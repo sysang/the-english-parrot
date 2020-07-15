@@ -1,0 +1,44 @@
+language: en
+pipeline:
+- name: ConveRTTokenizer
+- name: ConveRTFeaturizer
+- name: RegexFeaturizer
+- name: LexicalSyntacticFeaturizer
+- name: CountVectorsFeaturizer
+  OOV_token: oov
+  token_pattern: (?u)\b\w+\b
+- name: CountVectorsFeaturizer
+  analyzer: char_wb
+  min_ngram: 1
+  max_ngram: 4
+- name: DIETClassifier
+  epochs: 100
+  ranking_length: 5
+- name: DucklingHTTPExtractor
+  url: http://192.168.0.21:8008
+  dimensions:
+  - email
+  - number
+  - amount-of-money
+- name: EntitySynonymMapper
+- name: ResponseSelector
+  retrieval_intent: out_of_scope
+  scale_loss: false
+- name: ResponseSelector
+  retrieval_intent: chitchat
+  scale_loss: false
+policies:
+- name: TEDPolicy
+  max_history: 10
+  epochs: 20
+  batch_size:
+  - 32
+  - 64
+- max_history: 6
+  name: AugmentedMemoizationPolicy
+- core_threshold: 0.3
+  name: TwoStageFallbackPolicy
+  nlu_threshold: 0.8
+  deny_suggestion_intent_name: "trigger_rephrase"
+- name: FormPolicy
+- name: MappingPolicy

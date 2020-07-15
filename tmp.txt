@@ -1,0 +1,85 @@
+
+## intent:a_kiss/affirmation_carlos
+- yes
+- yes. of course.
+- he did
+- carlos
+
+## intent:a_kiss/denial_carlos
+- no
+- he didn't
+- he did not
+
+## intent:a_kiss/affirmation_the_girl
+- yes
+- yes. of course.
+- the girl
+- she did
+- the girl on bicycle
+
+## intent:a_kiss/denial_the_girl
+- no
+- she didn't
+- she did not
+
+## intent:a_kiss/affirmation_thing
+- yes
+- yes. of course.
+- it was
+- it is
+
+
+##
+* a_kiss/affirmation_carlos OR a_kiss/answer_1
+    - did carlos by an old car
+##
+* a_kiss/denial_carlos OR a_kiss/answer_1
+    - was the car expensive or was the car cheap
+##
+* a_kiss/answer_2
+    - did carlos by an expensive bicycle
+##
+* a_kiss/denial_thing OR intent:a_kiss/answer_3
+    - how big was the car
+##
+* intent:a_kiss/answer_4
+    - what color was the car
+##
+* intent:a_kiss/answer_6
+    - was the car yellow
+##
+* intent/denial_thing OR intent:a_kiss/answer_6
+    - what did he see
+##
+* intent:a_kiss/answer_7
+    - when did carlos see a girl on a bicycle
+##
+* intent:a_kiss/answer_8
+    - what did she look like
+##
+* intent:a_kiss/answer_10
+    - carlos yelled to her. what did he yell
+##
+* intent:a_kiss/answer_11
+    - did the girl keep going
+##
+* a_kiss/affirmation_the_girl OR intent:a_kiss/answer_14
+    - where did he want to take her
+
+DIALOGUE_SCRIPT = {
+    "a_kiss__answer_1" : {
+        "question": ["did carlos by an old car"],
+        "intent": "a_kiss__answer_1",
+        "yes_no": 1,
+        "positive": 0
+    },
+    "a_kiss__answer_2" : "did carlos by an expensive bicycle",
+    "a_kiss__answer_3" : "how big was the car",
+    "a_kiss__answer_4" : "what color was the car",
+    "a_kiss__answer_6" : "was the car yellow",
+    "a_kiss__answer_7" : "when did carlos see a girl on a bicycle",
+    "a_kiss__answer_8" : "what did she look like",
+    "a_kiss__answer_10" : "carlos yelled to her. what did he yell",
+    "a_kiss__answer_11" : "did the girl keep going",
+    "a_kiss__answer_12" : "where did he want to take her",
+}
