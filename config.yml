@@ -14,12 +14,6 @@ pipeline:
 - name: DIETClassifier
   epochs: 100
   ranking_length: 5
-- name: DucklingHTTPExtractor
-  url: http://192.168.58.5:8008
-  dimensions:
-  - email
-  - number
-  - amount-of-money
 - name: EntitySynonymMapper
 - name: ResponseSelector
   retrieval_intent: out_of_scope
