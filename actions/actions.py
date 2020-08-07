@@ -19,6 +19,7 @@ from rasa_sdk.events import (
 
 from actions import config
 from actions.api.algolia import AlgoliaAPI
+from actions.utils import text_to_float
 
 logger = logging.getLogger(__name__)
 
@@ -28,10 +29,8 @@ class ActionInitializeAKissStory(Action):
         return 'action_initialize_a_kiss_story'
 
     def run(self, dispatcher, tracker, domain):
-        [SlotSet("lesson_progress", "")]
-        [SlotSet("lesson_topic", 'a_kiss_story')]
 
-        return
+        return [SlotSet("lesson_topic", 'a_kiss_story')]
 
 class ActionTrackingProgress(Action):
 
@@ -51,4 +50,7 @@ class ActionTrackingProgress(Action):
         if not latest_bot_utterance:
             return
 
-        return [SlotSet("lesson_progress", latest_bot_utterance['text'])]
+        hashed = text_to_float(latest_bot_utterance['text'])
+        logger.debug(f"latest bot utterance hashed value: {hashed}")
+
+        return [SlotSet("lesson_progress", hashed)]
