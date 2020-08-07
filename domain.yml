@@ -37,11 +37,29 @@ intents:
         - attributivepr
         - carrier
         - attributive
+- nonexclamation__negative__attributivepr:
+    use_entities:
+        - attributivepr
+        - carrier
+        - attributive
 - nonexclamation__positive__mentalpr:
     use_entities:
         - mentalpr
         - senser
         - phenomenon
+- nonexclamation__negative__mentalpr:
+    use_entities:
+        - mentalpr
+        - senser
+        - phenomenon
+- affirmative__nominalgroup:
+    use_entities:
+        nominalgrp
+- affirmative__adjectivegroup:
+    use_entities:
+        adjectivegrp
+- affirmative__shortanswer
+- negative__shortanswer
 
 slots:
     lesson_topic:
