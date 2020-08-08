@@ -32,25 +32,45 @@ class ActionInitializeAKissStory(Action):
 
         return [SlotSet("lesson_topic", 'a_kiss_story')]
 
-class ActionTrackingProgress(Action):
+class ActionStoreLessonHistory(Action):
 
     def name(self):
-        return 'action_tracking_lesson_progress'
+        return 'action_store_lesson_history'
 
-    def _previous_bot_utter(self, events):
+    def _latest_bot_utter(self, events):
         bot_uters = list(filter(lambda e: e["event"] == "bot", events))
         length = len(bot_uters)
 
-        return bot_uters[length - 2] if length > 1 else None
+        return bot_uters[length - 1] if length > 0 else None
 
     def run(self, dispatcher, tracker, domain):
-        latest_bot_utterance = self._previous_bot_utter(tracker.events)
-        logger.debug(f"latest bot utterance: {latest_bot_utterance}")
+        latest_bot_utterance = self._latest_bot_utter(tracker.events)
 
         if not latest_bot_utterance:
-            return
+            return [FollowupAction("action_listen")]
 
         hashed = text_to_float(latest_bot_utterance['text'])
+        logger.debug(f"latest bot utterance: {latest_bot_utterance}")
         logger.debug(f"latest bot utterance hashed value: {hashed}")
 
-        return [SlotSet("lesson_progress", hashed)]
+        data = tracker.get_slot("lesson_history")
+        data.append(hashed)
+        SlotSet("lesson_history", data)
+
+        return [FollowupAction("action_listen")]
+
+class ActionTrackingLessonProgress(Action):
+    def name(self):
+        return 'action_tracking_lesson_progress'
+
+    def run(self, dispatcher, tracker, domain):
+        data = tracker.get_slot("lesson_history")
+        length = len(data)
+
+        if len(data) < 0:
+            return
+
+        hashed = data[length -1]
+
+        return SlotSet("lesson_progress", hashed)
+

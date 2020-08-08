@@ -82,6 +82,8 @@ intents:
 - negative__shortanswer
 
 slots:
+    lesson_history:
+        type: list
     lesson_topic:
         type: categorical
         values:
@@ -132,4 +134,5 @@ responses:
 actions:
 - respond_out_of_scope
 - action_initialize_a_kiss_story
+- action_store_lesson_history
 - action_tracking_lesson_progress

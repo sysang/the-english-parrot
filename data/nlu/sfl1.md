@@ -54,6 +54,7 @@
 ## intent:affirmative__nominalgroup
 - [the girl](nominalgrp)
 - [a girl](nominalgrp)
+- [girl](nominalgrp)
 - [a beautiful girl](nominalgrp)
 - [a new car](nominalgrp)
 - [a car](nominalgrp)
