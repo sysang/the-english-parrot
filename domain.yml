@@ -10,6 +10,8 @@ intents:
 - client_initializes_a_kiss_story
 - nonexclamation__positive__materialpr:
     use_entities:
+        - lesson_topic
+        - lesson_progress
         - materialpr
         - actor
         - beneficiary
@@ -17,6 +19,8 @@ intents:
         - scope
 - nonexclamation__negative__materialpr:
     use_entities:
+        - lesson_topic
+        - lesson_progress
         - materialpr
         - actor
         - beneficiary
@@ -24,40 +28,56 @@ intents:
         - scope
 - nonexclamation__positive__identifyingpr:
     use_entities:
+        - lesson_topic
+        - lesson_progress
         - identifyingpr
         - identified
         - identifier
 - nonexclamation__negative__identifyingpr:
     use_entities:
+        - lesson_topic
+        - lesson_progress
         - identifyingpr
         - identified
         - identifier
 - nonexclamation__positive__attributivepr:
     use_entities:
+        - lesson_topic
+        - lesson_progress
         - attributivepr
         - carrier
         - attributive
 - nonexclamation__negative__attributivepr:
     use_entities:
+        - lesson_topic
+        - lesson_progress
         - attributivepr
         - carrier
         - attributive
 - nonexclamation__positive__mentalpr:
     use_entities:
+        - lesson_topic
+        - lesson_progress
         - mentalpr
         - senser
         - phenomenon
 - nonexclamation__negative__mentalpr:
     use_entities:
+        - lesson_topic
+        - lesson_progress
         - mentalpr
         - senser
         - phenomenon
 - affirmative__nominalgroup:
     use_entities:
-        nominalgrp
+        - lesson_topic
+        - lesson_progress
+        - nominalgrp
 - affirmative__adjectivegroup:
     use_entities:
-        adjectivegrp
+        - lesson_topic
+        - lesson_progress
+        - adjectivegrp
 - affirmative__shortanswer
 - negative__shortanswer
 
@@ -84,6 +104,8 @@ entities:
 - mentalpr
 - senser
 - phenomenon
+- nominalgrp
+- adjectivegrp
 
 responses:
     utter_out_of_scope_no_english:
@@ -103,9 +125,9 @@ responses:
     utter_a_kiss_question_WhatColorWasCar:
     - text: "what color was the car"
     utter_a_kiss_question_WhileDrivingDownWhatDidHeSee:
-    - text: "While driving down the stree. What did he see"
+    - text: "while driving down the street. what did he see"
     utter_a_kiss_question_DidSheLookBeautiful:
-    - text: "Did She Look Beautiful"
+    - text: "did she look beautiful"
 
 actions:
 - respond_out_of_scope

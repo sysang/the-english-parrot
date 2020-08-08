@@ -37,14 +37,14 @@ class ActionTrackingProgress(Action):
     def name(self):
         return 'action_tracking_lesson_progress'
 
-    def _latest_bot_utter(self, events):
+    def _previous_bot_utter(self, events):
         bot_uters = list(filter(lambda e: e["event"] == "bot", events))
         length = len(bot_uters)
 
-        return bot_uters[length - 1] if length > 0 else None
+        return bot_uters[length - 2] if length > 1 else None
 
     def run(self, dispatcher, tracker, domain):
-        latest_bot_utterance = self._latest_bot_utter(tracker.events)
+        latest_bot_utterance = self._previous_bot_utter(tracker.events)
         logger.debug(f"latest bot utterance: {latest_bot_utterance}")
 
         if not latest_bot_utterance:
