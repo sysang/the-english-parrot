@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import re
 import logging
 import json
 import requests
@@ -15,6 +16,7 @@ from rasa_sdk.events import (
     ConversationPaused,
     EventType,
     FollowupAction,
+    ActionExecuted
 )
 
 from actions import config
@@ -43,21 +45,28 @@ class ActionStoreLessonHistory(Action):
 
         return bot_uters[length - 1] if length > 0 else None
 
+    def _extract_question_number(self, action_name):
+        p = re.compile("_(\d{2})_")
+        result = p.findall(action_name)
+
+        return int(result[0]) if len(result) > 0 else None
+
     def run(self, dispatcher, tracker, domain):
-        latest_bot_utterance = self._latest_bot_utter(tracker.events)
+        latest_action_name = tracker.latest_action_name
+        question_num = self._extract_question_number(latest_action_name)
 
-        if not latest_bot_utterance:
-            return [FollowupAction("action_listen")]
+        if not question_num:
+            return []
 
-        hashed = text_to_float(latest_bot_utterance['text'])
-        logger.debug(f"latest bot utterance: {latest_bot_utterance}")
-        logger.debug(f"latest bot utterance hashed value: {hashed}")
+        logger.debug(f"latest utterance action: {latest_action_name}")
+        logger.debug(f"latest question number: {question_num}")
 
         data = tracker.get_slot("lesson_history")
-        data.append(hashed)
-        SlotSet("lesson_history", data)
+        if not data:
+            data = []
+        data.append(question_num)
 
-        return [FollowupAction("action_listen")]
+        return [SlotSet("lesson_history", data), SlotSet("lesson_progress", question_num)]
 
 class ActionTrackingLessonProgress(Action):
     def name(self):
@@ -67,10 +76,11 @@ class ActionTrackingLessonProgress(Action):
         data = tracker.get_slot("lesson_history")
         length = len(data)
 
-        if len(data) < 0:
-            return
+        if length == 0:
+            return []
 
         hashed = data[length -1]
+        logger.debug(f"lesson progress: hashed value: {hashed}")
 
-        return SlotSet("lesson_progress", hashed)
+        return [SlotSet("lesson_progress", hashed)]
 
