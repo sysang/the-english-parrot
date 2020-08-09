@@ -66,7 +66,7 @@ class ActionStoreLessonHistory(Action):
             data = []
         data.append(question_num)
 
-        return [SlotSet("lesson_history", data), SlotSet("lesson_progress", question_num)]
+        return [SlotSet("lesson_history", data), SlotSet("lesson_progress", question_num), ActionExecuted("action_listen")]
 
 class ActionTrackingLessonProgress(Action):
     def name(self):

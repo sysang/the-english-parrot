@@ -92,6 +92,7 @@ slots:
         type: RasaSlotTypes.OnehotVector99
 
 entities:
+- lesson_progress
 - materialpr
 - actor
 - goal
