@@ -83,15 +83,13 @@ intents:
 
 slots:
     lesson_history:
-        type: list
+        type: unfeaturized
     lesson_topic:
         type: categorical
         values:
         - a_kiss_story
     lesson_progress:
-        type: float
-        min_value: 0
-        max_value: 99
+        type: RasaSlotTypes.OnehotVector99
 
 entities:
 - materialpr

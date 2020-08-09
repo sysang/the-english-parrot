@@ -61,9 +61,11 @@
 
 ## intent:affirmative__adjectivegroup
 - [beautiful](adjectivegrp)
+- [very beautiful](adjectivegrp)
 - [huge](adjectivegrp)
 - [very big](adjectivegrp)
 - [new](adjectivegrp)
+- [old](adjectivegrp)
 - [blue](adjectivegrp)
 
 ## intent:affirmative__shortanswer

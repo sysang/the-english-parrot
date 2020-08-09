@@ -53,7 +53,7 @@ class ActionStoreLessonHistory(Action):
 
     def run(self, dispatcher, tracker, domain):
         latest_action_name = tracker.latest_action_name
-        question_num = self._extract_question_number(latest_action_name)
+        question_num = int(self._extract_question_number(latest_action_name))
 
         if not question_num:
             return []
