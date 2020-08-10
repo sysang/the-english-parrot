@@ -15,16 +15,18 @@ pipeline:
   epochs: 100
   ranking_length: 5
 - name: EntitySynonymMapper
-- name: ResponseSelector
-  retrieval_intent: out_of_scope
-  scale_loss: false
 policies:
 - name: TEDPolicy
   max_history: 10
   epochs: 20
   batch_size:
-  - 32
   - 64
-- max_history: 6
+  - 128
+- max_history: 12
   name: AugmentedMemoizationPolicy
 - name: MappingPolicy
+- name: "FallbackPolicy"
+  nlu_threshold: 0.9
+  ambiguity_threshold: 0.1
+  core_threshold: 0.7
+  fallback_action_name: 'action_not_understand_fallback'

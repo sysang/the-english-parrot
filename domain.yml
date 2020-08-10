@@ -4,9 +4,6 @@ session_config:
     carry_over_slots_to_new_session: true  # set to false to forget slots between sessions
 
 intents:
-- out_of_scope:
-    triggers: respond_out_of_scope
-    use_entities: []
 - client_initializes_a_kiss_story
 - nonexclamation__positive__materialpr:
     use_entities:
@@ -131,6 +128,6 @@ responses:
     - text: "did she look beautiful"
 
 actions:
-- respond_out_of_scope
 - action_initialize_a_kiss_story
 - action_store_lesson_history
+- action_not_understand_fallback

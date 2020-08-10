@@ -66,21 +66,15 @@ class ActionStoreLessonHistory(Action):
             data = []
         data.append(question_num)
 
-        return [SlotSet("lesson_history", data), SlotSet("lesson_progress", question_num), ActionExecuted("action_listen")]
+        return [SlotSet("lesson_history", data), SlotSet("lesson_progress", question_num)]
 
-class ActionTrackingLessonProgress(Action):
+class ActionNotUnderstandFallback(Action):
     def name(self):
-        return 'action_tracking_lesson_progress'
+        return 'action_not_understand_fallback'
 
     def run(self, dispatcher, tracker, domain):
-        data = tracker.get_slot("lesson_history")
-        length = len(data)
 
-        if length == 0:
-            return []
+        dispatcher.utter_message("Sorry. i can not understand. could you say it again?")
 
-        hashed = data[length -1]
-        logger.debug(f"lesson progress: hashed value: {hashed}")
-
-        return [SlotSet("lesson_progress", hashed)]
+        return []
 
