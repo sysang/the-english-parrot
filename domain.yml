@@ -87,8 +87,14 @@ slots:
         - a_kiss_story
     lesson_progress:
         type: RasaSlotTypes.OnehotVector99
+    will_return:
+        type: categorical
+        values: 
+        - positive
+        - negative
 
 entities:
+- will_return
 - lesson_progress
 - materialpr
 - actor
@@ -106,12 +112,10 @@ entities:
 - adjectivegrp
 
 responses:
-    utter_out_of_scope_no_english:
-    - text: "I only understand English, I'm sorry."
-    utter_out_of_scope_other:
-    - text: "I can't help you with that, I'm sorry."
     utter_lesson_completed:
     - text: "That's it. You did a very good job."
+    utter_return_to_previous_question:
+    - text: "That is quite embarrassing because I'm getting lost. Let's go back to previous question."
     utter_start_a_kiss_lesson:
     - text: "in this lesson i will ask many questions. you must answer every question. okay. let's start. a kiss..."
     utter_a_kiss_01_DidCarlosBuyOldCar:
@@ -131,3 +135,4 @@ actions:
 - action_initialize_a_kiss_story
 - action_store_lesson_history
 - action_not_understand_fallback
+- action_not_sure_what_to_do_fallback

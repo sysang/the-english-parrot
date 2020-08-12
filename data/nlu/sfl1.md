@@ -12,7 +12,11 @@
 
 ## intent:nonexclamation__positive__identifyingpr
 - [it](identified) [was](identifyingpr) [a car](identifier)
+- [it](identified) [was](identifyingpr) [a bicycle](identifier)
 - [it](identified) [is](identifyingpr) [a car](identifier)
+- [it](identified) [is](identifyingpr) [a bicycle](identifier)
+- [it](identified) [was](identifyingpr) [a girl](identifier)
+- [they](identified) [are](identifyingpr) [teacher](identifier)
 
 ## intent:nonexclamation__negative__identifyingpr
 - [it](identified) [wasn't](identifyingpr) [a bicycle](identifier)

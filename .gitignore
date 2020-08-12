@@ -22,7 +22,9 @@ terms
 docker-local
 .pytype/
 pytags
+pylibtags
 rasa
 rasa-sdk
 .ipynb_checkpoints
 tmp
+rasa-custom-policies

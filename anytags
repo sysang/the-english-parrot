@@ -1,0 +1,1322 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+1. Forking the Rasa Repository	rasa/CONTRIBUTING.md	/^#### 1. Forking the Rasa Repository$/;"	t
+10. Non-code contributions	rasa/CONTRIBUTING.md	/^#### 10. Non-code contributions$/;"	t
+2. Cloning the Forked Repository Locally	rasa/CONTRIBUTING.md	/^#### 2. Cloning the Forked Repository Locally$/;"	t
+3. Update your Forked Repository	rasa/CONTRIBUTING.md	/^#### 3. Update your Forked Repository$/;"	t
+4. Implement your code contribution	rasa/CONTRIBUTING.md	/^#### 4. Implement your code contribution$/;"	t
+5. Push changes to your forked repository on GitHub	rasa/CONTRIBUTING.md	/^#### 5. Push changes to your forked repository on GitHub$/;"	t
+6. Opening the Pull Request on Rasa Open Source	rasa/CONTRIBUTING.md	/^#### 6. Opening the Pull Request on Rasa Open Source$/;"	t
+7. Signing the Contributor Licence Agreement (CLA)	rasa/CONTRIBUTING.md	/^#### 7. Signing the Contributor Licence Agreement (CLA)$/;"	t
+8. Merging your PR and the final steps of your contribution	rasa/CONTRIBUTING.md	/^#### 8. Merging your PR and the final steps of your contribution$/;"	t
+9. Share your contributions with the world!	rasa/CONTRIBUTING.md	/^#### 9. Share your contributions with the world!$/;"	t
+:gift: License	README.md	/^## :gift: License$/;"	s
+:surfer: Introduction	README.md	/^## :surfer: Introduction$/;"	s
+Attribution	rasa/CODE_OF_CONDUCT.md	/^## Attribution$/;"	s
+Branch 02	data/core/a_kiss__the_story.md	/^## Branch 02$/;"	s
+Branch 02 - negative__shortanswer	data/core/a_kiss__the_story.md	/^## Branch 02 - negative__shortanswer$/;"	s
+Branch 03	data/core/a_kiss__the_story.md	/^## Branch 03$/;"	s
+Branch 03 - negative__shortanswer	data/core/a_kiss__the_story.md	/^## Branch 03 - negative__shortanswer$/;"	s
+Branch 04	data/core/a_kiss__the_story.md	/^## Branch 04$/;"	s
+Branch 05	data/core/a_kiss__the_story.md	/^## Branch 05$/;"	s
+Branch 06	data/core/a_kiss__the_story.md	/^## Branch 06$/;"	s
+Branch 07	data/core/a_kiss__the_story.md	/^## Branch 07$/;"	s
+Branch 07 - affirmative__shortanswer	data/core/a_kiss__the_story.md	/^## Branch 07 - affirmative__shortanswer$/;"	s
+Building from source	rasa-sdk/README.md	/^## Building from source$/;"	s
+Building from source	rasa/README.md	/^### Building from source$/;"	S
+Bye	examples/knowledgebasebot/data/stories.md	/^## Bye$/;"	s
+Bye	rasa/examples/knowledgebasebot/data/stories.md	/^## Bye$/;"	s
+Change back to root user to install dependencies	rasa-sdk/README.md	/^# Change back to root user to install dependencies$/;"	c
+Code Style	rasa-sdk/README.md	/^## Code Style$/;"	s
+Code Style	rasa/README.md	/^### Code Style$/;"	S
+Code style	rasa/CONTRIBUTING.md	/^#### Code style$/;"	t
+Compatibility	rasa-sdk/README.md	/^## Compatibility$/;"	s
+Concertbot	examples/concertbot/README.md	/^# Concertbot$/;"	c
+Concertbot	rasa/examples/concertbot/README.md	/^# Concertbot$/;"	c
+Contribute	copy/data/core/step4_community.md	/^## Contribute$/;"	s
+Contributing	templates/README.md	/^### Contributing$/;"	S
+Contributor Covenant Code of Conduct	rasa/CODE_OF_CONDUCT.md	/^# Contributor Covenant Code of Conduct$/;"	c
+Core thread of scenario	data/core/a_kiss__the_story.md	/^## Core thread of scenario$/;"	s
+Custom Dependencies	rasa-sdk/README.md	/^### Custom Dependencies$/;"	S
+Deploying documentation updates	rasa/README.md	/^### Deploying documentation updates$/;"	S
+Development Internals	rasa/README.md	/^## Development Internals$/;"	s
+Direct "install Rasa"	copy/data/core/step2_rasa_init.md	/^## Direct "install Rasa"$/;"	s
+Docker	rasa-sdk/README.md	/^## Docker$/;"	s
+Doctor's utterance	script-content/seeing_doctor.md	/^## Doctor's utterance$/;"	s
+Draft PRs	rasa/CONTRIBUTING.md	/^#### Draft PRs$/;"	t
+Encountered any issues?	examples/concertbot/README.md	/^## Encountered any issues?$/;"	s
+Encountered any issues?	examples/formbot/README.md	/^## Encountered any issues?$/;"	s
+Encountered any issues?	examples/knowledgebasebot/README.md	/^## Encountered any issues?$/;"	s
+Encountered any issues?	examples/moodbot/README.md	/^## Encountered any issues?$/;"	s
+Encountered any issues?	examples/reminderbot/README.md	/^## Encountered any issues?$/;"	s
+Encountered any issues?	rasa/examples/concertbot/README.md	/^## Encountered any issues?$/;"	s
+Encountered any issues?	rasa/examples/formbot/README.md	/^## Encountered any issues?$/;"	s
+Encountered any issues?	rasa/examples/knowledgebasebot/README.md	/^## Encountered any issues?$/;"	s
+Encountered any issues?	rasa/examples/moodbot/README.md	/^## Encountered any issues?$/;"	s
+Encountered any issues?	rasa/examples/reminderbot/README.md	/^## Encountered any issues?$/;"	s
+Enforcement	rasa/CODE_OF_CONDUCT.md	/^## Enforcement$/;"	s
+Event Chatbot Template	templates/05_event_bot/README.md	/^# Event Chatbot Template$/;"	c
+Expression	script-content/seeing_doctor.md	/^## Expression$/;"	s
+Extend the official Rasa SDK image	rasa-sdk/README.md	/^# Extend the official Rasa SDK image$/;"	c
+FAQ - Step 2 flow interrupted	copy/data/core/faqs.md	/^## FAQ - Step 2 flow interrupted$/;"	s
+FAQ - tell more about channels	copy/data/core/faqs.md	/^## FAQ - tell more about channels$/;"	s
+FAQ - tell more about languages	copy/data/core/faqs.md	/^## FAQ - tell more about languages$/;"	s
+FAQ - tell more about rasa x ee	copy/data/core/faqs.md	/^## FAQ - tell more about rasa x ee$/;"	s
+FAQ - tell more about rasa x ee	test/test_conversations.md	/^## FAQ - tell more about rasa x ee$/;"	s
+FAQ - tell more about slots	copy/data/core/faqs.md	/^## FAQ - tell more about slots$/;"	s
+FAQ - tell more about voice	copy/data/core/faqs.md	/^## FAQ - tell more about voice$/;"	s
+Feedback Chatbot Template	templates/04_feedback_bot/README.md	/^# Feedback Chatbot Template$/;"	c
+Formatting	rasa/README.md	/^#### Formatting$/;"	t
+Formatting and Type Checking	rasa/CONTRIBUTING.md	/^#### Formatting and Type Checking$/;"	t
+Formbot	examples/formbot/README.md	/^# Formbot$/;"	c
+Formbot	rasa/examples/formbot/README.md	/^# Formbot$/;"	c
+Freshdesk Customer Support Chatbot Template	templates/10_freshdesk_customer_support_bot/README.md	/^# Freshdesk Customer Support Chatbot Template$/;"	c
+Generated Story 3490283781720101690 (example from interactive learning, "form: " will be excluded from training)	examples/formbot/data/stories.md	/^## Generated Story 3490283781720101690 (example from interactive learning, "form: " will be excl/;"	s
+Generated Story 3490283781720101690 (example from interactive learning, "form: " will be excluded from training)	rasa/examples/formbot/data/stories.md	/^## Generated Story 3490283781720101690 (example from interactive learning, "form: " will be excl/;"	s
+Get help in the forum	copy/data/core/step4_community.md	/^## Get help in the forum$/;"	s
+Get next event	copy/data/core/step4_community.md	/^## Get next event$/;"	s
+Get next event for location	copy/data/core/step4_community.md	/^## Get next event for location$/;"	s
+Get started from website	copy/data/core/step2_rasa_init.md	/^## Get started from website$/;"	s
+Get started from website	copy/data/core/step3_rasa_x.md	/^## Get started from website$/;"	s
+Get started from website + not interested in step 2	copy/data/core/step2_rasa_init.md	/^## Get started from website + not interested in step 2$/;"	s
+Happy path	examples/formbot/tests/end-to-end-stories.md	/^## Happy path$/;"	s
+Happy path	rasa/data/test_evaluations/form-end-to-end-stories.md	/^## Happy path$/;"	s
+Happy path	rasa/examples/formbot/tests/end-to-end-stories.md	/^## Happy path$/;"	s
+Happy path 1	examples/knowledgebasebot/data/stories.md	/^## Happy path 1$/;"	s
+Happy path 1	rasa/examples/knowledgebasebot/data/stories.md	/^## Happy path 1$/;"	s
+Happy path 2	examples/knowledgebasebot/data/stories.md	/^## Happy path 2$/;"	s
+Happy path 2	rasa/examples/knowledgebasebot/data/stories.md	/^## Happy path 2$/;"	s
+Happy path with form prefix	rasa/data/test_evaluations/form-end-to-end-stories.md	/^## Happy path with form prefix$/;"	s
+Happy path with message providing requested value	examples/formbot/tests/end-to-end-stories.md	/^## Happy path with message providing requested value$/;"	s
+Happy path with message providing requested value	rasa/examples/formbot/tests/end-to-end-stories.md	/^## Happy path with message providing requested value$/;"	s
+Happy path: Get event locations -> get next event	copy/data/core/step4_community.md	/^## Happy path: Get event locations -> get next event$/;"	s
+Happy path: Get event locations -> get next event for location	copy/data/core/step4_community.md	/^## Happy path: Get event locations -> get next event for location$/;"	s
+Happy path: Prompt -> Get event locations -> get next event	copy/data/core/step4_community.md	/^## Happy path: Prompt -> Get event locations -> get next event$/;"	s
+Happy path: Prompt -> Get event locations -> get next event for location	copy/data/core/step4_community.md	/^## Happy path: Prompt -> Get event locations -> get next event for location$/;"	s
+Hello	examples/knowledgebasebot/data/stories.md	/^## Hello$/;"	s
+Hello	rasa/examples/knowledgebasebot/data/stories.md	/^## Hello$/;"	s
+Hotel Chatbot Template	templates/06_hotel_bot/README.md	/^# Hotel Chatbot Template$/;"	c
+How can I contribute	copy/data/core/step4_community.md	/^## How can I contribute$/;"	s
+How to contribute	rasa/README.md	/^### How to contribute$/;"	S
+How to open a GitHub Pull Request	rasa/CONTRIBUTING.md	/^## How to open a GitHub Pull Request$/;"	s
+How to open a GitHub issue & file a bug report	rasa/CONTRIBUTING.md	/^## How to open a GitHub issue & file a bug report$/;"	s
+How to open a PR and contribute code to Rasa Open Source	rasa/CONTRIBUTING.md	/^## How to open a PR and contribute code to Rasa Open Source$/;"	s
+How to use it?	templates/01_smalltalk_bot/README.md	/^### How to use it?$/;"	S
+How to use it?	templates/02_lead_bot/README.md	/^### How to use it?$/;"	S
+How to use it?	templates/03_real_estate_bot/README.md	/^### How to use it?$/;"	S
+How to use it?	templates/04_feedback_bot/README.md	/^### How to use it?$/;"	S
+How to use it?	templates/05_event_bot/README.md	/^### How to use it?$/;"	S
+How to use it?	templates/06_hotel_bot/README.md	/^### How to use it?$/;"	S
+How to use it?	templates/07_survey_bot/README.md	/^### How to use it?$/;"	S
+How to use it?	templates/08_travel_agency_bot/README.md	/^### How to use it?$/;"	S
+How to use it?	templates/09_news_api/README.md	/^### How to use it?$/;"	S
+How to use it?	templates/10_freshdesk_customer_support_bot/README.md	/^### How to use it?$/;"	S
+How to use this example?	examples/concertbot/README.md	/^## How to use this example?$/;"	s
+How to use this example?	examples/formbot/README.md	/^## How to use this example?$/;"	s
+How to use this example?	examples/knowledgebasebot/README.md	/^## How to use this example?$/;"	s
+How to use this example?	examples/moodbot/README.md	/^## How to use this example?$/;"	s
+How to use this example?	examples/reminderbot/README.md	/^## How to use this example?$/;"	s
+How to use this example?	rasa/examples/concertbot/README.md	/^## How to use this example?$/;"	s
+How to use this example?	rasa/examples/formbot/README.md	/^## How to use this example?$/;"	s
+How to use this example?	rasa/examples/knowledgebasebot/README.md	/^## How to use this example?$/;"	s
+How to use this example?	rasa/examples/moodbot/README.md	/^## How to use this example?$/;"	s
+How to use this example?	rasa/examples/reminderbot/README.md	/^## How to use this example?$/;"	s
+If you want to learn more, please see the docs: https://rasa.com/docs/rasa/user-guide/testing-your-assistant/	rasa/rasa/cli/initial_project/tests/conversation_tests.md	/^#### If you want to learn more, please see the docs: https:\/\/rasa.com\/docs\/rasa\/user-guide\//;"	t
+Important	templates/README.md	/^### Important$/;"	S
+Installation	rasa-sdk/README.md	/^## Installation$/;"	s
+Installation & Configuration	templates/README.md	/^### Installation & Configuration$/;"	S
+Installation went well	copy/data/core/step2_rasa_init.md	/^## Installation went well$/;"	s
+Installing Poetry	rasa/README.md	/^### Installing Poetry$/;"	S
+Introduction	templates/README.md	/^### Introduction$/;"	S
+Just don't want to continue	copy/data/core/faqs.md	/^## Just don't want to continue$/;"	s
+Just don't want to continue	copy/data/core/step2_rasa_init.md	/^## Just don't want to continue$/;"	s
+Knowledge Base Bot	examples/knowledgebasebot/README.md	/^# Knowledge Base Bot$/;"	c
+Knowledge Base Bot	rasa/examples/knowledgebasebot/README.md	/^# Knowledge Base Bot$/;"	c
+Lead generation Chatbot Template	templates/02_lead_bot/README.md	/^# Lead generation Chatbot Template$/;"	c
+License	rasa-sdk/README.md	/^## License$/;"	s
+License	rasa/README.md	/^## License$/;"	s
+Maintainers	templates/README.md	/^### Maintainers$/;"	S
+Managing environments	rasa/README.md	/^### Managing environments$/;"	S
+Moodbot	examples/moodbot/README.md	/^# Moodbot$/;"	c
+Moodbot	rasa/examples/moodbot/README.md	/^# Moodbot$/;"	c
+News Api Chatbot Template	templates/09_news_api/README.md	/^# News Api Chatbot Template$/;"	c
+Opening issues before PRs	rasa/CONTRIBUTING.md	/^#### Opening issues before PRs$/;"	t
+Our Pledge	rasa/CODE_OF_CONDUCT.md	/^## Our Pledge$/;"	s
+Our Responsibilities	rasa/CODE_OF_CONDUCT.md	/^## Our Responsibilities$/;"	s
+Our Standards	rasa/CODE_OF_CONDUCT.md	/^## Our Standards$/;"	s
+PRs should be a reasonable length	rasa/CONTRIBUTING.md	/^#### PRs should be a reasonable length$/;"	t
+Patient's utterance	script-content/seeing_doctor.md	/^## Patient's utterance$/;"	s
+Problems installing	copy/data/core/step2_rasa_init.md	/^## Problems installing$/;"	s
+Problems installing (but FAQ + cut to the chase)	copy/data/core/step2_rasa_init.md	/^## Problems installing (but FAQ + cut to the chase)$/;"	s
+Problems installing (but FAQ)	copy/data/core/step2_rasa_init.md	/^## Problems installing (but FAQ)$/;"	s
+Problems installing (cut to the chase)	copy/data/core/step2_rasa_init.md	/^## Problems installing (cut to the chase)$/;"	s
+Prompt -> Contribute	copy/data/core/step4_community.md	/^## Prompt -> Contribute$/;"	s
+Prompt -> Get help in forum	copy/data/core/step4_community.md	/^## Prompt -> Get help in forum$/;"	s
+Prompt -> Get next event	copy/data/core/step4_community.md	/^## Prompt -> Get next event$/;"	s
+Prompt -> Get next event for location	copy/data/core/step4_community.md	/^## Prompt -> Get next event for location$/;"	s
+Prompt -> How can I contribute	copy/data/core/step4_community.md	/^## Prompt -> How can I contribute$/;"	s
+Query Knowledge Base	examples/knowledgebasebot/data/stories.md	/^## Query Knowledge Base$/;"	s
+Query Knowledge Base	rasa/examples/knowledgebasebot/data/stories.md	/^## Query Knowledge Base$/;"	s
+README Contents:	rasa/README.md	/^### README Contents:$/;"	S
+Rasa Chatbot Templates	templates/README.md	/^# Rasa Chatbot Templates$/;"	c
+Rasa Open Source	rasa/README.md	/^# Rasa Open Source$/;"	c
+Rasa Python-SDK	rasa-sdk/README.md	/^# Rasa Python-SDK$/;"	c
+Real Estate Chatbot Template	templates/03_real_estate_bot/README.md	/^# Real Estate Chatbot Template$/;"	c
+Reminderbot	examples/reminderbot/README.md	/^# Reminderbot$/;"	c
+Reminderbot	rasa/examples/reminderbot/README.md	/^# Reminderbot$/;"	c
+Resolving merge conflicts	rasa/README.md	/^### Resolving merge conflicts$/;"	S
+Return to question when not sure what to do next	data/core/a_kiss_the_return.md	/^## Return to question when not sure what to do next$/;"	s
+Running and changing the documentation	rasa/README.md	/^### Running and changing the documentation$/;"	S
+Running the Tests	rasa/README.md	/^### Running the Tests$/;"	S
+Sara - the Rasa Demo Bot	README.md	/^# Sara - the Rasa Demo Bot$/;"	c
+Scenario - main discussion path	copy/data/core/a_kiss.md	/^## Scenario - main discussion path$/;"	s
+Scope	rasa/CODE_OF_CONDUCT.md	/^## Scope$/;"	s
+Screenshots	templates/01_smalltalk_bot/README.md	/^### Screenshots$/;"	S
+Screenshots	templates/02_lead_bot/README.md	/^### Screenshots$/;"	S
+Screenshots	templates/03_real_estate_bot/README.md	/^### Screenshots$/;"	S
+Screenshots	templates/04_feedback_bot/README.md	/^### Screenshots$/;"	S
+Screenshots	templates/05_event_bot/README.md	/^### Screenshots$/;"	S
+Screenshots	templates/06_hotel_bot/README.md	/^### Screenshots$/;"	S
+Screenshots	templates/07_survey_bot/README.md	/^### Screenshots$/;"	S
+Screenshots	templates/08_travel_agency_bot/README.md	/^### Screenshots$/;"	S
+Screenshots	templates/09_news_api/README.md	/^### Screenshots$/;"	S
+Screenshots	templates/10_freshdesk_customer_support_bot/README.md	/^### Screenshots$/;"	S
+Smalltalk Chatbot Template	templates/01_smalltalk_bot/README.md	/^# Smalltalk Chatbot Template$/;"	c
+Step 4 prompt	copy/data/core/step4_community.md	/^## Step 4 prompt$/;"	s
+Steps to release a new version	rasa-sdk/README.md	/^## Steps to release a new version$/;"	s
+Steps to release a new version	rasa/README.md	/^### Steps to release a new version$/;"	S
+Story from conversation with 00e7815f79e4413abb0dfb4b392f1099 on November 15th 2018	copy/data/core/closetheloop.md	/^## Story from conversation with 00e7815f79e4413abb0dfb4b392f1099 on November 15th 2018$/;"	s
+Story from conversation with 030829eb30ed4339985d7e71737f6c2d on January 1st 2019	copy/data/core/closetheloop.md	/^## Story from conversation with 030829eb30ed4339985d7e71737f6c2d on January 1st 2019$/;"	s
+Story from conversation with 201bb55841154f858f524a485f8816c3 on November 18th 2018	copy/data/core/closetheloop.md	/^## Story from conversation with 201bb55841154f858f524a485f8816c3 on November 18th 2018$/;"	s
+Story from conversation with 29d264d8ce574a11bde572f0e79b73f3 on November 19th 2018	copy/data/core/closetheloop.md	/^## Story from conversation with 29d264d8ce574a11bde572f0e79b73f3 on November 19th 2018$/;"	s
+Story from conversation with 35d1ecc91c364cbf8a6edf006e5d8c9a on November 19th 2018	copy/data/core/closetheloop.md	/^## Story from conversation with 35d1ecc91c364cbf8a6edf006e5d8c9a on November 19th 2018$/;"	s
+Story from conversation with 3db7df5613a2487a809694e2f6b2b34e on November 25th 2019	copy/data/core/canthelp.md	/^## Story from conversation with 3db7df5613a2487a809694e2f6b2b34e on November 25th 2019$/;"	s
+Story from conversation with 477ddbe73e374eedb07104c5d9f42c31 on November 16th 2018	copy/data/core/closetheloop.md	/^## Story from conversation with 477ddbe73e374eedb07104c5d9f42c31 on November 16th 2018$/;"	s
+Story from conversation with 4986d88ccb784dc19dc5a553a8e07890 on November 19th 2018	copy/data/core/closetheloop.md	/^## Story from conversation with 4986d88ccb784dc19dc5a553a8e07890 on November 19th 2018$/;"	s
+Story from conversation with 4a4e903fc43940db9ccdb9153dfdadcb on January 21st 2019	copy/data/core/closetheloop.md	/^## Story from conversation with 4a4e903fc43940db9ccdb9153dfdadcb on January 21st 2019$/;"	s
+Story from conversation with 4b7ecc2cab6e42c5b1fedb8ab4056866 on December 29th 2018	copy/data/core/closetheloop.md	/^## Story from conversation with 4b7ecc2cab6e42c5b1fedb8ab4056866 on December 29th 2018$/;"	s
+Story from conversation with 4c274f8d470e4b77adbfefe7cda7cad7 on October 27th 2018	copy/data/core/closetheloop.md	/^## Story from conversation with 4c274f8d470e4b77adbfefe7cda7cad7 on October 27th 2018$/;"	s
+Story from conversation with 4cdb0b3c6f6c4b3694fcb311ae72743b on January 21st 2019	copy/data/core/closetheloop.md	/^## Story from conversation with 4cdb0b3c6f6c4b3694fcb311ae72743b on January 21st 2019$/;"	s
+Story from conversation with 53d4ca53494d4469b7d94aca2f7b3fec on January 21st 2019	copy/data/core/closetheloop.md	/^## Story from conversation with 53d4ca53494d4469b7d94aca2f7b3fec on January 21st 2019$/;"	s
+Story from conversation with 5f3a2ea92d184a9f96df7240e4f7e2d9 on January 21st 2019	copy/data/core/closetheloop.md	/^## Story from conversation with 5f3a2ea92d184a9f96df7240e4f7e2d9 on January 21st 2019$/;"	s
+Story from conversation with 602ddccbe2de4f46822e06e2781cf02d on January 8th 2019	copy/data/core/closetheloop.md	/^## Story from conversation with 602ddccbe2de4f46822e06e2781cf02d on January 8th 2019$/;"	s
+Story from conversation with 67a8696eb5894b25a800b6cbd7a695bb on December 15th 2018	copy/data/core/closetheloop.md	/^## Story from conversation with 67a8696eb5894b25a800b6cbd7a695bb on December 15th 2018$/;"	s
+Story from conversation with 6fd65c93e374489f9c8d76697ab9c493 on November 19th 2018	copy/data/core/closetheloop.md	/^## Story from conversation with 6fd65c93e374489f9c8d76697ab9c493 on November 19th 2018$/;"	s
+Story from conversation with 7830abb04e1c49809d89b0d420443928 on November 19th 2018	copy/data/core/closetheloop.md	/^## Story from conversation with 7830abb04e1c49809d89b0d420443928 on November 19th 2018$/;"	s
+Story from conversation with af5a6b3c39d04c6db2b682960e63f01c on January 21st 2019	copy/data/core/closetheloop.md	/^## Story from conversation with af5a6b3c39d04c6db2b682960e63f01c on January 21st 2019$/;"	s
+Story from conversation with alan on November 16th 2018	copy/data/core/closetheloop.md	/^## Story from conversation with alan on November 16th 2018$/;"	s
+Story from conversation with alan on November 16th 2018 2	copy/data/core/closetheloop.md	/^## Story from conversation with alan on November 16th 2018 2$/;"	s
+Story from conversation with cd483ab3456d47dfb40bd1f51043fb54 on November 18th 2018	copy/data/core/closetheloop.md	/^## Story from conversation with cd483ab3456d47dfb40bd1f51043fb54 on November 18th 2018$/;"	s
+Story from conversation with cdd14d763a664a5b95e998ce165bd86f on December 16th 2018	copy/data/core/closetheloop.md	/^## Story from conversation with cdd14d763a664a5b95e998ce165bd86f on December 16th 2018$/;"	s
+Story from conversation with ced8c1eb9a8d485f88a02d931b2879bd on January 16th 2019	copy/data/core/closetheloop.md	/^## Story from conversation with ced8c1eb9a8d485f88a02d931b2879bd on January 16th 2019$/;"	s
+Story from conversation with cfa8bb9deaf0427498c662745431a282 on December 15th 2018	copy/data/core/closetheloop.md	/^## Story from conversation with cfa8bb9deaf0427498c662745431a282 on December 15th 2018$/;"	s
+Story from conversation with d041ba4b0a89479e9bb6a5007f2cdc87 on November 15th 2018	copy/data/core/closetheloop.md	/^## Story from conversation with d041ba4b0a89479e9bb6a5007f2cdc87 on November 15th 2018$/;"	s
+Story from conversation with dfbb633d10854f97b880a2496d632f0d on November 16th 2018	copy/data/core/closetheloop.md	/^## Story from conversation with dfbb633d10854f97b880a2496d632f0d on November 16th 2018$/;"	s
+Story from conversation with dominik	copy/data/core/closetheloop.md	/^## Story from conversation with dominik$/;"	s
+Story from conversation with dominik on November 19th 2018	copy/data/core/closetheloop.md	/^## Story from conversation with dominik on November 19th 2018$/;"	s
+Story from conversation with e977c395a2404bef8ba7f0c3b7e65970 on January 8th 2019	copy/data/core/closetheloop.md	/^## Story from conversation with e977c395a2404bef8ba7f0c3b7e65970 on January 8th 2019$/;"	s
+Story from conversation with linda on November 15th 2018	copy/data/core/closetheloop.md	/^## Story from conversation with linda on November 15th 2018$/;"	s
+Survey Chatbot Template	templates/07_survey_bot/README.md	/^# Survey Chatbot Template$/;"	c
+Switch back to non-root to run code	rasa-sdk/README.md	/^# Switch back to non-root to run code$/;"	c
+Templates	templates/README.md	/^### Templates$/;"	S
+This file contains tests to evaluate that your bot behaves as expected.	rasa/rasa/cli/initial_project/tests/conversation_tests.md	/^#### This file contains tests to evaluate that your bot behaves as expected.$/;"	t
+To install packages from PyPI	rasa-sdk/README.md	/^# To install packages from PyPI$/;"	c
+To install system dependencies	rasa-sdk/README.md	/^# To install system dependencies$/;"	c
+To test Sara:	README.md	/^## To test Sara:$/;"	s
+Travel Agency Chatbot Template	templates/08_travel_agency_bot/README.md	/^# Travel Agency Chatbot Template$/;"	c
+Type Checking	rasa/README.md	/^#### Type Checking$/;"	t
+Usage	rasa-sdk/README.md	/^## Usage$/;"	s
+Usage	rasa-sdk/README.md	/^### Usage$/;"	S
+Vocabulary	script-content/seeing_doctor.md	/^## Vocabulary$/;"	s
+What is a Pull Request (PR)?	rasa/CONTRIBUTING.md	/^### What is a Pull Request (PR)?$/;"	S
+What to know before opening a PR	rasa/CONTRIBUTING.md	/^### What to know before opening a PR$/;"	S
+What’s inside this example?	examples/concertbot/README.md	/^## What’s inside this example?$/;"	s
+What’s inside this example?	examples/formbot/README.md	/^## What’s inside this example?$/;"	s
+What’s inside this example?	examples/knowledgebasebot/README.md	/^## What’s inside this example?$/;"	s
+What’s inside this example?	examples/moodbot/README.md	/^## What’s inside this example?$/;"	s
+What’s inside this example?	examples/reminderbot/README.md	/^## What’s inside this example?$/;"	s
+What’s inside this example?	rasa/examples/concertbot/README.md	/^## What’s inside this example?$/;"	s
+What’s inside this example?	rasa/examples/formbot/README.md	/^## What’s inside this example?$/;"	s
+What’s inside this example?	rasa/examples/knowledgebasebot/README.md	/^## What’s inside this example?$/;"	s
+What’s inside this example?	rasa/examples/moodbot/README.md	/^## What’s inside this example?$/;"	s
+What’s inside this example?	rasa/examples/reminderbot/README.md	/^## What’s inside this example?$/;"	s
+Where to get help	rasa/README.md	/^## Where to get help$/;"	s
+Working on a new feature or fixing a bug	rasa/CONTRIBUTING.md	/^### Working on a new feature or fixing a bug$/;"	S
+Working on an existing feature	rasa/CONTRIBUTING.md	/^### Working on an existing feature$/;"	S
+abc_news	templates/09_news_api/src/data/stories.md	/^## abc_news$/;"	s
+about_costa_rica	templates/08_travel_agency_bot/src/data/stories.md	/^## about_costa_rica$/;"	s
+activities	templates/08_travel_agency_bot/src/data/stories.md	/^## activities$/;"	s
+activities_natural_exploration	templates/08_travel_agency_bot/src/data/stories.md	/^## activities_natural_exploration$/;"	s
+activities_subwing	templates/08_travel_agency_bot/src/data/stories.md	/^## activities_subwing$/;"	s
+add_trip	templates/08_travel_agency_bot/src/data/stories.md	/^## add_trip$/;"	s
+anything else?	copy/data/core/stories.md	/^## anything else?$/;"	s
+anything else? - no	copy/data/core/stories.md	/^## anything else? - no$/;"	s
+anything else? - yes	copy/data/core/stories.md	/^## anything else? - yes$/;"	s
+ask name	rasa/data/test_responses/default.md	/^## ask name$/;"	s
+ask weather	rasa/data/test_responses/default.md	/^## ask weather$/;"	s
+babycotfaq	templates/06_hotel_bot/src/data/stories.md	/^## babycotfaq$/;"	s
+bbc_news	templates/09_news_api/src/data/stories.md	/^## bbc_news$/;"	s
+begin conversation	templates/02_lead_bot/src/data/stories.md	/^## begin conversation$/;"	s
+book_room_clubsuitesuite_details	templates/06_hotel_bot/src/data/stories.md	/^## book_room_clubsuitesuite_details$/;"	s
+book_room_dulex_details	templates/06_hotel_bot/src/data/stories.md	/^## book_room_dulex_details$/;"	s
+book_room_juniorsuite_details	templates/06_hotel_bot/src/data/stories.md	/^## book_room_juniorsuite_details$/;"	s
+book_room_now	templates/06_hotel_bot/src/data/stories.md	/^## book_room_now$/;"	s
+bot challenge	examples/concertbot/data/stories.md	/^## bot challenge$/;"	s
+bot challenge	examples/formbot/data/stories.md	/^## bot challenge$/;"	s
+bot challenge	examples/knowledgebasebot/data/stories.md	/^## bot challenge$/;"	s
+bot challenge	examples/moodbot/data/stories.md	/^## bot challenge$/;"	s
+bot challenge	rasa/data/test_stories/stories_retrieval_intents.md	/^## bot challenge$/;"	s
+bot challenge	rasa/examples/concertbot/data/stories.md	/^## bot challenge$/;"	s
+bot challenge	rasa/examples/formbot/data/stories.md	/^## bot challenge$/;"	s
+bot challenge	rasa/examples/knowledgebasebot/data/stories.md	/^## bot challenge$/;"	s
+bot challenge	rasa/examples/moodbot/data/stories.md	/^## bot challenge$/;"	s
+bot challenge	rasa/rasa/cli/initial_project/data/stories.md	/^## bot challenge$/;"	s
+bot challenge	rasa/rasa/cli/initial_project/tests/conversation_tests.md	/^## bot challenge$/;"	s
+breakfasttime	templates/06_hotel_bot/src/data/stories.md	/^## breakfasttime$/;"	s
+buy_a_home	templates/03_real_estate_bot/src/data/stories.md	/^## buy_a_home$/;"	s
+buy_home	templates/03_real_estate_bot/src/data/stories.md	/^## buy_home$/;"	s
+bye	copy/data/core/stories.md	/^## bye$/;"	s
+bye	templates/07_survey_bot/src/data/stories.md	/^## bye$/;"	s
+cancellationplicyfaq	templates/06_hotel_bot/src/data/stories.md	/^## cancellationplicyfaq$/;"	s
+carparking:	templates/06_hotel_bot/src/data/stories.md	/^## carparking:$/;"	s
+chitchat	copy/data/core/canthelp.md	/^## chitchat$/;"	s
+chitchat	copy/data/core/chitchat.md	/^## chitchat$/;"	s
+chitchat	copy/data/core/handoff.md	/^## chitchat$/;"	s
+chitchat	copy/data/nlu/responses/responses.md	/^## chitchat$/;"	s
+chitchat	rasa/data/test_stories/stories_retrieval_intents.md	/^## chitchat$/;"	s
+chitchat	test/test_conversations.md	/^## chitchat $/;"	s
+chitchat --> email --> no email	copy/data/core/stories.md	/^## chitchat --> email --> no email$/;"	s
+chitchat interrupting and stopping step 2 flow	copy/data/core/chitchat.md	/^## chitchat interrupting and stopping step 2 flow$/;"	s
+chitchat interrupting step 2 flow	copy/data/core/chitchat.md	/^## chitchat interrupting step 2 flow$/;"	s
+chitchat stop but continue and chitchat path	examples/formbot/data/stories.md	/^## chitchat stop but continue and chitchat path$/;"	s
+chitchat stop but continue and chitchat path	rasa/examples/formbot/data/stories.md	/^## chitchat stop but continue and chitchat path$/;"	s
+chitchat stop but continue path	examples/formbot/data/stories.md	/^## chitchat stop but continue path$/;"	s
+chitchat stop but continue path	rasa/examples/formbot/data/stories.md	/^## chitchat stop but continue path$/;"	s
+chitchat, stop and really stop path	examples/formbot/data/stories.md	/^## chitchat, stop and really stop path$/;"	s
+chitchat, stop and really stop path	rasa/examples/formbot/data/stories.md	/^## chitchat, stop and really stop path$/;"	s
+cnn_news	templates/09_news_api/src/data/stories.md	/^## cnn_news$/;"	s
+combined begin with url	templates/02_lead_bot/src/data/stories.md	/^## combined begin with url$/;"	s
+combined begin without url	templates/02_lead_bot/src/data/stories.md	/^## combined begin without url$/;"	s
+compare_reviews_concerts	examples/concertbot/data/stories.md	/^## compare_reviews_concerts$/;"	s
+compare_reviews_concerts	rasa/examples/concertbot/data/stories.md	/^## compare_reviews_concerts$/;"	s
+compare_reviews_venues	examples/concertbot/data/stories.md	/^## compare_reviews_venues$/;"	s
+compare_reviews_venues	rasa/examples/concertbot/data/stories.md	/^## compare_reviews_venues$/;"	s
+concert_search	examples/concertbot/data/stories.md	/^## concert_search$/;"	s
+concert_search	rasa/examples/concertbot/data/stories.md	/^## concert_search$/;"	s
+contactnumber	templates/06_hotel_bot/src/data/stories.md	/^## contactnumber$/;"	s
+contacts	templates/08_travel_agency_bot/src/data/stories.md	/^## contacts$/;"	s
+create tickets	templates/10_freshdesk_customer_support_bot/src/data/stories.md	/^## create tickets$/;"	s
+deny	rasa/data/test/markdown_single_sections/incorrect_nlu_format.md	/^## deny$/;"	s
+deny chitchat	copy/data/core/chitchat.md	/^## deny chitchat$/;"	s
+entity:human	rasa/data/test/markdown_single_sections/not_existing_section.md	/^## entity:human$/;"	s
+faq	copy/data/core/step1_get_started.md	/^## faq$/;"	s
+faq	copy/data/nlu/responses/responses.md	/^## faq$/;"	s
+faq with entities	test/test_conversations.md	/^## faq with entities$/;"	s
+faqbreakfastmenu	templates/06_hotel_bot/src/data/stories.md	/^## faqbreakfastmenu$/;"	s
+faqcheckin	templates/06_hotel_bot/src/data/stories.md	/^## faqcheckin$/;"	s
+faqcheckouttime	templates/06_hotel_bot/src/data/stories.md	/^## faqcheckouttime$/;"	s
+faqchildrenage	templates/06_hotel_bot/src/data/stories.md	/^## faqchildrenage$/;"	s
+faqearlycheckin	templates/06_hotel_bot/src/data/stories.md	/^## faqearlycheckin$/;"	s
+faqlatecheckin	templates/06_hotel_bot/src/data/stories.md	/^## faqlatecheckin$/;"	s
+faqlatecheckout	templates/06_hotel_bot/src/data/stories.md	/^## faqlatecheckout$/;"	s
+faqminimumage	templates/06_hotel_bot/src/data/stories.md	/^## faqminimumage$/;"	s
+faqpartialcancel	templates/06_hotel_bot/src/data/stories.md	/^## faqpartialcancel$/;"	s
+faqroomcountdetails	templates/06_hotel_bot/src/data/stories.md	/^## faqroomcountdetails$/;"	s
+faqs	copy/data/core/faqs.md	/^## faqs$/;"	s
+faqs	test/test_conversations.md	/^## faqs$/;"	s
+feedback deny	copy/data/core/feedback.md	/^## feedback deny$/;"	s
+feedback thank	copy/data/core/feedback.md	/^## feedback thank$/;"	s
+feedback thumbsup	copy/data/core/feedback.md	/^## feedback thumbsup$/;"	s
+feedback1	copy/data/core/feedback.md	/^## feedback1$/;"	s
+feedback2	copy/data/core/feedback.md	/^## feedback2$/;"	s
+feedback3	copy/data/core/feedback.md	/^## feedback3$/;"	s
+fortkochi_nearestattra	templates/06_hotel_bot/src/data/stories.md	/^## fortkochi_nearestattra$/;"	s
+get started rasa open source	test/test_conversations.md	/^## get started rasa open source$/;"	s
+goodbye	examples/concertbot/data/stories.md	/^## goodbye$/;"	s
+goodbye	rasa/data/test_stories/stories_with_cycle.md	/^## goodbye$/;"	s
+goodbye	rasa/examples/concertbot/data/stories.md	/^## goodbye$/;"	s
+greet	copy/data/core/stories.md	/^## greet$/;"	s
+greet	examples/concertbot/data/stories.md	/^## greet$/;"	s
+greet	rasa/examples/concertbot/data/stories.md	/^## greet$/;"	s
+greet + canthelp	copy/data/core/canthelp.md	/^## greet + canthelp$/;"	s
+greet + handoff	copy/data/core/handoff.md	/^## greet + handoff$/;"	s
+greet + newsletter + canthelp + continue	copy/data/core/canthelp.md	/^## greet + newsletter + canthelp + continue$/;"	s
+greet + newsletter + canthelp + don't continue	copy/data/core/canthelp.md	/^## greet + newsletter + canthelp + don't continue$/;"	s
+greet chitchat	copy/data/core/chitchat.md	/^## greet chitchat$/;"	s
+greetings	rasa/data/test_stories/stories_conflicting_2.md	/^## greetings$/;"	s
+greetings	rasa/data/test_stories/stories_conflicting_3.md	/^## greetings$/;"	s
+happy	examples/concertbot/data/stories.md	/^## happy$/;"	s
+happy	rasa/examples/concertbot/data/stories.md	/^## happy$/;"	s
+happy path	examples/formbot/data/stories.md	/^## happy path$/;"	s
+happy path	examples/reminderbot/data/stories.md	/^## happy path$/;"	s
+happy path	rasa/data/test_stories/stories_conflicting_2.md	/^## happy path$/;"	s
+happy path	rasa/data/test_stories/stories_conflicting_3.md	/^## happy path$/;"	s
+happy path	rasa/data/test_stories/stories_retrieval_intents.md	/^## happy path$/;"	s
+happy path	rasa/data/test_stories/stories_with_multiline_comments.md	/^## happy path$/;"	s
+happy path	rasa/examples/formbot/data/stories.md	/^## happy path$/;"	s
+happy path	rasa/examples/reminderbot/data/stories.md	/^## happy path$/;"	s
+happy path	rasa/rasa/cli/initial_project/data/stories.md	/^## happy path$/;"	s
+happy path	templates/03_real_estate_bot/src/data/stories.md	/^## happy path$/;"	s
+happy path	templates/05_event_bot/src/data/stories.md	/^## happy path$/;"	s
+happy path	templates/07_survey_bot/src/data/stories.md	/^## happy path$/;"	s
+happy path	templates/08_travel_agency_bot/src/data/stories.md	/^## happy path$/;"	s
+happy path               <!-- name of the story - just for debugging -->	examples/moodbot/data/stories.md	/^## happy path               <!-- name of the story - just for debugging -->$/;"	s
+happy path               <!-- name of the story - just for debugging -->	rasa/data/test_multi_domain/data/MoodBot/data/stories.md	/^## happy path               <!-- name of the story - just for debugging -->$/;"	s
+happy path               <!-- name of the story - just for debugging -->	rasa/examples/moodbot/data/stories.md	/^## happy path               <!-- name of the story - just for debugging -->$/;"	s
+happy path 1	rasa/rasa/cli/initial_project/tests/conversation_tests.md	/^## happy path 1$/;"	s
+happy path 2	rasa/rasa/cli/initial_project/tests/conversation_tests.md	/^## happy path 2$/;"	s
+how to get started without privacy policy	copy/data/core/chitchat.md	/^## how to get started without privacy policy$/;"	s
+intent: create_ticket	templates/10_freshdesk_customer_support_bot/src/data/nlu.md	/^## intent: create_ticket$/;"	s
+intent: show_all_tickets	templates/10_freshdesk_customer_support_bot/src/data/nlu.md	/^## intent: show_all_tickets$/;"	s
+intent: update_ticket	templates/10_freshdesk_customer_support_bot/src/data/nlu.md	/^## intent: update_ticket$/;"	s
+intent:abc_news	templates/09_news_api/src/data/nlu.md	/^## intent:abc_news$/;"	s
+intent:about_costa_rica	templates/08_travel_agency_bot/src/data/nlu.md	/^## intent:about_costa_rica$/;"	s
+intent:accept	templates/02_lead_bot/src/data/nlu.md	/^## intent:accept$/;"	s
+intent:activities_offered	templates/08_travel_agency_bot/src/data/nlu.md	/^## intent:activities_offered$/;"	s
+intent:add_to_mytrip	templates/08_travel_agency_bot/src/data/nlu.md	/^## intent:add_to_mytrip$/;"	s
+intent:affirm	copy/data/nlu/general.md	/^## intent:affirm$/;"	s
+intent:affirm	examples/formbot/data/nlu.md	/^## intent:affirm$/;"	s
+intent:affirm	examples/moodbot/data/nlu.md	/^## intent:affirm$/;"	s
+intent:affirm	rasa/data/examples/rasa/demo-rasa-multi-intent.md	/^## intent:affirm$/;"	s
+intent:affirm	rasa/data/examples/rasa/demo-rasa.md	/^## intent:affirm$/;"	s
+intent:affirm	rasa/data/test/demo-rasa-composite-entities.md	/^## intent:affirm$/;"	s
+intent:affirm	rasa/data/test/duplicate_intents_markdown/demo-rasa-intents-1.md	/^## intent:affirm$/;"	s
+intent:affirm	rasa/data/test/duplicate_intents_markdown/demo-rasa-intents-2.md	/^## intent:affirm$/;"	s
+intent:affirm	rasa/data/test/json_converted_to_md.md	/^## intent:affirm$/;"	s
+intent:affirm	rasa/data/test/json_with_special_chars_convered_to_md.md	/^## intent:affirm$/;"	s
+intent:affirm	rasa/data/test/multiple_files_markdown/demo-rasa-affirm.md	/^## intent:affirm$/;"	s
+intent:affirm	rasa/data/test_multi_domain/data/MoodBot/data/nlu.md	/^## intent:affirm$/;"	s
+intent:affirm	rasa/data/test_nlu/default_retrieval_intents.md	/^## intent:affirm$/;"	s
+intent:affirm	rasa/examples/formbot/data/nlu.md	/^## intent:affirm$/;"	s
+intent:affirm	rasa/examples/moodbot/data/nlu.md	/^## intent:affirm$/;"	s
+intent:affirm	rasa/rasa/cli/initial_project/data/nlu.md	/^## intent:affirm$/;"	s
+intent:affirm	test/test_nlu.md	/^## intent:affirm$/;"	s
+intent:affirmative__adjectivegroup	data/nlu/sfl1.md	/^## intent:affirmative__adjectivegroup$/;"	s
+intent:affirmative__nominalgroup	data/nlu/sfl1.md	/^## intent:affirmative__nominalgroup$/;"	s
+intent:affirmative__shortanswer	data/nlu/sfl1.md	/^## intent:affirmative__shortanswer$/;"	s
+intent:ask_builder	test/test_nlu.md	/^## intent:ask_builder$/;"	s
+intent:ask_forget_reminders	examples/reminderbot/data/nlu.md	/^## intent:ask_forget_reminders$/;"	s
+intent:ask_forget_reminders	rasa/examples/reminderbot/data/nlu.md	/^## intent:ask_forget_reminders$/;"	s
+intent:ask_how_contribute	copy/data/nlu/nlu.md	/^## intent:ask_how_contribute$/;"	s
+intent:ask_how_contribute	test/test_nlu.md	/^## intent:ask_how_contribute$/;"	s
+intent:ask_howbuilt	test/test_nlu.md	/^## intent:ask_howbuilt$/;"	s
+intent:ask_howdoing	test/test_nlu.md	/^## intent:ask_howdoing$/;"	s
+intent:ask_howold	test/test_nlu.md	/^## intent:ask_howold$/;"	s
+intent:ask_id	examples/reminderbot/data/nlu.md	/^## intent:ask_id$/;"	s
+intent:ask_id	rasa/examples/reminderbot/data/nlu.md	/^## intent:ask_id$/;"	s
+intent:ask_isbot	test/test_nlu.md	/^## intent:ask_isbot$/;"	s
+intent:ask_languagesbot	test/test_nlu.md	/^## intent:ask_languagesbot$/;"	s
+intent:ask_question_in_forum	copy/data/nlu/nlu.md	/^## intent:ask_question_in_forum$/;"	s
+intent:ask_question_in_forum	test/test_nlu.md	/^## intent:ask_question_in_forum$/;"	s
+intent:ask_remind_call	examples/reminderbot/data/nlu.md	/^## intent:ask_remind_call$/;"	s
+intent:ask_remind_call	rasa/examples/reminderbot/data/nlu.md	/^## intent:ask_remind_call$/;"	s
+intent:ask_restaurant	test/test_nlu.md	/^## intent:ask_restaurant$/;"	s
+intent:ask_time	test/test_nlu.md	/^## intent:ask_time$/;"	s
+intent:ask_weather	test/test_nlu.md	/^## intent:ask_weather$/;"	s
+intent:ask_whatismyname	test/test_nlu.md	/^## intent:ask_whatismyname$/;"	s
+intent:ask_whatisrasa	test/test_nlu.md	/^## intent:ask_whatisrasa$/;"	s
+intent:ask_whatspossible	test/test_nlu.md	/^## intent:ask_whatspossible$/;"	s
+intent:ask_when_next_event	test/test_nlu.md	/^## intent:ask_when_next_event$/;"	s
+intent:ask_wherefrom	test/test_nlu.md	/^## intent:ask_wherefrom$/;"	s
+intent:ask_which_events	copy/data/nlu/nlu.md	/^## intent:ask_which_events$/;"	s
+intent:ask_which_events	rasa/data/test/many_intents.md	/^## intent:ask_which_events$/;"	s
+intent:ask_which_events	test/test_nlu.md	/^## intent:ask_which_events$/;"	s
+intent:ask_whoami	test/test_nlu.md	/^## intent:ask_whoami$/;"	s
+intent:ask_whoisit	test/test_nlu.md	/^## intent:ask_whoisit$/;"	s
+intent:ask_why_contribute	copy/data/nlu/nlu.md	/^## intent:ask_why_contribute$/;"	s
+intent:batman_room_confrence	templates/05_event_bot/src/data/nlu.md	/^## intent:batman_room_confrence$/;"	s
+intent:bbc_news	templates/09_news_api/src/data/nlu.md	/^## intent:bbc_news$/;"	s
+intent:begin_lead	templates/02_lead_bot/src/data/nlu.md	/^## intent:begin_lead$/;"	s
+intent:book_flight	rasa/data/test/demo-rasa-composite-entities.md	/^## intent:book_flight$/;"	s
+intent:book_room_now	templates/06_hotel_bot/src/data/nlu.md	/^## intent:book_room_now$/;"	s
+intent:book_rooms	templates/06_hotel_bot/src/data/nlu.md	/^## intent:book_rooms$/;"	s
+intent:bot_challenge	examples/formbot/data/nlu.md	/^## intent:bot_challenge$/;"	s
+intent:bot_challenge	examples/knowledgebasebot/data/nlu.md	/^## intent:bot_challenge$/;"	s
+intent:bot_challenge	examples/moodbot/data/nlu.md	/^## intent:bot_challenge$/;"	s
+intent:bot_challenge	rasa/data/test_nlu/default_retrieval_intents.md	/^## intent:bot_challenge$/;"	s
+intent:bot_challenge	rasa/examples/formbot/data/nlu.md	/^## intent:bot_challenge$/;"	s
+intent:bot_challenge	rasa/examples/knowledgebasebot/data/nlu.md	/^## intent:bot_challenge$/;"	s
+intent:bot_challenge	rasa/examples/moodbot/data/nlu.md	/^## intent:bot_challenge$/;"	s
+intent:bot_challenge	rasa/rasa/cli/initial_project/data/nlu.md	/^## intent:bot_challenge$/;"	s
+intent:buy_a_home	templates/03_real_estate_bot/src/data/nlu.md	/^## intent:buy_a_home$/;"	s
+intent:bye	copy/data/nlu/general.md	/^## intent:bye$/;"	s
+intent:bye	examples/reminderbot/data/nlu.md	/^## intent:bye$/;"	s
+intent:bye	rasa/examples/reminderbot/data/nlu.md	/^## intent:bye$/;"	s
+intent:bye	test/test_nlu.md	/^## intent:bye$/;"	s
+intent:canthelp	copy/data/nlu/general.md	/^## intent:canthelp$/;"	s
+intent:canthelp	test/test_nlu.md	/^## intent:canthelp$/;"	s
+intent:chitchat	examples/formbot/data/nlu.md	/^## intent:chitchat$/;"	s
+intent:chitchat	rasa/data/test/demo-rasa-composite-entities.md	/^## intent:chitchat$/;"	s
+intent:chitchat	rasa/examples/formbot/data/nlu.md	/^## intent:chitchat$/;"	s
+intent:chitchat+ask_name	rasa/data/examples/rasa/demo-rasa-multi-intent.md	/^## intent:chitchat+ask_name$/;"	s
+intent:chitchat+ask_weather	rasa/data/examples/rasa/demo-rasa-multi-intent.md	/^## intent:chitchat+ask_weather$/;"	s
+intent:chitchat/ask_builder	copy/data/nlu/chitchat.md	/^## intent:chitchat\/ask_builder$/;"	s
+intent:chitchat/ask_howbuilt	copy/data/nlu/chitchat.md	/^## intent:chitchat\/ask_howbuilt$/;"	s
+intent:chitchat/ask_howdoing	copy/data/nlu/chitchat.md	/^## intent:chitchat\/ask_howdoing$/;"	s
+intent:chitchat/ask_howold	copy/data/nlu/chitchat.md	/^## intent:chitchat\/ask_howold$/;"	s
+intent:chitchat/ask_isbot	copy/data/nlu/chitchat.md	/^## intent:chitchat\/ask_isbot$/;"	s
+intent:chitchat/ask_ishuman	copy/data/nlu/chitchat.md	/^## intent:chitchat\/ask_ishuman$/;"	s
+intent:chitchat/ask_languagesbot	copy/data/nlu/chitchat.md	/^## intent:chitchat\/ask_languagesbot$/;"	s
+intent:chitchat/ask_name	rasa/data/examples/rasa/demo-rasa.md	/^## intent:chitchat\/ask_name$/;"	s
+intent:chitchat/ask_name	rasa/data/test/duplicate_intents_markdown/demo-rasa-intents-2.md	/^## intent:chitchat\/ask_name$/;"	s
+intent:chitchat/ask_name	rasa/data/test/json_converted_to_md.md	/^## intent:chitchat\/ask_name$/;"	s
+intent:chitchat/ask_name	rasa/data/test/multiple_files_markdown/demo-rasa-chitchat.md	/^## intent:chitchat\/ask_name$/;"	s
+intent:chitchat/ask_name	rasa/data/test_nlu/default_retrieval_intents.md	/^## intent:chitchat\/ask_name$/;"	s
+intent:chitchat/ask_restaurant	copy/data/nlu/chitchat.md	/^## intent:chitchat\/ask_restaurant$/;"	s
+intent:chitchat/ask_time	copy/data/nlu/chitchat.md	/^## intent:chitchat\/ask_time$/;"	s
+intent:chitchat/ask_weather	copy/data/nlu/chitchat.md	/^## intent:chitchat\/ask_weather$/;"	s
+intent:chitchat/ask_weather	rasa/data/examples/rasa/demo-rasa.md	/^## intent:chitchat\/ask_weather$/;"	s
+intent:chitchat/ask_weather	rasa/data/test/duplicate_intents_markdown/demo-rasa-intents-2.md	/^## intent:chitchat\/ask_weather$/;"	s
+intent:chitchat/ask_weather	rasa/data/test/json_converted_to_md.md	/^## intent:chitchat\/ask_weather$/;"	s
+intent:chitchat/ask_weather	rasa/data/test/multiple_files_markdown/demo-rasa-chitchat.md	/^## intent:chitchat\/ask_weather$/;"	s
+intent:chitchat/ask_weather	rasa/data/test_nlu/default_retrieval_intents.md	/^## intent:chitchat\/ask_weather$/;"	s
+intent:chitchat/ask_whatismyname	copy/data/nlu/chitchat.md	/^## intent:chitchat\/ask_whatismyname$/;"	s
+intent:chitchat/ask_whatisrasa	copy/data/nlu/chitchat.md	/^## intent:chitchat\/ask_whatisrasa$/;"	s
+intent:chitchat/ask_whatspossible	copy/data/nlu/chitchat.md	/^## intent:chitchat\/ask_whatspossible$/;"	s
+intent:chitchat/ask_wherefrom	copy/data/nlu/chitchat.md	/^## intent:chitchat\/ask_wherefrom$/;"	s
+intent:chitchat/ask_whoami	copy/data/nlu/chitchat.md	/^## intent:chitchat\/ask_whoami$/;"	s
+intent:chitchat/ask_whoisit	copy/data/nlu/chitchat.md	/^## intent:chitchat\/ask_whoisit$/;"	s
+intent:chitchat/handleinsult	copy/data/nlu/chitchat.md	/^## intent:chitchat\/handleinsult$/;"	s
+intent:chitchat/nicetomeetyou	copy/data/nlu/chitchat.md	/^## intent:chitchat\/nicetomeetyou$/;"	s
+intent:chitchat/telljoke	copy/data/nlu/chitchat.md	/^## intent:chitchat\/telljoke$/;"	s
+intent:client_initializes_a_kiss_story	data/nlu/a_kiss.md	/^## intent:client_initializes_a_kiss_story$/;"	s
+intent:club_suite_details	templates/06_hotel_bot/src/data/nlu.md	/^## intent:club_suite_details$/;"	s
+intent:cnn_news	templates/09_news_api/src/data/nlu.md	/^## intent:cnn_news$/;"	s
+intent:contact_sales	copy/data/nlu/nlu.md	/^## intent:contact_sales$/;"	s
+intent:contact_sales	test/test_nlu.md	/^## intent:contact_sales$/;"	s
+intent:contact_us	templates/08_travel_agency_bot/src/data/nlu.md	/^## intent:contact_us$/;"	s
+intent:deny	copy/data/nlu/general.md	/^## intent:deny$/;"	s
+intent:deny	examples/formbot/data/nlu.md	/^## intent:deny$/;"	s
+intent:deny	examples/moodbot/data/nlu.md	/^## intent:deny$/;"	s
+intent:deny	rasa/data/test_multi_domain/data/MoodBot/data/nlu.md	/^## intent:deny$/;"	s
+intent:deny	rasa/data/test_nlu/default_retrieval_intents.md	/^## intent:deny$/;"	s
+intent:deny	rasa/examples/formbot/data/nlu.md	/^## intent:deny$/;"	s
+intent:deny	rasa/examples/moodbot/data/nlu.md	/^## intent:deny$/;"	s
+intent:deny	rasa/rasa/cli/initial_project/data/nlu.md	/^## intent:deny$/;"	s
+intent:deny	test/test_nlu.md	/^## intent:deny$/;"	s
+intent:dulex_room_details	templates/06_hotel_bot/src/data/nlu.md	/^## intent:dulex_room_details$/;"	s
+intent:enter_data	copy/data/nlu/nlu.md	/^## intent:enter_data$/;"	s
+intent:enter_data	test/test_nlu.md	/^## intent:enter_data$/;"	s
+intent:explain	copy/data/nlu/general.md	/^## intent:explain$/;"	s
+intent:explain	test/test_nlu.md	/^## intent:explain$/;"	s
+intent:faq	templates/06_hotel_bot/src/data/nlu.md	/^## intent:faq$/;"	s
+intent:faq/channels	copy/data/nlu/faq.md	/^## intent:faq\/channels$/;"	s
+intent:faq/channels	test/test_nlu.md	/^## intent:faq\/channels$/;"	s
+intent:faq/community_size	copy/data/nlu/faq.md	/^## intent:faq\/community_size$/;"	s
+intent:faq/community_size	test/test_nlu.md	/^## intent:faq\/community_size$/;"	s
+intent:faq/differencecorenlu	copy/data/nlu/faq.md	/^## intent:faq\/differencecorenlu$/;"	s
+intent:faq/differencecorenlu	test/test_nlu.md	/^## intent:faq\/differencecorenlu$/;"	s
+intent:faq/differencerasarasax	copy/data/nlu/faq.md	/^## intent:faq\/differencerasarasax$/;"	s
+intent:faq/differencerasarasax	test/test_nlu.md	/^## intent:faq\/differencerasarasax$/;"	s
+intent:faq/ee	copy/data/nlu/faq.md	/^## intent:faq\/ee$/;"	s
+intent:faq/ee	test/test_nlu.md	/^## intent:faq\/ee$/;"	s
+intent:faq/is_programming_required	copy/data/nlu/faq.md	/^## intent:faq\/is_programming_required$/;"	s
+intent:faq/is_programming_required	test/test_nlu.md	/^## intent:faq\/is_programming_required$/;"	s
+intent:faq/languages	copy/data/nlu/faq.md	/^## intent:faq\/languages$/;"	s
+intent:faq/languages	test/test_nlu.md	/^## intent:faq\/languages$/;"	s
+intent:faq/opensource	test/test_nlu.md	/^## intent:faq\/opensource$/;"	s
+intent:faq/opensource_cost	copy/data/nlu/faq.md	/^## intent:faq\/opensource_cost$/;"	s
+intent:faq/python_version	copy/data/nlu/faq.md	/^## intent:faq\/python_version$/;"	s
+intent:faq/python_version	test/test_nlu.md	/^## intent:faq\/python_version$/;"	s
+intent:faq/rasax	copy/data/nlu/faq.md	/^## intent:faq\/rasax$/;"	s
+intent:faq/slots	copy/data/nlu/faq.md	/^## intent:faq\/slots$/;"	s
+intent:faq/slots	test/test_nlu.md	/^## intent:faq\/slots$/;"	s
+intent:faq/tutorialcore	copy/data/nlu/faq.md	/^## intent:faq\/tutorialcore$/;"	s
+intent:faq/tutorialnlu	copy/data/nlu/faq.md	/^## intent:faq\/tutorialnlu$/;"	s
+intent:faq/tutorials	copy/data/nlu/faq.md	/^## intent:faq\/tutorials$/;"	s
+intent:faq/tutorials	test/test_nlu.md	/^## intent:faq\/tutorials$/;"	s
+intent:faq/voice	copy/data/nlu/faq.md	/^## intent:faq\/voice$/;"	s
+intent:faq/voice	test/test_nlu.md	/^## intent:faq\/voice$/;"	s
+intent:faq/what_is_forum	copy/data/nlu/faq.md	/^## intent:faq\/what_is_forum$/;"	s
+intent:faq/what_is_forum	test/test_nlu.md	/^## intent:faq\/what_is_forum$/;"	s
+intent:faqbabycot	templates/06_hotel_bot/src/data/nlu.md	/^## intent:faqbabycot$/;"	s
+intent:faqbreakfast	templates/06_hotel_bot/src/data/nlu.md	/^## intent:faqbreakfast$/;"	s
+intent:faqbreakfasttime	templates/06_hotel_bot/src/data/nlu.md	/^## intent:faqbreakfasttime$/;"	s
+intent:faqcancellationpolicy	templates/06_hotel_bot/src/data/nlu.md	/^## intent:faqcancellationpolicy$/;"	s
+intent:faqcheckin	templates/06_hotel_bot/src/data/nlu.md	/^## intent:faqcheckin$/;"	s
+intent:faqcheckinage	templates/06_hotel_bot/src/data/nlu.md	/^## intent:faqcheckinage$/;"	s
+intent:faqcheckout	templates/06_hotel_bot/src/data/nlu.md	/^## intent:faqcheckout$/;"	s
+intent:faqchildrenage	templates/06_hotel_bot/src/data/nlu.md	/^## intent:faqchildrenage$/;"	s
+intent:faqcontactnumber	templates/06_hotel_bot/src/data/nlu.md	/^## intent:faqcontactnumber$/;"	s
+intent:faqearlycheckin	templates/06_hotel_bot/src/data/nlu.md	/^## intent:faqearlycheckin$/;"	s
+intent:faqlatecheckin	templates/06_hotel_bot/src/data/nlu.md	/^## intent:faqlatecheckin$/;"	s
+intent:faqlatecheckout	templates/06_hotel_bot/src/data/nlu.md	/^## intent:faqlatecheckout$/;"	s
+intent:faqluggage	templates/06_hotel_bot/src/data/nlu.md	/^## intent:faqluggage$/;"	s
+intent:faqmeetingroom	templates/06_hotel_bot/src/data/nlu.md	/^## intent:faqmeetingroom$/;"	s
+intent:faqmodifyreservation	templates/06_hotel_bot/src/data/nlu.md	/^## intent:faqmodifyreservation$/;"	s
+intent:faqnearestairport	templates/06_hotel_bot/src/data/nlu.md	/^## intent:faqnearestairport$/;"	s
+intent:faqparking	templates/06_hotel_bot/src/data/nlu.md	/^## intent:faqparking$/;"	s
+intent:faqparkingcost	templates/06_hotel_bot/src/data/nlu.md	/^## intent:faqparkingcost$/;"	s
+intent:faqpartialcancel	templates/06_hotel_bot/src/data/nlu.md	/^## intent:faqpartialcancel$/;"	s
+intent:faqpetpolicy	templates/06_hotel_bot/src/data/nlu.md	/^## intent:faqpetpolicy$/;"	s
+intent:faqreceptiontime	templates/06_hotel_bot/src/data/nlu.md	/^## intent:faqreceptiontime$/;"	s
+intent:faqrefundable	templates/06_hotel_bot/src/data/nlu.md	/^## intent:faqrefundable$/;"	s
+intent:faqreservaconfirm	templates/06_hotel_bot/src/data/nlu.md	/^## intent:faqreservaconfirm$/;"	s
+intent:faqroomcount	templates/06_hotel_bot/src/data/nlu.md	/^## intent:faqroomcount$/;"	s
+intent:faqsecurity	templates/06_hotel_bot/src/data/nlu.md	/^## intent:faqsecurity$/;"	s
+intent:fort_kochi	templates/06_hotel_bot/src/data/nlu.md	/^## intent:fort_kochi$/;"	s
+intent:goodbye	examples/knowledgebasebot/data/nlu.md	/^## intent:goodbye$/;"	s
+intent:goodbye	examples/moodbot/data/nlu.md	/^## intent:goodbye$/;"	s
+intent:goodbye	rasa/data/examples/rasa/demo-rasa-multi-intent.md	/^## intent:goodbye$/;"	s
+intent:goodbye	rasa/data/examples/rasa/demo-rasa.md	/^## intent:goodbye$/;"	s
+intent:goodbye	rasa/data/test/demo-rasa-composite-entities.md	/^## intent:goodbye$/;"	s
+intent:goodbye	rasa/data/test/duplicate_intents_markdown/demo-rasa-intents-1.md	/^## intent:goodbye$/;"	s
+intent:goodbye	rasa/data/test/duplicate_intents_markdown/demo-rasa-intents-2.md	/^## intent:goodbye$/;"	s
+intent:goodbye	rasa/data/test/json_converted_to_md.md	/^## intent:goodbye$/;"	s
+intent:goodbye	rasa/data/test/multiple_files_markdown/demo-rasa-goodbye.md	/^## intent:goodbye$/;"	s
+intent:goodbye	rasa/data/test_multi_domain/data/nlu.md	/^## intent:goodbye$/;"	s
+intent:goodbye	rasa/data/test_nlu/default_retrieval_intents.md	/^## intent:goodbye$/;"	s
+intent:goodbye	rasa/examples/knowledgebasebot/data/nlu.md	/^## intent:goodbye$/;"	s
+intent:goodbye	rasa/examples/moodbot/data/nlu.md	/^## intent:goodbye$/;"	s
+intent:goodbye	rasa/rasa/cli/initial_project/data/nlu.md	/^## intent:goodbye$/;"	s
+intent:goodbye	templates/03_real_estate_bot/src/data/nlu.md	/^## intent:goodbye$/;"	s
+intent:goodbye	templates/05_event_bot/src/data/nlu.md	/^## intent:goodbye$/;"	s
+intent:goodbye	templates/07_survey_bot/src/data/nlu.md	/^## intent:goodbye$/;"	s
+intent:greet	copy/data/nlu/general.md	/^## intent:greet$/;"	s
+intent:greet	examples/formbot/data/nlu.md	/^## intent:greet$/;"	s
+intent:greet	examples/knowledgebasebot/data/nlu.md	/^## intent:greet$/;"	s
+intent:greet	examples/moodbot/data/nlu.md	/^## intent:greet$/;"	s
+intent:greet	examples/reminderbot/data/nlu.md	/^## intent:greet$/;"	s
+intent:greet	rasa/data/examples/rasa/demo-rasa-multi-intent.md	/^## intent:greet$/;"	s
+intent:greet	rasa/data/examples/rasa/demo-rasa.md	/^## intent:greet$/;"	s
+intent:greet	rasa/data/test/demo-rasa-composite-entities.md	/^## intent:greet$/;"	s
+intent:greet	rasa/data/test/duplicate_intents_markdown/demo-rasa-intents-1.md	/^## intent:greet$/;"	s
+intent:greet	rasa/data/test/json_converted_to_md.md	/^## intent:greet$/;"	s
+intent:greet	rasa/data/test/multiple_files_markdown/demo-rasa-greet.md	/^## intent:greet$/;"	s
+intent:greet	rasa/data/test_multi_domain/data/GreetBot/data/nlu.md	/^## intent:greet$/;"	s
+intent:greet	rasa/data/test_nlu/default_retrieval_intents.md	/^## intent:greet$/;"	s
+intent:greet	rasa/examples/formbot/data/nlu.md	/^## intent:greet$/;"	s
+intent:greet	rasa/examples/knowledgebasebot/data/nlu.md	/^## intent:greet$/;"	s
+intent:greet	rasa/examples/moodbot/data/nlu.md	/^## intent:greet$/;"	s
+intent:greet	rasa/examples/reminderbot/data/nlu.md	/^## intent:greet$/;"	s
+intent:greet	rasa/rasa/cli/initial_project/data/nlu.md	/^## intent:greet$/;"	s
+intent:greet	templates/02_lead_bot/src/data/nlu.md	/^## intent:greet$/;"	s
+intent:greet	templates/03_real_estate_bot/src/data/nlu.md	/^## intent:greet$/;"	s
+intent:greet	templates/04_feedback_bot/src/data/nlu.md	/^## intent:greet$/;"	s
+intent:greet	templates/05_event_bot/src/data/nlu.md	/^## intent:greet$/;"	s
+intent:greet	templates/06_hotel_bot/src/data/nlu.md	/^## intent:greet$/;"	s
+intent:greet	templates/07_survey_bot/src/data/nlu.md	/^## intent:greet$/;"	s
+intent:greet	templates/08_travel_agency_bot/src/data/nlu.md	/^## intent:greet$/;"	s
+intent:greet	templates/09_news_api/src/data/nlu.md	/^## intent:greet$/;"	s
+intent:greet	templates/10_freshdesk_customer_support_bot/src/data/nlu.md	/^## intent:greet$/;"	s
+intent:greet	test/test_nlu.md	/^## intent:greet$/;"	s
+intent:grett	rasa/data/test/many_intents.md	/^## intent:grett$/;"	s
+intent:handleinsult	rasa/data/test/many_intents.md	/^## intent:handleinsult$/;"	s
+intent:hero_room_confrence	templates/05_event_bot/src/data/nlu.md	/^## intent:hero_room_confrence$/;"	s
+intent:how_to_get_started	copy/data/nlu/nlu.md	/^## intent:how_to_get_started$/;"	s
+intent:how_to_get_started	rasa/data/test/many_intents.md	/^## intent:how_to_get_started$/;"	s
+intent:how_to_get_started	test/test_nlu.md	/^## intent:how_to_get_started$/;"	s
+intent:human_handoff	copy/data/nlu/nlu.md	/^## intent:human_handoff$/;"	s
+intent:human_handoff	test/test_nlu.md	/^## intent:human_handoff$/;"	s
+intent:inform	examples/formbot/data/nlu.md	/^## intent:inform$/;"	s
+intent:inform	rasa/examples/formbot/data/nlu.md	/^## intent:inform$/;"	s
+intent:install_rasa	copy/data/nlu/nlu.md	/^## intent:install_rasa$/;"	s
+intent:install_rasa	rasa/data/test/many_intents.md	/^## intent:install_rasa$/;"	s
+intent:install_rasa	test/test_nlu.md	/^## intent:install_rasa$/;"	s
+intent:junior_suite_details	templates/06_hotel_bot/src/data/nlu.md	/^## intent:junior_suite_details$/;"	s
+intent:long_feedback	templates/04_feedback_bot/src/data/nlu.md	/^## intent:long_feedback$/;"	s
+intent:main_menu	templates/08_travel_agency_bot/src/data/nlu.md	/^## intent:main_menu$/;"	s
+intent:marine_drive	templates/06_hotel_bot/src/data/nlu.md	/^## intent:marine_drive$/;"	s
+intent:mattancherry	templates/06_hotel_bot/src/data/nlu.md	/^## intent:mattancherry$/;"	s
+intent:mood_great	examples/moodbot/data/nlu.md	/^## intent:mood_great$/;"	s
+intent:mood_great	rasa/data/test_multi_domain/data/MoodBot/data/nlu.md	/^## intent:mood_great$/;"	s
+intent:mood_great	rasa/data/test_nlu/default_retrieval_intents.md	/^## intent:mood_great$/;"	s
+intent:mood_great	rasa/examples/moodbot/data/nlu.md	/^## intent:mood_great$/;"	s
+intent:mood_great	rasa/rasa/cli/initial_project/data/nlu.md	/^## intent:mood_great$/;"	s
+intent:mood_unhappy	examples/moodbot/data/nlu.md	/^## intent:mood_unhappy$/;"	s
+intent:mood_unhappy	rasa/data/test_multi_domain/data/MoodBot/data/nlu.md	/^## intent:mood_unhappy$/;"	s
+intent:mood_unhappy	rasa/data/test_nlu/default_retrieval_intents.md	/^## intent:mood_unhappy$/;"	s
+intent:mood_unhappy	rasa/examples/moodbot/data/nlu.md	/^## intent:mood_unhappy$/;"	s
+intent:mood_unhappy	rasa/rasa/cli/initial_project/data/nlu.md	/^## intent:mood_unhappy$/;"	s
+intent:more_info_natural_exploration	templates/08_travel_agency_bot/src/data/nlu.md	/^## intent:more_info_natural_exploration$/;"	s
+intent:more_info_subwing	templates/08_travel_agency_bot/src/data/nlu.md	/^## intent:more_info_subwing$/;"	s
+intent:more_info_zipline_tour	templates/08_travel_agency_bot/src/data/nlu.md	/^## intent:more_info_zipline_tour$/;"	s
+intent:nearest_attraction	templates/06_hotel_bot/src/data/nlu.md	/^## intent:nearest_attraction$/;"	s
+intent:negative__shortanswer	data/nlu/sfl1.md	/^## intent:negative__shortanswer$/;"	s
+intent:news_australia	templates/09_news_api/src/data/nlu.md	/^## intent:news_australia$/;"	s
+intent:news_from_source	templates/09_news_api/src/data/nlu.md	/^## intent:news_from_source$/;"	s
+intent:news_headline	templates/09_news_api/src/data/nlu.md	/^## intent:news_headline$/;"	s
+intent:news_india	templates/09_news_api/src/data/nlu.md	/^## intent:news_india$/;"	s
+intent:news_us	templates/09_news_api/src/data/nlu.md	/^## intent:news_us$/;"	s
+intent:next_step	copy/data/nlu/general.md	/^## intent:next_step$/;"	s
+intent:next_step	test/test_nlu.md	/^## intent:next_step$/;"	s
+intent:nicetomeeyou	rasa/data/test/many_intents.md	/^## intent:nicetomeeyou$/;"	s
+intent:nlu_generation_tool_recommendation	copy/data/nlu/nlu.md	/^## intent:nlu_generation_tool_recommendation$/;"	s
+intent:nlu_generation_tool_recommendation	rasa/data/test/many_intents.md	/^## intent:nlu_generation_tool_recommendation$/;"	s
+intent:nlu_generation_tool_recommendation	test/test_nlu.md	/^## intent:nlu_generation_tool_recommendation$/;"	s
+intent:nlu_info	copy/data/nlu/nlu.md	/^## intent:nlu_info$/;"	s
+intent:nlu_info	test/test_nlu.md	/^## intent:nlu_info$/;"	s
+intent:nonexclamation__negative__attributivepr	data/nlu/sfl1.md	/^## intent:nonexclamation__negative__attributivepr$/;"	s
+intent:nonexclamation__negative__identifyingpr	data/nlu/sfl1.md	/^## intent:nonexclamation__negative__identifyingpr$/;"	s
+intent:nonexclamation__negative__materialpr	copy/data/nlu/system1.md	/^## intent:nonexclamation__negative__materialpr$/;"	s
+intent:nonexclamation__negative__materialpr	data/nlu/sfl1.md	/^## intent:nonexclamation__negative__materialpr$/;"	s
+intent:nonexclamation__negative__mentalpr	data/nlu/sfl1.md	/^## intent:nonexclamation__negative__mentalpr$/;"	s
+intent:nonexclamation__positive__attributivepr	data/nlu/sfl1.md	/^## intent:nonexclamation__positive__attributivepr$/;"	s
+intent:nonexclamation__positive__identifyingpr	copy/data/nlu/system1.md	/^## intent:nonexclamation__positive__identifyingpr$/;"	s
+intent:nonexclamation__positive__identifyingpr	data/nlu/sfl1.md	/^## intent:nonexclamation__positive__identifyingpr$/;"	s
+intent:nonexclamation__positive__materialpr	copy/data/nlu/system1.md	/^## intent:nonexclamation__positive__materialpr$/;"	s
+intent:nonexclamation__positive__materialpr	data/nlu/sfl1.md	/^## intent:nonexclamation__positive__materialpr$/;"	s
+intent:nonexclamation__positive__mentalpr	data/nlu/sfl1.md	/^## intent:nonexclamation__positive__mentalpr$/;"	s
+intent:order_pizza	rasa/data/test/demo-rasa-composite-entities.md	/^## intent:order_pizza$/;"	s
+intent:other_activities	templates/08_travel_agency_bot/src/data/nlu.md	/^## intent:other_activities$/;"	s
+intent:out_of_scope/non_english	copy/data/nlu/out_of_scope.md	/^## intent:out_of_scope\/non_english$/;"	s
+intent:out_of_scope/non_english	test/test_nlu.md	/^## intent:out_of_scope\/non_english$/;"	s
+intent:out_of_scope/other	copy/data/nlu/out_of_scope.md	/^## intent:out_of_scope\/other$/;"	s
+intent:out_of_scope/other	test/test_nlu.md	/^## intent:out_of_scope\/other$/;"	s
+intent:pipeline_recommendation	copy/data/nlu/nlu.md	/^## intent:pipeline_recommendation$/;"	s
+intent:pipeline_recommendation	rasa/data/test/many_intents.md	/^## intent:pipeline_recommendation$/;"	s
+intent:pipeline_recommendation	test/test_nlu.md	/^## intent:pipeline_recommendation$/;"	s
+intent:plan_my_trip	templates/08_travel_agency_bot/src/data/nlu.md	/^## intent:plan_my_trip$/;"	s
+intent:query_knowledge_base	examples/knowledgebasebot/data/nlu.md	/^## intent:query_knowledge_base$/;"	s
+intent:query_knowledge_base	rasa/examples/knowledgebasebot/data/nlu.md	/^## intent:query_knowledge_base$/;"	s
+intent:rasa_cost	rasa/data/test/many_intents.md	/^## intent:rasa_cost$/;"	s
+intent:react_negative	copy/data/nlu/general.md	/^## intent:react_negative$/;"	s
+intent:react_negative	rasa/data/test/many_intents.md	/^## intent:react_negative$/;"	s
+intent:react_positive	copy/data/nlu/general.md	/^## intent:react_positive$/;"	s
+intent:react_positive	rasa/data/test/many_intents.md	/^## intent:react_positive$/;"	s
+intent:reject	templates/02_lead_bot/src/data/nlu.md	/^## intent:reject$/;"	s
+intent:request_restaurant	examples/formbot/data/nlu.md	/^## intent:request_restaurant$/;"	s
+intent:request_restaurant	rasa/examples/formbot/data/nlu.md	/^## intent:request_restaurant$/;"	s
+intent:restart	copy/data/nlu/nlu.md	/^## intent:restart$/;"	s
+intent:restaurant_search	rasa/data/examples/rasa/demo-rasa-multi-intent.md	/^## intent:restaurant_search$/;"	s
+intent:restaurant_search	rasa/data/examples/rasa/demo-rasa.md	/^## intent:restaurant_search$/;"	s
+intent:restaurant_search	rasa/data/test/duplicate_intents_markdown/demo-rasa-intents-2.md	/^## intent:restaurant_search$/;"	s
+intent:restaurant_search	rasa/data/test/json_converted_to_md.md	/^## intent:restaurant_search$/;"	s
+intent:restaurant_search	rasa/data/test/json_with_special_chars_convered_to_md.md	/^## intent:restaurant_search$/;"	s
+intent:restaurant_search	rasa/data/test/lookup_tables/lookup_table.md	/^## intent:restaurant_search$/;"	s
+intent:restaurant_search	rasa/data/test/multiple_files_markdown/demo-rasa-restaurant_search.md	/^## intent:restaurant_search$/;"	s
+intent:search_news	templates/09_news_api/src/data/nlu.md	/^## intent:search_news$/;"	s
+intent:sell_your_home	templates/03_real_estate_bot/src/data/nlu.md	/^## intent:sell_your_home$/;"	s
+intent:session_confrence	templates/05_event_bot/src/data/nlu.md	/^## intent:session_confrence$/;"	s
+intent:session_freyabruke	templates/05_event_bot/src/data/nlu.md	/^## intent:session_freyabruke$/;"	s
+intent:session_one_speaker_details	templates/05_event_bot/src/data/nlu.md	/^## intent:session_one_speaker_details$/;"	s
+intent:session_rosestone	templates/05_event_bot/src/data/nlu.md	/^## intent:session_rosestone$/;"	s
+intent:session_speaker3	templates/05_event_bot/src/data/nlu.md	/^## intent:session_speaker3$/;"	s
+intent:session_two_speaker	templates/05_event_bot/src/data/nlu.md	/^## intent:session_two_speaker$/;"	s
+intent:signup_newsletter	copy/data/nlu/nlu.md	/^## intent:signup_newsletter$/;"	s
+intent:signup_newsletter	rasa/data/test/many_intents.md	/^## intent:signup_newsletter$/;"	s
+intent:signup_newsletter	test/test_nlu.md	/^## intent:signup_newsletter$/;"	s
+intent:smalltalk_agent_acquaintance	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_agent_acquaintance$/;"	s
+intent:smalltalk_agent_age	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_agent_age$/;"	s
+intent:smalltalk_agent_annoying	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_agent_annoying$/;"	s
+intent:smalltalk_agent_answer_my_question	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_agent_answer_my_question$/;"	s
+intent:smalltalk_agent_bad	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_agent_bad$/;"	s
+intent:smalltalk_agent_be_clever	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_agent_be_clever$/;"	s
+intent:smalltalk_agent_beautiful	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_agent_beautiful$/;"	s
+intent:smalltalk_agent_birth_date	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_agent_birth_date$/;"	s
+intent:smalltalk_agent_boring	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_agent_boring$/;"	s
+intent:smalltalk_agent_boss	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_agent_boss$/;"	s
+intent:smalltalk_agent_busy	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_agent_busy$/;"	s
+intent:smalltalk_agent_chatbot	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_agent_chatbot$/;"	s
+intent:smalltalk_agent_clever	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_agent_clever$/;"	s
+intent:smalltalk_agent_crazy	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_agent_crazy$/;"	s
+intent:smalltalk_agent_fired	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_agent_fired$/;"	s
+intent:smalltalk_agent_funny	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_agent_funny$/;"	s
+intent:smalltalk_agent_good	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_agent_good$/;"	s
+intent:smalltalk_agent_happy	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_agent_happy$/;"	s
+intent:smalltalk_agent_hungry	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_agent_hungry$/;"	s
+intent:smalltalk_agent_marry_user	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_agent_marry_user$/;"	s
+intent:smalltalk_agent_my_friend	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_agent_my_friend$/;"	s
+intent:smalltalk_agent_occupation	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_agent_occupation$/;"	s
+intent:smalltalk_agent_origin	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_agent_origin$/;"	s
+intent:smalltalk_agent_ready	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_agent_ready$/;"	s
+intent:smalltalk_agent_real	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_agent_real$/;"	s
+intent:smalltalk_agent_residence	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_agent_residence$/;"	s
+intent:smalltalk_agent_right	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_agent_right$/;"	s
+intent:smalltalk_agent_sure	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_agent_sure$/;"	s
+intent:smalltalk_agent_talk_to_me	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_agent_talk_to_me$/;"	s
+intent:smalltalk_agent_there	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_agent_there$/;"	s
+intent:smalltalk_appraisal_bad	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_appraisal_bad$/;"	s
+intent:smalltalk_appraisal_good	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_appraisal_good$/;"	s
+intent:smalltalk_appraisal_no_problem	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_appraisal_no_problem$/;"	s
+intent:smalltalk_appraisal_thank_you	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_appraisal_thank_you$/;"	s
+intent:smalltalk_appraisal_welcome	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_appraisal_welcome$/;"	s
+intent:smalltalk_appraisal_well_done	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_appraisal_well_done$/;"	s
+intent:smalltalk_confirmation_cancel	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_confirmation_cancel$/;"	s
+intent:smalltalk_confirmation_no	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_confirmation_no$/;"	s
+intent:smalltalk_confirmation_yes	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_confirmation_yes$/;"	s
+intent:smalltalk_dialog_hold_on	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_dialog_hold_on$/;"	s
+intent:smalltalk_dialog_hug	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_dialog_hug$/;"	s
+intent:smalltalk_dialog_i_do_not_care	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_dialog_i_do_not_care$/;"	s
+intent:smalltalk_dialog_sorry	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_dialog_sorry$/;"	s
+intent:smalltalk_dialog_what_do_you_mean	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_dialog_what_do_you_mean$/;"	s
+intent:smalltalk_dialog_wrong	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_dialog_wrong$/;"	s
+intent:smalltalk_emotions_ha_ha	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_emotions_ha_ha$/;"	s
+intent:smalltalk_emotions_wow	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_emotions_wow$/;"	s
+intent:smalltalk_greetings_bye	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_greetings_bye$/;"	s
+intent:smalltalk_greetings_goodevening	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_greetings_goodevening$/;"	s
+intent:smalltalk_greetings_goodmorning	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_greetings_goodmorning$/;"	s
+intent:smalltalk_greetings_goodnight	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_greetings_goodnight$/;"	s
+intent:smalltalk_greetings_hello	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_greetings_hello$/;"	s
+intent:smalltalk_greetings_how_are_you	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_greetings_how_are_you$/;"	s
+intent:smalltalk_greetings_nice_to_meet_you	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_greetings_nice_to_meet_you$/;"	s
+intent:smalltalk_greetings_nice_to_see_you	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_greetings_nice_to_see_you$/;"	s
+intent:smalltalk_greetings_nice_to_talk_to_you	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_greetings_nice_to_talk_to_you$/;"	s
+intent:smalltalk_greetings_whatsup	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_greetings_whatsup$/;"	s
+intent:smalltalk_user_angry	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_user_angry$/;"	s
+intent:smalltalk_user_back	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_user_back$/;"	s
+intent:smalltalk_user_bored	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_user_bored$/;"	s
+intent:smalltalk_user_busy	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_user_busy$/;"	s
+intent:smalltalk_user_can_not_sleep	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_user_can_not_sleep$/;"	s
+intent:smalltalk_user_does_not_want_to_talk	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_user_does_not_want_to_talk$/;"	s
+intent:smalltalk_user_excited	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_user_excited$/;"	s
+intent:smalltalk_user_going_to_bed	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_user_going_to_bed$/;"	s
+intent:smalltalk_user_good	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_user_good$/;"	s
+intent:smalltalk_user_happy	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_user_happy$/;"	s
+intent:smalltalk_user_has_birthday	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_user_has_birthday$/;"	s
+intent:smalltalk_user_here	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_user_here$/;"	s
+intent:smalltalk_user_joking	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_user_joking$/;"	s
+intent:smalltalk_user_likes_agent	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_user_likes_agent$/;"	s
+intent:smalltalk_user_lonely	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_user_lonely$/;"	s
+intent:smalltalk_user_looks_like	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_user_looks_like$/;"	s
+intent:smalltalk_user_loves_agent	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_user_loves_agent$/;"	s
+intent:smalltalk_user_misses_agent	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_user_misses_agent$/;"	s
+intent:smalltalk_user_needs_advice	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_user_needs_advice$/;"	s
+intent:smalltalk_user_sad	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_user_sad$/;"	s
+intent:smalltalk_user_sleepy	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_user_sleepy$/;"	s
+intent:smalltalk_user_testing_agent	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_user_testing_agent$/;"	s
+intent:smalltalk_user_tired	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_user_tired$/;"	s
+intent:smalltalk_user_waits	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_user_waits$/;"	s
+intent:smalltalk_user_wants_to_see_agent_again	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_user_wants_to_see_agent_again$/;"	s
+intent:smalltalk_user_wants_to_talk	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_user_wants_to_talk$/;"	s
+intent:smalltalk_user_will_be_back	templates/01_smalltalk_bot/src/data/nlu.md	/^## intent:smalltalk_user_will_be_back$/;"	s
+intent:source_code	copy/data/nlu/nlu.md	/^## intent:source_code$/;"	s
+intent:source_code	rasa/data/test/many_intents.md	/^## intent:source_code$/;"	s
+intent:speakers_confrence	templates/05_event_bot/src/data/nlu.md	/^## intent:speakers_confrence$/;"	s
+intent:stop	examples/formbot/data/nlu.md	/^## intent:stop$/;"	s
+intent:stop	rasa/examples/formbot/data/nlu.md	/^## intent:stop$/;"	s
+intent:subsctibition_to_update	templates/05_event_bot/src/data/nlu.md	/^## intent:subsctibition_to_update$/;"	s
+intent:superman_room_confrence	templates/05_event_bot/src/data/nlu.md	/^## intent:superman_room_confrence$/;"	s
+intent:switch	copy/data/nlu/nlu.md	/^## intent:switch$/;"	s
+intent:switch	test/test_nlu.md	/^## intent:switch$/;"	s
+intent:technical_question	copy/data/nlu/nlu.md	/^## intent:technical_question$/;"	s
+intent:technical_question	rasa/data/test/many_intents.md	/^## intent:technical_question$/;"	s
+intent:technical_question	test/test_nlu.md	/^## intent:technical_question$/;"	s
+intent:telljoke	rasa/data/test/many_intents.md	/^## intent:telljoke$/;"	s
+intent:testimonials	templates/08_travel_agency_bot/src/data/nlu.md	/^## intent:testimonials$/;"	s
+intent:thank	copy/data/nlu/general.md	/^## intent:thank$/;"	s
+intent:thank	rasa/data/test/many_intents.md	/^## intent:thank$/;"	s
+intent:thank	test/test_nlu.md	/^## intent:thank$/;"	s
+intent:thankyou	examples/formbot/data/nlu.md	/^## intent:thankyou$/;"	s
+intent:thankyou	rasa/examples/formbot/data/nlu.md	/^## intent:thankyou$/;"	s
+intent:tips_1	templates/08_travel_agency_bot/src/data/nlu.md	/^## intent:tips_1$/;"	s
+intent:tips_2	templates/08_travel_agency_bot/src/data/nlu.md	/^## intent:tips_2$/;"	s
+intent:tips_3	templates/08_travel_agency_bot/src/data/nlu.md	/^## intent:tips_3$/;"	s
+intent:tips_and_tricks	templates/08_travel_agency_bot/src/data/nlu.md	/^## intent:tips_and_tricks$/;"	s
+intent:tour_details_natural_exploration	templates/08_travel_agency_bot/src/data/nlu.md	/^## intent:tour_details_natural_exploration$/;"	s
+intent:tour_details_subwing	templates/08_travel_agency_bot/src/data/nlu.md	/^## intent:tour_details_subwing$/;"	s
+intent:tour_details_zipline	templates/08_travel_agency_bot/src/data/nlu.md	/^## intent:tour_details_zipline$/;"	s
+intent:venues_confrence	templates/05_event_bot/src/data/nlu.md	/^## intent:venues_confrence$/;"	s
+intent:view_information	templates/05_event_bot/src/data/nlu.md	/^## intent:view_information$/;"	s
+intent:view_session_speaker1	templates/05_event_bot/src/data/nlu.md	/^## intent:view_session_speaker1$/;"	s
+intent:view_session_speaker2	templates/05_event_bot/src/data/nlu.md	/^## intent:view_session_speaker2$/;"	s
+intent:why_rasa	copy/data/nlu/nlu.md	/^## intent:why_rasa$/;"	s
+just newsletter	copy/data/core/chitchat.md	/^## just newsletter$/;"	s
+just newsletter	copy/data/core/faqs.md	/^## just newsletter$/;"	s
+just newsletter	copy/data/core/oos.md	/^## just newsletter$/;"	s
+just newsletter	copy/data/core/stories.md	/^## just newsletter$/;"	s
+just newsletter (with email already)	copy/data/core/chitchat.md	/^## just newsletter (with email already)$/;"	s
+just newsletter (with email already)	copy/data/core/faqs.md	/^## just newsletter (with email already)$/;"	s
+just newsletter (with email already)	copy/data/core/oos.md	/^## just newsletter (with email already)$/;"	s
+just newsletter (with email already)	copy/data/core/stories.md	/^## just newsletter (with email already)$/;"	s
+just newsletter (with email already) + confirm	copy/data/core/chitchat.md	/^## just newsletter (with email already) + confirm$/;"	s
+just newsletter (with email already) + confirm	copy/data/core/faqs.md	/^## just newsletter (with email already) + confirm$/;"	s
+just newsletter (with email already) + confirm	copy/data/core/oos.md	/^## just newsletter (with email already) + confirm$/;"	s
+just newsletter (with email already) + confirm	copy/data/core/stories.md	/^## just newsletter (with email already) + confirm$/;"	s
+just newsletter + confirm	copy/data/core/chitchat.md	/^## just newsletter + confirm$/;"	s
+just newsletter + confirm	copy/data/core/oos.md	/^## just newsletter + confirm$/;"	s
+just newsletter + confirm	test/test_conversations.md	/^## just newsletter + confirm$/;"	s
+just newsletter + handoff, continue	copy/data/core/handoff.md	/^## just newsletter + handoff, continue$/;"	s
+just newsletter + handoff, don't continue	copy/data/core/handoff.md	/^## just newsletter + handoff, don't continue$/;"	s
+just newsletter, continue	copy/data/core/chitchat.md	/^## just newsletter, continue$/;"	s
+just newsletter, continue	copy/data/core/oos.md	/^## just newsletter, continue$/;"	s
+just newsletter, continue + confirm	copy/data/core/faqs.md	/^## just newsletter, continue + confirm$/;"	s
+just newsletter, continue + confirm	copy/data/core/oos.md	/^## just newsletter, continue + confirm$/;"	s
+just newsletter, continue, + confirm	copy/data/core/chitchat.md	/^## just newsletter, continue, + confirm$/;"	s
+just newsletter, continue, + confirm	test/test_conversations.md	/^## just newsletter, continue, + confirm$/;"	s
+just newsletter, don't continue	copy/data/core/chitchat.md	/^## just newsletter, don't continue$/;"	s
+just newsletter, don't continue	copy/data/core/oos.md	/^## just newsletter, don't continue$/;"	s
+just newsletter, don't continue + confirm	copy/data/core/faqs.md	/^## just newsletter, don't continue + confirm$/;"	s
+just newsletter, don't continue + confirm	copy/data/core/oos.md	/^## just newsletter, don't continue + confirm$/;"	s
+just newsletter, don't continue, + confirm	copy/data/core/chitchat.md	/^## just newsletter, don't continue, + confirm$/;"	s
+just sales	copy/data/core/chitchat.md	/^## just sales$/;"	s
+just sales	copy/data/core/faqs.md	/^## just sales$/;"	s
+just sales	copy/data/core/oos.md	/^## just sales$/;"	s
+just sales + continue	copy/data/core/canthelp.md	/^## just sales + continue$/;"	s
+just sales + don't continue	copy/data/core/canthelp.md	/^## just sales + don't continue$/;"	s
+just sales, continue	copy/data/core/chitchat.md	/^## just sales, continue$/;"	s
+just sales, continue	copy/data/core/faqs.md	/^## just sales, continue$/;"	s
+just sales, continue	copy/data/core/handoff.md	/^## just sales, continue$/;"	s
+just sales, continue	copy/data/core/oos.md	/^## just sales, continue$/;"	s
+just sales, don't continue	copy/data/core/chitchat.md	/^## just sales, don't continue$/;"	s
+just sales, don't continue	copy/data/core/faqs.md	/^## just sales, don't continue$/;"	s
+just sales, don't continue	copy/data/core/handoff.md	/^## just sales, don't continue$/;"	s
+just sales, don't continue	copy/data/core/oos.md	/^## just sales, don't continue$/;"	s
+just sales, explain, continue	copy/data/core/handoff.md	/^## just sales, explain, continue$/;"	s
+just sales, explain, stop	copy/data/core/handoff.md	/^## just sales, explain, stop$/;"	s
+just switch	copy/data/core/step1_get_started.md	/^## just switch$/;"	s
+long feedback	templates/04_feedback_bot/src/data/stories.md	/^## long feedback$/;"	s
+lookup:chinese	rasa/data/test/markdown_single_sections/empty_section.md	/^## lookup:chinese$/;"	s
+lookup:chinese	rasa/data/test/markdown_single_sections/not_existing_section.md	/^## lookup:chinese$/;"	s
+lookup:hotel	examples/knowledgebasebot/data/nlu.md	/^## lookup:hotel$/;"	s
+lookup:hotel	rasa/examples/knowledgebasebot/data/nlu.md	/^## lookup:hotel$/;"	s
+lookup:location	test/test_nlu.md	/^## lookup:location$/;"	s
+lookup:location.txt	copy/data/nlu/chitchat.md	/^## lookup:location.txt$/;"	s
+lookup:location.txt	copy/data/nlu/nlu.md	/^## lookup:location.txt$/;"	s
+lookup:plates	rasa/data/test/lookup_tables/lookup_table.md	/^## lookup:plates$/;"	s
+lookup:product	test/test_nlu.md	/^## lookup:product$/;"	s
+lookup:products.txt	copy/data/nlu/chitchat.md	/^## lookup:products.txt$/;"	s
+lookup:products.txt	copy/data/nlu/nlu.md	/^## lookup:products.txt$/;"	s
+lookup:restaurant	examples/knowledgebasebot/data/nlu.md	/^## lookup:restaurant$/;"	s
+lookup:restaurant	rasa/examples/knowledgebasebot/data/nlu.md	/^## lookup:restaurant$/;"	s
+luggahes	templates/06_hotel_bot/src/data/stories.md	/^## luggahes$/;"	s
+marine_nearestattra	templates/06_hotel_bot/src/data/stories.md	/^## marine_nearestattra$/;"	s
+mattanche_nearestattra	templates/06_hotel_bot/src/data/stories.md	/^## mattanche_nearestattra$/;"	s
+meetingroom	templates/06_hotel_bot/src/data/stories.md	/^## meetingroom$/;"	s
+migrating from dialogflow	copy/data/core/step1_get_started.md	/^##  migrating from dialogflow$/;"	s
+modifyreservation	templates/06_hotel_bot/src/data/stories.md	/^## modifyreservation$/;"	s
+more chitchat	copy/data/core/chitchat.md	/^## more chitchat$/;"	s
+more faqs	copy/data/core/faqs.md	/^## more faqs$/;"	s
+nearestairportfaq	templates/06_hotel_bot/src/data/stories.md	/^## nearestairportfaq$/;"	s
+negative reaction	copy/data/core/stories.md	/^## negative reaction$/;"	s
+neither --> newsletter	copy/data/core/stories.md	/^## neither --> newsletter$/;"	s
+neither --> sales	copy/data/core/stories.md	/^## neither --> sales$/;"	s
+neither options	copy/data/core/stories.md	/^## neither options$/;"	s
+new to rasa + built a bot before	copy/data/core/step1_get_started.md	/^## new to rasa + built a bot before$/;"	s
+new to rasa + not new to chatbots + migrating from dialogflow	copy/data/core/step1_get_started.md	/^## new to rasa + not new to chatbots + migrating from dialogflow$/;"	s
+new to rasa + not new to chatbots + migrating from luis	copy/data/core/step1_get_started.md	/^## new to rasa + not new to chatbots + migrating from luis$/;"	s
+new to rasa + not new to chatbots + migrating from something else	copy/data/core/step1_get_started.md	/^## new to rasa + not new to chatbots + migrating from something else$/;"	s
+new to rasa + not new to chatbots + not migrating	copy/data/core/chitchat.md	/^## new to rasa + not new to chatbots + not migrating$/;"	s
+new to rasa + not new to chatbots + not migrating	copy/data/core/faqs.md	/^## new to rasa + not new to chatbots + not migrating$/;"	s
+new to rasa + not new to chatbots + not migrating	copy/data/core/step1_get_started.md	/^## new to rasa + not new to chatbots + not migrating$/;"	s
+new to rasa + rasa oss	copy/data/core/step1_get_started.md	/^## new to rasa + rasa oss$/;"	s
+new to rasa + rasa x + nothing special	copy/data/core/chitchat.md	/^## new to rasa + rasa x + nothing special$/;"	s
+new to rasa + x	copy/data/core/step1_get_started.md	/^## new to rasa + x$/;"	s
+new to rasa at start	copy/data/core/step1_get_started.md	/^## new to rasa at start$/;"	s
+new to rasa at start	test/test_conversations.md	/^## new to rasa at start$/;"	s
+new to rasa at start, built bot before	copy/data/core/step1_get_started.md	/^## new to rasa at start, built bot before$/;"	s
+new to rasa/bots, don't explain	copy/data/core/step1_get_started.md	/^## new to rasa\/bots, don't explain$/;"	s
+new to rasa/bots, don't explain and direct to step2	copy/data/core/faqs.md	/^## new to rasa\/bots, don't explain and direct to step2$/;"	s
+new to rasa/bots, don't explain and try out stack	copy/data/core/chitchat.md	/^## new to rasa\/bots, don't explain and try out stack$/;"	s
+new to rasa/bots, explain NLU and try it out	copy/data/core/chitchat.md	/^## new to rasa\/bots, explain NLU and try it out$/;"	s
+new to rasa/bots, explain all	copy/data/core/step1_get_started.md	/^## new to rasa\/bots, explain all$/;"	s
+new to rasa/bots, explain core	copy/data/core/step1_get_started.md	/^## new to rasa\/bots, explain core$/;"	s
+new to rasa/bots, explain core and direct to step2	copy/data/core/faqs.md	/^## new to rasa\/bots, explain core and direct to step2$/;"	s
+new to rasa/bots, explain core and try out stack	copy/data/core/chitchat.md	/^## new to rasa\/bots, explain core and try out stack$/;"	s
+new to rasa/bots, explain core, then nlu and direct to step2	copy/data/core/faqs.md	/^## new to rasa\/bots, explain core, then nlu and direct to step2$/;"	s
+new to rasa/bots, explain core, then nlu and try out stack	copy/data/core/chitchat.md	/^## new to rasa\/bots, explain core, then nlu and try out stack$/;"	s
+new to rasa/bots, explain nlu	copy/data/core/step1_get_started.md	/^## new to rasa\/bots, explain nlu$/;"	s
+new to rasa/bots, explain nlu and direct to step2	copy/data/core/faqs.md	/^## new to rasa\/bots, explain nlu and direct to step2$/;"	s
+new to rasa/bots, explain nlu and try out stack	copy/data/core/chitchat.md	/^## new to rasa\/bots, explain nlu and try out stack$/;"	s
+new to rasa/bots, explain nlu then core	copy/data/core/step1_get_started.md	/^## new to rasa\/bots, explain nlu then core$/;"	s
+new to rasa/bots, explain rasa x only	copy/data/core/chitchat.md	/^## new to rasa\/bots, explain rasa x only$/;"	s
+new to rasa/bots, explain stack	copy/data/core/step1_get_started.md	/^## new to rasa\/bots, explain stack$/;"	s
+new to rasa/bots, explain stack and try it out	copy/data/core/chitchat.md	/^## new to rasa\/bots, explain stack and try it out$/;"	s
+new to rasa/bots, explain stack and try it out	copy/data/core/faqs.md	/^## new to rasa\/bots, explain stack and try it out$/;"	s
+new to rasa/bots, explain x	copy/data/core/step1_get_started.md	/^## new to rasa\/bots, explain x$/;"	s
+new to rasa/bots, explain x and direct to step2	copy/data/core/faqs.md	/^## new to rasa\/bots, explain x and direct to step2$/;"	s
+new to rasa/bots, explain x and try it out	copy/data/core/faqs.md	/^## new to rasa\/bots, explain x and try it out$/;"	s
+new to rasa/bots, explain x, then direct to step2	copy/data/core/faqs.md	/^## new to rasa\/bots, explain x, then direct to step2$/;"	s
+new to rasa/bots, explain x, then nlu+core	copy/data/core/step1_get_started.md	/^## new to rasa\/bots, explain x, then nlu+core$/;"	s
+news_australia	templates/09_news_api/src/data/stories.md	/^## news_australia$/;"	s
+news_india	templates/09_news_api/src/data/stories.md	/^## news_india$/;"	s
+news_us	templates/09_news_api/src/data/stories.md	/^## news_us$/;"	s
+newsletter + affirm feedback	copy/data/core/stories.md	/^## newsletter + affirm feedback$/;"	s
+newsletter + ask why email	copy/data/core/stories.md	/^## newsletter + ask why email$/;"	s
+newsletter + deny feedback	copy/data/core/stories.md	/^## newsletter + deny feedback$/;"	s
+newsletter + feedback	copy/data/core/stories.md	/^## newsletter + feedback$/;"	s
+newsletter then sales	copy/data/core/stories.md	/^## newsletter then sales$/;"	s
+newsletter, confirm, then sales	copy/data/core/stories.md	/^## newsletter, confirm, then sales$/;"	s
+newsletter, continue, affirm, then contact sales	copy/data/core/stories.md	/^## newsletter, continue, affirm, then contact sales$/;"	s
+newsletter, don't continue	copy/data/core/stories.md	/^## newsletter, don't continue$/;"	s
+newsletter, don't continue, then contact sales	copy/data/core/stories.md	/^## newsletter, don't continue, then contact sales$/;"	s
+newsletter, don't give email once	copy/data/core/stories.md	/^## newsletter, don't give email once$/;"	s
+next step prompt	copy/data/core/faqs.md	/^## next step prompt$/;"	s
+not new to rasa + core	copy/data/core/step1_get_started.md	/^## not new to rasa + core$/;"	s
+not new to rasa + nlu + entity + duckling info	copy/data/core/step1_get_started.md	/^## not new to rasa + nlu + entity + duckling info$/;"	s
+not new to rasa + nlu + entity + no recommendation	copy/data/core/step1_get_started.md	/^## not new to rasa + nlu + entity + no recommendation$/;"	s
+not new to rasa + nlu + entity + pipeline CRFEntityExtractor	copy/data/core/step1_get_started.md	/^## not new to rasa + nlu + entity + pipeline CRFEntityExtractor$/;"	s
+not new to rasa + nlu + entity + pipeline duckling	copy/data/core/chitchat.md	/^## not new to rasa + nlu + entity + pipeline duckling$/;"	s
+not new to rasa + nlu + entity + pipeline duckling	copy/data/core/faqs.md	/^## not new to rasa + nlu + entity + pipeline duckling$/;"	s
+not new to rasa + nlu + entity + pipeline duckling	copy/data/core/step1_get_started.md	/^## not new to rasa + nlu + entity + pipeline duckling$/;"	s
+not new to rasa + nlu + entity + pipeline spacy	copy/data/core/step1_get_started.md	/^## not new to rasa + nlu + entity + pipeline spacy$/;"	s
+not new to rasa + nlu + intent + no recommendation	copy/data/core/chitchat.md	/^## not new to rasa + nlu + intent + no recommendation$/;"	s
+not new to rasa + nlu + intent + no recommendation	copy/data/core/faqs.md	/^## not new to rasa + nlu + intent + no recommendation$/;"	s
+not new to rasa + nlu + intent + no recommendation	copy/data/core/step1_get_started.md	/^## not new to rasa + nlu + intent + no recommendation$/;"	s
+not new to rasa + nlu + intent + pipeline recommendation, english	copy/data/core/step1_get_started.md	/^## not new to rasa + nlu + intent + pipeline recommendation, english$/;"	s
+not new to rasa + nlu + intent + pipeline recommendation, not spacy	copy/data/core/chitchat.md	/^## not new to rasa + nlu + intent + pipeline recommendation, not spacy$/;"	s
+not new to rasa + nlu + intent + pipeline recommendation, not spacy	copy/data/core/faqs.md	/^## not new to rasa + nlu + intent + pipeline recommendation, not spacy$/;"	s
+not new to rasa + nlu + intent + pipeline recommendation, not spacy	copy/data/core/step1_get_started.md	/^## not new to rasa + nlu + intent + pipeline recommendation, not spacy$/;"	s
+not new to rasa + nlu + intent + pipeline recommendation, spacy	copy/data/core/chitchat.md	/^## not new to rasa + nlu + intent + pipeline recommendation, spacy$/;"	s
+not new to rasa + nlu + intent + pipeline recommendation, spacy	copy/data/core/faqs.md	/^## not new to rasa + nlu + intent + pipeline recommendation, spacy$/;"	s
+not new to rasa + nlu + intent + pipeline recommendation, spacy	copy/data/core/step1_get_started.md	/^## not new to rasa + nlu + intent + pipeline recommendation, spacy$/;"	s
+not new to rasa + nlu + intent + tool recommendation	copy/data/core/step1_get_started.md	/^## not new to rasa + nlu + intent + tool recommendation$/;"	s
+not new to rasa + nlu + nothing special	copy/data/core/chitchat.md	/^## not new to rasa + nlu + nothing special$/;"	s
+not new to rasa + nlu + nothing special	copy/data/core/faqs.md	/^## not new to rasa + nlu + nothing special$/;"	s
+not new to rasa + nlu + nothing special	copy/data/core/step1_get_started.md	/^## not new to rasa + nlu + nothing special$/;"	s
+not new to rasa + nlu + unknown topic	copy/data/core/chitchat.md	/^## not new to rasa + nlu + unknown topic$/;"	s
+not new to rasa + nlu + unknown topic	copy/data/core/faqs.md	/^## not new to rasa + nlu + unknown topic$/;"	s
+not new to rasa + nlu + unknown topic	copy/data/core/step1_get_started.md	/^## not new to rasa + nlu + unknown topic$/;"	s
+not new to rasa + not interested in products	copy/data/core/chitchat.md	/^## not new to rasa + not interested in products$/;"	s
+not new to rasa + not interested in products	copy/data/core/faqs.md	/^## not new to rasa + not interested in products$/;"	s
+not new to rasa + not interested in products	copy/data/core/step1_get_started.md	/^## not new to rasa + not interested in products$/;"	s
+not new to rasa + rasa	copy/data/core/step1_get_started.md	/^## not new to rasa + rasa$/;"	s
+not new to rasa + rasa	test/test_conversations.md	/^## not new to rasa + rasa$/;"	s
+not new to rasa + rasa x + nothing special	copy/data/core/chitchat.md	/^## not new to rasa + rasa x + nothing special$/;"	s
+not new to rasa + rasax	copy/data/core/step1_get_started.md	/^## not new to rasa + rasax$/;"	s
+not new to rasa + rasax	test/test_conversations.md	/^## not new to rasa + rasax$/;"	s
+not new to rasa + x	copy/data/core/step1_get_started.md	/^## not new to rasa + x$/;"	s
+not new to rasa/bots, explain all	copy/data/core/step1_get_started.md	/^## not new to rasa\/bots, explain all$/;"	s
+not new to rasa/bots, faq rasa	test/test_conversations.md	/^## not new to rasa\/bots, faq rasa$/;"	s
+out of scope	copy/data/core/oos.md	/^## out of scope$/;"	s
+out of scope non english	copy/data/nlu/responses/responses.md	/^## out of scope non english$/;"	s
+out of scope other	copy/data/nlu/responses/responses.md	/^## out of scope other$/;"	s
+parkingcost	templates/06_hotel_bot/src/data/stories.md	/^## parkingcost$/;"	s
+path_smalltalk_agent_acquaintance	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_agent_acquaintance$/;"	s
+path_smalltalk_agent_age	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_agent_age$/;"	s
+path_smalltalk_agent_annoying	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_agent_annoying$/;"	s
+path_smalltalk_agent_answer_my_question	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_agent_answer_my_question$/;"	s
+path_smalltalk_agent_bad	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_agent_bad$/;"	s
+path_smalltalk_agent_be_clever	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_agent_be_clever$/;"	s
+path_smalltalk_agent_beautiful	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_agent_beautiful$/;"	s
+path_smalltalk_agent_birth_date	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_agent_birth_date$/;"	s
+path_smalltalk_agent_boring	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_agent_boring$/;"	s
+path_smalltalk_agent_boss	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_agent_boss$/;"	s
+path_smalltalk_agent_busy	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_agent_busy$/;"	s
+path_smalltalk_agent_chatbot	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_agent_chatbot$/;"	s
+path_smalltalk_agent_clever	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_agent_clever$/;"	s
+path_smalltalk_agent_crazy	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_agent_crazy$/;"	s
+path_smalltalk_agent_fired	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_agent_fired$/;"	s
+path_smalltalk_agent_funny	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_agent_funny$/;"	s
+path_smalltalk_agent_good	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_agent_good$/;"	s
+path_smalltalk_agent_happy	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_agent_happy$/;"	s
+path_smalltalk_agent_hungry	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_agent_hungry$/;"	s
+path_smalltalk_agent_marry_user	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_agent_marry_user$/;"	s
+path_smalltalk_agent_my_friend	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_agent_my_friend$/;"	s
+path_smalltalk_agent_occupation	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_agent_occupation$/;"	s
+path_smalltalk_agent_origin	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_agent_origin$/;"	s
+path_smalltalk_agent_ready	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_agent_ready$/;"	s
+path_smalltalk_agent_real	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_agent_real$/;"	s
+path_smalltalk_agent_residence	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_agent_residence$/;"	s
+path_smalltalk_agent_right	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_agent_right$/;"	s
+path_smalltalk_agent_sure	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_agent_sure$/;"	s
+path_smalltalk_agent_talk_to_me	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_agent_talk_to_me$/;"	s
+path_smalltalk_agent_there	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_agent_there$/;"	s
+path_smalltalk_appraisal_bad	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_appraisal_bad$/;"	s
+path_smalltalk_appraisal_good	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_appraisal_good$/;"	s
+path_smalltalk_appraisal_no_problem	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_appraisal_no_problem$/;"	s
+path_smalltalk_appraisal_thank_you	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_appraisal_thank_you$/;"	s
+path_smalltalk_appraisal_welcome	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_appraisal_welcome$/;"	s
+path_smalltalk_appraisal_well_done	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_appraisal_well_done$/;"	s
+path_smalltalk_confirmation_cancel	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_confirmation_cancel$/;"	s
+path_smalltalk_confirmation_no	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_confirmation_no$/;"	s
+path_smalltalk_confirmation_yes	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_confirmation_yes$/;"	s
+path_smalltalk_dialog_hold_on	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_dialog_hold_on$/;"	s
+path_smalltalk_dialog_hug	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_dialog_hug$/;"	s
+path_smalltalk_dialog_i_do_not_care	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_dialog_i_do_not_care$/;"	s
+path_smalltalk_dialog_sorry	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_dialog_sorry$/;"	s
+path_smalltalk_dialog_what_do_you_mean	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_dialog_what_do_you_mean$/;"	s
+path_smalltalk_dialog_wrong	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_dialog_wrong$/;"	s
+path_smalltalk_emotions_ha_ha	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_emotions_ha_ha$/;"	s
+path_smalltalk_emotions_wow	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_emotions_wow$/;"	s
+path_smalltalk_greetings_bye	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_greetings_bye$/;"	s
+path_smalltalk_greetings_goodevening	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_greetings_goodevening$/;"	s
+path_smalltalk_greetings_goodmorning	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_greetings_goodmorning$/;"	s
+path_smalltalk_greetings_goodnight	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_greetings_goodnight$/;"	s
+path_smalltalk_greetings_hello	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_greetings_hello$/;"	s
+path_smalltalk_greetings_how_are_you	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_greetings_how_are_you$/;"	s
+path_smalltalk_greetings_nice_to_meet_you	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_greetings_nice_to_meet_you$/;"	s
+path_smalltalk_greetings_nice_to_see_you	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_greetings_nice_to_see_you$/;"	s
+path_smalltalk_greetings_nice_to_talk_to_you	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_greetings_nice_to_talk_to_you$/;"	s
+path_smalltalk_greetings_whatsup	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_greetings_whatsup$/;"	s
+path_smalltalk_user_angry	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_user_angry$/;"	s
+path_smalltalk_user_back	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_user_back$/;"	s
+path_smalltalk_user_bored	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_user_bored$/;"	s
+path_smalltalk_user_busy	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_user_busy$/;"	s
+path_smalltalk_user_can_not_sleep	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_user_can_not_sleep$/;"	s
+path_smalltalk_user_does_not_want_to_talk	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_user_does_not_want_to_talk$/;"	s
+path_smalltalk_user_excited	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_user_excited$/;"	s
+path_smalltalk_user_going_to_bed	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_user_going_to_bed$/;"	s
+path_smalltalk_user_good	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_user_good$/;"	s
+path_smalltalk_user_happy	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_user_happy$/;"	s
+path_smalltalk_user_has_birthday	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_user_has_birthday$/;"	s
+path_smalltalk_user_here	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_user_here$/;"	s
+path_smalltalk_user_joking	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_user_joking$/;"	s
+path_smalltalk_user_likes_agent	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_user_likes_agent$/;"	s
+path_smalltalk_user_lonely	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_user_lonely$/;"	s
+path_smalltalk_user_looks_like	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_user_looks_like$/;"	s
+path_smalltalk_user_loves_agent	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_user_loves_agent$/;"	s
+path_smalltalk_user_misses_agent	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_user_misses_agent$/;"	s
+path_smalltalk_user_needs_advice	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_user_needs_advice$/;"	s
+path_smalltalk_user_sad	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_user_sad$/;"	s
+path_smalltalk_user_sleepy	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_user_sleepy$/;"	s
+path_smalltalk_user_testing_agent	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_user_testing_agent$/;"	s
+path_smalltalk_user_tired	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_user_tired$/;"	s
+path_smalltalk_user_waits	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_user_waits$/;"	s
+path_smalltalk_user_wants_to_see_agent_again	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_user_wants_to_see_agent_again$/;"	s
+path_smalltalk_user_wants_to_talk	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_user_wants_to_talk$/;"	s
+path_smalltalk_user_will_be_back	templates/01_smalltalk_bot/src/data/stories.md	/^## path_smalltalk_user_will_be_back$/;"	s
+petpolicyfaq	templates/06_hotel_bot/src/data/stories.md	/^## petpolicyfaq$/;"	s
+pipeline	copy/data/core/step1_get_started.md	/^## pipeline$/;"	s
+positive reaction	copy/data/core/stories.md	/^## positive reaction$/;"	s
+problem	rasa/data/test_stories/stories_conflicting_2.md	/^## problem$/;"	s
+problem	rasa/data/test_stories/stories_conflicting_3.md	/^## problem$/;"	s
+prompt for getting started	copy/data/core/step1_get_started.md	/^## prompt for getting started$/;"	s
+prompt for getting started + confirm	copy/data/core/step1_get_started.md	/^## prompt for getting started + confirm$/;"	s
+prompt for getting started + confirm	test/test_stories.md	/^## prompt for getting started + confirm$/;"	s
+receptiontime	templates/06_hotel_bot/src/data/stories.md	/^## receptiontime$/;"	s
+refundpolicy	templates/06_hotel_bot/src/data/stories.md	/^## refundpolicy$/;"	s
+regex:greet	copy/data/nlu/nlu.md	/^## regex:greet$/;"	s
+regex:greet	rasa/data/examples/rasa/demo-rasa-multi-intent.md	/^## regex:greet$/;"	s
+regex:greet	rasa/data/examples/rasa/demo-rasa.md	/^## regex:greet$/;"	s
+regex:greet	rasa/data/test/duplicate_intents_markdown/demo-rasa-intents-2.md	/^## regex:greet$/;"	s
+regex:greet	rasa/data/test/markdown_single_sections/empty_section.md	/^## regex:greet$/;"	s
+regex:greet	rasa/data/test/markdown_single_sections/regex_only.md	/^## regex:greet$/;"	s
+regex:greet	rasa/data/test/multiple_files_markdown/demo-rasa-greet.md	/^## regex:greet$/;"	s
+regex:zipcode	copy/data/nlu/nlu.md	/^## regex:zipcode$/;"	s
+regex:zipcode	rasa/data/examples/rasa/demo-rasa-multi-intent.md	/^## regex:zipcode$/;"	s
+regex:zipcode	rasa/data/examples/rasa/demo-rasa.md	/^## regex:zipcode$/;"	s
+regex:zipcode	rasa/data/test/duplicate_intents_markdown/demo-rasa-intents-2.md	/^## regex:zipcode$/;"	s
+regex:zipcode	rasa/data/test/multiple_files_markdown/demo-rasa-restaurant_search.md	/^## regex:zipcode$/;"	s
+reservationconfirm	templates/06_hotel_bot/src/data/stories.md	/^## reservationconfirm$/;"	s
+sad path 1	rasa/data/test_stories/stories_retrieval_intents.md	/^## sad path 1$/;"	s
+sad path 1	rasa/data/test_stories/stories_with_multiline_comments.md	/^## sad path 1$/;"	s
+sad path 1	rasa/rasa/cli/initial_project/data/stories.md	/^## sad path 1$/;"	s
+sad path 1	rasa/rasa/cli/initial_project/tests/conversation_tests.md	/^## sad path 1$/;"	s
+sad path 1               <!-- this is already the start of the next story -->	examples/moodbot/data/stories.md	/^## sad path 1               <!-- this is already the start of the next story -->$/;"	s
+sad path 1               <!-- this is already the start of the next story -->	rasa/data/test_multi_domain/data/MoodBot/data/stories.md	/^## sad path 1               <!-- this is already the start of the next story -->$/;"	s
+sad path 1               <!-- this is already the start of the next story -->	rasa/examples/moodbot/data/stories.md	/^## sad path 1               <!-- this is already the start of the next story -->$/;"	s
+sad path 2	examples/moodbot/data/stories.md	/^## sad path 2$/;"	s
+sad path 2	rasa/data/test_multi_domain/data/MoodBot/data/stories.md	/^## sad path 2$/;"	s
+sad path 2	rasa/data/test_stories/stories_retrieval_intents.md	/^## sad path 2$/;"	s
+sad path 2	rasa/data/test_stories/stories_with_multiline_comments.md	/^## sad path 2$/;"	s
+sad path 2	rasa/examples/moodbot/data/stories.md	/^## sad path 2$/;"	s
+sad path 2	rasa/rasa/cli/initial_project/data/stories.md	/^## sad path 2$/;"	s
+sad path 2	rasa/rasa/cli/initial_project/tests/conversation_tests.md	/^## sad path 2$/;"	s
+sad path 3	rasa/rasa/cli/initial_project/tests/conversation_tests.md	/^## sad path 3$/;"	s
+sales	copy/data/core/stories.md	/^## sales$/;"	s
+sales then newsletter	copy/data/core/stories.md	/^## sales then newsletter$/;"	s
+sales, then newsletter, then confirm	copy/data/core/stories.md	/^## sales, then newsletter, then confirm$/;"	s
+say confirm outside the flows 2	copy/data/core/oos.md	/^## say confirm outside the flows 2$/;"	s
+say enter data outside the flows	copy/data/core/oos.md	/^## say enter data outside the flows$/;"	s
+say goodbye	examples/moodbot/data/stories.md	/^## say goodbye$/;"	s
+say goodbye	rasa/data/test_multi_domain/data/stories.md	/^## say goodbye$/;"	s
+say goodbye	rasa/data/test_stories/stories_retrieval_intents.md	/^## say goodbye$/;"	s
+say goodbye	rasa/data/test_stories/stories_with_multiline_comments.md	/^## say goodbye$/;"	s
+say goodbye	rasa/examples/moodbot/data/stories.md	/^## say goodbye$/;"	s
+say goodbye	rasa/rasa/cli/initial_project/data/stories.md	/^## say goodbye$/;"	s
+say goodbye	rasa/rasa/cli/initial_project/tests/conversation_tests.md	/^## say goodbye$/;"	s
+say greet outside the flows	copy/data/core/oos.md	/^## say greet outside the flows$/;"	s
+say hello	rasa/data/test_multi_domain/data/GreetBot/data/stories.md	/^## say hello$/;"	s
+search_news:	templates/09_news_api/src/data/stories.md	/^## search_news:$/;"	s
+security	templates/06_hotel_bot/src/data/stories.md	/^## security$/;"	s
+sell_home	templates/03_real_estate_bot/src/data/stories.md	/^## sell_home$/;"	s
+sell_your_home	templates/03_real_estate_bot/src/data/stories.md	/^## sell_your_home$/;"	s
+session_one_details01	templates/05_event_bot/src/data/stories.md	/^## session_one_details01$/;"	s
+session_one_details02	templates/05_event_bot/src/data/stories.md	/^## session_one_details02$/;"	s
+session_three_details01	templates/05_event_bot/src/data/stories.md	/^## session_three_details01$/;"	s
+session_three_details02	templates/05_event_bot/src/data/stories.md	/^## session_three_details02$/;"	s
+session_two_details01	templates/05_event_bot/src/data/stories.md	/^## session_two_details01$/;"	s
+session_two_details02	templates/05_event_bot/src/data/stories.md	/^## session_two_details02$/;"	s
+short feedback	templates/04_feedback_bot/src/data/stories.md	/^## short feedback$/;"	s
+show all tickets	templates/10_freshdesk_customer_support_bot/src/data/stories.md	/^## show all tickets$/;"	s
+show_it_all	rasa/data/test_mixed_yaml_md_stories/stories_part_2.md	/^## show_it_all$/;"	s
+show_it_all	rasa/data/test_multifile_stories/stories_part_2.md	/^## show_it_all$/;"	s
+show_it_all	rasa/data/test_stories/stories.md	/^## show_it_all$/;"	s
+simple_story	rasa/data/test_stories/stories_unfeaturized_entities.md	/^## simple_story$/;"	s
+simple_story_with_end_checkpoint_1	rasa/data/test_stories/stories_unused_checkpoints.md	/^## simple_story_with_end_checkpoint_1$/;"	s
+simple_story_with_end_checkpoint_2	rasa/data/test_stories/stories_unused_checkpoints.md	/^## simple_story_with_end_checkpoint_2$/;"	s
+simple_story_with_form_happy	rasa/data/test_stories/stories_form.md	/^## simple_story_with_form_happy$/;"	s
+simple_story_with_form_stop_continue	rasa/data/test_stories/stories_form.md	/^## simple_story_with_form_stop_continue$/;"	s
+simple_story_with_form_stop_deactivate	rasa/data/test_stories/stories_form.md	/^## simple_story_with_form_stop_deactivate$/;"	s
+simple_story_with_form_stop_inform	rasa/data/test_stories/stories_form.md	/^## simple_story_with_form_stop_inform$/;"	s
+simple_story_with_form_unhappy	rasa/data/test_stories/stories_form.md	/^## simple_story_with_form_unhappy$/;"	s
+simple_story_with_multiple_turns	rasa/data/test_evaluations/end_to_end_story.md	/^## simple_story_with_multiple_turns$/;"	s
+simple_story_with_multiple_turns	rasa/data/test_mixed_yaml_md_stories/stories_part_2.md	/^## simple_story_with_multiple_turns$/;"	s
+simple_story_with_multiple_turns	rasa/data/test_multifile_stories/stories_part_2.md	/^## simple_story_with_multiple_turns$/;"	s
+simple_story_with_multiple_turns	rasa/data/test_stories/stories.md	/^## simple_story_with_multiple_turns$/;"	s
+simple_story_with_multiple_turns	rasa/data/test_stories/stories_defaultdomain.md	/^## simple_story_with_multiple_turns$/;"	s
+simple_story_with_multiple_turns	rasa/data/test_stories/stories_form.md	/^## simple_story_with_multiple_turns$/;"	s
+simple_story_with_multiple_turns	rasa/data/test_stories/stories_unfeaturized_entities.md	/^## simple_story_with_multiple_turns$/;"	s
+simple_story_with_only_end	rasa/data/test_multifile_stories/stories_part_1.md	/^## simple_story_with_only_end$/;"	s
+simple_story_with_only_end	rasa/data/test_stories/stories.md	/^## simple_story_with_only_end$/;"	s
+simple_story_with_only_end	rasa/data/test_stories/stories_defaultdomain.md	/^## simple_story_with_only_end$/;"	s
+simple_story_with_only_start	rasa/data/test_evaluations/end_to_end_story.md	/^## simple_story_with_only_start$/;"	s
+simple_story_with_only_start	rasa/data/test_multifile_stories/stories_part_1.md	/^## simple_story_with_only_start$/;"	s
+simple_story_with_only_start	rasa/data/test_stories/stories.md	/^## simple_story_with_only_start$/;"	s
+simple_story_with_only_start	rasa/data/test_stories/stories_defaultdomain.md	/^## simple_story_with_only_start$/;"	s
+simple_story_with_restart	rasa/data/test_stories/stories_restart.md	/^## simple_story_with_restart$/;"	s
+simple_story_with_start	rasa/data/test_stories/stories_unused_checkpoints.md	/^## simple_story_with_start$/;"	s
+simple_story_with_unknown_entity	rasa/data/test_evaluations/story_unknown_entity.md	/^## simple_story_with_unknown_entity$/;"	s
+simple_story_without_checkpoint	rasa/data/test_multifile_stories/stories_part_1.md	/^## simple_story_without_checkpoint$/;"	s
+simple_story_without_checkpoint	rasa/data/test_stories/stories.md	/^## simple_story_without_checkpoint$/;"	s
+skip to info on core	copy/data/core/step1_get_started.md	/^## skip to info on core$/;"	s
+skip to info on nlu entities	copy/data/core/step1_get_started.md	/^## skip to info on nlu entities$/;"	s
+skip to info on nlu intents	copy/data/core/step1_get_started.md	/^## skip to info on nlu intents$/;"	s
+skip to info on rasa	copy/data/core/step1_get_started.md	/^## skip to info on rasa$/;"	s
+skip to info on rasa nlu	copy/data/core/step1_get_started.md	/^## skip to info on rasa nlu$/;"	s
+skip to info on rasa x	copy/data/core/step1_get_started.md	/^## skip to info on rasa x$/;"	s
+source code	copy/data/core/step1_get_started.md	/^## source code$/;"	s
+speaker_andrewking01	templates/05_event_bot/src/data/stories.md	/^## speaker_andrewking01$/;"	s
+speaker_andrewking02	templates/05_event_bot/src/data/stories.md	/^## speaker_andrewking02$/;"	s
+speaker_daniel01	templates/05_event_bot/src/data/stories.md	/^## speaker_daniel01$/;"	s
+speaker_daniel02	templates/05_event_bot/src/data/stories.md	/^## speaker_daniel02$/;"	s
+speaker_frey01	templates/05_event_bot/src/data/stories.md	/^## speaker_frey01$/;"	s
+speaker_frey02	templates/05_event_bot/src/data/stories.md	/^## speaker_frey02$/;"	s
+speaker_rose01	templates/05_event_bot/src/data/stories.md	/^## speaker_rose01$/;"	s
+speaker_rose02	templates/05_event_bot/src/data/stories.md	/^## speaker_rose02$/;"	s
+stop and really stop path	examples/formbot/data/stories.md	/^## stop and really stop path$/;"	s
+stop and really stop path	rasa/examples/formbot/data/stories.md	/^## stop and really stop path$/;"	s
+stop but continue and chitchat path	examples/formbot/data/stories.md	/^## stop but continue and chitchat path$/;"	s
+stop but continue and chitchat path	rasa/examples/formbot/data/stories.md	/^## stop but continue and chitchat path$/;"	s
+stop but continue path	examples/formbot/data/stories.md	/^## stop but continue path$/;"	s
+stop but continue path	rasa/examples/formbot/data/stories.md	/^## stop but continue path$/;"	s
+story 1	rasa/data/test_stories/stories_conflicting_1.md	/^## story 1$/;"	s
+story 1	rasa/data/test_stories/stories_conflicting_4.md	/^## story 1$/;"	s
+story 1	rasa/data/test_stories/stories_conflicting_5.md	/^## story 1$/;"	s
+story 1	rasa/data/test_stories/stories_conflicting_6.md	/^## story 1$/;"	s
+story 2	rasa/data/test_stories/stories_conflicting_1.md	/^## story 2$/;"	s
+story 2	rasa/data/test_stories/stories_conflicting_4.md	/^## story 2$/;"	s
+story 2	rasa/data/test_stories/stories_conflicting_5.md	/^## story 2$/;"	s
+story 2	rasa/data/test_stories/stories_conflicting_6.md	/^## story 2$/;"	s
+story 3	rasa/data/test_stories/stories_conflicting_6.md	/^## story 3$/;"	s
+story 4	rasa/data/test_stories/stories_conflicting_6.md	/^## story 4$/;"	s
+story 5	rasa/data/test_stories/stories_conflicting_6.md	/^## story 5$/;"	s
+story from linda	copy/data/core/closetheloop.md	/^## story from linda$/;"	s
+story number 1	copy/data/core/closetheloop.md	/^## story number 1$/;"	s
+story number 11, continue	copy/data/core/closetheloop.md	/^## story number 11, continue$/;"	s
+story number 11, don't continue	copy/data/core/closetheloop.md	/^## story number 11, don't continue$/;"	s
+story number 12	copy/data/core/closetheloop.md	/^## story number 12$/;"	s
+story number 12, continue	copy/data/core/closetheloop.md	/^## story number 12, continue$/;"	s
+story number 12, don't continue	copy/data/core/closetheloop.md	/^## story number 12, don't continue$/;"	s
+story number 14	copy/data/core/closetheloop.md	/^## story number 14$/;"	s
+story number 15	copy/data/core/closetheloop.md	/^## story number 15$/;"	s
+story number 17	copy/data/core/closetheloop.md	/^## story number 17$/;"	s
+story number 18	copy/data/core/closetheloop.md	/^## story number 18$/;"	s
+story number 2	copy/data/core/closetheloop.md	/^## story number 2$/;"	s
+story number 4	copy/data/core/closetheloop.md	/^## story number 4$/;"	s
+story number 5	copy/data/core/closetheloop.md	/^## story number 5$/;"	s
+story number 6	copy/data/core/closetheloop.md	/^## story number 6$/;"	s
+story number 7	copy/data/core/closetheloop.md	/^## story number 7$/;"	s
+story number 8	copy/data/core/closetheloop.md	/^## story number 8$/;"	s
+story number 9	copy/data/core/closetheloop.md	/^## story number 9$/;"	s
+story to continue checkpoint	rasa/data/test_stories/stories_checkpoint_after_or.md	/^## story to continue checkpoint$/;"	s
+story with checkpoint after or	rasa/data/test_stories/stories_checkpoint_after_or.md	/^## story with checkpoint after or$/;"	s
+story_00055028	rasa/data/test_stories/stories_babi_small.md	/^## story_00055028$/;"	s
+story_00832024	rasa/data/test_stories/stories_babi_small.md	/^## story_00832024$/;"	s
+story_00914561	rasa/data/test_stories/stories_babi_small.md	/^## story_00914561$/;"	s
+story_02879216	rasa/data/test_stories/stories_babi_small.md	/^## story_02879216$/;"	s
+story_03812903	rasa/data/test_stories/stories_babi_small.md	/^## story_03812903$/;"	s
+story_04649138	rasa/data/test_stories/stories_babi_small.md	/^## story_04649138$/;"	s
+story_04818543	rasa/data/test_stories/stories_babi_small.md	/^## story_04818543$/;"	s
+story_07265875	rasa/data/test_stories/stories_babi_small.md	/^## story_07265875$/;"	s
+story_trips_circuit_breaker	rasa/data/test_evaluations/end_to_end_trips_circuit_breaker.md	/^## story_trips_circuit_breaker$/;"	s
+story_trips_circuit_breaker	rasa/data/test_evaluations/stories_trip_circuit_breaker.md	/^## story_trips_circuit_breaker$/;"	s
+switch immediately to dialogflow	copy/data/core/step1_get_started.md	/^## switch immediately to dialogflow$/;"	s
+switch immediately to luis	copy/data/core/step1_get_started.md	/^## switch immediately to luis$/;"	s
+synonym: duration	copy/data/nlu/nlu.md	/^## synonym: duration$/;"	s
+synonym:1	test/test_nlu.md	/^## synonym:1$/;"	s
+synonym:10:00	rasa/data/test/markdown_single_sections/section_with_delimiter.md	/^## synonym:10:00$/;"	s
+synonym:USA	copy/data/nlu/nlu.md	/^## synonym:USA$/;"	s
+synonym:USA	test/test_nlu.md	/^## synonym:USA$/;"	s
+synonym:United Kingdom	copy/data/nlu/nlu.md	/^## synonym:United Kingdom$/;"	s
+synonym:United Kingdom	test/test_nlu.md	/^## synonym:United Kingdom$/;"	s
+synonym:all	copy/data/nlu/nlu.md	/^## synonym:all$/;"	s
+synonym:all	test/test_nlu.md	/^## synonym:all$/;"	s
+synonym:animal	rasa/data/test/markdown_single_sections/empty_section.md	/^## synonym:animal$/;"	s
+synonym:animal	rasa/data/test/markdown_single_sections/not_existing_section.md	/^## synonym:animal$/;"	s
+synonym:chinese	rasa/data/examples/rasa/demo-rasa-multi-intent.md	/^## synonym:chinese$/;"	s
+synonym:chinese	rasa/data/examples/rasa/demo-rasa.md	/^## synonym:chinese$/;"	s
+synonym:chinese	rasa/data/test/duplicate_intents_markdown/demo-rasa-intents-2.md	/^## synonym:chinese$/;"	s
+synonym:chinese	rasa/data/test/json_converted_to_md.md	/^## synonym:chinese$/;"	s
+synonym:chinese	rasa/data/test/json_with_special_chars_convered_to_md.md	/^## synonym:chinese$/;"	s
+synonym:chinese	rasa/data/test/markdown_single_sections/synonyms_only.md	/^## synonym:chinese$/;"	s
+synonym:chinese	rasa/data/test/multiple_files_markdown/demo-rasa-restaurant_search.md	/^## synonym:chinese$/;"	s
+synonym:conda	test/test_nlu.md	/^## synonym:conda$/;"	s
+synonym:core	copy/data/nlu/nlu.md	/^## synonym:core$/;"	s
+synonym:core	test/test_nlu.md	/^## synonym:core$/;"	s
+synonym:custom actions	copy/data/nlu/nlu.md	/^## synonym:custom actions$/;"	s
+synonym:date	copy/data/nlu/nlu.md	/^## synonym:date$/;"	s
+synonym:date	test/test_nlu.md	/^## synonym:date$/;"	s
+synonym:developer	test/test_nlu.md	/^## synonym:developer$/;"	s
+synonym:dialogflow	copy/data/nlu/nlu.md	/^## synonym:dialogflow$/;"	s
+synonym:dialogflow	test/test_nlu.md	/^## synonym:dialogflow$/;"	s
+synonym:distance	copy/data/nlu/nlu.md	/^## synonym:distance$/;"	s
+synonym:distance	test/test_nlu.md	/^## synonym:distance$/;"	s
+synonym:duration	test/test_nlu.md	/^## synonym:duration$/;"	s
+synonym:english	copy/data/nlu/nlu.md	/^## synonym:english$/;"	s
+synonym:entity recognition	copy/data/nlu/nlu.md	/^## synonym:entity recognition$/;"	s
+synonym:entity recognition	test/test_nlu.md	/^## synonym:entity recognition$/;"	s
+synonym:full stack developer	copy/data/nlu/nlu.md	/^## synonym:full stack developer$/;"	s
+synonym:helvetia	copy/data/nlu/nlu.md	/^## synonym:helvetia$/;"	s
+synonym:intent classification	copy/data/nlu/nlu.md	/^## synonym:intent classification$/;"	s
+synonym:intent classification	test/test_nlu.md	/^## synonym:intent classification$/;"	s
+synonym:italian	copy/data/nlu/nlu.md	/^## synonym:italian$/;"	s
+synonym:luis	copy/data/nlu/nlu.md	/^## synonym:luis$/;"	s
+synonym:luis	test/test_nlu.md	/^## synonym:luis$/;"	s
+synonym:money	copy/data/nlu/nlu.md	/^## synonym:money$/;"	s
+synonym:money	test/test_nlu.md	/^## synonym:money$/;"	s
+synonym:name	copy/data/nlu/nlu.md	/^## synonym:name$/;"	s
+synonym:name	test/test_nlu.md	/^## synonym:name$/;"	s
+synonym:nlu	copy/data/nlu/nlu.md	/^## synonym:nlu$/;"	s
+synonym:nlu	test/test_nlu.md	/^## synonym:nlu$/;"	s
+synonym:organisation	copy/data/nlu/nlu.md	/^## synonym:organisation$/;"	s
+synonym:organisation	test/test_nlu.md	/^## synonym:organisation$/;"	s
+synonym:place	test/test_nlu.md	/^## synonym:place$/;"	s
+synonym:rasa	copy/data/nlu/nlu.md	/^## synonym:rasa$/;"	s
+synonym:rasa	test/test_nlu.md	/^## synonym:rasa$/;"	s
+synonym:stack	copy/data/nlu/nlu.md	/^## synonym:stack$/;"	s
+synonym:vegetarian	rasa/data/examples/rasa/demo-rasa-multi-intent.md	/^## synonym:vegetarian$/;"	s
+synonym:vegetarian	rasa/data/examples/rasa/demo-rasa.md	/^## synonym:vegetarian$/;"	s
+synonym:vegetarian	rasa/data/test/duplicate_intents_markdown/demo-rasa-intents-2.md	/^## synonym:vegetarian$/;"	s
+synonym:vegetarian	rasa/data/test/json_converted_to_md.md	/^## synonym:vegetarian$/;"	s
+synonym:vegetarian	rasa/data/test/multiple_files_markdown/demo-rasa-restaurant_search.md	/^## synonym:vegetarian$/;"	s
+synonym:wit.ai	copy/data/nlu/nlu.md	/^## synonym:wit.ai$/;"	s
+synonym:x	copy/data/nlu/nlu.md	/^## synonym:x$/;"	s
+synonym:x	test/test_nlu.md	/^## synonym:x$/;"	s
+technical_question - docs_found - affirm	copy/data/core/faqs.md	/^## technical_question - docs_found - affirm$/;"	s
+technical_question - docs_found - affirm	test/test_stories.md	/^## technical_question - docs_found - affirm$/;"	s
+technical_question - docs_found - deny	copy/data/core/faqs.md	/^## technical_question - docs_found - deny$/;"	s
+technical_question - docs_found - deny	test/test_stories.md	/^## technical_question - docs_found - deny$/;"	s
+technical_question - no docs_found	copy/data/core/faqs.md	/^## technical_question - no docs_found$/;"	s
+technical_question - no docs_found	test/test_stories.md	/^## technical_question - no docs_found$/;"	s
+testimonials	templates/08_travel_agency_bot/src/data/stories.md	/^## testimonials$/;"	s
+thanks	copy/data/core/stories.md	/^## thanks$/;"	s
+tips1	templates/08_travel_agency_bot/src/data/stories.md	/^## tips1$/;"	s
+tips2	templates/08_travel_agency_bot/src/data/stories.md	/^## tips2$/;"	s
+tourdetails_natural	templates/08_travel_agency_bot/src/data/stories.md	/^## tourdetails_natural$/;"	s
+tourdetails_subwing	templates/08_travel_agency_bot/src/data/stories.md	/^## tourdetails_subwing$/;"	s
+tourdetails_zipline	templates/08_travel_agency_bot/src/data/stories.md	/^## tourdetails_zipline$/;"	s
+unhappy path	examples/formbot/data/stories.md	/^## unhappy path$/;"	s
+unhappy path	examples/formbot/tests/end-to-end-stories.md	/^## unhappy path$/;"	s
+unhappy path	rasa/data/test_evaluations/form-end-to-end-stories.md	/^## unhappy path$/;"	s
+unhappy path	rasa/examples/formbot/data/stories.md	/^## unhappy path$/;"	s
+unhappy path	rasa/examples/formbot/tests/end-to-end-stories.md	/^## unhappy path$/;"	s
+update ticket	templates/10_freshdesk_customer_support_bot/src/data/stories.md	/^## update ticket$/;"	s
+user no name	rasa/data/test_stories/stories_with_cycle.md	/^## user no name$/;"	s
+user sends name	rasa/data/test_stories/stories_with_cycle.md	/^## user sends name$/;"	s
+utter default	rasa/data/test_stories/stories_with_cycle.md	/^## utter default$/;"	s
+utter greet	rasa/data/test_stories/stories_with_cycle.md	/^## utter greet$/;"	s
+venue_search	examples/concertbot/data/stories.md	/^## venue_search$/;"	s
+venue_search	rasa/examples/concertbot/data/stories.md	/^## venue_search$/;"	s
+venues_batmanroom1	templates/05_event_bot/src/data/stories.md	/^## venues_batmanroom1$/;"	s
+venues_batmanroom2	templates/05_event_bot/src/data/stories.md	/^## venues_batmanroom2$/;"	s
+venues_heroroom1	templates/05_event_bot/src/data/stories.md	/^## venues_heroroom1$/;"	s
+venues_heroroom2	templates/05_event_bot/src/data/stories.md	/^## venues_heroroom2$/;"	s
+venues_supermanroom1	templates/05_event_bot/src/data/stories.md	/^## venues_supermanroom1$/;"	s
+venues_supermanroom2	templates/05_event_bot/src/data/stories.md	/^## venues_supermanroom2$/;"	s
+very unhappy path	examples/formbot/data/stories.md	/^## very unhappy path$/;"	s
+very unhappy path	rasa/examples/formbot/data/stories.md	/^## very unhappy path$/;"	s
+why does the user want to leave?	rasa/data/test_mixed_yaml_md_stories/stories_part_2.md	/^## why does the user want to leave?$/;"	s
+why does the user want to leave?	rasa/data/test_multifile_stories/stories_part_2.md	/^## why does the user want to leave?$/;"	s
+why does the user want to leave?	rasa/data/test_stories/stories.md	/^## why does the user want to leave?$/;"	s
+why rasa	copy/data/core/stories.md	/^## why rasa$/;"	s
+⚫️ Code Style	README.md	/^## ⚫️ Code Style$/;"	s
+👩‍💻 Overview of the files	README.md	/^## 👩‍💻 Overview of the files$/;"	s
+👷‍ Installation	README.md	/^## 👷‍ Installation$/;"	s
+🤖 To run Sara:	README.md	/^## 🤖 To run Sara:$/;"	s

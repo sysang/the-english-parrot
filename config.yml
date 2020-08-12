@@ -17,16 +17,20 @@ pipeline:
 - name: EntitySynonymMapper
 policies:
 - name: TEDPolicy
-  max_history: 10
+  max_history: 12
   epochs: 20
   batch_size:
   - 64
   - 128
-- max_history: 12
+- max_history: 6
   name: AugmentedMemoizationPolicy
 - name: MappingPolicy
-- name: "FallbackPolicy"
-  nlu_threshold: 0.9
-  ambiguity_threshold: 0.1
-  core_threshold: 0.7
+- name: "RasaCustomPolicies.NLUFallbackPolicy"
+  priority: 6
+  nlu_threshold: 0.85
+  ambiguity_threshold: 0.3
   fallback_action_name: 'action_not_understand_fallback'
+- name: "RasaCustomPolicies.PredictionFallbackPolicy"
+  priority: 4
+  core_threshold: 0.7
+  fallback_action_name: 'action_not_sure_what_to_do_fallback'

@@ -16,7 +16,8 @@ from rasa_sdk.events import (
     ConversationPaused,
     EventType,
     FollowupAction,
-    ActionExecuted
+    ActionExecuted,
+    UserUttered
 )
 
 from actions import config
@@ -39,12 +40,6 @@ class ActionStoreLessonHistory(Action):
     def name(self):
         return 'action_store_lesson_history'
 
-    def _latest_bot_utter(self, events):
-        bot_uters = list(filter(lambda e: e["event"] == "bot", events))
-        length = len(bot_uters)
-
-        return bot_uters[length - 1] if length > 0 else None
-
     def _extract_question_number(self, action_name):
         p = re.compile("_(\d{2})_")
         result = p.findall(action_name)
@@ -58,6 +53,7 @@ class ActionStoreLessonHistory(Action):
         if not question_num:
             return []
 
+        logger.info(tracker.latest_message)
         logger.debug(f"latest utterance action: {latest_action_name}")
         logger.debug(f"latest question number: {question_num}")
 
@@ -66,7 +62,7 @@ class ActionStoreLessonHistory(Action):
             data = []
         data.append(question_num)
 
-        return [SlotSet("lesson_history", data), SlotSet("lesson_progress", question_num)]
+        return [SlotSet('will_return', None), SlotSet("lesson_history", data), SlotSet("lesson_progress", question_num)]
 
 class ActionNotUnderstandFallback(Action):
     def name(self):
@@ -74,7 +70,25 @@ class ActionNotUnderstandFallback(Action):
 
     def run(self, dispatcher, tracker, domain):
 
-        dispatcher.utter_message("Sorry. i can not understand. could you say it again?")
+        dispatcher.utter_message("Sorry. i can not understand. Please help to say it again?")
 
         return []
+
+class ActionNotSureWhatToDoFallback(Action):
+    def name(self):
+        return 'action_not_sure_what_to_do_fallback'
+
+    def _latest_user_utter(self, events):
+        utters = list(filter(lambda e: e["event"] == "user", events))
+        length = len(utters)
+
+        return utters[length - 1] if length > 0 else None
+
+    def run(self, dispatcher, tracker, domain):
+        events = tracker.current_state()['events']
+        latest_user_utter_data = self._latest_user_utter(events)
+
+        user_uttered = UserUttered( text = latest_user_utter_data['text'], parse_data=dict())
+
+        return [SlotSet('will_return', "positive"), UserUtteranceReverted()]
 
