@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "eParrot"
+version = "0.1.0"
+description = "The English Parrot Bot"
+authors = ["Sang Dao <daosysang@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.6,<3.8"
+transformers = "^3.0.2"
+tensorflow_text = "2.1.0rc0"
+
+[tool.poetry.dev-dependencies]
+rasa-sdk = {path = "../rasa-sdk"}
+rasa = {path = "../rasa"}
+rasaslottypes = {path = "../rasa-slot-types"}
+rasacustompolicies = {path = "../rasa-custom-policies"}
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

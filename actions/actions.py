@@ -21,7 +21,7 @@ from rasa_sdk.events import (
 )
 
 from actions import config
-from actions.api.algolia import AlgoliaAPI
+# from actions.api.algolia import AlgoliaAPI
 from actions.utils import text_to_float
 
 logger = logging.getLogger(__name__)
@@ -53,7 +53,6 @@ class ActionStoreLessonHistory(Action):
         if not question_num:
             return []
 
-        logger.info(tracker.latest_message)
         logger.debug(f"latest utterance action: {latest_action_name}")
         logger.debug(f"latest question number: {question_num}")
 
@@ -62,7 +61,7 @@ class ActionStoreLessonHistory(Action):
             data = []
         data.append(question_num)
 
-        return [SlotSet('will_return', None), SlotSet("lesson_history", data), SlotSet("lesson_progress", question_num)]
+        return [SlotSet('will_return', None), SlotSet('confused', None), SlotSet("lesson_history", data), SlotSet("lesson_progress", question_num)]
 
 class ActionNotUnderstandFallback(Action):
     def name(self):
@@ -70,9 +69,7 @@ class ActionNotUnderstandFallback(Action):
 
     def run(self, dispatcher, tracker, domain):
 
-        dispatcher.utter_message("Sorry. i can not understand. Please help to say it again?")
-
-        return []
+        return [SlotSet("confused", "positive"), FollowupAction('utter_can_not_understand')]
 
 class ActionNotSureWhatToDoFallback(Action):
     def name(self):
@@ -88,7 +85,11 @@ class ActionNotSureWhatToDoFallback(Action):
         events = tracker.current_state()['events']
         latest_user_utter_data = self._latest_user_utter(events)
 
-        user_uttered = UserUttered( text = latest_user_utter_data['text'], parse_data=dict())
+        user_uttered = UserUttered(
+                text=latest_user_utter_data['text'],
+                parse_data=latest_user_utter_data['parse_data'],
+                input_channel=latest_user_utter_data['input_channel']
+                )
 
-        return [SlotSet('will_return', "positive"), UserUtteranceReverted()]
+        return [SlotSet('will_return', "positive"), user_uttered]
 
