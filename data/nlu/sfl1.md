@@ -58,9 +58,12 @@
 ## intent:affirmative__nominalgroup
 - [the girl](nominalgrp)
 - [a girl](nominalgrp)
+- [a girl](nominalgrp) on bicycle
 - [girl](nominalgrp)
 - [a beautiful girl](nominalgrp)
+- [a beautiful girl](nominalgrp) on bicycle
 - [a new car](nominalgrp)
+- [a blue car](nominalgrp)
 - [a car](nominalgrp)
 
 ## intent:affirmative__adjectivegroup

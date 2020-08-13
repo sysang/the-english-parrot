@@ -48,10 +48,12 @@ class ActionStoreLessonHistory(Action):
 
     def run(self, dispatcher, tracker, domain):
         latest_action_name = tracker.latest_action_name
-        question_num = int(self._extract_question_number(latest_action_name))
 
+        question_num = self._extract_question_number(latest_action_name)
         if not question_num:
             return []
+
+        question_num = int(self._extract_question_number(latest_action_name))
 
         logger.debug(f"latest utterance action: {latest_action_name}")
         logger.debug(f"latest question number: {question_num}")
@@ -61,7 +63,7 @@ class ActionStoreLessonHistory(Action):
             data = []
         data.append(question_num)
 
-        return [SlotSet('will_return', None), SlotSet('confused', None), SlotSet("lesson_history", data), SlotSet("lesson_progress", question_num)]
+        return [SlotSet('nlu_confused', None), SlotSet('nlu_confident', 'positive'), SlotSet('will_return', None), SlotSet("lesson_history", data), SlotSet("lesson_progress", question_num)]
 
 class ActionNotUnderstandFallback(Action):
     def name(self):
@@ -69,20 +71,19 @@ class ActionNotUnderstandFallback(Action):
 
     def run(self, dispatcher, tracker, domain):
 
-        return [SlotSet("confused", "positive"), FollowupAction('utter_can_not_understand')]
+        return [SlotSet("nlu_confused", "positive"), SlotSet('nlu_confident', None), FollowupAction('utter_can_not_understand')]
 
 class ActionNotSureWhatToDoFallback(Action):
     def name(self):
         return 'action_not_sure_what_to_do_fallback'
 
-    def _latest_user_utter(self, events):
+    def _latest_user_uttered(self, events) -> UserUttered:
         utters = list(filter(lambda e: e["event"] == "user", events))
         length = len(utters)
 
-        return utters[length - 1] if length > 0 else None
+        if length <= 0:
+            return None
 
-    def run(self, dispatcher, tracker, domain):
-        events = tracker.current_state()['events']
         latest_user_utter_data = self._latest_user_utter(events)
 
         user_uttered = UserUttered(
@@ -91,5 +92,10 @@ class ActionNotSureWhatToDoFallback(Action):
                 input_channel=latest_user_utter_data['input_channel']
                 )
 
-        return [SlotSet('will_return', "positive"), user_uttered]
+        return user_uttered
+
+    def run(self, dispatcher, tracker, domain):
+        # events = tracker.current_state()['events']
+
+        return [FollowupAction('utter_return_to_previous_question'), SlotSet('will_return', "positive")]
 

@@ -1,7 +1,11 @@
 help:
 	@echo "make"
-	@echo "    clean"
-	@echo "        Remove Python/build artifacts."
+	@echo "    action"
+	@echo "        Run action server"
+	@echo "    training"
+	@echo "        Training"
+	@echo "    shell"
+	@echo "        Start chatbot and shell I/O"
 	@echo "    formatter"
 	@echo "        Apply black formatting to code."
 	@echo "    lint"
@@ -9,14 +13,14 @@ help:
 	@echo "    types"
 	@echo "        Check for type errors using pytype."
 
-clean:
-	find . -name '*.pyc' -exec rm -f {} +
-	find . -name '*.pyo' -exec rm -f {} +
-	find . -name '*~' -exec rm -f  {} +
-	rm -rf build/
-	rm -rf .pytype/
-	rm -rf dist/
-	rm -rf docs/_build
+action:
+	bin/rasa run actions --actions actions
+
+training:
+	bin/rasa train -vv
+
+shell:
+	bin/rasa shell -vv -m $(model)
 
 formatter:
 	black actions
