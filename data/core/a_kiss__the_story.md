@@ -42,7 +42,7 @@
     - action_store_lesson_history
     - slot{"lesson_progress": 2, "nlu_confused": null, "nlu_confident": "positive", "will_return": null}
 
-## Branch 02 - negative__shortanswer
+## Branch 02 - negative__shortanswer{"nlu_confused": null, "nlu_confident": "positive", "will_return": null}
 > check_a_kiss_01_DidCarlosBuyOldCar
 * negative__shortanswer{}
     - utter_a_kiss_02_DidCarlosBuyExpensiveBicycle
@@ -56,9 +56,9 @@
     - action_store_lesson_history
     - slot{"lesson_progress": 3, "nlu_confused": null, "nlu_confident": "positive", "will_return": null}
 
-## Branch 03 - negative__shortanswer
+## Branch 03 - negative__shortanswer{"nlu_confused": null, "nlu_confident": "positive", "will_return": null}
 > check_a_kiss_02_DidCarlosBuyExpensiveBicycle
-* negative__shortanswer{}
+* negative__shortanswer{"nlu_confused": null, "nlu_confident": "positive", "will_return": null}
     - utter_a_kiss_03_HowBigWasCar
     - action_store_lesson_history
     - slot{"lesson_progress": 3, "nlu_confused": null, "nlu_confident": "positive", "will_return": null}
@@ -89,8 +89,8 @@
 * nonexclamation__positive__attributivepr{"carrier": "she", "attributive": "beautiful"} OR affirmative__adjectivegroup{"adjectivegrp": "beautiful", "confused": "positive"}
     - utter_lesson_completed
 
-## Branch 07 - affirmative__shortanswer
+## Branch 07 - affirmative__shortanswer{"nlu_confused": null, "nlu_confident": "positive", "will_return": null}
 > check_a_kiss_06_DidSheLookBeautiful
-* affirmative__shortanswer
+* affirmative__shortanswer{"nlu_confused": null, "nlu_confident": "positive", "will_return": null}
     - utter_lesson_completed
 

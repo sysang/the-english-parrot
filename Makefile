@@ -22,6 +22,9 @@ training:
 shell:
 	bin/rasa shell -vv -m $(model)
 
+run:
+	bin/rasa run -vv -m $(model)
+
 formatter:
 	black actions
 
