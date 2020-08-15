@@ -23,6 +23,7 @@ docker-local
 .pytype/
 pytags
 pylibtags
+pysystags
 rasa
 rasa-sdk
 .ipynb_checkpoints
