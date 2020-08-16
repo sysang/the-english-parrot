@@ -1,0 +1,43 @@
+scenario:
+    -
+        - The English parrot initializes a kiss story
+        # did carlos buy an old car
+        - abcef
+        # Sorry. i can not understand. Please help to say it again?
+        - no
+        # did carlos buy an new bicycle
+        - abcef
+        # Sorry. i can not understand. Please help to say it again?
+        - no
+        # Sorry. i can not understand. Please help to say it again?
+        - abcef
+        # how big was the car
+        - it's huge
+        # what color was the car
+        - abcef
+        # Sorry. i can not understand. Please help to say it again?
+        - it's blue
+        # while driving down the street. what did carlos see
+        - abcef
+        # Sorry. i can not understand. Please help to say it again?
+        - a girl
+        # did the girl beautiful
+        - abcef
+        # Sorry. i can not understand. Please help to say it again?
+        - yes
+        # that's it. You have done a good job
+    -
+        - The English parrot initializes a kiss story
+        # did carlos buy an old car
+        - aabbccdd
+        # did carlos buy an old car
+        - aabbccdd
+        # did carlos buy an old car
+        - aabbccdd
+        # did carlos buy an old car
+        - no
+        # did carlos buy an new bicycle
+        - abcdef
+        # did carlos buy an new bicycle
+        - no
+        # How big was the car

@@ -41,7 +41,7 @@ for scene in scenario:
     print("\n***********************************************\n")
     logger.info("\n***********************************************\n")
     for speech in scene:
-        payload = { 'sender': 'rasa', 'message': speech }
+        payload = { 'sender': 'autotester', 'message': speech }
         r = requests.post(apiurl, data = json.dumps(payload))
         botres = [item['text'] for item in r.json()]
         botres = ''.join(botres)

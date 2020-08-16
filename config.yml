@@ -17,13 +17,11 @@ pipeline:
 - name: EntitySynonymMapper
 policies:
 - name: TEDPolicy
-  max_history: 15
+  max_history: 10
   epochs: 20
   batch_size:
-  - 64
   - 128
-- name: MemoizationPolicy
-  max_history: 15
+  - 256
 - name: MappingPolicy
 - name: "RasaCustomPolicies.NLUFallbackPolicy"
   priority: 6

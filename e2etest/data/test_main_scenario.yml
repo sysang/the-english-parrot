@@ -1,5 +1,4 @@
 scenario:
-
     -
         - The English parrot initializes a kiss story
         # did carlos buy an old car
@@ -15,7 +14,6 @@ scenario:
         # did the girl beautiful
         - yes
         # that's it. You have done a good job
-
     -
         - The English parrot initializes a kiss story
         # did carlos buy an old car

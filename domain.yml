@@ -28,7 +28,7 @@ entities:
 - nominalgrp
 - phenomenon
 - senser
-- lesson_progress
+- a_kiss_progress
 - will_return
 - nlu_confused
 - nlu_confident
@@ -41,7 +41,7 @@ slots:
     initial_value: positive
   lesson_history:
     type: unfeaturized
-  lesson_progress:
+  a_kiss_progress:
     type: RasaSlotTypes.Class.OnehotVector99
   lesson_topic:
     type: categorical
@@ -80,74 +80,105 @@ responses:
 intents:
 - nonexclamation__negative__attributivepr:
     use_entities:
+    - lesson_topic
+    - a_kiss_progress
+    - nlu_confused
+    - nlu_confident
+    - will_return
     - attributivepr
     - attributive
-    - lesson_topic
-    - lesson_progress
+    - a_kiss_progress
     - carrier
 - nonexclamation__positive__materialpr:
     use_entities:
-    - materialpr
     - lesson_topic
+    - a_kiss_progress
+    - nlu_confused
+    - nlu_confident
+    - will_return
+    - materialpr
     - beneficiary
     - goal
     - actor
     - scope
-    - lesson_progress
 - nonexclamation__negative__materialpr:
     use_entities:
-    - materialpr
     - lesson_topic
+    - a_kiss_progress
+    - nlu_confused
+    - nlu_confident
+    - will_return
+    - materialpr
     - beneficiary
     - goal
     - actor
     - scope
-    - lesson_progress
 - nonexclamation__positive__identifyingpr:
     use_entities:
-    - identifier
     - lesson_topic
+    - a_kiss_progress
+    - nlu_confused
+    - nlu_confident
+    - will_return
+    - identifier
     - identifyingpr
-    - lesson_progress
     - identified
 - nonexclamation__negative__identifyingpr:
     use_entities:
-    - identifier
     - lesson_topic
+    - a_kiss_progress
+    - nlu_confused
+    - nlu_confident
+    - will_return
+    - identifier
     - identifyingpr
-    - lesson_progress
     - identified
 - nonexclamation__positive__attributivepr:
     use_entities:
+    - lesson_topic
+    - a_kiss_progress
+    - nlu_confused
+    - nlu_confident
+    - will_return
     - attributivepr
     - attributive
-    - lesson_topic
-    - lesson_progress
     - carrier
 - nonexclamation__positive__mentalpr:
     use_entities:
+    - lesson_topic
+    - a_kiss_progress
+    - nlu_confused
+    - nlu_confident
+    - will_return
     - phenomenon
     - mentalpr
     - senser
-    - lesson_topic
-    - lesson_progress
 - nonexclamation__negative__mentalpr:
     use_entities:
+    - lesson_topic
+    - a_kiss_progress
+    - nlu_confused
+    - nlu_confident
+    - will_return
     - phenomenon
     - mentalpr
     - senser
-    - lesson_topic
-    - lesson_progress
 - affirmative__nominalgroup:
     use_entities:
-    - lesson_progress
-    - nominalgrp
     - lesson_topic
+    - a_kiss_progress
+    - nlu_confused
+    - nlu_confident
+    - will_return
+    - nominalgrp
 - affirmative__adjectivegroup:
     use_entities:
-    - lesson_progress
-    - adjectivegrp
     - lesson_topic
+    - a_kiss_progress
+    - nlu_confused
+    - nlu_confident
+    - will_return
+    - adjectivegrp
 - client_initializes_a_kiss_story
 - negative__shortanswer
 - affirmative__shortanswer

@@ -33,7 +33,7 @@ class ActionInitializeAKissStory(Action):
 
     def run(self, dispatcher, tracker, domain):
 
-        return [SlotSet("lesson_topic", 'a_kiss_story')]
+        return [SlotSet("lesson_topic", 'a_kiss_story'), SlotSet('nlu_confused', None), SlotSet('nlu_confident', 'positive'), SlotSet('will_return', None), SlotSet("lesson_history", []), SlotSet("a_kiss_progress", None)]
 
 class ActionStoreLessonHistory(Action):
 
@@ -63,7 +63,7 @@ class ActionStoreLessonHistory(Action):
             data = []
         data.append(question_num)
 
-        return [SlotSet('nlu_confused', None), SlotSet('nlu_confident', 'positive'), SlotSet('will_return', None), SlotSet("lesson_history", data), SlotSet("lesson_progress", question_num)]
+        return [SlotSet('nlu_confused', None), SlotSet('nlu_confident', 'positive'), SlotSet('will_return', None), SlotSet("lesson_history", data), SlotSet("a_kiss_progress", question_num)]
 
 class ActionNotUnderstandFallback(Action):
     def name(self):

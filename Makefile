@@ -22,11 +22,11 @@ actiond:
 	@ps -ef | awk '/[r]unactionserver\.sh/'
 
 stopactiond:
-	ps -ef | awk '/[r]unactionserver\.sh/{print $$2;}' | xargs echo "-${1}" | sed 's/\s//g' | xargs kill -TERM
+	ps -ef | awk '/[r]unactionserver\.sh/{print $$2;}' | xargs echo "-${1}" | sed 's/\s//g' | xargs kill -9
 	@ps -ef | awk '/[r]unactionserver\.sh/'
 
 restartactiond:
-	ps -ef | awk '/[r]unactionserver\.sh/{print $$2;}' | xargs echo "-${1}" | sed 's/\s//g' | xargs kill -TERM
+	ps -ef | awk '/[r]unactionserver\.sh/{print $$2;}' | xargs echo "-${1}" | sed 's/\s//g' | xargs kill -9
 	@export ts=`/bin/date "+%Y%m%d.%H%M"`
 	setsid ./runactionserver.sh >./actions/logs/`echo $${ts};`.log 2>&1 < /dev/null &
 	@ps -ef | awk '/[r]unactionserver\.sh/'
