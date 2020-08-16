@@ -20,8 +20,10 @@ policies:
   max_history: 10
   epochs: 20
   batch_size:
-  - 128
-  - 256
+  - 32
+  - 64
+- name: AugmentedMemoizationPolicy
+  max_history: 15
 - name: MappingPolicy
 - name: "RasaCustomPolicies.NLUFallbackPolicy"
   priority: 6

@@ -34,6 +34,7 @@
 > check_a_kiss_06_DidSheLookBeautiful
 * nonexclamation__positive__attributivepr{"carrier": "she", "attributive": "beautiful"} OR affirmative__adjectivegroup{"adjectivegrp": "beautiful", "confused": "positive"}
     - utter_lesson_completed
+    - action_restart
 
 ## Branch 02
 > check_a_kiss_01_DidCarlosBuyOldCar
@@ -93,4 +94,5 @@
 > check_a_kiss_06_DidSheLookBeautiful
 * affirmative__shortanswer{"nlu_confused": null, "nlu_confident": "positive", "will_return": null}
     - utter_lesson_completed
+    - action_restart
 

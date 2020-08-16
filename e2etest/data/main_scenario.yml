@@ -6,11 +6,11 @@ scenario:
         # did carlos buy an new bicycle
         - it was a car
         # how big was the car
-        - it's huge
+        - it was huge
         # what color was the car
-        - it's blue
+        - it was blue
         # while driving down the street. what did carlos see
-        - a girl
+        - he saw a girl
         # did the girl beautiful
         - yes
         # that's it. You have done a good job

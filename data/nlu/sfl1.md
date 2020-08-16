@@ -46,14 +46,16 @@
 - [it](carrier) [is not](attributivepr) [yellow](attributive)
 
 ## intent:nonexclamation__positive__mentalpr
-- [he](sensor) [saw](mentalpr) [a girl](phenomenon)
-- [he](sensor) [sees](mentalpr) [a girl](phenomenon)
+- [he](senser) [saw](mentalpr) [a girl](phenomenon)
+- [he](senser) [sees](mentalpr) [a girl](phenomenon)
+- [they](senser) [see](mentalpr) [him](phenomenon)
+- [he](senser) is [listening](mentalpr) [music](phenomenon)
 
 ## intent:nonexclamation__negative__mentalpr
-- [he](sensor) didn't [saw](mentalpr) [a girl](phenomenon)
-- [he](sensor) did not [saw](mentalpr) [a girl](phenomenon)
-- [he](sensor) doesn't [see](mentalpr) [a girl](phenomenon)
-- [he](sensor) does not [see](mentalpr) [a girl](phenomenon)
+- [he](senser) didn't [saw](mentalpr) [a girl](phenomenon)
+- [he](senser) did not [saw](mentalpr) [a girl](phenomenon)
+- [he](senser) doesn't [see](mentalpr) [a girl](phenomenon)
+- [he](senser) does not [see](mentalpr) [a girl](phenomenon)
 
 ## intent:affirmative__nominalgroup
 - [the girl](nominalgrp)
