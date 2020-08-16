@@ -34,20 +34,23 @@ logger.setLevel(logging.INFO)
 
 yaml=YAML(typ="safe", pure=True)
 scripts = yaml.load(scripts)
-inputs = scripts['inputs']
+scenario = scripts['scenario']
 
 apiurl = 'http://127.0.0.1:5005/webhooks/rest/webhook'
-for msg in inputs:
-    payload = { 'sender': 'rasa', 'message': msg }
-    r = requests.post(apiurl, data = json.dumps(payload))
-    botres = [item['text'] for item in r.json()]
-    botres = ''.join(botres)
+for scene in scenario:
+    print("\n***********************************************\n")
+    logger.info("\n***********************************************\n")
+    for speech in scene:
+        payload = { 'sender': 'rasa', 'message': speech }
+        r = requests.post(apiurl, data = json.dumps(payload))
+        botres = [item['text'] for item in r.json()]
+        botres = ''.join(botres)
 
-    print(f"user >  {msg}")
-    print("\n")
-    print(f"bot  :  {botres}")
+        print(f"user >  {speech}")
+        print("\n")
+        print(f"bot  :  {botres}")
 
-    logger.info(f"user >  {msg}")
-    logger.info("\n")
-    logger.info(f"bot  :  {botres}")
+        logger.info(f"user >  {speech}")
+        logger.info("\n")
+        logger.info(f"bot  :  {botres}")
 

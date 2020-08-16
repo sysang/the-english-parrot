@@ -18,7 +18,7 @@ pipeline:
 policies:
 - name: TEDPolicy
   max_history: 15
-  epochs: 10
+  epochs: 20
   batch_size:
   - 64
   - 128

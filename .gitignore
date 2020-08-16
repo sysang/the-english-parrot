@@ -4,6 +4,7 @@ docker-compose.override.yml
 .DS_Store
 *.pyc
 *.log
+
 models
 *.egg-info
 docker-compose.yml
