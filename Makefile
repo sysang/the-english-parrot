@@ -39,7 +39,7 @@ shell:
 
 run:
 	@export ts=`/bin/date "+%Y%m%d.%H%M"`
-	bin/rasa run -vv -m $(model) --log-file=$(model)_run_$(ts).log
+	bin/rasa run -vv --log-file=logs/$(model)_run_$(ts).log -m $(model)
 
 formatter:
 	black actions
