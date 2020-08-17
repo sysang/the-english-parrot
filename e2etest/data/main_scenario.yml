@@ -12,7 +12,7 @@ scenario:
         # while driving down the street. what did carlos see
         - he saw a girl
         # did the girl beautiful
-        - yes
+        - yes she is
         # that's it. You have done a good job
     -
         - The English parrot initializes a kiss story

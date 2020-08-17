@@ -38,7 +38,7 @@ shell:
 	bin/rasa shell -vv -m $(model)
 
 run:
-	export ts=`/bin/date "+%Y%m%d-%H%M"`
+	@export ts=`/bin/date "+%Y%m%d-%H%M"`
 	bin/rasa run -vv --log-file=logs/$(model)_run_`echo $$ts;`.log -m $(model)
 
 formatter:

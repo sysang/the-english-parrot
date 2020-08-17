@@ -23,6 +23,8 @@
 - [it](identified) [was not](identifyingpr) [a bicycle](identifier)
 - [it](identified) [isn't](identifyingpr) [a bicycle](identifier)
 - [it](identified) [is not](identifyingpr) [a bicycle](identifier)
+- [he](identified) [is](identifyingpr) [a teacher](identifier)
+- [it](identified) [is](identifyingpr) [a dog](identifier)
 
 ## intent:nonexclamation__positive__attributivepr
 - [it](carrier) [was](attributivepr) [new](attributive)
@@ -40,6 +42,18 @@
 - [she](carrier) [looks](attributivepr) [beautiful](attributive)
 
 ## intent:nonexclamation__negative__attributivepr
+- [it](carrier) [was not](attributivepr) [new](attributive)
+- [it](carrier) [is not](attributivepr) [new](attributive)
+- [it](carrier) [was not](attributivepr) [huge](attributive)
+- [it](carrier) [is not](attributivepr) [huge](attributive)
+- [it](carrier) [was not](attributivepr) [very big](attributive)
+- [it](carrier) [is not](attributivepr) [very big](attributive)
+- [the car](carrier) [is not](attributivepr) [huge](attributive)
+- [the car](carrier) [is not](attributivepr) [very big](attributive)
+- [it](carrier) [was not](attributivepr) [blue](attributive)
+- [it](carrier) [is not](attributivepr) [blue](attributive)
+- [the car](carrier) [was not](attributivepr) [blue](attributive)
+- [she](carrier) does not [look](attributivepr) [beautiful](attributive)
 - [it](carrier) [wasn't](attributivepr) [yellow](attributive)
 - [it](carrier) [was not](attributivepr) [yellow](attributive)
 - [it](carrier) [isn't](attributivepr) [yellow](attributive)
@@ -50,12 +64,15 @@
 - [he](senser) [sees](mentalpr) [a girl](phenomenon)
 - [they](senser) [see](mentalpr) [him](phenomenon)
 - [he](senser) is [listening](mentalpr) [music](phenomenon)
+- [he](senser) [listened](mentalpr) [music](phenomenon)
+- [they](senser) are [watching](mentalpr) [television](phenomenon)
 
 ## intent:nonexclamation__negative__mentalpr
 - [he](senser) didn't [saw](mentalpr) [a girl](phenomenon)
 - [he](senser) did not [saw](mentalpr) [a girl](phenomenon)
 - [he](senser) doesn't [see](mentalpr) [a girl](phenomenon)
 - [he](senser) does not [see](mentalpr) [a girl](phenomenon)
+- [she](senser) have not [watched](mentalpr) [that show](phenomenon)
 
 ## intent:affirmative__nominalgroup
 - [the girl](nominalgrp)

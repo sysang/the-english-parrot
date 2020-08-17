@@ -4,6 +4,7 @@ import json
 import logging
 import argparse
 from datetime import datetime
+import time
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--model', required=True)
@@ -42,6 +43,7 @@ for scene in scenario:
     logger.info("\n***********************************************\n")
     for speech in scene:
         payload = { 'sender': 'autotester', 'message': speech }
+        time.sleep(0.3)
         r = requests.post(apiurl, data = json.dumps(payload))
         botres = [item['text'] for item in r.json()]
         botres = ''.join(botres)

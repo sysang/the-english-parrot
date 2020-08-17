@@ -18,19 +18,21 @@ pipeline:
 policies:
 - name: TEDPolicy
   max_history: 10
-  epochs: 20
+  epochs: 5
   batch_size:
   - 32
   - 64
+  number_of_transformer_layers: 2
+  transformer_size: 256
 - name: AugmentedMemoizationPolicy
-  max_history: 15
+  max_history: 10
 - name: MappingPolicy
 - name: "RasaCustomPolicies.NLUFallbackPolicy"
   priority: 6
-  nlu_threshold: 0.85
+  nlu_threshold: 0.5
   ambiguity_threshold: 0.3
   fallback_action_name: 'action_not_understand_fallback'
 - name: "RasaCustomPolicies.PredictionFallbackPolicy"
   priority: 4
-  core_threshold: 0.3
+  core_threshold: 0.32
   fallback_action_name: 'action_not_sure_what_to_do_fallback'
