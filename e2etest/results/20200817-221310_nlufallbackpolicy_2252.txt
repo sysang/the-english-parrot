@@ -1,0 +1,126 @@
+
+***********************************************
+
+user >  The English parrot initializes a kiss story
+
+
+bot  :  in this lesson i will ask many questions. you must answer every question. okay. let's start. a kiss...did carlos buy an old car
+user >  abcef
+
+
+bot  :  Sorry. i can not understand. Please help to say it again?
+user >  no
+
+
+bot  :  did carlos buy an expensive bicycle
+user >  abcef
+
+
+bot  :  Sorry. i can not understand. Please help to say it again?
+user >  no
+
+
+bot  :  how big is the car
+user >  abcef
+
+
+bot  :  Sorry. i can not understand. Please help to say it again?
+user >  it's huge
+
+
+bot  :  what color was the car
+user >  abcef
+
+
+bot  :  Sorry. i can not understand. Please help to say it again?
+user >  it's blue
+
+
+bot  :  while driving down the street. what did he see
+user >  abcef
+
+
+bot  :  Sorry. i can not understand. Please help to say it again?
+user >  a girl
+
+
+bot  :  did she look beautiful
+user >  abcef
+
+
+bot  :  Sorry. i can not understand. Please help to say it again?
+user >  yes
+
+
+bot  :  That's it. You did a very good job.
+
+***********************************************
+
+user >  The English parrot initializes a kiss story
+
+
+bot  :  in this lesson i will ask many questions. you must answer every question. okay. let's start. a kiss...did carlos buy an old car
+user >  aabbccdd
+
+
+bot  :  Sorry. i can not understand. Please help to say it again?
+user >  aabbccdd
+
+
+bot  :  Sorry. i can not understand. Please help to say it again?
+user >  aabbccdd
+
+
+bot  :  Sorry. i can not understand. Please help to say it again?
+user >  no
+
+
+bot  :  did carlos buy an expensive bicycle
+user >  abcdef
+
+
+bot  :  Sorry. i can not understand. Please help to say it again?
+user >  no
+
+
+bot  :  how big is the car
+user >  it's huge
+
+
+bot  :  what color was the car
+user >  it's blue
+
+
+bot  :  while driving down the street. what did he see
+user >  aabbccdd
+
+
+bot  :  Sorry. i can not understand. Please help to say it again?
+user >  abcdef
+
+
+bot  :  Sorry. i can not understand. Please help to say it again?
+user >  abcdef
+
+
+bot  :  Sorry. i can not understand. Please help to say it again?
+user >  a girl
+
+
+bot  :  did she look beautiful
+user >  aabbccdd
+
+
+bot  :  Sorry. i can not understand. Please help to say it again?
+user >  abcdef
+
+
+bot  :  Sorry. i can not understand. Please help to say it again?
+user >  abcdef
+
+
+bot  :  Sorry. i can not understand. Please help to say it again?
+user >  yes
+
+
+bot  :  That's it. You did a very good job.
