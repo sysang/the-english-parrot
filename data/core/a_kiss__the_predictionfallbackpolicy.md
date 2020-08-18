@@ -4,7 +4,7 @@
     - followup{"name": "utter_return_to_previous_question"}
     - utter_return_to_previous_question
     - utter_a_kiss_01_DidCarlosBuyOldCar
-    - action_store_lesson_history
+    - action_store_lesson_history__a_kiss
     - slot{"a_kiss_progress": 1, "nlu_confused": null, "nlu_confident": "positive", "will_return": null}
 > check_a_kiss_01_DidCarlosBuyOldCar
 
@@ -14,7 +14,7 @@
     - followup{"name": "utter_return_to_previous_question"}
     - utter_return_to_previous_question
     - utter_a_kiss_02_DidCarlosBuyExpensiveBicycle
-    - action_store_lesson_history
+    - action_store_lesson_history__a_kiss
     - slot{"a_kiss_progress": 2, "nlu_confused": null, "nlu_confident": "positive", "will_return": null}
 > check_a_kiss_02_DidCarlosBuyExpensiveBicycle
 
@@ -24,7 +24,7 @@
     - followup{"name": "utter_return_to_previous_question"}
     - utter_return_to_previous_question
     - utter_a_kiss_03_HowBigWasCar
-    - action_store_lesson_history
+    - action_store_lesson_history__a_kiss
     - slot{"a_kiss_progress": 3, "nlu_confused": null, "nlu_confident": "positive", "will_return": null}
 > check_a_kiss_03_HowBigWasCar
 
@@ -34,7 +34,7 @@
     - followup{"name": "utter_return_to_previous_question"}
     - utter_return_to_previous_question
     - utter_a_kiss_04_WhatColorWasCar
-    - action_store_lesson_history
+    - action_store_lesson_history__a_kiss
     - slot{"a_kiss_progress": 4, "nlu_confused": null, "nlu_confident": "positive", "will_return": null}
 > check_a_kiss_04_WhatColorWasCar
 
@@ -44,7 +44,7 @@
     - followup{"name": "utter_return_to_previous_question"}
     - utter_return_to_previous_question
     - utter_a_kiss_05_WhileDrivingDownWhatDidHeSee
-    - action_store_lesson_history
+    - action_store_lesson_history__a_kiss
     - slot{"a_kiss_progress": 5, "nlu_confused": null, "nlu_confident": "positive", "will_return": null}
 > check_a_kiss_05_WhileDrivingDownWhatDidHeSee
 
@@ -54,6 +54,6 @@
     - followup{"name": "utter_return_to_previous_question"}
     - utter_return_to_previous_question
     - utter_a_kiss_06_DidSheLookBeautiful
-    - action_store_lesson_history
+    - action_store_lesson_history__a_kiss
     - slot{"a_kiss_progress": 6, "nlu_confused": null, "nlu_confident": "positive", "will_return": null}
 > check_a_kiss_06_DidSheLookBeautiful

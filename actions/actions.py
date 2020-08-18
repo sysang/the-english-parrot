@@ -35,10 +35,10 @@ class ActionInitializeAKissStory(Action):
 
         return [SlotSet("lesson_topic", 'a_kiss_story'), SlotSet('nlu_confused', None), SlotSet('nlu_confident', 'positive'), SlotSet('will_return', None), SlotSet("lesson_history", []), SlotSet("a_kiss_progress", None)]
 
-class ActionStoreLessonHistory(Action):
+class ActionStoreLessonHistory__a_kiss(Action):
 
     def name(self):
-        return 'action_store_lesson_history'
+        return 'action_store_lesson_history__a_kiss'
 
     def _extract_question_number(self, action_name):
         p = re.compile("_(\d{2})_")
@@ -107,3 +107,33 @@ class ActionInitializeChangedStory(Action):
     def run(self, dispatcher, tracker, domain):
 
         return [SlotSet("lesson_topic", 'changed_story'), SlotSet('nlu_confused', None), SlotSet('nlu_confident', 'positive'), SlotSet('will_return', None), SlotSet("lesson_history", []), SlotSet("changed_progress", None)]
+
+class ActionStoreLessonHistory__changed(Action):
+
+    def name(self):
+        return 'action_store_lesson_history__changed'
+
+    def _extract_question_number(self, action_name):
+        p = re.compile("_(\d{2})_")
+        result = p.findall(action_name)
+
+        return int(result[0]) if len(result) > 0 else None
+
+    def run(self, dispatcher, tracker, domain):
+        latest_action_name = tracker.latest_action_name
+
+        question_num = self._extract_question_number(latest_action_name)
+        if not question_num:
+            return []
+
+        question_num = int(self._extract_question_number(latest_action_name))
+
+        logger.debug(f"latest utterance action: {latest_action_name}")
+        logger.debug(f"latest question number: {question_num}")
+
+        data = tracker.get_slot("lesson_history")
+        if not data:
+            data = []
+        data.append(question_num)
+
+        return [SlotSet('nlu_confused', None), SlotSet('nlu_confident', 'positive'), SlotSet('will_return', None), SlotSet("lesson_history", data), SlotSet("changed_progress", question_num)]
