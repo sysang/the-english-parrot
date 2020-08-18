@@ -4,34 +4,43 @@ session_config:
   session_expiration_time: 480
 
 actions:
-- action_initialize_a_kiss_story
 - action_not_sure_what_to_do_fallback
 - action_not_understand_fallback
 - action_store_lesson_history
-- utter_a_kiss_01_DidCarlosBuyOldCar
-- utter_can_not_understand
-- utter_return_to_previous_question
-- utter_start_a_kiss_lesson
+- action_initialize_a_kiss_story
+- action_initialize_changed_story
 
 entities:
+- materialpr
 - actor
-- adjectivegrp
-- attributive
+- goal
+- scope
+- beneficiary
 - attributivepr
 - carrier
-- goal
+- attribute
+- identifyingpr
 - identified
 - identifier
-- identifyingpr
-- materialpr
 - mentalpr
-- nominalgrp
-- phenomenon
 - senser
-- a_kiss_progress
+- phenomenon
+- behaviouralpr
+- behaver
+- verbalpr
+- sayer
+- reciver
+- verbiage
+- existantialpr
+- existent
+- nominalgrp
+- adjectivegrp
+- prepositionallocation
 - will_return
 - nlu_confused
 - nlu_confident
+- a_kiss_progress
+- changed_progress
 
 slots:
   nlu_confused:
@@ -39,43 +48,54 @@ slots:
   nlu_confident:
     type: text
     initial_value: positive
+  will_return:
+    type: text
   lesson_history:
     type: unfeaturized
-  a_kiss_progress:
-    type: RasaSlotTypes.Class.OnehotVector99
   lesson_topic:
     type: categorical
     values:
     - a_kiss_story
-  will_return:
-    type: categorical
-    values:
-    - positive
-    - negative
+  a_kiss_progress:
+    type: RasaSlotTypes.Class.OnehotVector99
+  changed_progress:
+    type: RasaSlotTypes.Class.OnehotVector99
 
 responses:
-  utter_a_kiss_01_DidCarlosBuyOldCar:
-  - text: did carlos buy an old car
-  utter_a_kiss_02_DidCarlosBuyExpensiveBicycle:
-  - text: did carlos buy an expensive bicycle
-  utter_a_kiss_03_HowBigWasCar:
-  - text: how big is the car
-  utter_a_kiss_04_WhatColorWasCar:
-  - text: what color was the car
-  utter_a_kiss_05_WhileDrivingDownWhatDidHeSee:
-  - text: while driving down the street. what did he see
-  utter_a_kiss_06_DidSheLookBeautiful:
-  - text: did she look beautiful
   utter_can_not_understand:
-  - text: Sorry. i can not understand. Please help to say it again?
-  utter_lesson_completed:
-  - text: That's it. You did a very good job.
+  - text: "Sorry. i can not understand. Please help to say it again?"
   utter_return_to_previous_question:
-  - text: That is quite embarrassing because I'm getting lost. Let's go back to previous
-      question.
+  - text: "That is quite embarrassing because I'm getting lost. Let's go back to previous question."
+  utter_lesson_completed:
+  - text: "That's it. You did a very good job."
   utter_start_a_kiss_lesson:
-  - text: in this lesson i will ask many questions. you must answer every question.
-      okay. let's start. a kiss...
+  - text: "in this lesson i will ask many questions. you must answer every question.  okay. let's start the story. a kiss..."
+  utter_a_kiss_01_DidCarlosBuyOldCar:
+  - text: "did carlos buy an old car"
+  utter_a_kiss_02_DidCarlosBuyExpensiveBicycle:
+  - text: "did carlos buy an expensive bicycle"
+  utter_a_kiss_03_HowBigWasCar:
+  - text: "how big is the car"
+  utter_a_kiss_04_WhatColorWasCar:
+  - text: "what color was the car"
+  utter_a_kiss_05_WhileDrivingDownWhatDidHeSee:
+  - text: "while driving down the street. what did he see"
+  utter_a_kiss_06_DidSheLookBeautiful:
+  - text: "did she look beautiful"
+  utter_start_a_changed_lesson:
+  - text: "in this lesson i will ask many questions. you must answer every question.  okay. let's start the story. changed..."
+  utter_changed_01_WhereDidSheLive:
+  - text: "where did she live"
+  utter_changed_02_DidGracHaveProblem:
+  - text: "did grace have a problem"
+  utter_changed_03_DidSheHaveProblemHerChildren:
+  - text: "did she have a problem with her children"
+  utter_changed_04_DidSheHaveProblemHerMom:
+  - text: "did she have a problem with her mom"
+  utter_changed_05_DidSheHaveProblemHerHusband:
+  - text: "did she have a problem with her husband"
+  utter_changed_06_WhichProblemDidSheHaveHerHusband:
+  - text: "which problem did she have with her husband"
 
 intents:
 - nonexclamation__negative__attributivepr:
@@ -179,7 +199,16 @@ intents:
     - nlu_confident
     - will_return
     - adjectivegrp
-- client_initializes_a_kiss_story
+- affirmative__prepositionalphrase__location:
+    use_entities:
+    - lesson_topic
+    - a_kiss_progress
+    - nlu_confused
+    - nlu_confident
+    - will_return
+    - prepositionallocation
 - negative__shortanswer
 - affirmative__shortanswer
+- client_initializes_a_kiss_story
+- client_initializes_changed_story
 

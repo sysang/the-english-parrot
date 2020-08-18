@@ -99,3 +99,11 @@ class ActionNotSureWhatToDoFallback(Action):
 
         return [FollowupAction('utter_return_to_previous_question'), SlotSet('will_return', "positive")]
 
+class ActionInitializeChangedStory(Action):
+
+    def name(self):
+        return 'action_initialize_changed_story'
+
+    def run(self, dispatcher, tracker, domain):
+
+        return [SlotSet("lesson_topic", 'changed_story'), SlotSet('nlu_confused', None), SlotSet('nlu_confident', 'positive'), SlotSet('will_return', None), SlotSet("lesson_history", []), SlotSet("changed_progress", None)]

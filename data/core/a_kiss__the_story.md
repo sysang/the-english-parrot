@@ -17,12 +17,12 @@
     - action_store_lesson_history
     - slot{"a_kiss_progress": 3, "nlu_confused": null, "nlu_confident": "positive", "will_return": null}
 > check_a_kiss_03_HowBigWasCar
-* nonexclamation__positive__attributivepr{"a_kiss_progress": 3, "nlu_confident": "positive", "carrier": "it","attributive": "huge"} OR affirmative__adjectivegroup{"a_kiss_progress": 3, "nlu_confident": "positive", "adjectivegrp": "huge", "confused": "positive"}
+* nonexclamation__positive__attributivepr{"a_kiss_progress": 3, "nlu_confident": "positive", "carrier": "it","attribute": "huge"} OR affirmative__adjectivegroup{"a_kiss_progress": 3, "nlu_confident": "positive", "adjectivegrp": "huge", "confused": "positive"}
     - utter_a_kiss_04_WhatColorWasCar
     - action_store_lesson_history
     - slot{"a_kiss_progress": 4, "nlu_confused": null, "nlu_confident": "positive", "will_return": null}
 > check_a_kiss_04_WhatColorWasCar
-* nonexclamation__positive__attributivepr{"a_kiss_progress": 4, "nlu_confident": "positive", "carrier": "it", "attributive": "blue"} OR affirmative__nominalgroup{"a_kiss_progress": 4, "nlu_confident": "positive", "adjectivegrp": "blue", "confused": "positive"}
+* nonexclamation__positive__attributivepr{"a_kiss_progress": 4, "nlu_confident": "positive", "carrier": "it", "attribute": "blue"} OR affirmative__nominalgroup{"a_kiss_progress": 4, "nlu_confident": "positive", "adjectivegrp": "blue", "confused": "positive"}
     - utter_a_kiss_05_WhileDrivingDownWhatDidHeSee
     - action_store_lesson_history
     - slot{"a_kiss_progress": 5, "nlu_confused": null, "nlu_confident": "positive", "will_return": null}
@@ -32,7 +32,7 @@
     - action_store_lesson_history
     - slot{"a_kiss_progress": 6, "nlu_confused": null, "nlu_confident": "positive", "will_return": null}
 > check_a_kiss_06_DidSheLookBeautiful
-* nonexclamation__positive__attributivepr{"a_kiss_progress": 6, "nlu_confident": "positive", "carrier": "she", "attributive": "beautiful"} OR affirmative__adjectivegroup{"a_kiss_progress": 6, "nlu_confident": "positive", "adjectivegrp": "beautiful", "confused": "positive"}
+* nonexclamation__positive__attributivepr{"a_kiss_progress": 6, "nlu_confident": "positive", "carrier": "she", "attribute": "beautiful"} OR affirmative__adjectivegroup{"a_kiss_progress": 6, "nlu_confident": "positive", "adjectivegrp": "beautiful", "confused": "positive"}
     - utter_lesson_completed
     - action_restart
 
@@ -66,14 +66,14 @@
 
 ## Branch 04
 > check_a_kiss_03_HowBigWasCar
-* nonexclamation__positive__attributivepr{"a_kiss_progress": 3, "nlu_confident": "positive", "carrier": "it","attributive": "huge"} OR affirmative__adjectivegroup{"a_kiss_progress": 3, "nlu_confident": "positive", "adjectivegrp": "huge", "confused": "positive"}
+* nonexclamation__positive__attributivepr{"a_kiss_progress": 3, "nlu_confident": "positive", "carrier": "it","attribute": "huge"} OR affirmative__adjectivegroup{"a_kiss_progress": 3, "nlu_confident": "positive", "adjectivegrp": "huge", "confused": "positive"}
     - utter_a_kiss_04_WhatColorWasCar
     - action_store_lesson_history
     - slot{"a_kiss_progress": 4, "nlu_confused": null, "nlu_confident": "positive", "will_return": null}
 
 ## Branch 05
 > check_a_kiss_04_WhatColorWasCar
-* nonexclamation__positive__attributivepr{"a_kiss_progress": 4, "nlu_confident": "positive", "carrier": "it", "attributive": "blue"} OR affirmative__nominalgroup{"a_kiss_progress": 4, "nlu_confident": "positive", "adjectivegrp": "blue", "confused": "positive"}
+* nonexclamation__positive__attributivepr{"a_kiss_progress": 4, "nlu_confident": "positive", "carrier": "it", "attribute": "blue"} OR affirmative__nominalgroup{"a_kiss_progress": 4, "nlu_confident": "positive", "adjectivegrp": "blue", "confused": "positive"}
     - utter_a_kiss_05_WhileDrivingDownWhatDidHeSee
     - action_store_lesson_history
     - slot{"a_kiss_progress": 5, "nlu_confused": null, "nlu_confident": "positive", "will_return": null}
@@ -87,7 +87,7 @@
 
 ## Branch 07
 > check_a_kiss_06_DidSheLookBeautiful
-* nonexclamation__positive__attributivepr{"a_kiss_progress": 6, "nlu_confident": "positive", "carrier": "she", "attributive": "beautiful"} OR affirmative__adjectivegroup{"a_kiss_progress": 6, "nlu_confident": "positive", "adjectivegrp": "beautiful", "confused": "positive"}
+* nonexclamation__positive__attributivepr{"a_kiss_progress": 6, "nlu_confident": "positive", "carrier": "she", "attribute": "beautiful"} OR affirmative__adjectivegroup{"a_kiss_progress": 6, "nlu_confident": "positive", "adjectivegrp": "beautiful", "confused": "positive"}
     - utter_lesson_completed
     - action_restart
 
