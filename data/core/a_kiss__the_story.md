@@ -44,32 +44,26 @@
     - utter_a_kiss_01_DidCarlosBuyOldCar
     - action_store_lesson_history__a_kiss
     - slot{"a_kiss_progress": 1, "nlu_confused": null, "nlu_confident": "positive", "will_return": null, "lesson_topic": "a_kiss_story"}
-> check_a_kiss_01_DidCarlosBuyOldCar
 * negative__shortanswer{"a_kiss_progress": 1, "nlu_confident": "positive", "lesson_topic": "a_kiss_story"}
     - utter_a_kiss_02_DidCarlosBuyExpensiveBicycle
     - action_store_lesson_history__a_kiss
     - slot{"a_kiss_progress": 2, "nlu_confused": null, "nlu_confident": "positive", "will_return": null, "lesson_topic": "a_kiss_story"}
-> check_a_kiss_02_DidCarlosBuyExpensiveBicycle
 * negative__shortanswer{"a_kiss_progress": 2, "nlu_confident": "positive", "lesson_topic": "a_kiss_story"}
     - utter_a_kiss_03_HowBigWasCar
     - action_store_lesson_history__a_kiss
     - slot{"a_kiss_progress": 3, "nlu_confused": null, "nlu_confident": "positive", "will_return": null, "lesson_topic": "a_kiss_story"}
-> check_a_kiss_03_HowBigWasCar
 * affirmative__adjectivegroup{"a_kiss_progress": 3, "nlu_confident": "positive", "adjectivegrp": "huge", "confused": "positive", "lesson_topic": "a_kiss_story"}
     - utter_a_kiss_04_WhatColorWasCar
     - action_store_lesson_history__a_kiss
     - slot{"a_kiss_progress": 4, "nlu_confused": null, "nlu_confident": "positive", "will_return": null, "lesson_topic": "a_kiss_story"}
-> check_a_kiss_04_WhatColorWasCar
 * affirmative__nominalgroup{"a_kiss_progress": 4, "nlu_confident": "positive", "adjectivegrp": "blue", "confused": "positive", "lesson_topic": "a_kiss_story"}
     - utter_a_kiss_05_WhileDrivingDownWhatDidHeSee
     - action_store_lesson_history__a_kiss
     - slot{"a_kiss_progress": 5, "nlu_confused": null, "nlu_confident": "positive", "will_return": null, "lesson_topic": "a_kiss_story"}
-> check_a_kiss_05_WhileDrivingDownWhatDidHeSee
 * affirmative__nominalgroup{"a_kiss_progress": 5, "nlu_confident": "positive", "nominalgrp": "a girl", "confused": "positive", "lesson_topic": "a_kiss_story"}
     - utter_a_kiss_06_DidSheLookBeautiful
     - action_store_lesson_history__a_kiss
     - slot{"a_kiss_progress": 6, "nlu_confused": null, "nlu_confident": "positive", "will_return": null, "lesson_topic": "a_kiss_story"}
-> check_a_kiss_06_DidSheLookBeautiful
 * affirmative__shortanswer{"a_kiss_progress": 6, "nlu_confident": "positive", "lesson_topic": "a_kiss_story"}
     - utter_lesson_completed
     - action_restart
