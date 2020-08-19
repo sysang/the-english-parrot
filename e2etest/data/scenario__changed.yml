@@ -1,0 +1,31 @@
+scenario:
+    -
+        - The English parrot initializes a changed story
+        # where did she live
+        - she lived in phoenix
+        # did grace have a problem
+        - she had a problem
+        # did she have a problem with her children
+        - she did not have problem with her children
+        # did she have a problem with her mom
+        - she did not have problem with her mother
+        # did she have a problem with her husband
+        - she had a problem with her husband
+        # which problem did she have with her husband
+        - he did not show her affection
+        # that's it. You have done a good job
+    -
+        - The English parrot initializes a changed story
+        # where did she live
+        - she lived in phoenix
+        # did grace have a problem
+        - yes
+        # did she have a problem with her children
+        - no
+        # did she have a problem with her mom
+        - no
+        # did she have a problem with her husband
+        - yes
+        # which problem did she have with her husband
+        - no affection
+        # that's it. You have done a good job

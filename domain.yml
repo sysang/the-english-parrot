@@ -37,6 +37,7 @@ entities:
 - nominalgrp
 - adjectivegrp
 - prepositionallocation
+- lesson_topic
 - will_return
 - nlu_confused
 - nlu_confident
@@ -57,6 +58,7 @@ slots:
     type: categorical
     values:
     - a_kiss_story
+    - changed_story
   a_kiss_progress:
     type: RasaSlotTypes.Class.OnehotVector99
   changed_progress:

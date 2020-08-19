@@ -17,19 +17,14 @@ action:
 	bin/rasa run actions --actions actions
 
 actiond:
-	@export ts=`/bin/date "+%Y%m%d-%H%M"`
-	setsid ./runactionserver.sh >./actions/logs/`echo $$ts;`.log 2>&1 < /dev/null &
-	@ps -ef | awk '/[r]unactionserver\.sh/'
+	setsid ./actions/runactionserver.sh >./actions/logs/$(shell date "+%Y%m%d-%H%M").log 2>&1 < /dev/null &
+	@ps -ef | awk '/[a]ctions\/runactionserver\.sh/'
 
 stopactiond:
-	ps -ef | awk '/[r]unactionserver\.sh/{print $$2;}' | xargs echo "-${1}" | sed 's/\s//g' | xargs kill -9
-	@ps -ef | awk '/[r]unactionserver\.sh/'
+	ps -ef | awk '/[a]ctions\/runactionserver\.sh/{print $$2;}' | xargs echo "-${1}" | sed 's/\s//g' | xargs kill -9
+	@ps -ef | awk '/[a]ctions\/runactionserver\.sh/'
 
-restartactiond:
-	ps -ef | awk '/[r]unactionserver\.sh/{print $$2;}' | xargs echo "-${1}" | sed 's/\s//g' | xargs kill -9
-	@export ts=`/bin/date "+%Y%m%d.%H%M"`
-	setsid ./runactionserver.sh >./actions/logs/`echo $$ts;`.log 2>&1 < /dev/null &
-	@ps -ef | awk '/[r]unactionserver\.sh/'
+restartactiond: stopactiond actiond
 
 training:
 	bin/rasa train -vv --augmentation 0
@@ -39,7 +34,7 @@ shell:
 
 run:
 	@export ts=`/bin/date "+%Y%m%d-%H%M"`
-	bin/rasa run -vv --log-file=logs/$(model)_run_`echo $$ts;`.log -m $(model)
+	bin/rasa run -vv --log-file=logs/$(model)_run_$(shell date "+%Y%m%d-%H%M").log -m $(model)
 
 formatter:
 	black actions
@@ -51,13 +46,11 @@ lint:
 types:
 	pytype --keep-going actions
 
-timestamp:
-	@export ts=`/bin/date "+%Y%m%d-%H%M"`
-	echo $$ts
+e2etest_main__a_kiss:
+	bin/python e2etest/test.py --model $(model) --scriptfile e2etest/data/scenario__a_kiss.yml
 
-e2etest_main:
-	bin/python e2etest/test.py --model $(model) --scriptfile e2etest/data/main_scenario.yml
+e2etest_fallbackpolicy__a_kiss:
+	bin/python e2etest/test.py --model $(model) --scriptfile e2etest/data/fallbackpolicy__a_kiss.yml
 
-e2etest_nlufallbackpolicy:
-	bin/python e2etest/test.py --model $(model) --scriptfile e2etest/data/nlufallbackpolicy.yml
-
+e2etest_main__changed:
+	bin/python e2etest/test.py --model $(model) --scriptfile e2etest/data/scenario__changed.yml

@@ -12,7 +12,7 @@ pipeline:
   min_ngram: 1
   max_ngram: 4
 - name: DIETClassifier
-  epochs: 100
+  epochs: 80
   ranking_length: 5
 - name: EntitySynonymMapper
 policies:
@@ -34,5 +34,5 @@ policies:
   fallback_action_name: 'action_not_understand_fallback'
 - name: "RasaCustomPolicies.PredictionFallbackPolicy"
   priority: 4
-  core_threshold: 0.32
+  core_threshold: 0.35
   fallback_action_name: 'action_not_sure_what_to_do_fallback'

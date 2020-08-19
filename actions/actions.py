@@ -33,7 +33,7 @@ class ActionInitializeAKissStory(Action):
 
     def run(self, dispatcher, tracker, domain):
 
-        return [SlotSet("lesson_topic", 'a_kiss_story'), SlotSet('nlu_confused', None), SlotSet('nlu_confident', 'positive'), SlotSet('will_return', None), SlotSet("lesson_history", []), SlotSet("a_kiss_progress", None)]
+        return [SlotSet("lesson_topic", 'a_kiss_story'), SlotSet('nlu_confused', None), SlotSet('nlu_confident', 'positive'), SlotSet('will_return', None), SlotSet("lesson_history", []), SlotSet("a_kiss_progress", 0)]
 
 class ActionStoreLessonHistory__a_kiss(Action):
 
@@ -106,7 +106,7 @@ class ActionInitializeChangedStory(Action):
 
     def run(self, dispatcher, tracker, domain):
 
-        return [SlotSet("lesson_topic", 'changed_story'), SlotSet('nlu_confused', None), SlotSet('nlu_confident', 'positive'), SlotSet('will_return', None), SlotSet("lesson_history", []), SlotSet("changed_progress", None)]
+        return [SlotSet("lesson_topic", 'changed_story'), SlotSet('nlu_confused', None), SlotSet('nlu_confident', 'positive'), SlotSet('will_return', None), SlotSet("lesson_history", []), SlotSet("changed_progress", 0)]
 
 class ActionStoreLessonHistory__changed(Action):
 

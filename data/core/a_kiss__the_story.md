@@ -1,99 +1,137 @@
 ## Core thread of scenario
 * client_initializes_a_kiss_story
-    - utter_start_a_kiss_lesson
     - action_initialize_a_kiss_story
-    - slot{"lesson_topic": "a_kiss_story"}
+    - slot{"a_kiss_progress": 0, "nlu_confident": "positive", "lesson_topic": "a_kiss_story"}
+    - utter_start_a_kiss_lesson
     - utter_a_kiss_01_DidCarlosBuyOldCar
     - action_store_lesson_history__a_kiss
-    - slot{"a_kiss_progress": 1, "nlu_confused": null, "nlu_confident": "positive", "will_return": null}
+    - slot{"a_kiss_progress": 1, "nlu_confused": null, "nlu_confident": "positive", "will_return": null, "lesson_topic": "a_kiss_story"}
 > check_a_kiss_01_DidCarlosBuyOldCar
-* nonexclamation__positive__materialpr{"a_kiss_progress": 1, "nlu_confident": "positive", "actor": "he", "materialpr": "bought", "goal": "a new car"} OR nonexclamation__negative__materialpr{"a_kiss_progress": 1, "nlu_confident": "positive", "actor": "he", "materialpr": "buy", "goal": "an old car", "confused": "positive"} OR affirmative__nominalgroup{"a_kiss_progress": 1, "nlu_confident": "positive", "nominalgrp": "a new car", "confused": "positive"}
+* nonexclamation__positive__materialpr{"a_kiss_progress": 1, "nlu_confident": "positive", "actor": "he", "materialpr": "bought", "goal": "a new car", "lesson_topic": "a_kiss_story"} OR nonexclamation__negative__materialpr{"a_kiss_progress": 1, "nlu_confident": "positive", "actor": "he", "materialpr": "buy", "goal": "an old car", "confused": "positive", "lesson_topic": "a_kiss_story"} OR affirmative__nominalgroup{"a_kiss_progress": 1, "nlu_confident": "positive", "nominalgrp": "a new car", "confused": "positive", "lesson_topic": "a_kiss_story"} OR negative__shortanswer{"a_kiss_progress": 1, "nlu_confident": "positive", "lesson_topic": "a_kiss_story"}
     - utter_a_kiss_02_DidCarlosBuyExpensiveBicycle
     - action_store_lesson_history__a_kiss
-    - slot{"a_kiss_progress": 2, "nlu_confused": null, "nlu_confident": "positive", "will_return": null}
+    - slot{"a_kiss_progress": 2, "nlu_confused": null, "nlu_confident": "positive", "will_return": null, "lesson_topic": "a_kiss_story"}
 > check_a_kiss_02_DidCarlosBuyExpensiveBicycle
-* nonexclamation__positive__identifyingpr{"a_kiss_progress": 2, "nlu_confident": "positive", "identified": "it","identifier": "a car"} OR nonexclamation__negative__identifyingpr{"a_kiss_progress": 2, "nlu_confident": "positive", "identified": "it", "identifier": "a bicycle", "confused": "positive"} OR affirmative__nominalgroup{"a_kiss_progress": 2, "nlu_confident": "positive", "nominalgrp": "a car"}
+* nonexclamation__positive__identifyingpr{"a_kiss_progress": 2, "nlu_confident": "positive", "identified": "it","identifier": "a car", "lesson_topic": "a_kiss_story"} OR nonexclamation__negative__identifyingpr{"a_kiss_progress": 2, "nlu_confident": "positive", "identified": "it", "identifier": "a bicycle", "confused": "positive", "lesson_topic": "a_kiss_story"} OR affirmative__nominalgroup{"a_kiss_progress": 2, "nlu_confident": "positive", "nominalgrp": "a car", "lesson_topic": "a_kiss_story"} OR negative__shortanswer{"a_kiss_progress": 2, "nlu_confident": "positive", "lesson_topic": "a_kiss_story"}
     - utter_a_kiss_03_HowBigWasCar
     - action_store_lesson_history__a_kiss
-    - slot{"a_kiss_progress": 3, "nlu_confused": null, "nlu_confident": "positive", "will_return": null}
+    - slot{"a_kiss_progress": 3, "nlu_confused": null, "nlu_confident": "positive", "will_return": null, "lesson_topic": "a_kiss_story"}
 > check_a_kiss_03_HowBigWasCar
-* nonexclamation__positive__attributivepr{"a_kiss_progress": 3, "nlu_confident": "positive", "carrier": "it","attribute": "huge"} OR affirmative__adjectivegroup{"a_kiss_progress": 3, "nlu_confident": "positive", "adjectivegrp": "huge", "confused": "positive"}
+* nonexclamation__positive__attributivepr{"a_kiss_progress": 3, "nlu_confident": "positive", "carrier": "it","attribute": "huge", "lesson_topic": "a_kiss_story"} OR affirmative__adjectivegroup{"a_kiss_progress": 3, "nlu_confident": "positive", "adjectivegrp": "huge", "confused": "positive", "lesson_topic": "a_kiss_story"}
     - utter_a_kiss_04_WhatColorWasCar
     - action_store_lesson_history__a_kiss
-    - slot{"a_kiss_progress": 4, "nlu_confused": null, "nlu_confident": "positive", "will_return": null}
+    - slot{"a_kiss_progress": 4, "nlu_confused": null, "nlu_confident": "positive", "will_return": null, "lesson_topic": "a_kiss_story"}
 > check_a_kiss_04_WhatColorWasCar
-* nonexclamation__positive__attributivepr{"a_kiss_progress": 4, "nlu_confident": "positive", "carrier": "it", "attribute": "blue"} OR affirmative__nominalgroup{"a_kiss_progress": 4, "nlu_confident": "positive", "adjectivegrp": "blue", "confused": "positive"}
+* nonexclamation__positive__attributivepr{"a_kiss_progress": 4, "nlu_confident": "positive", "carrier": "it", "attribute": "blue", "lesson_topic": "a_kiss_story"} OR affirmative__nominalgroup{"a_kiss_progress": 4, "nlu_confident": "positive", "adjectivegrp": "blue", "confused": "positive", "lesson_topic": "a_kiss_story"}
     - utter_a_kiss_05_WhileDrivingDownWhatDidHeSee
     - action_store_lesson_history__a_kiss
-    - slot{"a_kiss_progress": 5, "nlu_confused": null, "nlu_confident": "positive", "will_return": null}
+    - slot{"a_kiss_progress": 5, "nlu_confused": null, "nlu_confident": "positive", "will_return": null, "lesson_topic": "a_kiss_story"}
 > check_a_kiss_05_WhileDrivingDownWhatDidHeSee
-* nonexclamation__positive__mentalpr{"a_kiss_progress": 5, "nlu_confident": "positive", "senser": "he","mentalpr": "saw", "phenomenon": "a girl"} OR affirmative__nominalgroup{"a_kiss_progress": 5, "nlu_confident": "positive", "nominalgrp": "a girl", "confused": "positive"}
+* nonexclamation__positive__mentalpr{"a_kiss_progress": 5, "nlu_confident": "positive", "senser": "he","mentalpr": "saw", "phenomenon": "a girl", "lesson_topic": "a_kiss_story"} OR affirmative__nominalgroup{"a_kiss_progress": 5, "nlu_confident": "positive", "nominalgrp": "a girl", "confused": "positive", "lesson_topic": "a_kiss_story"}
     - utter_a_kiss_06_DidSheLookBeautiful
     - action_store_lesson_history__a_kiss
-    - slot{"a_kiss_progress": 6, "nlu_confused": null, "nlu_confident": "positive", "will_return": null}
+    - slot{"a_kiss_progress": 6, "nlu_confused": null, "nlu_confident": "positive", "will_return": null, "lesson_topic": "a_kiss_story"}
 > check_a_kiss_06_DidSheLookBeautiful
-* nonexclamation__positive__attributivepr{"a_kiss_progress": 6, "nlu_confident": "positive", "carrier": "she", "attribute": "beautiful"} OR affirmative__adjectivegroup{"a_kiss_progress": 6, "nlu_confident": "positive", "adjectivegrp": "beautiful", "confused": "positive"}
+* nonexclamation__positive__attributivepr{"a_kiss_progress": 6, "nlu_confident": "positive", "carrier": "she", "attribute": "beautiful", "lesson_topic": "a_kiss_story"} OR affirmative__adjectivegroup{"a_kiss_progress": 6, "nlu_confident": "positive", "adjectivegrp": "beautiful", "confused": "positive", "lesson_topic": "a_kiss_story"} OR affirmative__shortanswer{"a_kiss_progress": 6, "nlu_confident": "positive", "lesson_topic": "a_kiss_story"}
+    - utter_lesson_completed
+    - action_restart
+
+## Scenario of short answers
+* client_initializes_a_kiss_story
+    - action_initialize_a_kiss_story
+    - slot{"a_kiss_progress": 0, "nlu_confident": "positive", "lesson_topic": "a_kiss_story"}
+    - utter_start_a_kiss_lesson
+    - utter_a_kiss_01_DidCarlosBuyOldCar
+    - action_store_lesson_history__a_kiss
+    - slot{"a_kiss_progress": 1, "nlu_confused": null, "nlu_confident": "positive", "will_return": null, "lesson_topic": "a_kiss_story"}
+> check_a_kiss_01_DidCarlosBuyOldCar
+* negative__shortanswer{"a_kiss_progress": 1, "nlu_confident": "positive", "lesson_topic": "a_kiss_story"}
+    - utter_a_kiss_02_DidCarlosBuyExpensiveBicycle
+    - action_store_lesson_history__a_kiss
+    - slot{"a_kiss_progress": 2, "nlu_confused": null, "nlu_confident": "positive", "will_return": null, "lesson_topic": "a_kiss_story"}
+> check_a_kiss_02_DidCarlosBuyExpensiveBicycle
+* negative__shortanswer{"a_kiss_progress": 2, "nlu_confident": "positive", "lesson_topic": "a_kiss_story"}
+    - utter_a_kiss_03_HowBigWasCar
+    - action_store_lesson_history__a_kiss
+    - slot{"a_kiss_progress": 3, "nlu_confused": null, "nlu_confident": "positive", "will_return": null, "lesson_topic": "a_kiss_story"}
+> check_a_kiss_03_HowBigWasCar
+* affirmative__adjectivegroup{"a_kiss_progress": 3, "nlu_confident": "positive", "adjectivegrp": "huge", "confused": "positive", "lesson_topic": "a_kiss_story"}
+    - utter_a_kiss_04_WhatColorWasCar
+    - action_store_lesson_history__a_kiss
+    - slot{"a_kiss_progress": 4, "nlu_confused": null, "nlu_confident": "positive", "will_return": null, "lesson_topic": "a_kiss_story"}
+> check_a_kiss_04_WhatColorWasCar
+* affirmative__nominalgroup{"a_kiss_progress": 4, "nlu_confident": "positive", "adjectivegrp": "blue", "confused": "positive", "lesson_topic": "a_kiss_story"}
+    - utter_a_kiss_05_WhileDrivingDownWhatDidHeSee
+    - action_store_lesson_history__a_kiss
+    - slot{"a_kiss_progress": 5, "nlu_confused": null, "nlu_confident": "positive", "will_return": null, "lesson_topic": "a_kiss_story"}
+> check_a_kiss_05_WhileDrivingDownWhatDidHeSee
+* affirmative__nominalgroup{"a_kiss_progress": 5, "nlu_confident": "positive", "nominalgrp": "a girl", "confused": "positive", "lesson_topic": "a_kiss_story"}
+    - utter_a_kiss_06_DidSheLookBeautiful
+    - action_store_lesson_history__a_kiss
+    - slot{"a_kiss_progress": 6, "nlu_confused": null, "nlu_confident": "positive", "will_return": null, "lesson_topic": "a_kiss_story"}
+> check_a_kiss_06_DidSheLookBeautiful
+* affirmative__shortanswer{"a_kiss_progress": 6, "nlu_confident": "positive", "lesson_topic": "a_kiss_story"}
     - utter_lesson_completed
     - action_restart
 
 ## Branch 02
 > check_a_kiss_01_DidCarlosBuyOldCar
-* nonexclamation__positive__materialpr{"a_kiss_progress": 1, "nlu_confident": "positive", "actor": "he", "materialpr": "bought", "goal": "a new car"} OR nonexclamation__negative__materialpr{"a_kiss_progress": 1, "nlu_confident": "positive", "actor": "he", "materialpr": "buy", "goal": "an old car", "confused": "positive"} OR affirmative__nominalgroup{"nominalgrp": "a new car", "confused": "positive"}
+* nonexclamation__positive__materialpr{"a_kiss_progress": 1, "nlu_confident": "positive", "actor": "he", "materialpr": "bought", "goal": "a new car", "lesson_topic": "a_kiss_story", "lesson_topic": "a_kiss_story"} OR nonexclamation__negative__materialpr{"a_kiss_progress": 1, "nlu_confident": "positive", "actor": "he", "materialpr": "buy", "goal": "an old car", "confused": "positive", "lesson_topic": "a_kiss_story"} OR affirmative__nominalgroup{"nominalgrp": "a new car", "confused": "positive", "lesson_topic": "a_kiss_story"}
     - utter_a_kiss_02_DidCarlosBuyExpensiveBicycle
     - action_store_lesson_history__a_kiss
-    - slot{"a_kiss_progress": 2, "nlu_confused": null, "nlu_confident": "positive", "will_return": null}
+    - slot{"a_kiss_progress": 2, "nlu_confused": null, "nlu_confident": "positive", "will_return": null, "lesson_topic": "a_kiss_story"}
 
 ## Branch 02 - negative__shortanswer
 > check_a_kiss_01_DidCarlosBuyOldCar
-* negative__shortanswer{"a_kiss_progress": 1, "nlu_confident": "positive"}
+* negative__shortanswer{"a_kiss_progress": 1, "nlu_confident": "positive", "lesson_topic": "a_kiss_story"}
     - utter_a_kiss_02_DidCarlosBuyExpensiveBicycle
     - action_store_lesson_history__a_kiss
-    - slot{"a_kiss_progress": 2, "nlu_confused": null, "nlu_confident": "positive", "will_return": null}
+    - slot{"a_kiss_progress": 2, "nlu_confused": null, "nlu_confident": "positive", "will_return": null, "lesson_topic": "a_kiss_story"}
 
 ## Branch 03
 > check_a_kiss_02_DidCarlosBuyExpensiveBicycle
-* nonexclamation__positive__identifyingpr{"a_kiss_progress": 2, "nlu_confident": "positive", "identified": "it","identifier": "a car"} OR nonexclamation__negative__identifyingpr{"a_kiss_progress": 2, "nlu_confident": "positive", "identified": "it", "identifier": "a bicycle", "confused": "positive"} OR affirmative__nominalgroup{"a_kiss_progress": 2, "nlu_confident": "positive", "nominalgrp": "a car", "nlu_confident": "positive", "confused": "positive"}
+* nonexclamation__positive__identifyingpr{"a_kiss_progress": 2, "nlu_confident": "positive", "identified": "it","identifier": "a car", "lesson_topic": "a_kiss_story"} OR nonexclamation__negative__identifyingpr{"a_kiss_progress": 2, "nlu_confident": "positive", "identified": "it", "identifier": "a bicycle", "confused": "positive", "lesson_topic": "a_kiss_story"} OR affirmative__nominalgroup{"a_kiss_progress": 2, "nlu_confident": "positive", "nominalgrp": "a car", "nlu_confident": "positive", "confused": "positive", "lesson_topic": "a_kiss_story"}
     - utter_a_kiss_03_HowBigWasCar
     - action_store_lesson_history__a_kiss
-    - slot{"a_kiss_progress": 3, "nlu_confused": null, "nlu_confident": "positive", "will_return": null}
+    - slot{"a_kiss_progress": 3, "nlu_confused": null, "nlu_confident": "positive", "will_return": null, "lesson_topic": "a_kiss_story"}
 
 ## Branch 03 - negative__shortanswer
 > check_a_kiss_02_DidCarlosBuyExpensiveBicycle
-* negative__shortanswer{"a_kiss_progress": 2, "nlu_confident": "positive"}
+* negative__shortanswer{"a_kiss_progress": 2, "nlu_confident": "positive", "lesson_topic": "a_kiss_story"}
     - utter_a_kiss_03_HowBigWasCar
     - action_store_lesson_history__a_kiss
-    - slot{"a_kiss_progress": 3, "nlu_confused": null, "nlu_confident": "positive", "will_return": null}
+    - slot{"a_kiss_progress": 3, "nlu_confused": null, "nlu_confident": "positive", "will_return": null, "lesson_topic": "a_kiss_story"}
 
 ## Branch 04
 > check_a_kiss_03_HowBigWasCar
-* nonexclamation__positive__attributivepr{"a_kiss_progress": 3, "nlu_confident": "positive", "carrier": "it","attribute": "huge"} OR affirmative__adjectivegroup{"a_kiss_progress": 3, "nlu_confident": "positive", "adjectivegrp": "huge", "confused": "positive"}
+* nonexclamation__positive__attributivepr{"a_kiss_progress": 3, "nlu_confident": "positive", "carrier": "it","attribute": "huge", "lesson_topic": "a_kiss_story"} OR affirmative__adjectivegroup{"a_kiss_progress": 3, "nlu_confident": "positive", "adjectivegrp": "huge", "confused": "positive", "lesson_topic": "a_kiss_story"}
     - utter_a_kiss_04_WhatColorWasCar
     - action_store_lesson_history__a_kiss
-    - slot{"a_kiss_progress": 4, "nlu_confused": null, "nlu_confident": "positive", "will_return": null}
+    - slot{"a_kiss_progress": 4, "nlu_confused": null, "nlu_confident": "positive", "will_return": null, "lesson_topic": "a_kiss_story"}
 
 ## Branch 05
 > check_a_kiss_04_WhatColorWasCar
-* nonexclamation__positive__attributivepr{"a_kiss_progress": 4, "nlu_confident": "positive", "carrier": "it", "attribute": "blue"} OR affirmative__nominalgroup{"a_kiss_progress": 4, "nlu_confident": "positive", "adjectivegrp": "blue", "confused": "positive"}
+* nonexclamation__positive__attributivepr{"a_kiss_progress": 4, "nlu_confident": "positive", "carrier": "it", "attribute": "blue", "lesson_topic": "a_kiss_story"} OR affirmative__nominalgroup{"a_kiss_progress": 4, "nlu_confident": "positive", "adjectivegrp": "blue", "confused": "positive", "lesson_topic": "a_kiss_story"}
     - utter_a_kiss_05_WhileDrivingDownWhatDidHeSee
     - action_store_lesson_history__a_kiss
-    - slot{"a_kiss_progress": 5, "nlu_confused": null, "nlu_confident": "positive", "will_return": null}
+    - slot{"a_kiss_progress": 5, "nlu_confused": null, "nlu_confident": "positive", "will_return": null, "lesson_topic": "a_kiss_story"}
 
 ## Branch 06
 > check_a_kiss_05_WhileDrivingDownWhatDidHeSee
-* nonexclamation__positive__mentalpr{"a_kiss_progress": 5, "nlu_confident": "positive", "senser": "he","mentalpr": "saw", "phenomenon": "a girl"} OR affirmative__nominalgroup{"a_kiss_progress": 5, "nlu_confident": "positive", "nominalgrp": "a girl", "confused": "positive"}
+* nonexclamation__positive__mentalpr{"a_kiss_progress": 5, "nlu_confident": "positive", "senser": "he","mentalpr": "saw", "phenomenon": "a girl", "lesson_topic": "a_kiss_story"} OR affirmative__nominalgroup{"a_kiss_progress": 5, "nlu_confident": "positive", "nominalgrp": "a girl", "confused": "positive", "lesson_topic": "a_kiss_story"}
     - utter_a_kiss_06_DidSheLookBeautiful
     - action_store_lesson_history__a_kiss
-    - slot{"a_kiss_progress": 6, "nlu_confused": null, "nlu_confident": "positive", "will_return": null}
+    - slot{"a_kiss_progress": 6, "nlu_confused": null, "nlu_confident": "positive", "will_return": null, "lesson_topic": "a_kiss_story"}
 
 ## Branch 07
 > check_a_kiss_06_DidSheLookBeautiful
-* nonexclamation__positive__attributivepr{"a_kiss_progress": 6, "nlu_confident": "positive", "carrier": "she", "attribute": "beautiful"} OR affirmative__adjectivegroup{"a_kiss_progress": 6, "nlu_confident": "positive", "adjectivegrp": "beautiful", "confused": "positive"}
+* nonexclamation__positive__attributivepr{"a_kiss_progress": 6, "nlu_confident": "positive", "carrier": "she", "attribute": "beautiful", "lesson_topic": "a_kiss_story"} OR affirmative__adjectivegroup{"a_kiss_progress": 6, "nlu_confident": "positive", "adjectivegrp": "beautiful", "confused": "positive", "lesson_topic": "a_kiss_story"}
     - utter_lesson_completed
     - action_restart
 
-## Branch 07 - affirmative__shortanswer{"nlu_confused": null, "nlu_confident": "positive", "will_return": null}
+## Branch 07 - affirmative__shortanswer{"nlu_confused": null, "nlu_confident": "positive", "will_return": null, "lesson_topic": "a_kiss_story"}
 > check_a_kiss_06_DidSheLookBeautiful
-* affirmative__shortanswer{"a_kiss_progress": 6, "nlu_confident": "positive"}
+* affirmative__shortanswer{"a_kiss_progress": 6, "nlu_confident": "positive", "lesson_topic": "a_kiss_story"}
     - utter_lesson_completed
     - action_restart
 

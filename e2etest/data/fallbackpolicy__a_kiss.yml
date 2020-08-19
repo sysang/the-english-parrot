@@ -2,42 +2,42 @@ scenario:
     -
         - The English parrot initializes a kiss story
         # did carlos buy an old car
-        - abcef
+        - abc
         # Sorry. i can not understand. Please help to say it again?
         - no
         # did carlos buy an new bicycle
-        - abcef
+        - abc
         # Sorry. i can not understand. Please help to say it again?
         - no
         # Sorry. i can not understand. Please help to say it again?
-        - abcef
+        - abc
         # how big was the car
         - it's huge
         # what color was the car
-        - abcef
+        - abc
         # Sorry. i can not understand. Please help to say it again?
         - it's blue
         # while driving down the street. what did carlos see
-        - abcef
+        - abc
         # Sorry. i can not understand. Please help to say it again?
         - a girl
         # did the girl beautiful
-        - abcef
+        - abc
         # Sorry. i can not understand. Please help to say it again?
         - yes
         # that's it. You have done a good job
     -
         - The English parrot initializes a kiss story
         # did carlos buy an old car
-        - aabbccdd
+        - aabb
         # Sorry. i can not understand. Please help to say it again?
-        - aabbccdd
+        - aabb
         # Sorry. i can not understand. Please help to say it again?
-        - aabbccdd
+        - aabb
         # Sorry. i can not understand. Please help to say it again?
         - no
         # did carlos buy an new bicycle
-        - abcdef
+        - abcd
         # Sorry. i can not understand. Please help to say it again?
         - no
         # How big was the car
@@ -45,19 +45,19 @@ scenario:
         # what color was the car
         - it's blue
         # while driving down the street. what did he see
-        - aabbccdd
+        - aabb
         # Sorry. i can not understand. Please help to say it again?
-        - abcdef
+        - ab
         # Sorry. i can not understand. Please help to say it again?
-        - abcdef
+        - abcd
         # Sorry. i can not understand. Please help to say it again?
         - a girl
         # did she look beautiful
-        - aabbccdd
+        - aabb
         # Sorry. i can not understand. Please help to say it again?
-        - abcdef
+        - ab
         # Sorry. i can not understand. Please help to say it again?
-        - abcdef
+        - abcd
         # Sorry. i can not understand. Please help to say it again?
         - yes
         # that's it. You have done a good job
