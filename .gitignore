@@ -30,3 +30,4 @@ rasa-sdk
 tmp
 rasa-custom-policies
 e2etest/results
+data/graphs

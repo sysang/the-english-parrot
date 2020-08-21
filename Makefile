@@ -32,6 +32,9 @@ training:
 shell:
 	bin/rasa shell -vv -m $(model)
 
+visualize:
+	bin/rasa visualize -vv --out data/graphs/$(shell date "+%Y%m%d-%H%M").html
+
 run:
 	@export ts=`/bin/date "+%Y%m%d-%H%M"`
 	bin/rasa run -vv --log-file=logs/$(model)_run_$(shell date "+%Y%m%d-%H%M").log -m $(model)

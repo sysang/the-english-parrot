@@ -60,9 +60,9 @@ slots:
     - a_kiss_story
     - changed_story
   a_kiss_progress:
-    type: RasaSlotTypes.Class.OnehotVector99
+    type: RasaSlotTypes.BinaryVector7
   changed_progress:
-    type: RasaSlotTypes.Class.OnehotVector99
+    type: RasaSlotTypes.BinaryVector7
 
 responses:
   utter_can_not_understand:

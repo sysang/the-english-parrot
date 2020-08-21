@@ -47,6 +47,9 @@ class ActionStoreLessonHistory__a_kiss(Action):
         return int(result[0]) if len(result) > 0 else None
 
     def run(self, dispatcher, tracker, domain):
+        current_state = tracker.current_state()
+        logger.debug(f"Current state: {current_state}")
+
         latest_action_name = tracker.latest_action_name
 
         question_num = self._extract_question_number(latest_action_name)
@@ -70,6 +73,8 @@ class ActionNotUnderstandFallback(Action):
         return 'action_not_understand_fallback'
 
     def run(self, dispatcher, tracker, domain):
+        current_state = tracker.current_state()
+        logger.debug(f"Current state: {current_state}")
 
         return [SlotSet("nlu_confused", "positive"), SlotSet('nlu_confident', None), FollowupAction('utter_can_not_understand')]
 

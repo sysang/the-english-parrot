@@ -12,21 +12,21 @@ pipeline:
   min_ngram: 1
   max_ngram: 4
 - name: DIETClassifier
-  epochs: 80
+  epochs: 100
+  transformer_size: 512
   ranking_length: 5
 - name: EntitySynonymMapper
 policies:
 - name: TEDPolicy
-  max_history: 10
-  epochs: 5
+  max_history: 3
+  epochs: 10
   batch_size:
   - 32
   - 64
-  number_of_transformer_layers: 2
-  transformer_size: 256
+  number_of_transformer_layers: 3
+  transformer_size: 512
 - name: AugmentedMemoizationPolicy
-  max_history: 10
-- name: MappingPolicy
+  max_history: 3
 - name: "RasaCustomPolicies.NLUFallbackPolicy"
   priority: 6
   nlu_threshold: 0.5

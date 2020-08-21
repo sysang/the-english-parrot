@@ -62,3 +62,22 @@
     - utter_lesson_completed
     - action_restart
 
+## Branch 02 - negative__shortanswer
+* negative__shortanswer{"a_kiss_progress": 1, "nlu_confident": "positive", "lesson_topic": "a_kiss_story"}
+    - utter_a_kiss_02_DidCarlosBuyExpensiveBicycle
+    - action_store_lesson_history__a_kiss
+    - slot{"a_kiss_progress": 2, "nlu_confused": null, "nlu_confident": "positive", "will_return": null, "lesson_topic": "a_kiss_story"}
+> check_a_kiss_02_DidCarlosBuyExpensiveBicycle
+
+## Branch 03 - negative__shortanswer
+* negative__shortanswer{"a_kiss_progress": 2, "nlu_confident": "positive", "lesson_topic": "a_kiss_story"}
+    - utter_a_kiss_03_HowBigWasCar
+    - action_store_lesson_history__a_kiss
+    - slot{"a_kiss_progress": 3, "nlu_confused": null, "nlu_confident": "positive", "will_return": null, "lesson_topic": "a_kiss_story"}
+> check_a_kiss_03_HowBigWasCar
+
+## Branch 07 - affirmative__shortanswer
+* affirmative__shortanswer{"a_kiss_progress": 6, "nlu_confident": "positive", "lesson_topic": "a_kiss_story"}
+    - utter_lesson_completed
+    - action_restart
+
