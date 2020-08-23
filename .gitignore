@@ -4,7 +4,6 @@ docker-compose.override.yml
 .DS_Store
 *.pyc
 *.log
-
 models
 *.egg-info
 docker-compose.yml
@@ -21,6 +20,7 @@ events.*
 terms
 docker-local
 .pytype/
+anytag
 pytags
 pylibtags
 pysystags
@@ -28,6 +28,6 @@ rasa
 rasa-sdk
 .ipynb_checkpoints
 tmp
-rasa-custom-policies
 e2etest/results
 data/graphs
+bin

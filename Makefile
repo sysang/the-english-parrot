@@ -50,7 +50,7 @@ types:
 	pytype --keep-going actions
 
 e2etest_main__a_kiss:
-	bin/python e2etest/test.py --model $(model) --scriptfile e2etest/data/scenario__a_kiss.yml
+	e2etest/test.py --model $(model) --scriptfile e2etest/data/scenario__a_kiss.yml
 
 e2etest_fallbackpolicy__a_kiss:
 	bin/python e2etest/test.py --model $(model) --scriptfile e2etest/data/fallbackpolicy__a_kiss.yml
