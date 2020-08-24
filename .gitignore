@@ -29,5 +29,5 @@ rasa-sdk
 .ipynb_checkpoints
 tmp
 e2etest/results
-data/graphs
+story-graphs
 bin

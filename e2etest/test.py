@@ -1,4 +1,3 @@
-#!/root/.cache/pypoetry/virtualenvs/eparrot-cuMo8lwU-py3.7/bin/python
 from ruamel.yaml import YAML
 import requests
 import json

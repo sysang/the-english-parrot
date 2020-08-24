@@ -27,13 +27,13 @@ stopactiond:
 restartactiond: stopactiond actiond
 
 training:
-	bin/rasa train -vv --augmentation 0
+	bin/rasa train -vv --augmentation 3
 
 shell:
 	bin/rasa shell -vv -m $(model)
 
 visualize:
-	bin/rasa visualize -vv --out data/graphs/$(shell date "+%Y%m%d-%H%M").html
+	bin/rasa visualize -vv --out story-graphs/$(shell date "+%Y%m%d-%H%M").html
 
 run:
 	@export ts=`/bin/date "+%Y%m%d-%H%M"`
@@ -50,10 +50,10 @@ types:
 	pytype --keep-going actions
 
 e2etest_main__a_kiss:
-	e2etest/test.py --model $(model) --scriptfile e2etest/data/scenario__a_kiss.yml
+	poetry run python e2etest/test.py --model $(model) --scriptfile e2etest/data/scenario__a_kiss.yml
 
 e2etest_fallbackpolicy__a_kiss:
-	bin/python e2etest/test.py --model $(model) --scriptfile e2etest/data/fallbackpolicy__a_kiss.yml
+	poetry run python e2etest/test.py --model $(model) --scriptfile e2etest/data/fallbackpolicy__a_kiss.yml
 
 e2etest_main__changed:
-	bin/python e2etest/test.py --model $(model) --scriptfile e2etest/data/scenario__changed.yml
+	poetry run python e2etest/test.py --model $(model) --scriptfile e2etest/data/scenario__changed.yml
