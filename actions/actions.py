@@ -68,6 +68,15 @@ class ActionStoreLessonHistory__a_kiss(Action):
 
         return [SlotSet('nlu_confused', None), SlotSet('nlu_confident', 'positive'), SlotSet('will_return', None), SlotSet("lesson_history", data), SlotSet("a_kiss_progress", question_num)]
 
+class ActionResetNLUConfusedSlot(Action):
+
+    def name(self):
+        return 'action_reset_nlu_confused_slot'
+
+    def run(self, dispatcher, tracker, domain):
+
+        return [SlotSet('nlu_confused', None), SlotSet('nlu_confident', 'positive')]
+
 class ActionNotUnderstandFallback(Action):
     def name(self):
         return 'action_not_understand_fallback'

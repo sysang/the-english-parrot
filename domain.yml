@@ -7,6 +7,7 @@ actions:
 - action_not_sure_what_to_do_fallback
 - action_not_understand_fallback
 - action_store_lesson_history__a_kiss
+- action_reset_nlu_confused_slot
 - action_initialize_a_kiss_story
 - action_initialize_changed_story
 - action_store_lesson_history__changed
