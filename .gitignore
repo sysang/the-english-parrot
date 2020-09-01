@@ -20,7 +20,7 @@ events.*
 terms
 docker-local
 .pytype/
-anytag
+anytags
 pytags
 pylibtags
 pysystags
@@ -31,3 +31,4 @@ tmp
 e2etest/results
 story-graphs
 bin
+modules/rasa-slot-types/corpus

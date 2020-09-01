@@ -12,6 +12,10 @@ rasacustompolicies = {path = "modules/rasa-custom-policies"}
 rasaslottypes = {path = "modules/rasa-slot-types"}
 rasa-sdk = {path = "../rasa-sdk"}
 rasa = {path = "../rasa"}
+future = "^0.18.2"
+nltk = "^3.5"
+gensim = "^3.8.3"
+pyemd = "^0.5.1"
 
 [build-system]
 requires = ["poetry>=0.12"]

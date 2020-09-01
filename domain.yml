@@ -38,14 +38,64 @@ entities:
 - nominalgrp
 - adjectivegrp
 - prepositionallocation
-- lesson_topic
-- will_return
 - nlu_confused
+- will_return
 - nlu_confident
+- lesson_topic
 - a_kiss_progress
 - changed_progress
 
 slots:
+  materialpr:
+    type: RasaSlotTypes.WordVector
+  actor:
+    type: RasaSlotTypes.WordVector
+  goal:
+    type: RasaSlotTypes.WordVector
+  scope:
+    type: RasaSlotTypes.WordVector
+  beneficiary:
+    type: RasaSlotTypes.WordVector
+  attributivepr:
+    type: RasaSlotTypes.WordVector
+  carrier:
+    type: RasaSlotTypes.WordVector
+  attribute:
+    type: RasaSlotTypes.WordVector
+  identifyingpr:
+    type: RasaSlotTypes.WordVector
+  identified:
+    type: RasaSlotTypes.WordVector
+  identifier:
+    type: RasaSlotTypes.WordVector
+  mentalpr:
+    type: RasaSlotTypes.WordVector
+  senser:
+    type: RasaSlotTypes.WordVector
+  phenomenon:
+    type: RasaSlotTypes.WordVector
+  behaviouralpr:
+    type: RasaSlotTypes.WordVector
+  behaver:
+    type: RasaSlotTypes.WordVector
+  verbalpr:
+    type: RasaSlotTypes.WordVector
+  sayer:
+    type: RasaSlotTypes.WordVector
+  reciver:
+    type: RasaSlotTypes.WordVector
+  verbiage:
+    type: RasaSlotTypes.WordVector
+  existantialpr:
+    type: RasaSlotTypes.WordVector
+  existent:
+    type: RasaSlotTypes.WordVector
+  nominalgrp:
+    type: RasaSlotTypes.WordVector
+  adjectivegrp:
+    type: RasaSlotTypes.WordVector
+  prepositionallocation:
+    type: RasaSlotTypes.WordVector
   nlu_confused:
     type: text
   nlu_confident:
@@ -76,16 +126,28 @@ responses:
   - text: "in this lesson i will ask many questions. you must answer every question.  okay. let's start the story. a kiss..."
   utter_a_kiss_01_DidCarlosBuyOldCar:
   - text: "did carlos buy an old car"
+  utter_a_kiss_01_disagree:
+  - text: "it's not correct. he bought a new car"
   utter_a_kiss_02_DidCarlosBuyExpensiveBicycle:
   - text: "did carlos buy an expensive bicycle"
+  utter_a_kiss_02_disagree:
+  - text: "no. it was an expensive car"
   utter_a_kiss_03_HowBigWasCar:
   - text: "how big is the car"
+  utter_a_kiss_03_disagree:
+  - text: "no no. the car was huge. very big"
   utter_a_kiss_04_WhatColorWasCar:
   - text: "what color was the car"
+  utter_a_kiss_04_disagree:
+  - text: "not correct. It was blue"
   utter_a_kiss_05_WhileDrivingDownWhatDidHeSee:
   - text: "while driving down the street. what did he see"
+  utter_a_kiss_05_disagree:
+  - text: "while driving down the street he saw a girl on bicycle"
   utter_a_kiss_06_DidSheLookBeautiful:
   - text: "did she look beautiful"
+  utter_a_kiss_06_disagree:
+  - text: "The girl is beautiful"
   utter_start_a_changed_lesson:
   - text: "in this lesson i will ask many questions. you must answer every question.  okay. let's start the story. changed..."
   utter_changed_01_WhereDidSheLive:
@@ -165,7 +227,7 @@ intents:
     - nlu_confident
     - will_return
     - attributivepr
-    - attributive
+    - attribute
     - carrier
 - nonexclamation__positive__mentalpr:
     use_entities:

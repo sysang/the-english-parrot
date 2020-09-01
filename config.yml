@@ -19,11 +19,11 @@ pipeline:
 policies:
 - name: TEDPolicy
   max_history: 10
-  epochs: 10
+  epochs: 12
   batch_size:
-  - 16
   - 32
-  number_of_transformer_layers: 3
+  - 64
+  number_of_transformer_layers: 2
   transformer_size: 1024
 - name: AugmentedMemoizationPolicy
   max_history: 10

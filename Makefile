@@ -27,10 +27,10 @@ stopactiond:
 restartactiond: stopactiond actiond
 
 training:
-	bin/rasa train -vv --augmentation 3
+	bin/rasa train -vv --augmentation 1
 
 shell:
-	bin/rasa shell -vv -m $(model)
+	bin/rasa shell -vv --log-file=logs/$(model)_run_$(shell date "+%Y%m%d-%H%M").log -m $(model)
 
 visualize:
 	bin/rasa visualize -vv --out story-graphs/$(shell date "+%Y%m%d-%H%M").html
@@ -38,6 +38,9 @@ visualize:
 run:
 	@export ts=`/bin/date "+%Y%m%d-%H%M"`
 	bin/rasa run -vv --log-file=logs/$(model)_run_$(shell date "+%Y%m%d-%H%M").log -m $(model)
+
+pyrun:
+	poetry run python $(file)
 
 formatter:
 	black actions
