@@ -13,7 +13,7 @@ logger.info('Loading doc2vec model...')
 model_file = os.path.join(os.path.dirname(__file__), 'models/alpha05_dmm_d100_n5_w10_mc2.bin')
 logger.info(model_file)
 model = Doc2Vec.load(model_file)
-logger.info('...end loading doc2vec model.')
+logger.info('...completed loading doc2vec model.')
 
 caches = dict()
 
