@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 
 
 logger.info('Loading doc2vec model...')
-model_file = os.path.join(os.path.dirname(__file__), 'models/dmc_d10_n3_w2_mc5_s001_ech50_imdb.bin')
+model_file = os.path.join(os.path.dirname(__file__), 'models/dmc_d15_n4_w3_mc5_s001_ech20_imdb.bin')
 logger.info(model_file)
 model = Doc2Vec.load(model_file)
 logger.info('...completed loading doc2vec model.')
@@ -22,8 +22,8 @@ def transform_to_vector(sentence):
     if sentence not in caches:
         tokens = sentence.split(' ')
         result = model.infer_vector(tokens)
-        # norm = np.linalg.norm(result)
-        # result = result / norm
+        norm = np.linalg.norm(result)
+        result = result / norm
         caches[sentence] = result.tolist()
 
     return caches.get(sentence)
@@ -32,7 +32,7 @@ def transform_to_vector(sentence):
 class WordVector(Slot):
 
     def feature_dimensionality(self):
-        return 10
+        return 15
 
     def as_feature(self):
         dim = self.feature_dimensionality()
