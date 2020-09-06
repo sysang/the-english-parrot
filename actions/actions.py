@@ -1,15 +1,11 @@
 # -*- coding: utf-8 -*-
 import re
 import logging
-import json
-import requests
-from datetime import datetime
 from typing import Any, Dict, List, Text, Union, Optional
-from itertools import islice
+# from itertools import islice
 
 from rasa_sdk import Action, Tracker
-from rasa_sdk.executor import CollectingDispatcher
-from rasa_sdk.forms import FormAction
+# from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import (
     SlotSet,
     UserUtteranceReverted,
@@ -20,11 +16,12 @@ from rasa_sdk.events import (
     UserUttered
 )
 
-from actions import config
+# from actions import config
 # from actions.api.algolia import AlgoliaAPI
-from actions.utils import text_to_float
+# from actions.utils import text_to_float
 
 logger = logging.getLogger(__name__)
+
 
 class ActionInitializeAKissStory(Action):
 
@@ -35,13 +32,14 @@ class ActionInitializeAKissStory(Action):
 
         return [SlotSet("lesson_topic", 'a_kiss_story'), SlotSet('nlu_confused', None), SlotSet('nlu_confident', 'positive'), SlotSet('will_return', None), SlotSet("lesson_history", []), SlotSet("a_kiss_progress", 0)]
 
+
 class ActionStoreLessonHistory__a_kiss(Action):
 
     def name(self):
         return 'action_store_lesson_history__a_kiss'
 
     def _extract_question_number(self, action_name):
-        p = re.compile("_(\d{2})_")
+        p = re.compile(r"_(\d{2})_")
         result = p.findall(action_name)
 
         return int(result[0]) if len(result) > 0 else None
@@ -68,6 +66,7 @@ class ActionStoreLessonHistory__a_kiss(Action):
 
         return [SlotSet('nlu_confused', None), SlotSet('nlu_confident', 'positive'), SlotSet('will_return', None), SlotSet("lesson_history", data), SlotSet("a_kiss_progress", question_num)]
 
+
 class ActionResetNLUConfusedSlot(Action):
 
     def name(self):
@@ -76,6 +75,7 @@ class ActionResetNLUConfusedSlot(Action):
     def run(self, dispatcher, tracker, domain):
 
         return [SlotSet('nlu_confused', None), SlotSet('nlu_confident', 'positive')]
+
 
 class ActionNotUnderstandFallback(Action):
     def name(self):
@@ -86,6 +86,7 @@ class ActionNotUnderstandFallback(Action):
         logger.debug(f"Current state: {current_state}")
 
         return [SlotSet("nlu_confused", "positive"), SlotSet('nlu_confident', None), FollowupAction('utter_can_not_understand')]
+
 
 class ActionNotSureWhatToDoFallback(Action):
     def name(self):
@@ -104,14 +105,15 @@ class ActionNotSureWhatToDoFallback(Action):
                 text=latest_user_utter_data['text'],
                 parse_data=latest_user_utter_data['parse_data'],
                 input_channel=latest_user_utter_data['input_channel']
-                )
+            )
 
         return user_uttered
 
     def run(self, dispatcher, tracker, domain):
         # events = tracker.current_state()['events']
 
-        return [FollowupAction('utter_return_to_previous_question'), SlotSet('will_return', "positive")]
+        return [SlotSet('will_return', "positive"), FollowupAction('utter_return_to_previous_question')]
+
 
 class ActionInitializeChangedStory(Action):
 
@@ -121,6 +123,7 @@ class ActionInitializeChangedStory(Action):
     def run(self, dispatcher, tracker, domain):
 
         return [SlotSet("lesson_topic", 'changed_story'), SlotSet('nlu_confused', None), SlotSet('nlu_confident', 'positive'), SlotSet('will_return', None), SlotSet("lesson_history", []), SlotSet("changed_progress", 0)]
+
 
 class ActionStoreLessonHistory__changed(Action):
 
