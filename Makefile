@@ -68,3 +68,10 @@ e2etest_fallbackpolicy__a_kiss:
 
 e2etest_main__changed:
 	poetry run python e2etest/test.py --model $(model) --scriptfile e2etest/data/scenario__changed.yml
+
+compile_lectures:
+	/usr/bin/python3 teaching_assistant.py
+
+neoterm:
+	@/usr/bin/python3 teaching_assistant.py
+

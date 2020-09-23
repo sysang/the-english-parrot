@@ -1,0 +1,89 @@
+topic:
+  name: "a_kiss"
+  dialogueTurns:
+    -
+      progress: 0
+      intentions:
+        -
+          name: "client_initializes_a_kiss_story"
+          utterances:
+            - "The English parrot initializes a kiss"
+            - "The English parrot starts a kiss"
+            - "The English parrot begins a kiss"
+
+    -
+      progress: 1
+      question: "did carlos buy an old car"
+      intentions:
+        -
+          name: "nonexclamation__positive__materialpr"
+          utterances:
+            - "[he](actor) [bought](materialpr) [a new car](goal)"
+            - "[he](actor) [bought](materialpr) [a new car](goal)"
+            - "[carlos](actor) [bought](materialpr) [a new car](goal)"
+            - "[carlos](actor) [bought](materialpr) [a huge car](goal)"
+            - "[he](actor) [bought](materialpr) [a huge car](goal)"
+        -
+          name: "nonexclamation__positive__materialpr"
+          utterances:
+            - "[he](actor) didn't [buy](materialpr) [an old car](goal)"
+            - "[he](actor) did not [buy](materialpr) [an old car](goal)"
+            - "[carlos](actor) didn't [buy](materialpr) [an old car](goal)"
+            - "[carlos](actor) did not [buy](materialpr) [an old car](goal)"
+
+    -
+      progress: 2
+      question: "did carlos buy an expensive bicycle"
+      intentions:
+        -
+          name: "nonexclamation__positive__identifyingpr"
+          utterances:
+            - "[it](identified) [was](identifyingpr) [a car](identifier)"
+            - "[it](identified) [was](identifyingpr) [a bicycle](identifier)"
+            - "[it](identified) [is](identifyingpr) [a car](identifier)"
+            - "[it](identified) [is](identifyingpr) [a bicycle](identifier)"
+
+    -
+      progress: 3
+      question: "how big was the car"
+      intentions:
+        -
+          name: "nonexclamation__positive__attributivepr"
+          utterances:
+            - "[it](carrier) [was](attributivepr) [huge](attribute)"
+            - "[it](carrier) [is](attributivepr) [huge](attribute)"
+            - "[it](carrier) [was](attributivepr) [very big](attribute)"
+            - "[it](carrier) [is](attributivepr) [very big](attribute)"
+
+    -
+      progress: 4
+      question: "what color was the car"
+      intentions:
+        -
+          name: "nonexclamation__positive__attributivepr"
+          utterances:
+          - "[it](carrier) [was](attributivepr) [blue](attribute)"
+          - "[it](carrier) [is](attributivepr) [blue](attribute)"
+          - "[the car](carrier) [was](attributivepr) [blue](attribute)"
+
+    -
+      progress: 5
+      question: "while driving down the street what did he see"
+      intentions:
+        -
+          name: "nonexclamation__positive__mentalpr"
+          utterances:
+          - "[he](senser) [saw](mentalpr) [a girl](phenomenon)"
+          - "[he](senser) [sees](mentalpr) [a girl](phenomenon)"
+
+    -
+      progress: 6
+      question: "did she beautiful"
+      intentions:
+        -
+          name: "nonexclamation__positive__attributivepr"
+          utterances:
+          - "[she](carrier) [was](attributivepr) [beautiful](attribute)"
+          - "[she](carrier) [is](attributivepr) [beautiful](attribute)"
+          - "[she](carrier) [looked](attributivepr) [beautiful](attribute)"
+          - "[she](carrier) [looks](attributivepr) [beautiful](attribute)"
