@@ -39,7 +39,7 @@ class ActionStoreLessonHistory__a_kiss(Action):
         return 'action_store_lesson_history__a_kiss'
 
     def _extract_question_number(self, action_name):
-        p = re.compile(r"_(\d{2})_")
+        p = re.compile(r"_(\d{1,2})_")
         result = p.findall(action_name)
 
         return int(result[0]) if len(result) > 0 else None

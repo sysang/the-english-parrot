@@ -1,17 +1,9 @@
 help:
-	@echo "make"
-	@echo "    action"
-	@echo "        Run action server"
-	@echo "    training"
-	@echo "        Training"
-	@echo "    shell"
-	@echo "        Start chatbot and shell I/O"
-	@echo "    formatter"
-	@echo "        Apply black formatting to code."
-	@echo "    lint"
-	@echo "        Lint code with flake8, and check if black formatter should be applied."
-	@echo "    types"
-	@echo "        Check for type errors using pytype."
+	@echo "Read Makefile"
+
+neoterm:
+	@/usr/bin/python3 teaching_assistant.py
+# @/usr/bin/python3 tryit.py
 
 action:
 	bin/rasa run actions --actions actions
@@ -71,7 +63,4 @@ e2etest_main__changed:
 
 compile_lectures:
 	/usr/bin/python3 teaching_assistant.py
-
-neoterm:
-	@/usr/bin/python3 teaching_assistant.py
 
