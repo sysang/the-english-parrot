@@ -26,7 +26,7 @@ policies:
   number_of_transformer_layers: 2
   transformer_size: 1024
 - name: AugmentedMemoizationPolicy
-  max_history: 6
+  max_history: 10
 - name: "RasaCustomPolicies.NLUFallbackPolicy"
   priority: 6
   nlu_threshold: 0.75

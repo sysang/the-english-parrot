@@ -1,5 +1,5 @@
-topic:
-  name: "a_kiss"
+story:
+  topic: "a_kiss"
   dialogueTurns:
     -
       progress: 0
