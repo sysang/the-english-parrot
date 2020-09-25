@@ -1,0 +1,44 @@
+story:
+  topic: "a_kiss"
+  dialogueTurns:
+    -
+      progress: 0
+      question: ""
+      scenarios:
+        main:
+          name: "main"
+          intention: "client_initializes_a_kiss_story"
+          utterances:
+            - "The English parrot initializes a kiss"
+            - "The English parrot starts a kiss"
+            - "The English parrot begins a kiss"
+      going_next: "did carlos buy an old car"
+
+    -
+      progress: 1
+      question: "did carlos buy an old car"
+      scenarios:
+        main:
+          name: "main"
+          intention: "nonexclamation__positive__materialpr"
+          utterances:
+            - "[he](actor) [bought](materialpr) [a new car](goal)"
+            - "[he](actor) [bought](materialpr) [a new car](goal)"
+            - "[carlos](actor) [bought](materialpr) [a new car](goal)"
+            - "[carlos](actor) [bought](materialpr) [a huge car](goal)"
+            - "[he](actor) [bought](materialpr) [a huge car](goal)"
+      going_next: "did carlos buy an expensive bicycle"
+
+    -
+      progress: 2
+      question: "did carlos buy an expensive bicycle"
+      scenarios:
+        main:
+          name: "main"
+          intention: "nonexclamation__positive__identifyingpr"
+          utterances:
+            - "[it](identified) [was](identifyingpr) [a car](identifier)"
+            - "[it](identified) [was](identifyingpr) [a bicycle](identifier)"
+            - "[it](identified) [is](identifyingpr) [a car](identifier)"
+            - "[it](identified) [is](identifyingpr) [a bicycle](identifier)"
+      going_next: "how big was the car"

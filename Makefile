@@ -2,7 +2,7 @@ help:
 	@echo "Read Makefile"
 
 neoterm:
-	@/usr/bin/python3 teaching_assistant.py
+	@/usr/bin/python3 modules/teaching_assistant/teaching_assistant/main.py
 # @/usr/bin/python3 tryit.py
 
 action:

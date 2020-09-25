@@ -4,7 +4,7 @@ story:
     -
       progress: 0
       question: ""
-      scenario:
+      scenarios:
         main:
           name: "main"
           intention: "client_initializes_a_kiss_story"
@@ -17,7 +17,7 @@ story:
     -
       progress: 1
       question: "did carlos buy an old car"
-      scenario:
+      scenarios:
         main:
           name: "main"
           intention: "nonexclamation__positive__materialpr"
@@ -32,7 +32,7 @@ story:
     -
       progress: 2
       question: "did carlos buy an expensive bicycle"
-      scenario:
+      scenarios:
         main:
           name: "main"
           intention: "nonexclamation__positive__identifyingpr"
@@ -46,7 +46,7 @@ story:
     -
       progress: 3
       question: "how big was the car"
-      scenario:
+      scenarios:
         main:
           name: "main"
           intention: "nonexclamation__positive__attributivepr"
@@ -60,7 +60,7 @@ story:
     -
       progress: 4
       question: "what color was the car"
-      scenario:
+      scenarios:
         main:
           name: "main"
           intention: "nonexclamation__positive__attributivepr"
@@ -73,7 +73,7 @@ story:
     -
       progress: 5
       question: "while driving down the street what did he see"
-      scenario:
+      scenarios:
         main:
           name: "main"
           intention: "nonexclamation__positive__mentalpr"
@@ -85,7 +85,7 @@ story:
     -
       progress: 6
       question: "did she beautiful"
-      scenario:
+      scenarios:
         main:
           name: "main"
           intention: "nonexclamation__positive__attributivepr"
