@@ -27,6 +27,17 @@ story:
             - "[carlos](actor) [bought](materialpr) [a new car](goal)"
             - "[carlos](actor) [bought](materialpr) [a huge car](goal)"
             - "[he](actor) [bought](materialpr) [a huge car](goal)"
+        negative_form:
+          name: "negative_form"
+          intention: "nonexclamation__negative__materialpr"
+          utterances:
+            - "[he](actor) didn't [buy](materialpr) [an old car](goal)"
+            - "[he](actor) did not [buy](materialpr) [an old car](goal)"
+            - "[carlos](actor) didn't [buy](materialpr) [an old car](goal)"
+            - "[carlos](actor) did not [buy](materialpr) [an old car](goal)"
+        affirmative__shortanswer:
+          name: "affirmative__shortanswer"
+          intention: "affirmative__shortanswer"
       going_next: "did carlos buy an expensive bicycle"
 
     -
@@ -41,6 +52,17 @@ story:
             - "[it](identified) [was](identifyingpr) [a bicycle](identifier)"
             - "[it](identified) [is](identifyingpr) [a car](identifier)"
             - "[it](identified) [is](identifyingpr) [a bicycle](identifier)"
+        negative_form:
+          name: "negative_form"
+          intention: "nonexclamation__negative__attributivepr"
+          utterances:
+            - "[it](identified) [wasn't](identifyingpr) [a bicycle](identifier)"
+            - "[it](identified) [was not](identifyingpr) [a bicycle](identifier)"
+            - "[it](identified) [isn't](identifyingpr) [a bicycle](identifier)"
+            - "[it](identified) [is not](identifyingpr) [a bicycle](identifier)"
+        affirmative__shortanswer:
+          name: "affirmative__shortanswer"
+          intention: "affirmative__shortanswer"
       going_next: "how big was the car"
 
     -
@@ -55,7 +77,13 @@ story:
             - "[it](carrier) [is](attributivepr) [huge](attribute)"
             - "[it](carrier) [was](attributivepr) [very big](attribute)"
             - "[it](carrier) [is](attributivepr) [very big](attribute)"
-      going_next: "how big was the car"
+        affirmative__adjectivegroup:
+          name: "affirmative__adjectivegroup"
+          intention: "affirmative__adjectivegroup"
+          utterances:
+            - "[huge](adjectivegrp)"
+            - "[very big](adjectivegrp)"
+      going_next: "what color was the car"
 
     -
       progress: 4
@@ -65,9 +93,15 @@ story:
           name: "main"
           intention: "nonexclamation__positive__attributivepr"
           utterances:
-          - "[it](carrier) [was](attributivepr) [blue](attribute)"
-          - "[it](carrier) [is](attributivepr) [blue](attribute)"
-          - "[the car](carrier) [was](attributivepr) [blue](attribute)"
+            - "[it](carrier) [was](attributivepr) [blue](attribute)"
+            - "[it](carrier) [is](attributivepr) [blue](attribute)"
+            - "[the car](carrier) [was](attributivepr) [blue](attribute)"
+        affirmative__adjectivegroup:
+          name: "affirmative__adjectivegroup"
+          intention: "affirmative__adjectivegroup"
+          utterances:
+            - "[blue](adjectivegrp)"
+
       going_next: "while driving down the street what did he see"
 
     -
@@ -78,8 +112,17 @@ story:
           name: "main"
           intention: "nonexclamation__positive__mentalpr"
           utterances:
-          - "[he](senser) [saw](mentalpr) [a girl](phenomenon)"
-          - "[he](senser) [sees](mentalpr) [a girl](phenomenon)"
+            - "[he](senser) [saw](mentalpr) [a girl](phenomenon)"
+            - "[he](senser) [sees](mentalpr) [a girl](phenomenon)"
+        affirmative__nominalgroup:
+          name: "affirmative__nominalgroup"
+          intention: "affirmative__nominalgroup"
+          utterances:
+            - "[a girl](nominalgrp)"
+            - "[a girl](nominalgrp) on bicycle"
+            - "[girl](nominalgrp)"
+            - "[a beautiful girl](nominalgrp)"
+            - "[a beautiful girl](nominalgrp) on bicycle"
       going_next: "did she beautiful"
 
     -
@@ -94,4 +137,7 @@ story:
           - "[she](carrier) [is](attributivepr) [beautiful](attribute)"
           - "[she](carrier) [looked](attributivepr) [beautiful](attribute)"
           - "[she](carrier) [looks](attributivepr) [beautiful](attribute)"
+        affirmative__shortanswer:
+          name: "affirmative__shortanswer"
+          intention: "affirmative__shortanswer"
       going_next: ""

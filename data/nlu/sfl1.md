@@ -110,10 +110,10 @@
 - [no affection](nominalgrp)
 
 ## intent:affirmative__adjectivegroup
-- [beautiful](adjectivegrp)
-- [very beautiful](adjectivegrp)
 - [huge](adjectivegrp)
 - [very big](adjectivegrp)
+- [beautiful](adjectivegrp)
+- [very beautiful](adjectivegrp)
 - [new](adjectivegrp)
 - [old](adjectivegrp)
 - [blue](adjectivegrp)
