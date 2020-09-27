@@ -35,9 +35,9 @@ story:
             - "[he](actor) did not [buy](materialpr) [an old car](goal)"
             - "[carlos](actor) didn't [buy](materialpr) [an old car](goal)"
             - "[carlos](actor) did not [buy](materialpr) [an old car](goal)"
-        affirmative__shortanswer:
-          name: "affirmative__shortanswer"
-          intention: "affirmative__shortanswer"
+        negative__shortanswer:
+          name: "negative__shortanswer"
+          intention: "negative__shortanswer"
       going_next: "did carlos buy an expensive bicycle"
 
     -
@@ -60,9 +60,9 @@ story:
             - "[it](identified) [was not](identifyingpr) [a bicycle](identifier)"
             - "[it](identified) [isn't](identifyingpr) [a bicycle](identifier)"
             - "[it](identified) [is not](identifyingpr) [a bicycle](identifier)"
-        affirmative__shortanswer:
-          name: "affirmative__shortanswer"
-          intention: "affirmative__shortanswer"
+        negative__shortanswer:
+          name: "negative__shortanswer"
+          intention: "negative__shortanswer"
       going_next: "how big was the car"
 
     -
