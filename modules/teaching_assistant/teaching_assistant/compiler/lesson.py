@@ -62,8 +62,8 @@ class Lesson(object):
         content = ''
         for data in self.dialogue_turns:
             if case not in data['scenarios']:
+                data['scenarios'][C.MAIN_SCENARIO_STR]['name'] = C.NEGATIVE_FORM_SCENARIO_STR
                 _case = C.MAIN_SCENARIO_STR
-                data['scenarios'][_case]['name'] = C.NEGATIVE_FORM_SCENARIO_STR
             else:
                 _case = case
             turn = self.create_turn(data, _case)
@@ -84,5 +84,24 @@ class Lesson(object):
 
         return content
 
-    def compile_return_previous_scenario(self):
-        pass
+    def compile_return2previous_quest_scenario(self):
+        content = ''
+        case = C.MAIN_SCENARIO_STR
+        for data in self.dialogue_turns:
+            data['scenarios'][C.MAIN_SCENARIO_STR]['name'] = C.RETURN2PREVIOUS_QUEST_SCENARIO_STR
+            turn = self.create_turn(data, case)
+            tpl = self.env.get_template('return2previous_quest_scenario.tpl')
+            content += tpl.render(turn=turn)
+
+        return content
+
+    def compile_cannot_understand_scenario(self):
+        content = ''
+        case = C.MAIN_SCENARIO_STR
+        for data in self.dialogue_turns:
+            data['scenarios'][C.MAIN_SCENARIO_STR]['name'] = C.CANNOT_UNDERSTAND_SCENARIO
+            turn = self.create_turn(data, case)
+            tpl = self.env.get_template('cannot_understand_scenario.tpl')
+            content += tpl.render(turn=turn)
+
+        return content
