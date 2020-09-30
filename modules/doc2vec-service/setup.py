@@ -1,12 +1,13 @@
 from setuptools import setup
+
 setup(
-        name='rasaslottypes',
+        name='doc2vec_service',
         version='0.1',
-        description='Extending classes for slot types',
+        description='Provides api to make use of doc2vec model',
         url='#',
         author='sysang',
         author_email='daosysang@gmail.com',
         license='MIT',
-        packages=['RasaSlotTypes'],
+        packages=['doc2vec_service'],
         zip_safe=False
     )
