@@ -22,8 +22,6 @@ def transform_to_vector(sentence):
     if sentence not in caches:
         tokens = sentence.split(' ')
         result = model.infer_vector(tokens)
-        # norm = np.linalg.norm(result)
-        # result = result / norm
         caches[sentence] = result.tolist()
 
     return caches.get(sentence)

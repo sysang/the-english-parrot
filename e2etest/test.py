@@ -20,8 +20,8 @@ scriptfile = args.scriptfile
 with open(scriptfile, 'r') as f:
     scripts = f.read()
 
-scriptfile = scriptfile.replace('e2etest/data/','')
-scriptfile = scriptfile.replace('.yml','')
+scriptfile = scriptfile.replace('e2etest/data/', '')
+scriptfile = scriptfile.replace('.yml', '')
 
 now = datetime.now()
 resultfile = f"e2etest/results/{model}_{scriptfile}_{now.hour}{now.minute}.txt"
@@ -33,7 +33,7 @@ hdlr.setFormatter(formatter)
 logger.addHandler(hdlr)
 logger.setLevel(logging.INFO)
 
-yaml=YAML(typ="safe", pure=True)
+yaml = YAML(typ="safe", pure=True)
 scripts = yaml.load(scripts)
 scenario = scripts['scenario']
 
@@ -42,9 +42,9 @@ for scene in scenario:
     print("\n***********************************************\n")
     logger.info("\n***********************************************\n")
     for speech in scene:
-        payload = { 'sender': 'autotester', 'message': speech }
+        payload = {'sender': 'autotester', 'message': speech}
         time.sleep(0.3)
-        r = requests.post(apiurl, data = json.dumps(payload))
+        r = requests.post(apiurl, data=json.dumps(payload))
         botres = [item['text'] for item in r.json()]
         botres = ''.join(botres)
 
@@ -55,4 +55,3 @@ for scene in scenario:
         logger.info(f"user >  {speech}")
         logger.info("\n")
         logger.info(f"bot  :  {botres}")
-
