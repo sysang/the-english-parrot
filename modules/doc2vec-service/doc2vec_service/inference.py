@@ -2,6 +2,15 @@ from numpy import dot
 from numpy.linalg import norm
 
 
+def model_infer_vector(model, tokens, epochs=10, ntimes=500):
+    vector = model.infer_vector(tokens, epochs)
+
+    for i in range(ntimes - 1):
+        vector += model.infer_vector(tokens, epochs)
+
+    return vector / (ntimes)
+
+
 def project_vector_to(query, target):
     return target * dot(query, target) / dot(target, target)
 
@@ -23,9 +32,9 @@ def query_semantic_distance(model, query, target, theme, epochs=5):
         distance (float)
     """
 
-    query_vector = model.infer_vector(query.split(' '), epochs=epochs)
-    target_vector = model.infer_vector(target.split(' '), epochs=epochs)
-    theme_vector = model.infer_vector([theme], epochs=epochs)
+    query_vector = model_infer_vector(model, query.split(' '), epochs=epochs)
+    target_vector = model_infer_vector(model, target.split(' '), epochs=epochs)
+    theme_vector = model_infer_vector(model, [theme], epochs=epochs)
     query_projection_on_theme = project_vector_to(query_vector, theme_vector)
     target_projection_on_theme = project_vector_to(target_vector, theme_vector)
 
