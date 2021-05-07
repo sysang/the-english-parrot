@@ -1,5 +1,5 @@
 import logging
-from rasa.core.slots import Slot
+from rasa.shared.core.slots  import Slot
 
 logger = logging.getLogger(__name__)
 

@@ -1,4 +1,4 @@
 #!/bin/zsh
 
-bin/rasa run actions -vv --actions actions
+rasa run actions -vv --actions actions
 

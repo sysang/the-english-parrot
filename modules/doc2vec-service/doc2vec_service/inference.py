@@ -2,13 +2,13 @@ from numpy import dot
 from numpy.linalg import norm
 
 
-def model_infer_vector(model, tokens, epochs=10, ntimes=500):
+def model_infer_vector(model, tokens, epochs=5, nsamples=300):
     vector = model.infer_vector(tokens, epochs)
 
-    for i in range(ntimes - 1):
+    for i in range(nsamples - 1):
         vector += model.infer_vector(tokens, epochs)
 
-    return vector / (ntimes)
+    return vector / (nsamples)
 
 
 def project_vector_to(query, target):

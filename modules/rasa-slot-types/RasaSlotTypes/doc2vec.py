@@ -1,7 +1,7 @@
 import os
 
 import numpy as np
-from rasa.core.slots import Slot
+from rasa.shared.core.slots import Slot
 from gensim.models.doc2vec import Doc2Vec
 from gensim.models.callbacks import CallbackAny2Vec
 

@@ -1,12 +1,9 @@
 language: en
 pipeline:
-- name: ConveRTTokenizer
-- name: ConveRTFeaturizer
+- name: WhitespaceTokenizer
 - name: RegexFeaturizer
 - name: LexicalSyntacticFeaturizer
 - name: CountVectorsFeaturizer
-  OOV_token: oov
-  token_pattern: (?u)\b\w+\b
 - name: CountVectorsFeaturizer
   analyzer: char_wb
   min_ngram: 1
@@ -15,6 +12,8 @@ pipeline:
   epochs: 100
   transformer_size: 512
   ranking_length: 5
+  constrain_similarities: True
+  model_confidence: "linear_norm"
 - name: EntitySynonymMapper
 policies:
 - name: TEDPolicy
@@ -25,11 +24,13 @@ policies:
   - 32
   number_of_transformer_layers: 2
   transformer_size: 1024
+  constrain_similarities: True
+  model_confidence: "linear_norm"
 - name: AugmentedMemoizationPolicy
   max_history: 10
 - name: "RasaCustomPolicies.NLUFallbackPolicy"
   priority: 6
-  nlu_threshold: 0.75
+  nlu_threshold: 0.35
   ambiguity_threshold: 0.15
   fallback_action_name: 'action_not_understand_fallback'
 - name: "RasaCustomPolicies.PredictionFallbackPolicy"

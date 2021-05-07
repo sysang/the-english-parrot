@@ -1,6 +1,8 @@
 ## intent:nonexclamation__positive__materialpr
-- [she](actor) [lived](materialpr)[in phoenix](scope)
-- [he](actor) [worked](materialpr)[at home](scope)
+- [she](actor) [lived](materialpr) [in phoenix](scope)
+- [he](actor) [worked](materialpr) [at home](scope)
+- [he](actor) [bought](materialpr) [a new car](scope)
+- [he](actor) [buys](materialpr) [a new car](scope)
 
 ## intent:nonexclamation__negative__materialpr
 - [he](actor) didn't [buy](materialpr) [an old car](goal)
