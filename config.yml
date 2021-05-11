@@ -30,7 +30,7 @@ policies:
   max_history: 10
 - name: "RasaCustomPolicies.NLUFallbackPolicy"
   priority: 6
-  nlu_threshold: 0.35
+  nlu_threshold: 0.25
   ambiguity_threshold: 0.15
   fallback_action_name: 'action_not_understand_fallback'
 - name: "RasaCustomPolicies.PredictionFallbackPolicy"
