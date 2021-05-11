@@ -1,33 +1,49 @@
 import os
 
-import numpy as np
 from rasa.shared.core.slots import Slot
 from gensim.models.doc2vec import Doc2Vec
-from gensim.models.callbacks import CallbackAny2Vec
 
 import logging
 logger = logging.getLogger(__name__)
 
 
-logger.info('Loading doc2vec model...')
-model_file = os.path.join(os.path.dirname(__file__), 'models/mc_d15_n67_w5_mc99_s00005_ech05_mal0002x25_blogwikgutimdb.bin')
-logger.info(model_file)
-model = Doc2Vec.load(model_file)
-logger.info('...completed loading doc2vec model.')
+class Model():
+    __instance = None
 
-caches = dict()
+    @staticmethod
+    def getInstance():
+        if Model.__instance is None:
+            Model()
+        return Model.__instance
 
+    def __init__(self):
 
-def transform_to_vector(sentence):
-    if sentence not in caches:
-        tokens = sentence.split(' ')
-        result = model.infer_vector(tokens)
-        caches[sentence] = result.tolist()
+        if Model.__instance is not None:
+            raise Exception("This class is a singleton! Use Model.getInstance() instead.")
+        else:
+            logger.info('Loading doc2vec model...')
+            model_file = os.path.join(os.path.dirname(__file__), 'models/dmc_d15_n67_w5_mc99_s00005_ech05_mal0002x25_blogwikgutimdb.bin')
+            logger.info(model_file)
+            self.model = Doc2Vec.load(model_file)
+            logger.info('...completed loading doc2vec model.')
 
-    return caches.get(sentence)
+            self.caches = dict()
+
+            Model.__instance = self
+
+    def infer_sentence_vector(self, sentence):
+        if sentence not in self.caches:
+            tokens = sentence.split(' ')
+            result = self.model.infer_vector(tokens)
+            self.caches[sentence] = result.tolist()
+
+        return self.caches.get(sentence)
 
 
 class WordVector(Slot):
+    def __init__(self, *args, **kwargs):
+        super(WordVector, self).__init__(*args, **kwargs)
+        self.model = Model.getInstance()
 
     def feature_dimensionality(self):
         return 15
@@ -39,6 +55,6 @@ class WordVector(Slot):
         if not self.value:
             return r
 
-        r = transform_to_vector(self.value)
+        r = self.model.infer_sentence_vector(self.value)
 
         return r

@@ -8,5 +8,8 @@ setup(
         author_email='daosysang@gmail.com',
         license='MIT',
         packages=['RasaSlotTypes'],
-        zip_safe=False
+        zip_safe=False,
+        package_data={
+            "RasaSlotTypes": ["models/*.bin", "models/*.npy"],
+        }
     )
