@@ -18,6 +18,8 @@ RUN pip install poetry
 RUN poetry config virtualenvs.create false
 RUN poetry install
 
+RUN rm -R -f modules
+
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Don't use root user to run code
