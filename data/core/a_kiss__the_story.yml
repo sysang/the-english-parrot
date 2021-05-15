@@ -1,7 +1,7 @@
 version: "2.0"
 
 stories:
-- story: Scenario [MAIN] - [00]
+- story: Scenario MAIN-00
   steps:
   - intent: client_initializes_a_kiss_story
   - action: action_initialize_a_kiss_story
@@ -89,7 +89,7 @@ stories:
   - action: utter_lesson_completed
   - action: action_restart
 
-- story: Scenario of [NEGATIVE_FORM] - [01]
+- story: Scenario of NEGATIVE_FORM-01
   steps:
   - checkpoint: check_a_kiss_01_DidCarlosBuyOldCar
   - intent: nonexclamation__negative__materialpr
@@ -106,7 +106,7 @@ stories:
     - "will_return": null
   - checkpoint: check_a_kiss_02_DidCarlosBuyExpensiveBicycle
 
-- story: Scenario of [NEGATIVE_FORM] - [02]
+- story: Scenario of NEGATIVE_FORM-02
   steps:
   - checkpoint: check_a_kiss_02_DidCarlosBuyExpensiveBicycle
   - intent: nonexclamation__negative__identifyingpr
@@ -122,7 +122,7 @@ stories:
     - "will_return": null
   - checkpoint: check_a_kiss_03_HowBigWasCar
 
-- story: Scenario of [SHORT_ANSWER] - [01]
+- story: Scenario of SHORT_ANSWER-01
   steps:
   - checkpoint: check_a_kiss_01_DidCarlosBuyOldCar
   - intent: negative__shortanswer
@@ -135,11 +135,11 @@ stories:
     - "will_return": null
   - checkpoint: check_a_kiss_02_DidCarlosBuyExpensiveBicycle
 
-- story: Scenario of [SHORT_ANSWER] - [02]
+- story: Scenario of SHORT_ANSWER-02
   steps:
   - checkpoint: check_a_kiss_02_DidCarlosBuyExpensiveBicycle
   - intent: negative__shortanswer
-- action: utter_a_kiss_03_HowBigWasCar
+  - action: utter_a_kiss_03_HowBigWasCar
   - action: action_store_lesson_history__a_kiss
   - slot_was_set:
     - "a_kiss_progress": 3
@@ -148,7 +148,7 @@ stories:
     - "will_return": null
   - checkpoint: check_a_kiss_03_HowBigWasCar
 
-- story: Scenario of [SHORT_ANSWER] - [03]
+- story: Scenario of SHORT_ANSWER-03
   steps:
   - checkpoint: check_a_kiss_03_HowBigWasCar
   - intent: affirmative__adjectivegroup
@@ -163,7 +163,7 @@ stories:
     - "will_return": null
   - checkpoint: check_a_kiss_04_WhatColorWasCar
 
-- story: Scenario of [SHORT_ANSWER] - [04]
+- story: Scenario of SHORT_ANSWER-04
   steps:
   - checkpoint: check_a_kiss_04_WhatColorWasCar
   - intent: affirmative__adjectivegroup
@@ -178,7 +178,7 @@ stories:
     - "will_return": null
   - checkpoint: check_a_kiss_05_WhileDrivingDownWhatDidHeSee
 
-- story: Scenario of [SHORT_ANSWER] - [05]
+- story: Scenario of SHORT_ANSWER-05
   steps:
   - checkpoint: check_a_kiss_05_WhileDrivingDownWhatDidHeSee
   - intent: affirmative__nominalgroup
@@ -193,21 +193,30 @@ stories:
     - "will_return": null
   - checkpoint: check_a_kiss_06_DidSheLookBeautiful
 
-- story: Scenario of [SHORT_ANSWER] - [06]
+- story: Scenario of SHORT_ANSWER-06
   steps:
   - checkpoint: check_a_kiss_06_DidSheLookBeautiful
   - intent: affirmative__shortanswer
   - action: utter_lesson_completed
   - action: action_restart
 
-- story: Scenario of utter [RETURN_TO_PREVIOUS_QUESTION] - [01]
+- story: Scenario of utter RETURN_TO_PREVIOUS_QUESTION-01
   steps:
-  - intent: nonexclamation__positive__materialpr OR nonexclamation__negative__materialpr OR nonexclamation__negative__identifyingpr OR nonexclamation__positive__attributivepr OR nonexclamation__negative__attributivepr OR nonexclamation__positive__mentalpr OR nonexclamation__negative__mentalpr OR affirmative__nominalgroup OR affirmative__adjectivegroup OR affirmative__shortanswer OR negative__shortanswer
-    entities:
+  - or:
+    - intent: nonexclamation__positive__materialpr
+    - intent: nonexclamation__negative__materialpr
+    - intent: nonexclamation__negative__identifyingpr
+    - intent: nonexclamation__positive__attributivepr
+    - intent: nonexclamation__negative__attributivepr
+    - intent: nonexclamation__positive__mentalpr
+    - intent: nonexclamation__negative__mentalpr
+    - intent: affirmative__nominalgroup
+    - intent: affirmative__adjectivegroup
+    - intent: affirmative__shortanswer
+    - intent: negative__shortanswer
+  - slot_was_set:
     - "a_kiss_progress": 1
     - "will_return": "positive"
-  - action: followup
-    name: "utter_return_to_previous_question"
   - action: utter_return_to_previous_question
   - action: utter_a_kiss_01_DidCarlosBuyOldCar
   - action: action_store_lesson_history__a_kiss
@@ -217,14 +226,23 @@ stories:
     - "will_return": null
   - checkpoint: check_a_kiss_01_DidCarlosBuyOldCar
 
-- story: Scenario of utter [RETURN_TO_PREVIOUS_QUESTION] - [02]
+- story: Scenario of utter RETURN_TO_PREVIOUS_QUESTION-02
   steps:
-  - intent: nonexclamation__positive__materialpr OR nonexclamation__negative__materialpr OR nonexclamation__negative__identifyingpr OR nonexclamation__positive__attributivepr OR nonexclamation__negative__attributivepr OR nonexclamation__positive__mentalpr OR nonexclamation__negative__mentalpr OR affirmative__nominalgroup OR affirmative__adjectivegroup OR affirmative__shortanswer OR negative__shortanswer
+  - or:
+    - intent: nonexclamation__positive__materialpr
+    - intent: nonexclamation__negative__materialpr
+    - intent: nonexclamation__negative__identifyingpr
+    - intent: nonexclamation__positive__attributivepr
+    - intent: nonexclamation__negative__attributivepr
+    - intent: nonexclamation__positive__mentalpr
+    - intent: nonexclamation__negative__mentalpr
+    - intent: affirmative__nominalgroup
+    - intent: affirmative__adjectivegroup
+    - intent: affirmative__shortanswer
+    - intent: negative__shortanswer
   - slot_was_set:
     - "a_kiss_progress": 2
     - "will_return": "positive"
-  - action: followup
-    name: "utter_return_to_previous_question"
   - action: utter_return_to_previous_question
   - action: utter_a_kiss_02_DidCarlosBuyExpensiveBicycle
   - action: action_store_lesson_history__a_kiss
@@ -235,14 +253,23 @@ stories:
     - "will_return": null
   - checkpoint: check_a_kiss_01_DidCarlosBuyOldCar
 
-- story: Scenario of utter [RETURN_TO_PREVIOUS_QUESTION] - [03]
+- story: Scenario of utter RETURN_TO_PREVIOUS_QUESTION-03
   steps:
-  - intent: nonexclamation__positive__materialpr OR nonexclamation__negative__materialpr OR nonexclamation__negative__identifyingpr OR nonexclamation__positive__attributivepr OR nonexclamation__negative__attributivepr OR nonexclamation__positive__mentalpr OR nonexclamation__negative__mentalpr OR affirmative__nominalgroup OR affirmative__adjectivegroup OR affirmative__shortanswer OR negative__shortanswer
+  - or:
+    - intent: nonexclamation__positive__materialpr
+    - intent: nonexclamation__negative__materialpr
+    - intent: nonexclamation__negative__identifyingpr
+    - intent: nonexclamation__positive__attributivepr
+    - intent: nonexclamation__negative__attributivepr
+    - intent: nonexclamation__positive__mentalpr
+    - intent: nonexclamation__negative__mentalpr
+    - intent: affirmative__nominalgroup
+    - intent: affirmative__adjectivegroup
+    - intent: affirmative__shortanswer
+    - intent: negative__shortanswer
   - slot_was_set:
     - "a_kiss_progress": 3
     - "will_return": "positive"
-  - action: followup
-    name: "utter_return_to_previous_question"
   - action: utter_return_to_previous_question
   - action: utter_a_kiss_03_HowBigWasCar
   - action: action_store_lesson_history__a_kiss
@@ -253,14 +280,23 @@ stories:
     - "will_return": null
   - checkpoint: check_a_kiss_03_HowBigWasCar
 
-- story: Scenario of utter [RETURN_TO_PREVIOUS_QUESTION] - [04]
+- story: Scenario of utter RETURN_TO_PREVIOUS_QUESTION-04
   steps:
-  - intent: nonexclamation__positive__materialpr OR nonexclamation__negative__materialpr OR nonexclamation__negative__identifyingpr OR nonexclamation__positive__attributivepr OR nonexclamation__negative__attributivepr OR nonexclamation__positive__mentalpr OR nonexclamation__negative__mentalpr OR affirmative__nominalgroup OR affirmative__adjectivegroup OR affirmative__shortanswer OR negative__shortanswer
+  - or:
+    - intent: nonexclamation__positive__materialpr
+    - intent: nonexclamation__negative__materialpr
+    - intent: nonexclamation__negative__identifyingpr
+    - intent: nonexclamation__positive__attributivepr
+    - intent: nonexclamation__negative__attributivepr
+    - intent: nonexclamation__positive__mentalpr
+    - intent: nonexclamation__negative__mentalpr
+    - intent: affirmative__nominalgroup
+    - intent: affirmative__adjectivegroup
+    - intent: affirmative__shortanswer
+    - intent: negative__shortanswer
   - slot_was_set:
     - "a_kiss_progress": 4
     - "will_return": "positive"
-  - action: followup
-    name: "utter_return_to_previous_question"
   - action: utter_return_to_previous_question
   - action: utter_a_kiss_04_WhatColorWasCar
   - action: action_store_lesson_history__a_kiss
@@ -271,14 +307,23 @@ stories:
     - "will_return": null
   - checkpoint: check_a_kiss_04_WhatColorWasCar
 
-- story: Scenario of utter [RETURN_TO_PREVIOUS_QUESTION] - [05]
+- story: Scenario of utter RETURN_TO_PREVIOUS_QUESTION-05
   steps:
-  - intent: nonexclamation__positive__materialpr OR nonexclamation__negative__materialpr OR nonexclamation__negative__identifyingpr OR nonexclamation__positive__attributivepr OR nonexclamation__negative__attributivepr OR nonexclamation__positive__mentalpr OR nonexclamation__negative__mentalpr OR affirmative__nominalgroup OR affirmative__adjectivegroup OR affirmative__shortanswer OR negative__shortanswer
+  - or:
+    - intent: nonexclamation__positive__materialpr
+    - intent: nonexclamation__negative__materialpr
+    - intent: nonexclamation__negative__identifyingpr
+    - intent: nonexclamation__positive__attributivepr
+    - intent: nonexclamation__negative__attributivepr
+    - intent: nonexclamation__positive__mentalpr
+    - intent: nonexclamation__negative__mentalpr
+    - intent: affirmative__nominalgroup
+    - intent: affirmative__adjectivegroup
+    - intent: affirmative__shortanswer
+    - intent: negative__shortanswer
   - slot_was_set:
     - "a_kiss_progress": 5
     - "will_return": "positive"
-  - action: followup
-    name: "utter_return_to_previous_question"
   - action: utter_return_to_previous_question
   - action: utter_a_kiss_05_WhileDrivingDownWhatDidHeSee
   - action: action_store_lesson_history__a_kiss
@@ -289,15 +334,23 @@ stories:
     - "will_return": null
   - checkpoint: check_a_kiss_05_WhileDrivingDownWhatDidHeSee
 
-- story: Scenario of utter [RETURN_TO_PREVIOUS_QUESTION] - [06]
+- story: Scenario of utter RETURN_TO_PREVIOUS_QUESTION-06
   steps:
-  - intent: nonexclamation__positive__materialpr OR nonexclamation__negative__materialpr OR nonexclamation__negative__identifyingpr OR nonexclamation__positive__attributivepr OR nonexclamation__negative__attributivepr OR nonexclamation__positive__mentalpr OR nonexclamation__negative__mentalpr OR affirmative__nominalgroup OR affirmative__adjectivegroup OR affirmative__shortanswer OR negative__shortanswer
+  - or:
+    - intent: nonexclamation__positive__materialpr
+    - intent: nonexclamation__negative__materialpr
+    - intent: nonexclamation__negative__identifyingpr
+    - intent: nonexclamation__positive__attributivepr
+    - intent: nonexclamation__negative__attributivepr
+    - intent: nonexclamation__positive__mentalpr
+    - intent: nonexclamation__negative__mentalpr
+    - intent: affirmative__nominalgroup
+    - intent: affirmative__adjectivegroup
+    - intent: affirmative__shortanswer
+    - intent: negative__shortanswer
   - slot_was_set:
     - "a_kiss_progress": 6
     - "will_return": "positive"
-  - action: followup
-    name: "utter_return_to_previous_question"
-  - action: utter_return_to_previous_question
   - action: utter_a_kiss_06_DidSheLookBeautiful
   - action: action_store_lesson_history__a_kiss
   - slot_was_set:
@@ -307,15 +360,24 @@ stories:
     - "will_return": null
   - checkpoint: check_a_kiss_06_DidSheLookBeautiful
 
-- story: Scenario of utter [CAN_NOT_UNDERSTAND] - [01]
+- story: Scenario of utter CAN_NOT_UNDERSTAND-01
   steps:
-  - intent: nonexclamation__positive__materialpr OR nonexclamation__negative__materialpr OR nonexclamation__negative__identifyingpr OR nonexclamation__positive__attributivepr OR nonexclamation__negative__attributivepr OR nonexclamation__positive__mentalpr OR nonexclamation__negative__mentalpr OR affirmative__nominalgroup OR affirmative__adjectivegroup OR affirmative__shortanswer OR negative__shortanswer
+  - or:
+    - intent: nonexclamation__positive__materialpr
+    - intent: nonexclamation__negative__materialpr
+    - intent: nonexclamation__negative__identifyingpr
+    - intent: nonexclamation__positive__attributivepr
+    - intent: nonexclamation__negative__attributivepr
+    - intent: nonexclamation__positive__mentalpr
+    - intent: nonexclamation__negative__mentalpr
+    - intent: affirmative__nominalgroup
+    - intent: affirmative__adjectivegroup
+    - intent: affirmative__shortanswer
+    - intent: negative__shortanswer
   - slot_was_set:
     - "a_kiss_progress": 1
     - "nlu_confused": "positive"
     - "nlu_confident": null
-  - action: followup
-    name: "utter_return_to_previous_question"
   - action: utter_can_not_understand
   - action: action_reset_nlu_confused_slot
   - slot_was_set:
@@ -325,15 +387,24 @@ stories:
     - "will_return": null
   - checkpoint: check_a_kiss_01_DidCarlosBuyOldCar
 
-- story: Scenario of utter [CAN_NOT_UNDERSTAND] - [02]
+- story: Scenario of utter CAN_NOT_UNDERSTAND-02
   steps:
-  - intent: nonexclamation__positive__materialpr OR nonexclamation__negative__materialpr OR nonexclamation__negative__identifyingpr OR nonexclamation__positive__attributivepr OR nonexclamation__negative__attributivepr OR nonexclamation__positive__mentalpr OR nonexclamation__negative__mentalpr OR affirmative__nominalgroup OR affirmative__adjectivegroup OR affirmative__shortanswer OR negative__shortanswer
+  - or:
+    - intent: nonexclamation__positive__materialpr
+    - intent: nonexclamation__negative__materialpr
+    - intent: nonexclamation__negative__identifyingpr
+    - intent: nonexclamation__positive__attributivepr
+    - intent: nonexclamation__negative__attributivepr
+    - intent: nonexclamation__positive__mentalpr
+    - intent: nonexclamation__negative__mentalpr
+    - intent: affirmative__nominalgroup
+    - intent: affirmative__adjectivegroup
+    - intent: affirmative__shortanswer
+    - intent: negative__shortanswer
   - slot_was_set:
     - "a_kiss_progress": 2
     - "nlu_confused": "positive"
     - "nlu_confident": null
-  - action: followup
-    name: "utter_return_to_previous_question"
   - action: utter_can_not_understand
   - action: action_reset_nlu_confused_slot
   - slot_was_set:
@@ -343,15 +414,24 @@ stories:
     - "will_return": null
   - checkpoint: check_a_kiss_02_DidCarlosBuyExpensiveBicycle
 
-- story: Scenario of utter [CAN_NOT_UNDERSTAND] - [03]
+- story: Scenario of utter CAN_NOT_UNDERSTAND-03
   steps:
-  - intent: nonexclamation__positive__materialpr OR nonexclamation__negative__materialpr OR nonexclamation__negative__identifyingpr OR nonexclamation__positive__attributivepr OR nonexclamation__negative__attributivepr OR nonexclamation__positive__mentalpr OR nonexclamation__negative__mentalpr OR affirmative__nominalgroup OR affirmative__adjectivegroup OR affirmative__shortanswer OR negative__shortanswer
+  - or:
+    - intent: nonexclamation__positive__materialpr
+    - intent: nonexclamation__negative__materialpr
+    - intent: nonexclamation__negative__identifyingpr
+    - intent: nonexclamation__positive__attributivepr
+    - intent: nonexclamation__negative__attributivepr
+    - intent: nonexclamation__positive__mentalpr
+    - intent: nonexclamation__negative__mentalpr
+    - intent: affirmative__nominalgroup
+    - intent: affirmative__adjectivegroup
+    - intent: affirmative__shortanswer
+    - intent: negative__shortanswer
   - slot_was_set:
     - "a_kiss_progress": 3
     - "nlu_confused": "positive"
     - "nlu_confident": null
-  - action: followup
-    name: "utter_return_to_previous_question"
   - action: utter_can_not_understand
   - action: action_reset_nlu_confused_slot
   - slot_was_set:
@@ -361,15 +441,24 @@ stories:
     - "will_return": null
   - checkpoint: check_a_kiss_03_HowBigWasCar
 
-- story: Scenario of utter [CAN_NOT_UNDERSTAND] - [04]
+- story: Scenario of utter CAN_NOT_UNDERSTAND-04
   steps:
-  - intent: nonexclamation__positive__materialpr OR nonexclamation__negative__materialpr OR nonexclamation__negative__identifyingpr OR nonexclamation__positive__attributivepr OR nonexclamation__negative__attributivepr OR nonexclamation__positive__mentalpr OR nonexclamation__negative__mentalpr OR affirmative__nominalgroup OR affirmative__adjectivegroup OR affirmative__shortanswer OR negative__shortanswer
+  - or:
+    - intent: nonexclamation__positive__materialpr
+    - intent: nonexclamation__negative__materialpr
+    - intent: nonexclamation__negative__identifyingpr
+    - intent: nonexclamation__positive__attributivepr
+    - intent: nonexclamation__negative__attributivepr
+    - intent: nonexclamation__positive__mentalpr
+    - intent: nonexclamation__negative__mentalpr
+    - intent: affirmative__nominalgroup
+    - intent: affirmative__adjectivegroup
+    - intent: affirmative__shortanswer
+    - intent: negative__shortanswer
   - slot_was_set:
     - "a_kiss_progress": 4
     - "nlu_confused": "positive"
     - "nlu_confident": null
-  - action: followup
-    name: "utter_return_to_previous_question"
   - action: utter_can_not_understand
   - action: action_reset_nlu_confused_slot
   - slot_was_set:
@@ -379,15 +468,24 @@ stories:
     - "will_return": null
   - checkpoint: check_a_kiss_04_WhatColorWasCar
 
-- story: Scenario of utter [CAN_NOT_UNDERSTAND] - [05]
+- story: Scenario of utter CAN_NOT_UNDERSTAND-05
   steps:
-  - intent: nonexclamation__positive__materialpr OR nonexclamation__negative__materialpr OR nonexclamation__negative__identifyingpr OR nonexclamation__positive__attributivepr OR nonexclamation__negative__attributivepr OR nonexclamation__positive__mentalpr OR nonexclamation__negative__mentalpr OR affirmative__nominalgroup OR affirmative__adjectivegroup OR affirmative__shortanswer OR negative__shortanswer
+  - or:
+    - intent: nonexclamation__positive__materialpr
+    - intent: nonexclamation__negative__materialpr
+    - intent: nonexclamation__negative__identifyingpr
+    - intent: nonexclamation__positive__attributivepr
+    - intent: nonexclamation__negative__attributivepr
+    - intent: nonexclamation__positive__mentalpr
+    - intent: nonexclamation__negative__mentalpr
+    - intent: affirmative__nominalgroup
+    - intent: affirmative__adjectivegroup
+    - intent: affirmative__shortanswer
+    - intent: negative__shortanswer
   - slot_was_set:
     - "a_kiss_progress": 5
     - "nlu_confused": "positive"
     - "nlu_confident": null
-  - action: followup
-    name: "utter_return_to_previous_question"
   - action: utter_can_not_understand
   - action: action_reset_nlu_confused_slot
   - slot_was_set:
@@ -397,15 +495,24 @@ stories:
     - "will_return": null
   - checkpoint: check_a_kiss_05_WhileDrivingDownWhatDidHeSee
 
-- story: Scenario of utter [CAN_NOT_UNDERSTAND] - [06]
+- story: Scenario of utter CAN_NOT_UNDERSTAND-06
   steps:
-  - intent: nonexclamation__positive__materialpr OR nonexclamation__negative__materialpr OR nonexclamation__negative__identifyingpr OR nonexclamation__positive__attributivepr OR nonexclamation__negative__attributivepr OR nonexclamation__positive__mentalpr OR nonexclamation__negative__mentalpr OR affirmative__nominalgroup OR affirmative__adjectivegroup OR affirmative__shortanswer OR negative__shortanswer
+  - or:
+    - intent: nonexclamation__positive__materialpr
+    - intent: nonexclamation__negative__materialpr
+    - intent: nonexclamation__negative__identifyingpr
+    - intent: nonexclamation__positive__attributivepr
+    - intent: nonexclamation__negative__attributivepr
+    - intent: nonexclamation__positive__mentalpr
+    - intent: nonexclamation__negative__mentalpr
+    - intent: affirmative__nominalgroup
+    - intent: affirmative__adjectivegroup
+    - intent: affirmative__shortanswer
+    - intent: negative__shortanswer
   - slot_was_set:
     - "a_kiss_progress": 6
     - "nlu_confused": "positive"
     - "nlu_confident": null
-  - action: followup
-    name: "utter_return_to_previous_question"
   - action: utter_can_not_understand
   - action: action_reset_nlu_confused_slot
   - slot_was_set:
@@ -415,7 +522,7 @@ stories:
     - "will_return": null
   - checkpoint: check_a_kiss_06_DidSheLookBeautiful
 
-- story: Scenario of [WRONG_ANSWER] - [01]
+- story: Scenario of WRONG_ANSWER-01
   steps:
   - checkpoint: check_a_kiss_01_DidCarlosBuyOldCar
   - intent: affirmative__shortanswer
@@ -429,7 +536,7 @@ stories:
     - "will_return": null
   - checkpoint: check_a_kiss_02_DidCarlosBuyExpensiveBicycle
 
-- story: Scenario of [WRONG_ANSWER] - [02]
+- story: Scenario of WRONG_ANSWER-02
   steps:
   - checkpoint: check_a_kiss_02_DidCarlosBuyExpensiveBicycle
   - intent: affirmative__shortanswer
@@ -443,10 +550,11 @@ stories:
     - "will_return": null
   - checkpoint: check_a_kiss_03_HowBigWasCar
 
-- story: Scenario of [WRONG_ANSWER] - [03] - [01]
+- story: Scenario of WRONG_ANSWER-03-01
   steps:
   - checkpoint: check_a_kiss_03_HowBigWasCar
   - intent: nonexclamation__positive__attributivepr
+    entities:
     - "carrier": "it"
     - "attribute": "small"
   - action: utter_a_kiss_03_disagree
@@ -459,7 +567,7 @@ stories:
     - "will_return": null
   - checkpoint: check_a_kiss_04_WhatColorWasCar
 
-- story: Scenario of [WRONG_ANSWER] - [03] - [02]
+- story: Scenario of WRONG_ANSWER-03-02
   steps:
   - checkpoint: check_a_kiss_03_HowBigWasCar
   - intent: nonexclamation__positive__attributivepr
@@ -476,10 +584,11 @@ stories:
     - "will_return": null
   - checkpoint: check_a_kiss_04_WhatColorWasCar
 
-- story: Scenario of [WRONG_ANSWER] - [04] - [01]
+- story: Scenario of WRONG_ANSWER-04-01
   steps:
   - checkpoint: check_a_kiss_04_WhatColorWasCar
   - intent: nonexclamation__positive__attributivepr
+    entities:
     - "carrier": "it"
     - "attribute": "green"
   - action: utter_a_kiss_04_disagree
@@ -492,7 +601,7 @@ stories:
     - "will_return": null
   - checkpoint: check_a_kiss_05_WhileDrivingDownWhatDidHeSee
 
-- story: Scenario of [WRONG_ANSWER] - [04] - [02]
+- story: Scenario of WRONG_ANSWER-04-02
   steps:
   - checkpoint: check_a_kiss_04_WhatColorWasCar
   - intent: nonexclamation__positive__attributivepr
@@ -509,7 +618,7 @@ stories:
     - "will_return": null
   - checkpoint: check_a_kiss_05_WhileDrivingDownWhatDidHeSee
 
-- story: Scenario of [WRONG_ANSWER] - [04] - [03]
+- story: Scenario of WRONG_ANSWER-04-03
   steps:
   - checkpoint: check_a_kiss_04_WhatColorWasCar
   - intent: nonexclamation__positive__attributivepr
@@ -517,7 +626,7 @@ stories:
     - "carrier": "it"
     - "attribute": "bright"
   - action: utter_a_kiss_04_disagree
-  - action:action:action:   utter_a_kiss_05_WhileDrivingDownWhatDidHeSee
+  - action: utter_a_kiss_05_WhileDrivingDownWhatDidHeSee
   - action: action_store_lesson_history__a_kiss
   - slot_was_set:
     - "a_kiss_progress": 5
@@ -526,7 +635,7 @@ stories:
     - "will_return": null
   - checkpoint: check_a_kiss_05_WhileDrivingDownWhatDidHeSee
 
-- story: Scenario of [WRONG_ANSWER] - [05] - [01]
+- story: Scenario of WRONG_ANSWER-05-01
   steps:
   - checkpoint: check_a_kiss_05_WhileDrivingDownWhatDidHeSee
   - intent: nonexclamation__positive__mentalpr
@@ -544,7 +653,7 @@ stories:
     - "will_return": null
   - checkpoint: check_a_kiss_06_DidSheLookBeautiful
 
-- story: Scenario of [WRONG_ANSWER] - [05] - [02]
+- story: Scenario of WRONG_ANSWER-05-02
   steps:
   - checkpoint: check_a_kiss_05_WhileDrivingDownWhatDidHeSee
   - intent: nonexclamation__positive__mentalpr
@@ -562,7 +671,7 @@ stories:
     - "will_return": null
   - checkpoint: check_a_kiss_06_DidSheLookBeautiful
 
-- story: Scenario of [WRONG_ANSWER] - [05] - [03]
+- story: Scenario of WRONG_ANSWER-05-03
   steps:
   - checkpoint: check_a_kiss_05_WhileDrivingDownWhatDidHeSee
   - intent: affirmative__nominalgroup
@@ -578,7 +687,7 @@ stories:
     - "will_return": null
   - checkpoint: check_a_kiss_06_DidSheLookBeautiful
 
-- story: Scenario of [WRONG_ANSWER] - [06] - [01]
+- story: Scenario of WRONG_ANSWER-06-01
   steps:
   - checkpoint: check_a_kiss_06_DidSheLookBeautiful
   - intent: negative__shortanswer
@@ -586,10 +695,11 @@ stories:
   - action: utter_lesson_completed
   - action: action_restart
 
-- story: Scenario of [WRONG_ANSWER] - [06] - [02]
+- story: Scenario of WRONG_ANSWER-06-02
   steps:
   - checkpoint: check_a_kiss_06_DidSheLookBeautiful
   - intent: nonexclamation__positive__attributivepr
+    entities:
     - "carrier": "she"
     - "attribute": "ugly"
   - action: utter_a_kiss_06_disagree

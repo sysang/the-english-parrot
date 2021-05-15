@@ -1,4 +1,8 @@
-## intent:client_initializes_a_kiss_story
+version: "2.0"
+
+nlu:
+- intent: client_initializes_a_kiss_story
+  examples: |
     - The English parrot initializes a kiss story
     - The English parrot starts a kiss story
     - The English parrot begins a kiss story

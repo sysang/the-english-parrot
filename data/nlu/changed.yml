@@ -1,4 +1,8 @@
-## intent:client_initializes_changed_story
+version: "2.0"
+
+nlu:
+- intent: client_initializes_changed_story
+  examples: |
     - The English parrot initializes changed story
     - The English parrot starts changed story
     - The English parrot begins changed story
