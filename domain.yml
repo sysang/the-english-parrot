@@ -1,3 +1,5 @@
+---
+
 version: "2.0"
 
 session_config:
@@ -5,46 +7,46 @@ session_config:
   session_expiration_time: 480
 
 actions:
-- action_not_sure_what_to_do_fallback
-- action_not_understand_fallback
-- action_store_lesson_history__a_kiss
-- action_reset_nlu_confused_slot
-- action_initialize_a_kiss_story
-- action_initialize_changed_story
-- action_store_lesson_history__changed
+  - action_not_sure_what_to_do_fallback
+  - action_not_understand_fallback
+  - action_store_lesson_history__a_kiss
+  - action_reset_nlu_confused_slot
+  - action_initialize_a_kiss_story
+  - action_initialize_changed_story
+  - action_store_lesson_history__changed
 
 entities:
-- materialpr
-- actor
-- goal
-- scope
-- beneficiary
-- attributivepr
-- carrier
-- attribute
-- identifyingpr
-- identified
-- identifier
-- mentalpr
-- senser
-- phenomenon
-- behaviouralpr
-- behaver
-- verbalpr
-- sayer
-- reciver
-- verbiage
-- existantialpr
-- existent
-- nominalgrp
-- adjectivegrp
-- prepositionallocation
-- nlu_confused
-- will_return
-- nlu_confident
-- lesson_topic
-- a_kiss_progress
-- changed_progress
+  - materialpr
+  - actor
+  - goal
+  - scope
+  - beneficiary
+  - attributivepr
+  - carrier
+  - attribute
+  - identifyingpr
+  - identified
+  - identifier
+  - mentalpr
+  - senser
+  - phenomenon
+  - behaviouralpr
+  - behaver
+  - verbalpr
+  - sayer
+  - reciver
+  - verbiage
+  - existantialpr
+  - existent
+  - nominalgrp
+  - adjectivegrp
+  - prepositionallocation
+  - nlu_confused
+  - will_return
+  - nlu_confident
+  - lesson_topic
+  - a_kiss_progress
+  - changed_progress
 
 slots:
   materialpr:
@@ -105,12 +107,13 @@ slots:
   will_return:
     type: text
   lesson_history:
-    influence_conversation: False
+    type: RasaSlotTypes.OnehotVector99
+    influence_conversation: false
   lesson_topic:
     type: categorical
     values:
-    - a_kiss_story
-    - changed_story
+      - a_kiss_story
+      - changed_story
   a_kiss_progress:
     type: RasaSlotTypes.BinaryVector7
   changed_progress:
@@ -118,164 +121,163 @@ slots:
 
 responses:
   utter_can_not_understand:
-  - text: "Sorry. i can not understand. Please help to say it again?"
+    - text: "Sorry. i can not understand. Please help to say it again?"
   utter_return_to_previous_question:
-  - text: "That is quite embarrassing because I'm getting lost. Let's go back to previous question."
+    - text: "That is quite embarrassing because I'm getting lost. Let's go back to previous question."
   utter_lesson_completed:
-  - text: "That's all. You did a very good job."
+    - text: "That's all. You did a very good job."
   utter_start_a_kiss_lesson:
-  - text: "in this lesson i will ask many questions. you must answer every question.  okay. let's start the story. a kiss..."
+    - text: "in this lesson i will ask many questions. you must answer every question.  okay. let's start the story. a kiss..."
   utter_a_kiss_01_DidCarlosBuyOldCar:
-  - text: "did carlos buy an old car"
+    - text: "did carlos buy an old car"
   utter_a_kiss_01_disagree:
-  - text: "it's not correct. he bought a new car"
+    - text: "it's not correct. he bought a new car"
   utter_a_kiss_02_DidCarlosBuyExpensiveBicycle:
-  - text: "did carlos buy an expensive bicycle"
+    - text: "did carlos buy an expensive bicycle"
   utter_a_kiss_02_disagree:
-  - text: "no. it was an expensive car"
+    - text: "no. it was an expensive car"
   utter_a_kiss_03_HowBigWasCar:
-  - text: "how big is the car"
+    - text: "how big is the car"
   utter_a_kiss_03_disagree:
-  - text: "no no. the car was huge. very big"
+    - text: "no no. the car was huge. very big"
   utter_a_kiss_04_WhatColorWasCar:
-  - text: "what color was the car"
+    - text: "what color was the car"
   utter_a_kiss_04_disagree:
-  - text: "not correct. It was blue"
+    - text: "not correct. It was blue"
   utter_a_kiss_05_WhileDrivingDownWhatDidHeSee:
-  - text: "while driving down the street. what did he see"
+    - text: "while driving down the street. what did he see"
   utter_a_kiss_05_disagree:
-  - text: "while driving down the street he saw a girl on bicycle"
+    - text: "while driving down the street he saw a girl on bicycle"
   utter_a_kiss_06_DidSheLookBeautiful:
-  - text: "did she look beautiful"
+    - text: "did she look beautiful"
   utter_a_kiss_06_disagree:
-  - text: "actually, the girl is beautiful"
+    - text: "actually, the girl is beautiful"
   utter_start_a_changed_lesson:
-  - text: "in this lesson i will ask many questions. you must answer every question.  okay. let's start the story. changed..."
+    - text: "in this lesson i will ask many questions. you must answer every question.  okay. let's start the story. changed..."
   utter_changed_01_WhereDidSheLive:
-  - text: "where did she live"
+    - text: "where did she live"
   utter_changed_02_DidGracHaveProblem:
-  - text: "did grace have a problem"
+    - text: "did grace have a problem"
   utter_changed_03_DidSheHaveProblemHerChildren:
-  - text: "did she have a problem with her children"
+    - text: "did she have a problem with her children"
   utter_changed_04_DidSheHaveProblemHerMom:
-  - text: "did she have a problem with her mom"
+    - text: "did she have a problem with her mom"
   utter_changed_05_DidSheHaveProblemHerHusband:
-  - text: "did she have a problem with her husband"
+    - text: "did she have a problem with her husband"
   utter_changed_06_WhichProblemDidSheHaveHerHusband:
-  - text: "which problem did she have with her husband"
+    - text: "which problem did she have with her husband"
 
 intents:
-- nonexclamation__negative__attributivepr:
-    use_entities:
-    - lesson_topic
-    - a_kiss_progress
-    - nlu_confused
-    - nlu_confident
-    - will_return
-    - attributivepr
-    - attributive
-    - a_kiss_progress
-    - carrier
-- nonexclamation__positive__materialpr:
-    use_entities:
-    - lesson_topic
-    - a_kiss_progress
-    - nlu_confused
-    - nlu_confident
-    - will_return
-    - materialpr
-    - beneficiary
-    - goal
-    - actor
-    - scope
-- nonexclamation__negative__materialpr:
-    use_entities:
-    - lesson_topic
-    - a_kiss_progress
-    - nlu_confused
-    - nlu_confident
-    - will_return
-    - materialpr
-    - beneficiary
-    - goal
-    - actor
-    - scope
-- nonexclamation__positive__identifyingpr:
-    use_entities:
-    - lesson_topic
-    - a_kiss_progress
-    - nlu_confused
-    - nlu_confident
-    - will_return
-    - identifier
-    - identifyingpr
-    - identified
-- nonexclamation__negative__identifyingpr:
-    use_entities:
-    - lesson_topic
-    - a_kiss_progress
-    - nlu_confused
-    - nlu_confident
-    - will_return
-    - identifier
-    - identifyingpr
-    - identified
-- nonexclamation__positive__attributivepr:
-    use_entities:
-    - lesson_topic
-    - a_kiss_progress
-    - nlu_confused
-    - nlu_confident
-    - will_return
-    - attributivepr
-    - attribute
-    - carrier
-- nonexclamation__positive__mentalpr:
-    use_entities:
-    - lesson_topic
-    - a_kiss_progress
-    - nlu_confused
-    - nlu_confident
-    - will_return
-    - phenomenon
-    - mentalpr
-    - senser
-- nonexclamation__negative__mentalpr:
-    use_entities:
-    - lesson_topic
-    - a_kiss_progress
-    - nlu_confused
-    - nlu_confident
-    - will_return
-    - phenomenon
-    - mentalpr
-    - senser
-- affirmative__nominalgroup:
-    use_entities:
-    - lesson_topic
-    - a_kiss_progress
-    - nlu_confused
-    - nlu_confident
-    - will_return
-    - nominalgrp
-- affirmative__adjectivegroup:
-    use_entities:
-    - lesson_topic
-    - a_kiss_progress
-    - nlu_confused
-    - nlu_confident
-    - will_return
-    - adjectivegrp
-- affirmative__prepositionalphrase__location:
-    use_entities:
-    - lesson_topic
-    - a_kiss_progress
-    - nlu_confused
-    - nlu_confident
-    - will_return
-    - prepositionallocation
-- negative__shortanswer
-- affirmative__shortanswer
-- client_initializes_a_kiss_story
-- client_initializes_changed_story
-
+  - nonexclamation__negative__attributivepr:
+      use_entities:
+        - lesson_topic
+        - a_kiss_progress
+        - nlu_confused
+        - nlu_confident
+        - will_return
+        - attributivepr
+        - attributive
+        - a_kiss_progress
+        - carrier
+  - nonexclamation__positive__materialpr:
+      use_entities:
+        - lesson_topic
+        - a_kiss_progress
+        - nlu_confused
+        - nlu_confident
+        - will_return
+        - materialpr
+        - beneficiary
+        - goal
+        - actor
+        - scope
+  - nonexclamation__negative__materialpr:
+      use_entities:
+        - lesson_topic
+        - a_kiss_progress
+        - nlu_confused
+        - nlu_confident
+        - will_return
+        - materialpr
+        - beneficiary
+        - goal
+        - actor
+        - scope
+  - nonexclamation__positive__identifyingpr:
+      use_entities:
+        - lesson_topic
+        - a_kiss_progress
+        - nlu_confused
+        - nlu_confident
+        - will_return
+        - identifier
+        - identifyingpr
+        - identified
+  - nonexclamation__negative__identifyingpr:
+      use_entities:
+        - lesson_topic
+        - a_kiss_progress
+        - nlu_confused
+        - nlu_confident
+        - will_return
+        - identifier
+        - identifyingpr
+        - identified
+  - nonexclamation__positive__attributivepr:
+      use_entities:
+        - lesson_topic
+        - a_kiss_progress
+        - nlu_confused
+        - nlu_confident
+        - will_return
+        - attributivepr
+        - attribute
+        - carrier
+  - nonexclamation__positive__mentalpr:
+      use_entities:
+        - lesson_topic
+        - a_kiss_progress
+        - nlu_confused
+        - nlu_confident
+        - will_return
+        - phenomenon
+        - mentalpr
+        - senser
+  - nonexclamation__negative__mentalpr:
+      use_entities:
+        - lesson_topic
+        - a_kiss_progress
+        - nlu_confused
+        - nlu_confident
+        - will_return
+        - phenomenon
+        - mentalpr
+        - senser
+  - affirmative__nominalgroup:
+      use_entities:
+        - lesson_topic
+        - a_kiss_progress
+        - nlu_confused
+        - nlu_confident
+        - will_return
+        - nominalgrp
+  - affirmative__adjectivegroup:
+      use_entities:
+        - lesson_topic
+        - a_kiss_progress
+        - nlu_confused
+        - nlu_confident
+        - will_return
+        - adjectivegrp
+  - affirmative__prepositionalphrase__location:
+      use_entities:
+        - lesson_topic
+        - a_kiss_progress
+        - nlu_confused
+        - nlu_confident
+        - will_return
+        - prepositionallocation
+  - negative__shortanswer
+  - affirmative__shortanswer
+  - client_initializes_a_kiss_story
+  - client_initializes_changed_story

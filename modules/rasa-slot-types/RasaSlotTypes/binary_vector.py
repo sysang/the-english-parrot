@@ -1,7 +1,8 @@
 import logging
-from rasa.shared.core.slots  import Slot
+from rasa.shared.core.slots import Slot
 
 logger = logging.getLogger(__name__)
+
 
 class OnehotVector99(Slot):
 
@@ -23,6 +24,7 @@ class OnehotVector99(Slot):
         r[selfval] = 1.0
 
         return r
+
 
 class BinaryVector7(Slot):
 

@@ -30,7 +30,12 @@ class ActionInitializeAKissStory(Action):
 
     def run(self, dispatcher, tracker, domain):
 
-        return [SlotSet("lesson_topic", 'a_kiss_story'), SlotSet('nlu_confused', None), SlotSet('nlu_confident', 'positive'), SlotSet('will_return', None), SlotSet("lesson_history", []), SlotSet("a_kiss_progress", 0)]
+        return [SlotSet("lesson_topic", 'a_kiss_story'),
+                SlotSet('nlu_confused', None),
+                SlotSet('nlu_confident', 'positive'),
+                SlotSet('will_return', None),
+                SlotSet("lesson_history", []),
+                SlotSet("a_kiss_progress", 0)]
 
 
 class ActionStoreLessonHistory__a_kiss(Action):
@@ -64,7 +69,11 @@ class ActionStoreLessonHistory__a_kiss(Action):
             data = []
         data.append(question_num)
 
-        return [SlotSet('nlu_confused', None), SlotSet('nlu_confident', 'positive'), SlotSet('will_return', None), SlotSet("lesson_history", data), SlotSet("a_kiss_progress", question_num)]
+        return [SlotSet('nlu_confused', None),
+                SlotSet('nlu_confident', 'positive'),
+                SlotSet('will_return', None),
+                SlotSet("lesson_history", data),
+                SlotSet("a_kiss_progress", question_num)]
 
 
 class ActionResetNLUConfusedSlot(Action):
@@ -74,7 +83,8 @@ class ActionResetNLUConfusedSlot(Action):
 
     def run(self, dispatcher, tracker, domain):
 
-        return [SlotSet('nlu_confused', None), SlotSet('nlu_confident', 'positive')]
+        return [SlotSet('nlu_confused', None),
+                SlotSet('nlu_confident', 'positive')]
 
 
 class ActionNotUnderstandFallback(Action):
@@ -85,7 +95,9 @@ class ActionNotUnderstandFallback(Action):
         current_state = tracker.current_state()
         logger.debug(f"Current state: {current_state}")
 
-        return [SlotSet("nlu_confused", "positive"), SlotSet('nlu_confident', None), FollowupAction('utter_can_not_understand')]
+        return [SlotSet("nlu_confused", "positive"),
+                SlotSet('nlu_confident', None),
+                FollowupAction('utter_can_not_understand')]
 
 
 class ActionNotSureWhatToDoFallback(Action):
@@ -112,7 +124,8 @@ class ActionNotSureWhatToDoFallback(Action):
     def run(self, dispatcher, tracker, domain):
         # events = tracker.current_state()['events']
 
-        return [SlotSet('will_return', "positive"), FollowupAction('utter_return_to_previous_question')]
+        return [SlotSet('will_return', "positive"),
+                FollowupAction('utter_return_to_previous_question')]
 
 
 class ActionInitializeChangedStory(Action):
@@ -122,7 +135,12 @@ class ActionInitializeChangedStory(Action):
 
     def run(self, dispatcher, tracker, domain):
 
-        return [SlotSet("lesson_topic", 'changed_story'), SlotSet('nlu_confused', None), SlotSet('nlu_confident', 'positive'), SlotSet('will_return', None), SlotSet("lesson_history", []), SlotSet("changed_progress", 0)]
+        return [SlotSet("lesson_topic", 'changed_story'),
+                SlotSet('nlu_confused', None),
+                SlotSet('nlu_confident', 'positive'),
+                SlotSet('will_return', None),
+                SlotSet("lesson_history", []),
+                SlotSet("changed_progress", 0)]
 
 
 class ActionStoreLessonHistory__changed(Action):
@@ -153,4 +171,8 @@ class ActionStoreLessonHistory__changed(Action):
             data = []
         data.append(question_num)
 
-        return [SlotSet('nlu_confused', None), SlotSet('nlu_confident', 'positive'), SlotSet('will_return', None), SlotSet("lesson_history", data), SlotSet("changed_progress", question_num)]
+        return [SlotSet('nlu_confused', None),
+                SlotSet('nlu_confident', 'positive'),
+                SlotSet('will_return', None),
+                SlotSet("lesson_history", data),
+                SlotSet("changed_progress", question_num)]

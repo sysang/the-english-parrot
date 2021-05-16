@@ -1,5 +1,6 @@
 from rasa.core.policies.fallback import FallbackPolicy
 
+
 class NLUFallbackPolicy(FallbackPolicy):
 
     def __init__(
@@ -12,11 +13,14 @@ class NLUFallbackPolicy(FallbackPolicy):
     ) -> None:
 
         core_threshold = 0.01
-        super().__init__(priority=priority,
+        super().__init__(
+                priority=priority,
                 nlu_threshold=nlu_threshold,
                 ambiguity_threshold=ambiguity_threshold,
                 core_threshold=core_threshold,
-                fallback_action_name=fallback_action_name)
+                fallback_action_name=fallback_action_name
+            )
+
 
 class PredictionFallbackPolicy(FallbackPolicy):
 
@@ -31,9 +35,9 @@ class PredictionFallbackPolicy(FallbackPolicy):
 
         nlu_threshold = 0.01
         ambiguity_threshold = 0.01
-        super().__init__(priority=priority,
+        super().__init__(
+                priority=priority,
                 nlu_threshold=nlu_threshold,
                 ambiguity_threshold=ambiguity_threshold,
                 core_threshold=core_threshold,
                 fallback_action_name=fallback_action_name)
-
