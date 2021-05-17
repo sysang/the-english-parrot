@@ -19,7 +19,7 @@ stopactiond:
 restartactiond: stopactiond actiond
 
 training:
-	/usr/local/bin/rasa train -vv --augmentation 0
+	/usr/local/bin/rasa train -vv --augmentation 1
 
 train:
 	rasa train -v --augmentation 0

@@ -19,10 +19,13 @@ pipeline:
     constrain_similarities: true
     model_confidence: "linear_norm"
   - name: EntitySynonymMapper
+  - name: FallbackClassifier
+    threshold: 0.25
+    ambiguity_threshold: 0.01
 policies:
   - name: TEDPolicy
-    max_history: 10
-    epochs: 10
+    max_history: null  # Default value
+    epochs: 15
     batch_size:
       - 16
       - 32
@@ -38,14 +41,18 @@ policies:
       dialogue: 1024
     constrain_similarities: true
     model_confidence: "linear_norm"
+    split_entities_by_comma: true
   - name: AugmentedMemoizationPolicy
     max_history: 10
-  - name: "RasaCustomPolicies.NLUFallbackPolicy"
-    priority: 6
-    nlu_threshold: 0.25
-    ambiguity_threshold: 0.15
-    fallback_action_name: 'action_not_understand_fallback'
-  - name: "RasaCustomPolicies.PredictionFallbackPolicy"
+  # - name: "RasaCustomPolicies.NLUFallbackPolicy"
+  #   priority: 6
+  #   nlu_threshold: 0.25
+  #   ambiguity_threshold: 0.15
+  #   fallback_action_name: 'action_not_understand_fallback'
+  - name: "RulePolicy"
     priority: 4
-    core_threshold: 0.25
-    fallback_action_name: 'action_not_sure_what_to_do_fallback'
+    core_fallback_threshold: 0.2
+    core_fallback_action_name: 'action_not_sure_what_to_do_fallback'
+    enable_fallback_prediction: true
+    restrict_rules: true
+    check_for_contradictions: true

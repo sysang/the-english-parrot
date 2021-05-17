@@ -7,7 +7,7 @@ logger = logging.getLogger(__name__)
 class OnehotVector99(Slot):
 
     def feature_dimensionality(self):
-        return 10
+        return 100
 
     def as_feature(self):
         dim = self.feature_dimensionality()

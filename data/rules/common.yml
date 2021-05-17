@@ -1,0 +1,34 @@
+---
+
+version: "2.0"
+
+rules:
+  - rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+    steps:
+      - intent: nlu_fallback
+      - action: utter_please_rephrase
+
+  - rule: Return to previous question
+    condition:
+      - slot_was_set:
+          - will_return: "positive"
+    steps:
+      # Below lines should be removed, but left here for memorizing purpose
+      # Below lines caused error: - the prediction of the action 'utter_a_kiss_06_DidSheLookBeautiful'
+      #   in story 'Scenario MAIN > Scenario of UTTER_PLEASE_REPHRASE > Scenario of utter RETURN_TO_PREVIOUS_QUESTION-06'
+      #   is contradicting with rule(s) 'Return to previous question' which predicted action 'utter_return_to_previous_question'.
+
+      # - or:
+      #     - intent: nonexclamation__positive__materialpr
+      #     - intent: nonexclamation__negative__materialpr
+      #     - intent: nonexclamation__negative__identifyingpr
+      #     - intent: nonexclamation__positive__attributivepr
+      #     - intent: nonexclamation__negative__attributivepr
+      #     - intent: nonexclamation__positive__mentalpr
+      #     - intent: nonexclamation__negative__mentalpr
+      #     - intent: affirmative__nominalgroup
+      #     - intent: affirmative__adjectivegroup
+      #     - intent: affirmative__shortanswer
+      #     - intent: negative__shortanswer
+      - action: utter_return_to_previous_question
+    wait_for_user_input: false

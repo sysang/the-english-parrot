@@ -10,7 +10,6 @@ actions:
   - action_not_sure_what_to_do_fallback
   - action_not_understand_fallback
   - action_store_lesson_history__a_kiss
-  - action_reset_nlu_confused_slot
   - action_initialize_a_kiss_story
   - action_initialize_changed_story
   - action_store_lesson_history__changed
@@ -45,8 +44,7 @@ entities:
   - will_return
   - nlu_confident
   - lesson_topic
-  - a_kiss_progress
-  - changed_progress
+  - story_progress
 
 slots:
   materialpr:
@@ -99,27 +97,19 @@ slots:
     type: RasaSlotTypes.WordVector
   prepositionallocation:
     type: RasaSlotTypes.WordVector
-  nlu_confused:
-    type: text
-  nlu_confident:
-    type: text
-    initial_value: positive
   will_return:
     type: text
-  lesson_history:
-    type: RasaSlotTypes.OnehotVector99
-    influence_conversation: false
   lesson_topic:
     type: categorical
     values:
       - a_kiss_story
       - changed_story
-  a_kiss_progress:
-    type: RasaSlotTypes.BinaryVector7
-  changed_progress:
-    type: RasaSlotTypes.BinaryVector7
+  story_progress:
+    type: RasaSlotTypes.OnehotVector99
 
 responses:
+  utter_please_rephrase:
+    - text: "I'm sorry, I didn't quite understand that. Could you rephrase?"
   utter_can_not_understand:
     - text: "Sorry. i can not understand. Please help to say it again?"
   utter_return_to_previous_question:
@@ -171,18 +161,15 @@ intents:
   - nonexclamation__negative__attributivepr:
       use_entities:
         - lesson_topic
-        - a_kiss_progress
         - nlu_confused
         - nlu_confident
         - will_return
         - attributivepr
         - attributive
-        - a_kiss_progress
         - carrier
   - nonexclamation__positive__materialpr:
       use_entities:
         - lesson_topic
-        - a_kiss_progress
         - nlu_confused
         - nlu_confident
         - will_return
@@ -194,7 +181,6 @@ intents:
   - nonexclamation__negative__materialpr:
       use_entities:
         - lesson_topic
-        - a_kiss_progress
         - nlu_confused
         - nlu_confident
         - will_return
@@ -206,7 +192,6 @@ intents:
   - nonexclamation__positive__identifyingpr:
       use_entities:
         - lesson_topic
-        - a_kiss_progress
         - nlu_confused
         - nlu_confident
         - will_return
@@ -216,7 +201,6 @@ intents:
   - nonexclamation__negative__identifyingpr:
       use_entities:
         - lesson_topic
-        - a_kiss_progress
         - nlu_confused
         - nlu_confident
         - will_return
@@ -226,7 +210,6 @@ intents:
   - nonexclamation__positive__attributivepr:
       use_entities:
         - lesson_topic
-        - a_kiss_progress
         - nlu_confused
         - nlu_confident
         - will_return
@@ -236,7 +219,6 @@ intents:
   - nonexclamation__positive__mentalpr:
       use_entities:
         - lesson_topic
-        - a_kiss_progress
         - nlu_confused
         - nlu_confident
         - will_return
@@ -246,7 +228,6 @@ intents:
   - nonexclamation__negative__mentalpr:
       use_entities:
         - lesson_topic
-        - a_kiss_progress
         - nlu_confused
         - nlu_confident
         - will_return
@@ -256,7 +237,6 @@ intents:
   - affirmative__nominalgroup:
       use_entities:
         - lesson_topic
-        - a_kiss_progress
         - nlu_confused
         - nlu_confident
         - will_return
@@ -264,7 +244,6 @@ intents:
   - affirmative__adjectivegroup:
       use_entities:
         - lesson_topic
-        - a_kiss_progress
         - nlu_confused
         - nlu_confident
         - will_return
@@ -272,7 +251,6 @@ intents:
   - affirmative__prepositionalphrase__location:
       use_entities:
         - lesson_topic
-        - a_kiss_progress
         - nlu_confused
         - nlu_confident
         - will_return

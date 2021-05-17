@@ -1,3 +1,5 @@
+---
+
 story:
   topic: "a_kiss"
   dialogueTurns:
@@ -133,10 +135,10 @@ story:
           name: "main"
           intention: "nonexclamation__positive__attributivepr"
           utterances:
-          - "[she](carrier) [was](attributivepr) [beautiful](attribute)"
-          - "[she](carrier) [is](attributivepr) [beautiful](attribute)"
-          - "[she](carrier) [looked](attributivepr) [beautiful](attribute)"
-          - "[she](carrier) [looks](attributivepr) [beautiful](attribute)"
+            - "[she](carrier) [was](attributivepr) [beautiful](attribute)"
+            - "[she](carrier) [is](attributivepr) [beautiful](attribute)"
+            - "[she](carrier) [looked](attributivepr) [beautiful](attribute)"
+            - "[she](carrier) [looks](attributivepr) [beautiful](attribute)"
         affirmative__shortanswer:
           name: "affirmative__shortanswer"
           intention: "affirmative__shortanswer"

@@ -3,23 +3,19 @@
 version: "2.0"
 
 stories:
-  - story: Scenario MAIN-00
+  - story: Scenario MAIN
     steps:
       - intent: client_initializes_a_kiss_story
       - action: action_initialize_a_kiss_story
       - slot_was_set:
-          - "a_kiss_progress": 0
           - "lesson_topic": "a_kiss_story"
-          - "nlu_confused": null
-          - "nlu_confident": "positive"
+          - "story_progress": 0
           - "will_return": null
       - action: utter_start_a_kiss_lesson
       - action: utter_a_kiss_01_DidCarlosBuyOldCar
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
-          - "a_kiss_progress": 1
-          - "nlu_confused": null
-          - "nlu_confident": "positive"
+          - "story_progress": 1
           - "will_return": null
       - checkpoint: check_a_kiss_01_DidCarlosBuyOldCar
       - intent: nonexclamation__positive__materialpr
@@ -30,9 +26,7 @@ stories:
       - action: utter_a_kiss_02_DidCarlosBuyExpensiveBicycle
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
-          - "a_kiss_progress": 2
-          - "nlu_confused": null
-          - "nlu_confident": "positive"
+          - "story_progress": 2
           - "will_return": null
       - checkpoint: check_a_kiss_02_DidCarlosBuyExpensiveBicycle
       - intent: nonexclamation__positive__identifyingpr
@@ -42,9 +36,7 @@ stories:
       - action: utter_a_kiss_03_HowBigWasCar
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
-          - "a_kiss_progress": 3
-          - "nlu_confused": null
-          - "nlu_confident": "positive"
+          - "story_progress": 3
           - "will_return": null
       - checkpoint: check_a_kiss_03_HowBigWasCar
       - intent: nonexclamation__positive__attributivepr
@@ -54,9 +46,7 @@ stories:
       - action: utter_a_kiss_04_WhatColorWasCar
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
-          - "a_kiss_progress": 4
-          - "nlu_confused": null
-          - "nlu_confident": "positive"
+          - "story_progress": 4
           - "will_return": null
       - checkpoint: check_a_kiss_04_WhatColorWasCar
       - intent: nonexclamation__positive__attributivepr
@@ -66,9 +56,7 @@ stories:
       - action: utter_a_kiss_05_WhileDrivingDownWhatDidHeSee
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
-          - "a_kiss_progress": 5
-          - "nlu_confused": null
-          - "nlu_confident": "positive"
+          - "story_progress": 5
           - "will_return": null
       - checkpoint: check_a_kiss_05_WhileDrivingDownWhatDidHeSee
       - intent: nonexclamation__positive__mentalpr
@@ -79,9 +67,7 @@ stories:
       - action: utter_a_kiss_06_DidSheLookBeautiful
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
-          - "a_kiss_progress": 6
-          - "nlu_confused": null
-          - "nlu_confident": "positive"
+          - "story_progress": 6
           - "will_return": null
       - checkpoint: check_a_kiss_06_DidSheLookBeautiful
       - intent: nonexclamation__positive__attributivepr
@@ -91,7 +77,7 @@ stories:
       - action: utter_lesson_completed
       - action: action_restart
 
-  - story: Scenario of NEGATIVE_FORM-01
+  - story: Scenario of NEGATIVE_FORM
     steps:
       - checkpoint: check_a_kiss_01_DidCarlosBuyOldCar
       - intent: nonexclamation__negative__materialpr
@@ -102,15 +88,8 @@ stories:
       - action: utter_a_kiss_02_DidCarlosBuyExpensiveBicycle
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
-          - "a_kiss_progress": 2
-          - "nlu_confused": null
-          - "nlu_confident": "positive"
+          - "story_progress": 2
           - "will_return": null
-      - checkpoint: check_a_kiss_02_DidCarlosBuyExpensiveBicycle
-
-  - story: Scenario of NEGATIVE_FORM-02
-    steps:
-      - checkpoint: check_a_kiss_02_DidCarlosBuyExpensiveBicycle
       - intent: nonexclamation__negative__identifyingpr
         entities:
           - "identified": "it"
@@ -118,92 +97,51 @@ stories:
       - action: utter_a_kiss_03_HowBigWasCar
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
-          - "a_kiss_progress": 3
-          - "nlu_confused": null
-          - "nlu_confident": "positive"
+          - "story_progress": 3
           - "will_return": null
-      - checkpoint: check_a_kiss_03_HowBigWasCar
-
-  - story: Scenario of SHORT_ANSWER-01
-    steps:
-      - checkpoint: check_a_kiss_01_DidCarlosBuyOldCar
       - intent: negative__shortanswer
       - action: utter_a_kiss_02_DidCarlosBuyExpensiveBicycle
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
-          - "a_kiss_progress": 2
-          - "nlu_confused": null
-          - "nlu_confident": "positive"
+          - "story_progress": 2
           - "will_return": null
-      - checkpoint: check_a_kiss_02_DidCarlosBuyExpensiveBicycle
-
-  - story: Scenario of SHORT_ANSWER-02
-    steps:
-      - checkpoint: check_a_kiss_02_DidCarlosBuyExpensiveBicycle
       - intent: negative__shortanswer
       - action: utter_a_kiss_03_HowBigWasCar
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
-          - "a_kiss_progress": 3
-          - "nlu_confused": null
-          - "nlu_confident": "positive"
+          - "story_progress": 3
           - "will_return": null
-      - checkpoint: check_a_kiss_03_HowBigWasCar
-
-  - story: Scenario of SHORT_ANSWER-03
-    steps:
-      - checkpoint: check_a_kiss_03_HowBigWasCar
       - intent: affirmative__adjectivegroup
         entities:
           - "adjectivegrp": "huge"
       - action: utter_a_kiss_04_WhatColorWasCar
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
-          - "a_kiss_progress": 4
-          - "nlu_confused": null
-          - "nlu_confident": "positive"
+          - "story_progress": 4
           - "will_return": null
-      - checkpoint: check_a_kiss_04_WhatColorWasCar
-
-  - story: Scenario of SHORT_ANSWER-04
-    steps:
-      - checkpoint: check_a_kiss_04_WhatColorWasCar
       - intent: affirmative__adjectivegroup
         entities:
           - "adjectivegrp": "blue"
       - action: utter_a_kiss_05_WhileDrivingDownWhatDidHeSee
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
-          - "a_kiss_progress": 5
-          - "nlu_confused": null
-          - "nlu_confident": "positive"
+          - "story_progress": 5
           - "will_return": null
-      - checkpoint: check_a_kiss_05_WhileDrivingDownWhatDidHeSee
-
-  - story: Scenario of SHORT_ANSWER-05
-    steps:
-      - checkpoint: check_a_kiss_05_WhileDrivingDownWhatDidHeSee
       - intent: affirmative__nominalgroup
         entities:
           - "nominalgrp": "a girl"
       - action: utter_a_kiss_06_DidSheLookBeautiful
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
-          - "a_kiss_progress": 6
-          - "nlu_confused": null
-          - "nlu_confident": "positive"
+          - "story_progress": 6
           - "will_return": null
-      - checkpoint: check_a_kiss_06_DidSheLookBeautiful
-
-  - story: Scenario of SHORT_ANSWER-06
-    steps:
-      - checkpoint: check_a_kiss_06_DidSheLookBeautiful
       - intent: affirmative__shortanswer
       - action: utter_lesson_completed
       - action: action_restart
 
   - story: Scenario of utter RETURN_TO_PREVIOUS_QUESTION-01
     steps:
+      - checkpoint: check_a_kiss_01_DidCarlosBuyOldCar
       - or:
           - intent: nonexclamation__positive__materialpr
           - intent: nonexclamation__negative__materialpr
@@ -217,19 +155,18 @@ stories:
           - intent: affirmative__shortanswer
           - intent: negative__shortanswer
       - slot_was_set:
-          - "a_kiss_progress": 1
+          - "story_progress": 1
           - "will_return": "positive"
       - action: utter_return_to_previous_question
       - action: utter_a_kiss_01_DidCarlosBuyOldCar
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
-          - "a_kiss_progress": 1
-          - "nlu_confused": null
+          - "story_progress": 1
           - "will_return": null
-      - checkpoint: check_a_kiss_01_DidCarlosBuyOldCar
 
   - story: Scenario of utter RETURN_TO_PREVIOUS_QUESTION-02
     steps:
+      - checkpoint: check_a_kiss_02_DidCarlosBuyExpensiveBicycle
       - or:
           - intent: nonexclamation__positive__materialpr
           - intent: nonexclamation__negative__materialpr
@@ -243,20 +180,18 @@ stories:
           - intent: affirmative__shortanswer
           - intent: negative__shortanswer
       - slot_was_set:
-          - "a_kiss_progress": 2
+          - "story_progress": 2
           - "will_return": "positive"
       - action: utter_return_to_previous_question
       - action: utter_a_kiss_02_DidCarlosBuyExpensiveBicycle
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
-          - "a_kiss_progress": 2
-          - "nlu_confused": null
-          - "nlu_confident": "positive"
+          - "story_progress": 2
           - "will_return": null
-      - checkpoint: check_a_kiss_01_DidCarlosBuyOldCar
 
   - story: Scenario of utter RETURN_TO_PREVIOUS_QUESTION-03
     steps:
+      - checkpoint: check_a_kiss_03_HowBigWasCar
       - or:
           - intent: nonexclamation__positive__materialpr
           - intent: nonexclamation__negative__materialpr
@@ -270,20 +205,18 @@ stories:
           - intent: affirmative__shortanswer
           - intent: negative__shortanswer
       - slot_was_set:
-          - "a_kiss_progress": 3
+          - "story_progress": 3
           - "will_return": "positive"
       - action: utter_return_to_previous_question
       - action: utter_a_kiss_03_HowBigWasCar
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
-          - "a_kiss_progress": 3
-          - "nlu_confused": null
-          - "nlu_confident": "positive"
+          - "story_progress": 3
           - "will_return": null
-      - checkpoint: check_a_kiss_03_HowBigWasCar
 
   - story: Scenario of utter RETURN_TO_PREVIOUS_QUESTION-04
     steps:
+      - checkpoint: check_a_kiss_04_WhatColorWasCar
       - or:
           - intent: nonexclamation__positive__materialpr
           - intent: nonexclamation__negative__materialpr
@@ -297,20 +230,18 @@ stories:
           - intent: affirmative__shortanswer
           - intent: negative__shortanswer
       - slot_was_set:
-          - "a_kiss_progress": 4
+          - "story_progress": 4
           - "will_return": "positive"
       - action: utter_return_to_previous_question
       - action: utter_a_kiss_04_WhatColorWasCar
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
-          - "a_kiss_progress": 4
-          - "nlu_confused": null
-          - "nlu_confident": "positive"
+          - "story_progress": 4
           - "will_return": null
-      - checkpoint: check_a_kiss_04_WhatColorWasCar
 
   - story: Scenario of utter RETURN_TO_PREVIOUS_QUESTION-05
     steps:
+      - checkpoint: check_a_kiss_05_WhileDrivingDownWhatDidHeSee
       - or:
           - intent: nonexclamation__positive__materialpr
           - intent: nonexclamation__negative__materialpr
@@ -324,20 +255,18 @@ stories:
           - intent: affirmative__shortanswer
       - intent: negative__shortanswer
       - slot_was_set:
-          - "a_kiss_progress": 5
+          - "story_progress": 5
           - "will_return": "positive"
       - action: utter_return_to_previous_question
       - action: utter_a_kiss_05_WhileDrivingDownWhatDidHeSee
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
-          - "a_kiss_progress": 5
-          - "nlu_confused": null
-          - "nlu_confident": "positive"
+          - "story_progress": 5
           - "will_return": null
-      - checkpoint: check_a_kiss_05_WhileDrivingDownWhatDidHeSee
 
   - story: Scenario of utter RETURN_TO_PREVIOUS_QUESTION-06
     steps:
+      - checkpoint: check_a_kiss_06_DidSheLookBeautiful
       - or:
           - intent: nonexclamation__positive__materialpr
           - intent: nonexclamation__negative__materialpr
@@ -351,180 +280,86 @@ stories:
           - intent: affirmative__shortanswer
           - intent: negative__shortanswer
       - slot_was_set:
-          - "a_kiss_progress": 6
+          - "story_progress": 6
           - "will_return": "positive"
       - action: utter_a_kiss_06_DidSheLookBeautiful
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
-          - "a_kiss_progress": 6
-          - "nlu_confused": null
-          - "nlu_confident": "positive"
+          - "story_progress": 6
           - "will_return": null
-      - checkpoint: check_a_kiss_06_DidSheLookBeautiful
 
-  - story: Scenario of utter CAN_NOT_UNDERSTAND-01
+  - story: Scenario of UTTER_PLEASE_REPHRASE
     steps:
-      - or:
-          - intent: nonexclamation__positive__materialpr
-          - intent: nonexclamation__negative__materialpr
-          - intent: nonexclamation__negative__identifyingpr
-          - intent: nonexclamation__positive__attributivepr
-          - intent: nonexclamation__negative__attributivepr
-          - intent: nonexclamation__positive__mentalpr
-          - intent: nonexclamation__negative__mentalpr
-          - intent: affirmative__nominalgroup
-          - intent: affirmative__adjectivegroup
-          - intent: affirmative__shortanswer
-          - intent: negative__shortanswer
-      - slot_was_set:
-          - "a_kiss_progress": 1
-          - "nlu_confused": "positive"
-          - "nlu_confident": null
-      - action: utter_can_not_understand
-      - action: action_reset_nlu_confused_slot
-      - slot_was_set:
-          - "a_kiss_progress": 1
-          - "nlu_confused": null
-          - "nlu_confident": "positive"
-          - "will_return": null
       - checkpoint: check_a_kiss_01_DidCarlosBuyOldCar
-
-  - story: Scenario of utter CAN_NOT_UNDERSTAND-02
-    steps:
-      - or:
-          - intent: nonexclamation__positive__materialpr
-          - intent: nonexclamation__negative__materialpr
-          - intent: nonexclamation__negative__identifyingpr
-          - intent: nonexclamation__positive__attributivepr
-          - intent: nonexclamation__negative__attributivepr
-          - intent: nonexclamation__positive__mentalpr
-          - intent: nonexclamation__negative__mentalpr
-          - intent: affirmative__nominalgroup
-          - intent: affirmative__adjectivegroup
-          - intent: affirmative__shortanswer
-          - intent: negative__shortanswer
+      - intent: nlu_fallback
+      - action: utter_please_rephrase
+      - intent: nonexclamation__positive__materialpr
+        entities:
+          - "actor": "he"
+          - "materialpr": "bought"
+          - "goal": "a new car"
+      - action: utter_a_kiss_02_DidCarlosBuyExpensiveBicycle
+      - action: action_store_lesson_history__a_kiss
       - slot_was_set:
-          - "a_kiss_progress": 2
-          - "nlu_confused": "positive"
-          - "nlu_confident": null
-      - action: utter_can_not_understand
-      - action: action_reset_nlu_confused_slot
-      - slot_was_set:
-          - "a_kiss_progress": 2
-          - "nlu_confused": null
-          - "nlu_confident": "positive"
+          - "story_progress": 2
           - "will_return": null
-      - checkpoint: check_a_kiss_02_DidCarlosBuyExpensiveBicycle
-
-  - story: Scenario of utter CAN_NOT_UNDERSTAND-03
-    steps:
-      - or:
-          - intent: nonexclamation__positive__materialpr
-          - intent: nonexclamation__negative__materialpr
-          - intent: nonexclamation__negative__identifyingpr
-          - intent: nonexclamation__positive__attributivepr
-          - intent: nonexclamation__negative__attributivepr
-          - intent: nonexclamation__positive__mentalpr
-          - intent: nonexclamation__negative__mentalpr
-          - intent: affirmative__nominalgroup
-          - intent: affirmative__adjectivegroup
-          - intent: affirmative__shortanswer
-          - intent: negative__shortanswer
+      - intent: nlu_fallback
+      - action: utter_please_rephrase
+      - intent: nonexclamation__positive__identifyingpr
+        entities:
+          - "identified": "it"
+          - "identifier": "a car"
+      - action: utter_a_kiss_03_HowBigWasCar
+      - action: action_store_lesson_history__a_kiss
       - slot_was_set:
-          - "a_kiss_progress": 3
-          - "nlu_confused": "positive"
-          - "nlu_confident": null
-      - action: utter_can_not_understand
-      - action: action_reset_nlu_confused_slot
-      - slot_was_set:
-          - "a_kiss_progress": 3
-          - "nlu_confused": null
-          - "nlu_confident": "positive"
+          - "story_progress": 3
           - "will_return": null
-      - checkpoint: check_a_kiss_03_HowBigWasCar
-
-  - story: Scenario of utter CAN_NOT_UNDERSTAND-04
-    steps:
-      - or:
-          - intent: nonexclamation__positive__materialpr
-          - intent: nonexclamation__negative__materialpr
-          - intent: nonexclamation__negative__identifyingpr
-          - intent: nonexclamation__positive__attributivepr
-          - intent: nonexclamation__negative__attributivepr
-          - intent: nonexclamation__positive__mentalpr
-          - intent: nonexclamation__negative__mentalpr
-          - intent: affirmative__nominalgroup
-          - intent: affirmative__adjectivegroup
-          - intent: affirmative__shortanswer
-          - intent: negative__shortanswer
+      - intent: nlu_fallback
+      - action: utter_please_rephrase
+      - intent: nonexclamation__positive__attributivepr
+        entities:
+          - "carrier": "it"
+          - "attribute": "huge"
+      - action: utter_a_kiss_04_WhatColorWasCar
+      - action: action_store_lesson_history__a_kiss
       - slot_was_set:
-          - "a_kiss_progress": 4
-          - "nlu_confused": "positive"
-          - "nlu_confident": null
-      - action: utter_can_not_understand
-      - action: action_reset_nlu_confused_slot
-      - slot_was_set:
-          - "a_kiss_progress": 4
-          - "nlu_confused": null
-          - "nlu_confident": "positive"
+          - "story_progress": 4
           - "will_return": null
-      - checkpoint: check_a_kiss_04_WhatColorWasCar
-
-  - story: Scenario of utter CAN_NOT_UNDERSTAND-05
-    steps:
-      - or:
-          - intent: nonexclamation__positive__materialpr
-          - intent: nonexclamation__negative__materialpr
-          - intent: nonexclamation__negative__identifyingpr
-          - intent: nonexclamation__positive__attributivepr
-          - intent: nonexclamation__negative__attributivepr
-          - intent: nonexclamation__positive__mentalpr
-          - intent: nonexclamation__negative__mentalpr
-          - intent: affirmative__nominalgroup
-          - intent: affirmative__adjectivegroup
-          - intent: affirmative__shortanswer
-          - intent: negative__shortanswer
+      - intent: nlu_fallback
+      - action: utter_please_rephrase
+      - intent: nonexclamation__positive__attributivepr
+        entities:
+          - "carrier": "it"
+          - "attribute": "blue"
+      - action: utter_a_kiss_05_WhileDrivingDownWhatDidHeSee
+      - action: action_store_lesson_history__a_kiss
       - slot_was_set:
-          - "a_kiss_progress": 5
-          - "nlu_confused": "positive"
-          - "nlu_confident": null
-      - action: utter_can_not_understand
-      - action: action_reset_nlu_confused_slot
-      - slot_was_set:
-          - "a_kiss_progress": 5
-          - "nlu_confused": null
-          - "nlu_confident": "positive"
+          - "story_progress": 5
           - "will_return": null
       - checkpoint: check_a_kiss_05_WhileDrivingDownWhatDidHeSee
-
-  - story: Scenario of utter CAN_NOT_UNDERSTAND-06
-    steps:
-      - or:
-          - intent: nonexclamation__positive__materialpr
-          - intent: nonexclamation__negative__materialpr
-          - intent: nonexclamation__negative__identifyingpr
-          - intent: nonexclamation__positive__attributivepr
-          - intent: nonexclamation__negative__attributivepr
-          - intent: nonexclamation__positive__mentalpr
-          - intent: nonexclamation__negative__mentalpr
-          - intent: affirmative__nominalgroup
-          - intent: affirmative__adjectivegroup
-          - intent: affirmative__shortanswer
-          - intent: negative__shortanswer
+      - intent: nlu_fallback
+      - action: utter_please_rephrase
+      - intent: nonexclamation__positive__mentalpr
+        entities:
+          - "senser": "he"
+          - "mentalpr": "saw"
+          - "phenomenon": "a girl"
+      - action: utter_a_kiss_06_DidSheLookBeautiful
+      - action: action_store_lesson_history__a_kiss
       - slot_was_set:
-          - "a_kiss_progress": 6
-          - "nlu_confused": "positive"
-          - "nlu_confident": null
-      - action: utter_can_not_understand
-      - action: action_reset_nlu_confused_slot
-      - slot_was_set:
-          - "a_kiss_progress": 6
-          - "nlu_confused": null
-          - "nlu_confident": "positive"
+          - "story_progress": 6
           - "will_return": null
       - checkpoint: check_a_kiss_06_DidSheLookBeautiful
+      - intent: nlu_fallback
+      - action: utter_please_rephrase
+      - intent: nonexclamation__positive__attributivepr
+        entities:
+          - "carrier": "she"
+          - "attribute": "beautiful"
+      - action: utter_lesson_completed
+      - action: action_restart
 
-  - story: Scenario of WRONG_ANSWER-01
+  - story: Scenario of WRONG_ANSWER
     steps:
       - checkpoint: check_a_kiss_01_DidCarlosBuyOldCar
       - intent: affirmative__shortanswer
@@ -532,178 +367,75 @@ stories:
       - action: utter_a_kiss_02_DidCarlosBuyExpensiveBicycle
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
-          - "a_kiss_progress": 2
-          - "nlu_confused": null
-          - "nlu_confident": "positive"
+          - "story_progress": 2
           - "will_return": null
-      - checkpoint: check_a_kiss_02_DidCarlosBuyExpensiveBicycle
-
-  - story: Scenario of WRONG_ANSWER-02
-    steps:
-      - checkpoint: check_a_kiss_02_DidCarlosBuyExpensiveBicycle
       - intent: affirmative__shortanswer
       - action: utter_a_kiss_02_disagree
       - action: utter_a_kiss_03_HowBigWasCar
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
-          - "a_kiss_progress": 3
-          - "nlu_confused": null
-          - "nlu_confident": "positive"
+          - "story_progress": 3
           - "will_return": null
-      - checkpoint: check_a_kiss_03_HowBigWasCar
-
-  - story: Scenario of WRONG_ANSWER-03-01
-    steps:
-      - checkpoint: check_a_kiss_03_HowBigWasCar
-      - intent: nonexclamation__positive__attributivepr
-        entities:
-          - "carrier": "it"
-          - "attribute": "small"
+      - or:
+          - intent: nonexclamation__positive__attributivepr
+            entities:
+              - "carrier": "it"
+              - "attribute": "small"
+          - intent: nonexclamation__positive__attributivepr
+            entities:
+              - "carrier": "it"
+              - "attribute": "modern"
       - action: utter_a_kiss_03_disagree
       - action: utter_a_kiss_04_WhatColorWasCar
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
-          - "a_kiss_progress": 4
-          - "nlu_confused": null
-          - "nlu_confident": "positive"
+          - "story_progress": 4
           - "will_return": null
-      - checkpoint: check_a_kiss_04_WhatColorWasCar
-
-  - story: Scenario of WRONG_ANSWER-03-02
-    steps:
-      - checkpoint: check_a_kiss_03_HowBigWasCar
-      - intent: nonexclamation__positive__attributivepr
-        entities:
-          - "carrier": "it"
-          - "attribute": "modern"
-      - action: utter_a_kiss_03_disagree
-      - action: utter_a_kiss_04_WhatColorWasCar
-      - action: action_store_lesson_history__a_kiss
-      - slot_was_set:
-          - "a_kiss_progress": 4
-          - "nlu_confused": null
-          - "nlu_confident": "positive"
-          - "will_return": null
-      - checkpoint: check_a_kiss_04_WhatColorWasCar
-
-  - story: Scenario of WRONG_ANSWER-04-01
-    steps:
-      - checkpoint: check_a_kiss_04_WhatColorWasCar
-      - intent: nonexclamation__positive__attributivepr
-        entities:
-          - "carrier": "it"
-          - "attribute": "green"
+      - or:
+          - intent: nonexclamation__positive__attributivepr
+            entities:
+              - "carrier": "it"
+              - "attribute": "green"
+          - intent: nonexclamation__positive__attributivepr
+            entities:
+              - "carrier": "it"
+              - "attribute": "brown"
+          - intent: nonexclamation__positive__attributivepr
+            entities:
+              - "carrier": "it"
+              - "attribute": "bright"
       - action: utter_a_kiss_04_disagree
       - action: utter_a_kiss_05_WhileDrivingDownWhatDidHeSee
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
-          - "a_kiss_progress": 5
-          - "nlu_confused": null
-          - "nlu_confident": "positive"
+          - "story_progress": 5
           - "will_return": null
-      - checkpoint: check_a_kiss_05_WhileDrivingDownWhatDidHeSee
-
-  - story: Scenario of WRONG_ANSWER-04-02
-    steps:
-      - checkpoint: check_a_kiss_04_WhatColorWasCar
-      - intent: nonexclamation__positive__attributivepr
-        entities:
-          - "carrier": "it"
-          - "attribute": "brown"
-      - action: utter_a_kiss_04_disagree
-      - action: utter_a_kiss_05_WhileDrivingDownWhatDidHeSee
-      - action: action_store_lesson_history__a_kiss
-      - slot_was_set:
-          - "a_kiss_progress": 5
-          - "nlu_confused": null
-          - "nlu_confident": "positive"
-          - "will_return": null
-      - checkpoint: check_a_kiss_05_WhileDrivingDownWhatDidHeSee
-
-  - story: Scenario of WRONG_ANSWER-04-03
-    steps:
-      - checkpoint: check_a_kiss_04_WhatColorWasCar
-      - intent: nonexclamation__positive__attributivepr
-        entities:
-          - "carrier": "it"
-          - "attribute": "bright"
-      - action: utter_a_kiss_04_disagree
-      - action: utter_a_kiss_05_WhileDrivingDownWhatDidHeSee
-      - action: action_store_lesson_history__a_kiss
-      - slot_was_set:
-          - "a_kiss_progress": 5
-          - "nlu_confused": null
-          - "nlu_confident": "positive"
-          - "will_return": null
-      - checkpoint: check_a_kiss_05_WhileDrivingDownWhatDidHeSee
-
-  - story: Scenario of WRONG_ANSWER-05-01
-    steps:
-      - checkpoint: check_a_kiss_05_WhileDrivingDownWhatDidHeSee
-      - intent: nonexclamation__positive__mentalpr
-        entities:
-          - "senser": "he"
-          - "mentalpr": "saw"
-          - "phenomenon": "a boy"
+      - or:
+          - intent: nonexclamation__positive__mentalpr
+            entities:
+              - "senser": "he"
+              - "mentalpr": "saw"
+              - "phenomenon": "a boy"
+          - intent: nonexclamation__positive__mentalpr
+            entities:
+              - "senser": "he"
+              - "mentalpr": "saw"
+              - "phenomenon": "an egg"
+          - intent: affirmative__nominalgroup
+            entities:
+              - "nominalgrp": "men"
       - action: utter_a_kiss_05_disagree
       - action: utter_a_kiss_06_DidSheLookBeautiful
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
-          - "a_kiss_progress": 6
-          - "nlu_confused": null
-          - "nlu_confident": "positive"
+          - "story_progress": 6
           - "will_return": null
-      - checkpoint: check_a_kiss_06_DidSheLookBeautiful
-
-  - story: Scenario of WRONG_ANSWER-05-02
-    steps:
-      - checkpoint: check_a_kiss_05_WhileDrivingDownWhatDidHeSee
-      - intent: nonexclamation__positive__mentalpr
-        entities:
-          - "senser": "he"
-          - "mentalpr": "saw"
-          - "phenomenon": "an egg"
-      - action: utter_a_kiss_05_disagree
-      - action: utter_a_kiss_06_DidSheLookBeautiful
-      - action: action_store_lesson_history__a_kiss
-      - slot_was_set:
-          - "a_kiss_progress": 6
-          - "nlu_confused": null
-          - "nlu_confident": "positive"
-          - "will_return": null
-      - checkpoint: check_a_kiss_06_DidSheLookBeautiful
-
-  - story: Scenario of WRONG_ANSWER-05-03
-    steps:
-      - checkpoint: check_a_kiss_05_WhileDrivingDownWhatDidHeSee
-      - intent: affirmative__nominalgroup
-        entities:
-          - "nominalgrp": "men"
-      - action: utter_a_kiss_05_disagree
-      - action: utter_a_kiss_06_DidSheLookBeautiful
-      - action: action_store_lesson_history__a_kiss
-      - slot_was_set:
-          - "a_kiss_progress": 6
-          - "nlu_confused": null
-          - "nlu_confident": "positive"
-          - "will_return": null
-      - checkpoint: check_a_kiss_06_DidSheLookBeautiful
-
-  - story: Scenario of WRONG_ANSWER-06-01
-    steps:
-      - checkpoint: check_a_kiss_06_DidSheLookBeautiful
-      - intent: negative__shortanswer
-      - action: utter_a_kiss_06_disagree
-      - action: utter_lesson_completed
-      - action: action_restart
-
-  - story: Scenario of WRONG_ANSWER-06-02
-    steps:
-      - checkpoint: check_a_kiss_06_DidSheLookBeautiful
-      - intent: nonexclamation__positive__attributivepr
-        entities:
-          - "carrier": "she"
-          - "attribute": "ugly"
+      - or:
+          - intent: negative__shortanswer
+          - intent: nonexclamation__positive__attributivepr
+            entities:
+              - "carrier": "she"
+              - "attribute": "ugly"
       - action: utter_a_kiss_06_disagree
       - action: utter_lesson_completed
       - action: action_restart
