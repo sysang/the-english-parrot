@@ -13,45 +13,61 @@ pipeline:
     min_ngram: 1
     max_ngram: 4
   - name: DIETClassifier
-    epochs: 100
-    transformer_size: 512
-    ranking_length: 5
-    constrain_similarities: true
+    epochs: 300
+    hidden_layers_sizes:
+      text: []
+      label: []
+    embedding_dimension: 20
+    number_of_transformer_layers: 2
+    transformer_size: 256
+    weight_sparsity: 0.8
+    constrain_similarities: True
     model_confidence: "linear_norm"
+    constrain_similarities: true
+    batch_size: [64, 256]
+    ranking_length: 10
   - name: EntitySynonymMapper
   - name: FallbackClassifier
     threshold: 0.25
     ambiguity_threshold: 0.01
 policies:
   - name: TEDPolicy
-    max_history: null  # Default value
-    epochs: 15
-    batch_size:
-      - 16
-      - 32
-    number_of_transformer_layers:
-      text: 1
-      action_text: 1
-      label_action_text: 1
-      dialogue: 2
+    epochs: 20
+    max_history: 20  # null set default value
+    dense_dimension:
+      text: 128
+      action_text: 128
+      label_action_text: 128
+      intent: 20
+      action_name: 20
+      label_action_name: 20
+      entities: 20
+      slots: 20
+      active_loop: 20
+    encoding_dimension: 50
     transformer_size:
       text: 128
       action_text: 128
       label_action_text: 128
-      dialogue: 1024
+      dialogue: 128
+    number_of_transformer_layers:
+      text: 1
+      action_text: 1
+      label_action_text: 1
+      dialogue: 1
+    number_of_attention_heads: 4
+    weight_sparsity: 0.8
+    split_entities_by_comma: true
     constrain_similarities: true
     model_confidence: "linear_norm"
-    split_entities_by_comma: true
+    batch_size:
+      - 16
+      - 32
   - name: AugmentedMemoizationPolicy
-    max_history: 10
-  # - name: "RasaCustomPolicies.NLUFallbackPolicy"
-  #   priority: 6
-  #   nlu_threshold: 0.25
-  #   ambiguity_threshold: 0.15
-  #   fallback_action_name: 'action_not_understand_fallback'
+    max_history: 5
   - name: "RulePolicy"
     priority: 4
-    core_fallback_threshold: 0.2
+    core_fallback_threshold: 0.1
     core_fallback_action_name: 'action_not_sure_what_to_do_fallback'
     enable_fallback_prediction: true
     restrict_rules: true

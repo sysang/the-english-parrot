@@ -253,7 +253,7 @@ stories:
           - intent: affirmative__nominalgroup
           - intent: affirmative__adjectivegroup
           - intent: affirmative__shortanswer
-      - intent: negative__shortanswer
+          - intent: negative__shortanswer
       - slot_was_set:
           - "story_progress": 5
           - "will_return": "positive"
@@ -282,6 +282,7 @@ stories:
       - slot_was_set:
           - "story_progress": 6
           - "will_return": "positive"
+      - action: utter_return_to_previous_question
       - action: utter_a_kiss_06_DidSheLookBeautiful
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:

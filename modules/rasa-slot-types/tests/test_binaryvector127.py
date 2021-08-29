@@ -1,7 +1,7 @@
-from RasaSlotTypes import BinaryVector127
+from RasaSlotTypes import Binary127Bit3
 
-v = BinaryVector127('test_slot')
-v.value = 126
+v = Binary127Bit3('test_slot')
+v.value = 7
 
-print("feature_dimensionality(): %s", v.feature_dimensionality())
-print("as_feature(): %s", v.as_feature())
+print("value: %s" % v.value)
+print("as_feature(): %s" % v.as_feature())

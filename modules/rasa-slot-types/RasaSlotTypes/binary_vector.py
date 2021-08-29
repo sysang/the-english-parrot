@@ -26,61 +26,51 @@ class OnehotVector99(Slot):
         return r
 
 
-class BinaryVector7(Slot):
+class Binary127Bit3(Slot):
+    encoding_bit_quantity = 3
 
     def feature_dimensionality(self):
-        dim = self._encoding_bit()
-        max_encoded = self._get_max_encoded_value(dim)
+        return 21
 
-        return dim*max_encoded
+    def _get_max_encoded_value(self):
+        dim = self.feature_dimensionality()
+        if dim % self.encoding_bit_quantity:
+            raise Exception(f"Inappropriate feature dimensionality size: {dim}")
 
-    def _encoding_bit(self):
-        return 3
+        binary_size = int(dim / self.encoding_bit_quantity)
+        max_binary_value = [1] * binary_size
 
-    def _get_max_encoded_value(self, dim):
-        array_of_binary_digits = [1]*dim
-        digit_str = ''.join([str(d) for d in array_of_binary_digits])
+        digit_str = ''.join([str(d) for d in max_binary_value])
 
         return int(digit_str, 2)
 
-    def _convert_decimal_to_binary_digits(self, val, dim):
-        array_of_binary_digits = [int(d) for d in format(val, 'b')]
-        extended_length = dim - len(array_of_binary_digits)
+    def _generate_vector(self, selfval):
+        dim = self.feature_dimensionality()
+        r = [0.0] * dim
 
-        return [0]*extended_length + array_of_binary_digits
+        binary_number_str = "{0:b}".format(selfval)
 
-    def _generate_vector(self, val, dim):
-        max_encoded = self._get_max_encoded_value(dim)
-        r = []
-        for num in range(max_encoded + 1):
-            encoded = self._convert_decimal_to_binary_digits(num, dim)
-            if num <= val:
-                r = r + encoded
-            else:
-                r = r + [0]*dim
+        order = 0
+        for idx, val in enumerate(reversed(binary_number_str)):
+            for i in range(self.encoding_bit_quantity):
+                r[order] = float(val)
+                order += 1
 
-        return r
+        return list(reversed(r))
 
     def as_feature(self):
-        dim = self._encoding_bit()
+        dim = self.feature_dimensionality()
         r = [0.0] * dim
 
         if not self.value:
             return r
 
         selfval = int(self.value)
-        max_encoded = self._get_max_encoded_value(dim)
+        max_encoded = self._get_max_encoded_value()
 
         if selfval < 0 or selfval > max_encoded:
             raise Exception(f"Invalid value: {selfval}, max encoded value: {max_encoded}")
 
-        r = self._generate_vector(selfval, dim)
-
-        #logger.debug(f"Encoded vector for slot value {selfval}: {r}")
+        r = self._generate_vector(selfval)
 
         return r
-
-class BinaryVector127(BinaryVector7):
-
-    def _encoding_bit(self):
-        return 7

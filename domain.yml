@@ -49,63 +49,115 @@ entities:
 slots:
   materialpr:
     type: RasaSlotTypes.WordVector
+    auto_fill: true
+    influence_conversation: true
   actor:
     type: RasaSlotTypes.WordVector
+    auto_fill: true
+    influence_conversation: true
   goal:
     type: RasaSlotTypes.WordVector
+    auto_fill: true
+    influence_conversation: true
   scope:
     type: RasaSlotTypes.WordVector
+    auto_fill: true
+    influence_conversation: true
   beneficiary:
     type: RasaSlotTypes.WordVector
+    auto_fill: true
+    influence_conversation: true
   attributivepr:
     type: RasaSlotTypes.WordVector
+    auto_fill: true
+    influence_conversation: true
   carrier:
     type: RasaSlotTypes.WordVector
+    auto_fill: true
+    influence_conversation: true
   attribute:
     type: RasaSlotTypes.WordVector
+    auto_fill: true
+    influence_conversation: true
   identifyingpr:
     type: RasaSlotTypes.WordVector
+    auto_fill: true
+    influence_conversation: true
   identified:
     type: RasaSlotTypes.WordVector
+    auto_fill: true
+    influence_conversation: true
   identifier:
     type: RasaSlotTypes.WordVector
+    auto_fill: true
   mentalpr:
     type: RasaSlotTypes.WordVector
+    auto_fill: true
+    influence_conversation: true
   senser:
     type: RasaSlotTypes.WordVector
+    auto_fill: true
+    influence_conversation: true
   phenomenon:
     type: RasaSlotTypes.WordVector
+    auto_fill: true
+    influence_conversation: true
   behaviouralpr:
     type: RasaSlotTypes.WordVector
+    auto_fill: true
+    influence_conversation: true
   behaver:
     type: RasaSlotTypes.WordVector
+    auto_fill: true
+    influence_conversation: true
   verbalpr:
     type: RasaSlotTypes.WordVector
+    auto_fill: true
+    influence_conversation: true
   sayer:
     type: RasaSlotTypes.WordVector
+    auto_fill: true
+    influence_conversation: true
   reciver:
     type: RasaSlotTypes.WordVector
+    auto_fill: true
+    influence_conversation: true
   verbiage:
     type: RasaSlotTypes.WordVector
+    auto_fill: true
+    influence_conversation: true
   existantialpr:
     type: RasaSlotTypes.WordVector
+    auto_fill: true
+    influence_conversation: true
   existent:
     type: RasaSlotTypes.WordVector
+    auto_fill: true
+    influence_conversation: true
   nominalgrp:
     type: RasaSlotTypes.WordVector
+    auto_fill: true
+    influence_conversation: true
   adjectivegrp:
     type: RasaSlotTypes.WordVector
+    auto_fill: true
+    influence_conversation: true
   prepositionallocation:
     type: RasaSlotTypes.WordVector
+    auto_fill: true
+    influence_conversation: true
   will_return:
     type: text
+    influence_conversation: true
   lesson_topic:
     type: categorical
     values:
       - a_kiss_story
       - changed_story
+    influence_conversation: true
   story_progress:
-    type: RasaSlotTypes.OnehotVector99
+    type: RasaSlotTypes.Binary127Bit3
+    influence_conversation: true
 
 responses:
   utter_please_rephrase:

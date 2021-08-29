@@ -34,7 +34,7 @@ visualize:
 	bin/rasa visualize -vv --out story-graphs/$(shell date "+%Y%m%d-%H%M").html
 
 run:
-	/usr/local/bin/rasa run -vv --log-file=logs/$(model)_run_$(shell date "+%Y%m%d-%H%M").log -m $(model)
+	rasa run -vv --log-file=logs/$(model)_run_$(shell date "+%Y%m%d-%H%M").log -m $(model)
 
 run_silent:
 	bin/rasa run -v --log-file=logs/$(model)_run_$(shell date "+%Y%m%d-%H%M").log -m $(model)

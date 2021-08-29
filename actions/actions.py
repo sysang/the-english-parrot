@@ -12,7 +12,8 @@ from rasa_sdk.events import (
     # EventType,
     FollowupAction,
     # ActionExecuted,
-    UserUttered
+    # UserUttered,
+    ActionReverted
 )
 
 # from actions import config
@@ -70,4 +71,7 @@ class ActionNotSureWhatToDoFallback(Action):
 
     def run(self, dispatcher, tracker, domain):
 
-        return [SlotSet('will_return', "positive")]
+        return [
+                SlotSet('will_return', "positive"),
+                FollowupAction('utter_return_to_previous_question'),
+                    ]
