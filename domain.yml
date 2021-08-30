@@ -48,102 +48,102 @@ entities:
 
 slots:
   materialpr:
-    type: RasaSlotTypes.WordVector
+    type: text
     auto_fill: true
     influence_conversation: true
   actor:
-    type: RasaSlotTypes.WordVector
+    type: text
     auto_fill: true
     influence_conversation: true
   goal:
-    type: RasaSlotTypes.WordVector
+    type: text
     auto_fill: true
     influence_conversation: true
   scope:
-    type: RasaSlotTypes.WordVector
+    type: text
     auto_fill: true
     influence_conversation: true
   beneficiary:
-    type: RasaSlotTypes.WordVector
+    type: text
     auto_fill: true
     influence_conversation: true
   attributivepr:
-    type: RasaSlotTypes.WordVector
+    type: text
     auto_fill: true
     influence_conversation: true
   carrier:
-    type: RasaSlotTypes.WordVector
+    type: text
     auto_fill: true
     influence_conversation: true
   attribute:
-    type: RasaSlotTypes.WordVector
+    type: text
     auto_fill: true
     influence_conversation: true
   identifyingpr:
-    type: RasaSlotTypes.WordVector
+    type: text
     auto_fill: true
     influence_conversation: true
   identified:
-    type: RasaSlotTypes.WordVector
+    type: text
     auto_fill: true
     influence_conversation: true
   identifier:
-    type: RasaSlotTypes.WordVector
+    type: text
     auto_fill: true
   mentalpr:
-    type: RasaSlotTypes.WordVector
+    type: text
     auto_fill: true
     influence_conversation: true
   senser:
-    type: RasaSlotTypes.WordVector
+    type: text
     auto_fill: true
     influence_conversation: true
   phenomenon:
-    type: RasaSlotTypes.WordVector
+    type: text
     auto_fill: true
     influence_conversation: true
   behaviouralpr:
-    type: RasaSlotTypes.WordVector
+    type: text
     auto_fill: true
     influence_conversation: true
   behaver:
-    type: RasaSlotTypes.WordVector
+    type: text
     auto_fill: true
     influence_conversation: true
   verbalpr:
-    type: RasaSlotTypes.WordVector
+    type: text
     auto_fill: true
     influence_conversation: true
   sayer:
-    type: RasaSlotTypes.WordVector
+    type: text
     auto_fill: true
     influence_conversation: true
   reciver:
-    type: RasaSlotTypes.WordVector
+    type: text
     auto_fill: true
     influence_conversation: true
   verbiage:
-    type: RasaSlotTypes.WordVector
+    type: text
     auto_fill: true
     influence_conversation: true
   existantialpr:
-    type: RasaSlotTypes.WordVector
+    type: text
     auto_fill: true
     influence_conversation: true
   existent:
-    type: RasaSlotTypes.WordVector
+    type: text
     auto_fill: true
     influence_conversation: true
   nominalgrp:
-    type: RasaSlotTypes.WordVector
+    type: text
     auto_fill: true
     influence_conversation: true
   adjectivegrp:
-    type: RasaSlotTypes.WordVector
+    type: text
     auto_fill: true
     influence_conversation: true
   prepositionallocation:
-    type: RasaSlotTypes.WordVector
+    type: text
     auto_fill: true
     influence_conversation: true
   will_return:
@@ -158,6 +158,19 @@ slots:
   story_progress:
     type: RasaSlotTypes.Binary127Bit3
     influence_conversation: true
+  stm_recipient_response:
+    type: RasaSlotTypes.EmbeddedSentence
+    influence_conversation: true
+  stm_bot_reference_of_truth:
+    type: RasaSlotTypes.EmbeddedSentence
+    influence_conversation: true
+  stm_matched_belief:
+    type: bool
+    influence_conversation: true
+  stm_unmatched_belief:
+    type: bool
+    influence_conversation: true
+
 
 responses:
   utter_please_rephrase:

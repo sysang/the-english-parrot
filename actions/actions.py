@@ -22,6 +22,15 @@ from rasa_sdk.events import (
 
 logger = logging.getLogger(__name__)
 
+answers = [
+        "pad-0",
+        "he bought a new car",
+        "it was a car",
+        "it was blue",
+        "it was huge",
+        "he saw a girl",
+        "she was beautiful",
+    ]
 
 class ActionInitializeAKissStory(Action):
 
@@ -61,8 +70,11 @@ class ActionStoreLessonHistory__a_kiss(Action):
         logger.debug(f"latest utterance action: {latest_action_name}")
         logger.debug(f"latest question number: {question_num}")
 
-        return [SlotSet('will_return', None),
-                SlotSet("story_progress", question_num)]
+        return [
+                SlotSet('will_return', None),
+                SlotSet("story_progress", question_num),
+                SlotSet("stm_bot_reference_of_truth", answers[question_num]),
+                ]
 
 
 class ActionNotSureWhatToDoFallback(Action):
@@ -75,3 +87,34 @@ class ActionNotSureWhatToDoFallback(Action):
                 SlotSet('will_return', "positive"),
                 FollowupAction('utter_return_to_previous_question'),
                     ]
+
+class ActionActivateMatchedPerception(Action):
+    def name(self):
+        return 'action_activate_matched_perception'
+
+    def run(self, dispatcher, tracker, domain):
+
+        return [
+                SlotSet('stm_matched_belief', True),
+            ]
+
+class ActionActivateUnMatchedPerception(Action):
+    def name(self):
+        return 'action_activate_unmatched_perception'
+
+    def run(self, dispatcher, tracker, domain):
+
+        return [
+                SlotSet('stm_unmatched_belief', True),
+            ]
+
+
+class ActionMemorizeUserResponse(Action):
+    def name(self):
+        return 'action_memorize_user_response'
+
+    def run(self, dispatcher, tracker, domain):
+
+        logger.info('OK!')
+
+        return []
