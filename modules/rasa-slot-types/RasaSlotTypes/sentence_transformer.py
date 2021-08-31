@@ -25,7 +25,7 @@ class Model():
         if Model.__instance is not None:
             raise Exception("This class is a singleton! Use Model.getInstance() instead.")
         else:
-            self.model = SentenceTransformer(MODEL_NAME)
+            self.model = SentenceTransformer(MODEL_NAME, device='cpu')
             logger.info(f"Loaded Sentence Transformer pre-trained model {MODEL_NAME}")
 
             self.caches = LRU(100)
@@ -35,7 +35,7 @@ class Model():
     def infer_sentence_vector(self, sentence):
         key = "".join((sentence.split()))
         if key not in self.caches:
-            result = self.model.infer_vector(sentence)
+            result = self.model.encode(sentence, convert_to_numpy=True)
             self.caches[key] = result.tolist()
 
         return self.caches.get(key)
@@ -43,7 +43,7 @@ class Model():
 
 class EmbeddedSentence(Slot):
     def __init__(self, *args, **kwargs):
-        super(WordVector, self).__init__(*args, **kwargs)
+        super(EmbeddedSentence, self).__init__(*args, **kwargs)
         self.model = Model.getInstance()
 
     def feature_dimensionality(self):

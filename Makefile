@@ -22,7 +22,7 @@ training:
 	/usr/local/bin/rasa train -vv --augmentation 1
 
 train:
-	rasa train -v --augmentation 0
+	rasa train -vv --augmentation 0
 
 shell:
 	/usr/local/bin/rasa shell -vv --log-file=logs/$(model)_run_$(shell date "+%Y%m%d-%H%M").log -m $(model)

@@ -60,7 +60,6 @@ class ActionStoreLessonHistory__a_kiss(Action):
         logger.debug(f"Current state: {current_state}")
 
         latest_action_name = tracker.latest_action_name
-
         question_num = self._extract_question_number(latest_action_name)
         if not question_num:
             return []
@@ -73,7 +72,33 @@ class ActionStoreLessonHistory__a_kiss(Action):
         return [
                 SlotSet('will_return', None),
                 SlotSet("story_progress", question_num),
-                SlotSet("stm_bot_reference_of_truth", answers[question_num]),
+                SlotSet("stm_matched_belief", None),
+                SlotSet("stm_unmatched_belief", None),
+                SlotSet("materialpr", None),
+                SlotSet("actor", None),
+                SlotSet("goal", None),
+                SlotSet("scope", None),
+                SlotSet("beneficiary", None),
+                SlotSet("attributivepr", None),
+                SlotSet("carrier", None),
+                SlotSet("attribute", None),
+                SlotSet("identifyingpr", None),
+                SlotSet("identified", None),
+                SlotSet("identifier", None),
+                SlotSet("mentalpr", None),
+                SlotSet("senser", None),
+                SlotSet("phenomenon", None),
+                SlotSet("behaviouralpr", None),
+                SlotSet("behaver", None),
+                SlotSet("verbalpr", None),
+                SlotSet("sayer", None),
+                SlotSet("reciver", None),
+                SlotSet("verbiage", None),
+                SlotSet("existantialpr", None),
+                SlotSet("existent", None),
+                SlotSet("nominalgrp", None),
+                SlotSet("adjectivegrp", None),
+                SlotSet("prepositionallocation", None),
                 ]
 
 
@@ -113,8 +138,15 @@ class ActionMemorizeUserResponse(Action):
     def name(self):
         return 'action_memorize_user_response'
 
+
     def run(self, dispatcher, tracker, domain):
 
-        logger.info('OK!')
+        question_num = tracker.get_slot('story_progress')
 
-        return []
+        if not question_num:
+            raise Exception("Can not get slot value, story_progress")
+
+        return [
+                SlotSet("stm_bot_reference_of_truth", answers[question_num]),
+                SlotSet('stm_recipient_response', tracker.latest_message['text']),
+            ]

@@ -13,6 +13,9 @@ actions:
   - action_initialize_a_kiss_story
   - action_initialize_changed_story
   - action_store_lesson_history__changed
+  - action_memorize_user_response
+  - action_activate_matched_perception
+  - action_activate_unmatched_perception
 
 entities:
   - materialpr
@@ -40,11 +43,6 @@ entities:
   - nominalgrp
   - adjectivegrp
   - prepositionallocation
-  - nlu_confused
-  - will_return
-  - nlu_confident
-  - lesson_topic
-  - story_progress
 
 slots:
   materialpr:
@@ -225,19 +223,11 @@ responses:
 intents:
   - nonexclamation__negative__attributivepr:
       use_entities:
-        - lesson_topic
-        - nlu_confused
-        - nlu_confident
-        - will_return
         - attributivepr
         - attributive
         - carrier
   - nonexclamation__positive__materialpr:
       use_entities:
-        - lesson_topic
-        - nlu_confused
-        - nlu_confident
-        - will_return
         - materialpr
         - beneficiary
         - goal
@@ -245,10 +235,6 @@ intents:
         - scope
   - nonexclamation__negative__materialpr:
       use_entities:
-        - lesson_topic
-        - nlu_confused
-        - nlu_confident
-        - will_return
         - materialpr
         - beneficiary
         - goal
@@ -256,69 +242,37 @@ intents:
         - scope
   - nonexclamation__positive__identifyingpr:
       use_entities:
-        - lesson_topic
-        - nlu_confused
-        - nlu_confident
-        - will_return
         - identifier
         - identifyingpr
         - identified
   - nonexclamation__negative__identifyingpr:
       use_entities:
-        - lesson_topic
-        - nlu_confused
-        - nlu_confident
-        - will_return
         - identifier
         - identifyingpr
         - identified
   - nonexclamation__positive__attributivepr:
       use_entities:
-        - lesson_topic
-        - nlu_confused
-        - nlu_confident
-        - will_return
         - attributivepr
         - attribute
         - carrier
   - nonexclamation__positive__mentalpr:
       use_entities:
-        - lesson_topic
-        - nlu_confused
-        - nlu_confident
-        - will_return
         - phenomenon
         - mentalpr
         - senser
   - nonexclamation__negative__mentalpr:
       use_entities:
-        - lesson_topic
-        - nlu_confused
-        - nlu_confident
-        - will_return
         - phenomenon
         - mentalpr
         - senser
   - affirmative__nominalgroup:
       use_entities:
-        - lesson_topic
-        - nlu_confused
-        - nlu_confident
-        - will_return
         - nominalgrp
   - affirmative__adjectivegroup:
       use_entities:
-        - lesson_topic
-        - nlu_confused
-        - nlu_confident
-        - will_return
         - adjectivegrp
   - affirmative__prepositionalphrase__location:
       use_entities:
-        - lesson_topic
-        - nlu_confused
-        - nlu_confident
-        - will_return
         - prepositionallocation
   - negative__shortanswer
   - affirmative__shortanswer
