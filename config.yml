@@ -31,8 +31,8 @@ pipeline:
     ambiguity_threshold: 0.01
 policies:
   - name: TEDPolicy
-    epochs: 248
-    max_history: 23  # null set default value
+    epochs: 99
+    max_history: null  # null set default value
     dense_dimension:
       text: 128
       action_text: 128
@@ -40,31 +40,31 @@ policies:
       intent: 20
       action_name: 20
       label_action_name: 20
-      entities: 24
+      entities: 256
       slots: 1542
       active_loop: 20
-    encoding_dimension: 50
+    encoding_dimension: 150
     transformer_size:
       text: 128
       action_text: 128
       label_action_text: 128
-      dialogue: 1024
+      dialogue: 2048
     number_of_transformer_layers:
       text: 1
       action_text: 1
       label_action_text: 1
-      dialogue: 2
+      dialogue: 3
     number_of_attention_heads: 4
-    connection_density: 0.25
+    connection_density: 0.15
     split_entities_by_comma: true
     constrain_similarities: true
     model_confidence: softmax
     batch_size:
       - 32
       - 64
-  - name: AugmentedMemoizationPolicy
-    max_history: 10
-    priority: 5
+  # - name: AugmentedMemoizationPolicy
+  #   max_history: 10
+  #   priority: 5
   - name: "RulePolicy"
     priority: 4
     core_fallback_threshold: 0.65

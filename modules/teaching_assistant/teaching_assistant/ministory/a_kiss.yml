@@ -23,8 +23,8 @@ story:
         main:
           name: "main"
           intention: "nonexclamation__positive__materialpr"
+          semantic_axis: "goal"
           utterances:
-            - "[he](actor) [bought](materialpr) [a new car](goal)"
             - "[he](actor) [bought](materialpr) [a new car](goal)"
             - "[carlos](actor) [bought](materialpr) [a new car](goal)"
             - "[carlos](actor) [bought](materialpr) [a huge car](goal)"

@@ -13,7 +13,7 @@ from rasa_sdk.events import (
     FollowupAction,
     # ActionExecuted,
     # UserUttered,
-    ActionReverted
+    # ActionReverted
 )
 
 # from actions import config
@@ -25,12 +25,13 @@ logger = logging.getLogger(__name__)
 answers = [
         "pad-0",
         "he bought a new car",
-        "it was a car",
-        "it was blue",
+        "he bought an expensive car",
         "it was huge",
+        "it was blue",
         "he saw a girl",
-        "she was beautiful",
+        "she looked beautiful",
     ]
+
 
 class ActionInitializeAKissStory(Action):
 
@@ -70,36 +71,36 @@ class ActionStoreLessonHistory__a_kiss(Action):
         logger.debug(f"latest question number: {question_num}")
 
         return [
-                SlotSet('will_return', None),
-                SlotSet("story_progress", question_num),
-                SlotSet("stm_matched_belief", None),
-                SlotSet("stm_unmatched_belief", None),
-                SlotSet("materialpr", None),
-                SlotSet("actor", None),
-                SlotSet("goal", None),
-                SlotSet("scope", None),
-                SlotSet("beneficiary", None),
-                SlotSet("attributivepr", None),
-                SlotSet("carrier", None),
-                SlotSet("attribute", None),
-                SlotSet("identifyingpr", None),
-                SlotSet("identified", None),
-                SlotSet("identifier", None),
-                SlotSet("mentalpr", None),
-                SlotSet("senser", None),
-                SlotSet("phenomenon", None),
-                SlotSet("behaviouralpr", None),
-                SlotSet("behaver", None),
-                SlotSet("verbalpr", None),
-                SlotSet("sayer", None),
-                SlotSet("reciver", None),
-                SlotSet("verbiage", None),
-                SlotSet("existantialpr", None),
-                SlotSet("existent", None),
-                SlotSet("nominalgrp", None),
-                SlotSet("adjectivegrp", None),
-                SlotSet("prepositionallocation", None),
-                ]
+            SlotSet('will_return', None),
+            SlotSet("story_progress", question_num),
+            SlotSet("stm_matched_belief", None),
+            SlotSet("stm_unmatched_belief", None),
+            SlotSet("materialpr", None),
+            SlotSet("actor", None),
+            SlotSet("goal", None),
+            SlotSet("scope", None),
+            SlotSet("beneficiary", None),
+            SlotSet("attributivepr", None),
+            SlotSet("carrier", None),
+            SlotSet("attribute", None),
+            SlotSet("identifyingpr", None),
+            SlotSet("identified", None),
+            SlotSet("identifier", None),
+            SlotSet("mentalpr", None),
+            SlotSet("senser", None),
+            SlotSet("phenomenon", None),
+            SlotSet("behaviouralpr", None),
+            SlotSet("behaver", None),
+            SlotSet("verbalpr", None),
+            SlotSet("sayer", None),
+            SlotSet("reciver", None),
+            SlotSet("verbiage", None),
+            SlotSet("existantialpr", None),
+            SlotSet("existent", None),
+            SlotSet("nominalgrp", None),
+            SlotSet("adjectivegrp", None),
+            SlotSet("prepositionallocation", None),
+        ]
 
 
 class ActionNotSureWhatToDoFallback(Action):
@@ -109,9 +110,37 @@ class ActionNotSureWhatToDoFallback(Action):
     def run(self, dispatcher, tracker, domain):
 
         return [
-                SlotSet('will_return', "positive"),
-                FollowupAction('utter_return_to_previous_question'),
-                    ]
+            SlotSet('stm_matched_belief', None),
+            SlotSet('stm_unmatched_belief', None),
+            SlotSet('will_return', "positive"),
+            SlotSet("materialpr", None),
+            SlotSet("actor", None),
+            SlotSet("goal", None),
+            SlotSet("scope", None),
+            SlotSet("beneficiary", None),
+            SlotSet("attributivepr", None),
+            SlotSet("carrier", None),
+            SlotSet("attribute", None),
+            SlotSet("identifyingpr", None),
+            SlotSet("identified", None),
+            SlotSet("identifier", None),
+            SlotSet("mentalpr", None),
+            SlotSet("senser", None),
+            SlotSet("phenomenon", None),
+            SlotSet("behaviouralpr", None),
+            SlotSet("behaver", None),
+            SlotSet("verbalpr", None),
+            SlotSet("sayer", None),
+            SlotSet("reciver", None),
+            SlotSet("verbiage", None),
+            SlotSet("existantialpr", None),
+            SlotSet("existent", None),
+            SlotSet("nominalgrp", None),
+            SlotSet("adjectivegrp", None),
+            SlotSet("prepositionallocation", None),
+            FollowupAction('utter_return_to_previous_question'),
+        ]
+
 
 class ActionActivateMatchedPerception(Action):
     def name(self):
@@ -122,6 +151,7 @@ class ActionActivateMatchedPerception(Action):
         return [
                 SlotSet('stm_matched_belief', True),
             ]
+
 
 class ActionActivateUnMatchedPerception(Action):
     def name(self):
@@ -137,7 +167,6 @@ class ActionActivateUnMatchedPerception(Action):
 class ActionMemorizeUserResponse(Action):
     def name(self):
         return 'action_memorize_user_response'
-
 
     def run(self, dispatcher, tracker, domain):
 

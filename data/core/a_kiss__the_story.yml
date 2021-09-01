@@ -16,34 +16,7 @@ stories:
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
           - "story_progress": 1
-          - "materialpr": null
-          - "actor": null
-          - "goal": null
-          - "scope": null
-          - "beneficiary": null
-          - "attributivepr": null
-          - "carrier": null
-          - "attribute": null
-          - "identifyingpr": null
-          - "identified": null
-          - "identifier": null
-          - "mentalpr": null
-          - "senser": null
-          - "phenomenon": null
-          - "behaviouralpr": null
-          - "behaver": null
-          - "verbalpr": null
-          - "sayer": null
-          - "reciver": null
-          - "verbiage": null
-          - "existantialpr": null
-          - "existent": null
-          - "nominalgrp": null
-          - "adjectivegrp": null
-          - "prepositionallocation": null
-          - "will_return": null
-          - "stm_matched_belief": null
-          - "stm_unmatched_belief": null
+      - action: action_listen
       - checkpoint: check_a_kiss_01_DidCarlosBuyOldCar
 
       - intent: nonexclamation__positive__materialpr
@@ -55,6 +28,7 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "he bought a new car"
           - "stm_bot_reference_of_truth": "he bought a new car"
+          - "stm_semantic_axis": "goal"
       - action: action_activate_matched_perception
       - slot_was_set:
           - "stm_matched_belief": true
@@ -62,44 +36,27 @@ stories:
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
           - "story_progress": 2
-          - "materialpr": null
           - "actor": null
+          - "materialpr": null
           - "goal": null
-          - "scope": null
-          - "beneficiary": null
-          - "attributivepr": null
-          - "carrier": null
-          - "attribute": null
-          - "identifyingpr": null
-          - "identified": null
-          - "identifier": null
-          - "mentalpr": null
-          - "senser": null
-          - "phenomenon": null
-          - "behaviouralpr": null
-          - "behaver": null
-          - "verbalpr": null
-          - "sayer": null
-          - "reciver": null
-          - "verbiage": null
-          - "existantialpr": null
-          - "existent": null
-          - "nominalgrp": null
-          - "adjectivegrp": null
-          - "prepositionallocation": null
-          - "will_return": null
+          - "stm_recipient_response": null
+          - "stm_bot_reference_of_truth": null
+          - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
+      - action: action_listen
       - checkpoint: check_a_kiss_02_DidCarlosBuyExpensiveBicycle
 
-      - intent: nonexclamation__positive__identifyingpr
+      - intent: nonexclamation__positive__materialpr
         entities:
-          - "identified": "it"
-          - "identifier": "a car"
+          - "actor": "he"
+          - "materialpr": "bought"
+          - "goal": "a expensive car"
       - action: action_memorize_user_response
       - slot_was_set:
-          - "stm_recipient_response": "it was a car"
-          - "stm_bot_reference_of_truth": "it was a car"
+          - "stm_recipient_response": "he bought an expensive car"
+          - "stm_bot_reference_of_truth": "he bought an expensive car"
+          - "stm_semantic_axis": "goal"
       - action: action_activate_matched_perception
       - slot_was_set:
           - "stm_matched_belief": true
@@ -107,41 +64,15 @@ stories:
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
           - "story_progress": 3
-          - "materialpr": null
           - "actor": null
+          - "materialpr": null
           - "goal": null
-          - "scope": null
-          - "beneficiary": null
-          - "attributivepr": null
-          - "carrier": null
-          - "attribute": null
-          - "identifyingpr": null
-          - "identified": null
-          - "identifier": null
-          - "mentalpr": null
-          - "senser": null
-          - "phenomenon": null
-          - "behaviouralpr": null
-          - "behaver": null
-          - "verbalpr": null
-          - "sayer": null
-          - "reciver": null
-          - "verbiage": null
-          - "existantialpr": null
-          - "existent": null
-          - "nominalgrp": null
-          - "adjectivegrp": null
-          - "prepositionallocation": null
-          - "will_return": null
+          - "stm_recipient_response": null
+          - "stm_bot_reference_of_truth": null
+          - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
-      - action: action_memorize_user_response
-      - slot_was_set:
-          - "stm_recipient_response": "it was huge"
-          - "stm_bot_reference_of_truth": "it was huge"
-      - action: action_activate_matched_perception
-      - slot_was_set:
-          - "stm_matched_belief": true
+      - action: action_listen
       - checkpoint: check_a_kiss_03_HowBigWasCar
 
       - intent: nonexclamation__positive__attributivepr
@@ -152,6 +83,7 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "it was huge"
           - "stm_bot_reference_of_truth": "it was huge"
+          - "stm_semantic_axis": "attribute"
       - action: action_activate_matched_perception
       - slot_was_set:
           - "stm_matched_belief": true
@@ -159,34 +91,14 @@ stories:
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
           - "story_progress": 4
-          - "materialpr": null
-          - "actor": null
-          - "goal": null
-          - "scope": null
-          - "beneficiary": null
-          - "attributivepr": null
           - "carrier": null
           - "attribute": null
-          - "identifyingpr": null
-          - "identified": null
-          - "identifier": null
-          - "mentalpr": null
-          - "senser": null
-          - "phenomenon": null
-          - "behaviouralpr": null
-          - "behaver": null
-          - "verbalpr": null
-          - "sayer": null
-          - "reciver": null
-          - "verbiage": null
-          - "existantialpr": null
-          - "existent": null
-          - "nominalgrp": null
-          - "adjectivegrp": null
-          - "prepositionallocation": null
-          - "will_return": null
+          - "stm_recipient_response": null
+          - "stm_bot_reference_of_truth": null
+          - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
+      - action: action_listen
       - checkpoint: check_a_kiss_04_WhatColorWasCar
 
       - intent: nonexclamation__positive__attributivepr
@@ -197,6 +109,7 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "it was blue"
           - "stm_bot_reference_of_truth": "it was blue"
+          - "stm_semantic_axis": "attribute"
       - action: action_activate_matched_perception
       - slot_was_set:
           - "stm_matched_belief": true
@@ -204,34 +117,14 @@ stories:
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
           - "story_progress": 5
-          - "materialpr": null
-          - "actor": null
-          - "goal": null
-          - "scope": null
-          - "beneficiary": null
-          - "attributivepr": null
           - "carrier": null
           - "attribute": null
-          - "identifyingpr": null
-          - "identified": null
-          - "identifier": null
-          - "mentalpr": null
-          - "senser": null
-          - "phenomenon": null
-          - "behaviouralpr": null
-          - "behaver": null
-          - "verbalpr": null
-          - "sayer": null
-          - "reciver": null
-          - "verbiage": null
-          - "existantialpr": null
-          - "existent": null
-          - "nominalgrp": null
-          - "adjectivegrp": null
-          - "prepositionallocation": null
-          - "will_return": null
+          - "stm_recipient_response": null
+          - "stm_bot_reference_of_truth": null
+          - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
+      - action: action_listen
       - checkpoint: check_a_kiss_05_WhileDrivingDownWhatDidHeSee
 
       - intent: nonexclamation__positive__mentalpr
@@ -243,6 +136,7 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "he saw a girl"
           - "stm_bot_reference_of_truth": "he saw a girl"
+          - "stm_semantic_axis": "phenomenon"
       - action: action_activate_matched_perception
       - slot_was_set:
           - "stm_matched_belief": true
@@ -250,34 +144,15 @@ stories:
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
           - "story_progress": 6
-          - "materialpr": null
-          - "actor": null
-          - "goal": null
-          - "scope": null
-          - "beneficiary": null
-          - "attributivepr": null
-          - "carrier": null
-          - "attribute": null
-          - "identifyingpr": null
-          - "identified": null
-          - "identifier": null
-          - "mentalpr": null
           - "senser": null
+          - "mentalpr": null
           - "phenomenon": null
-          - "behaviouralpr": null
-          - "behaver": null
-          - "verbalpr": null
-          - "sayer": null
-          - "reciver": null
-          - "verbiage": null
-          - "existantialpr": null
-          - "existent": null
-          - "nominalgrp": null
-          - "adjectivegrp": null
-          - "prepositionallocation": null
-          - "will_return": null
+          - "stm_recipient_response": null
+          - "stm_bot_reference_of_truth": null
+          - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
+      - action: action_listen
       - checkpoint: check_a_kiss_06_DidSheLookBeautiful
 
       - intent: nonexclamation__positive__attributivepr
@@ -286,8 +161,9 @@ stories:
           - "attribute": "beautiful"
       - action: action_memorize_user_response
       - slot_was_set:
-          - "stm_recipient_response": "she was beautiful"
-          - "stm_bot_reference_of_truth": "she was beautiful"
+          - "stm_recipient_response": "she looked beautiful"
+          - "stm_bot_reference_of_truth": "she looked beautiful"
+          - "stm_semantic_axis": "attribute"
       - action: action_activate_matched_perception
       - slot_was_set:
           - "stm_matched_belief": true
@@ -301,11 +177,12 @@ stories:
         entities:
           - "actor": "he"
           - "materialpr": "buy"
-          - "goal": "an old car"
+          - "goal": "a old car"
       - action: action_memorize_user_response
       - slot_was_set:
           - "stm_recipient_response": "he did not buy an old car"
-          - "stm_bot_reference_of_truth": "he did not buy an old car"
+          - "stm_bot_reference_of_truth": "he bought a new car"
+          - "stm_semantic_axis": "goal"
       - action: action_activate_matched_perception
       - slot_was_set:
           - "stm_matched_belief": true
@@ -316,40 +193,23 @@ stories:
           - "materialpr": null
           - "actor": null
           - "goal": null
-          - "scope": null
-          - "beneficiary": null
-          - "attributivepr": null
-          - "carrier": null
-          - "attribute": null
-          - "identifyingpr": null
-          - "identified": null
-          - "identifier": null
-          - "mentalpr": null
-          - "senser": null
-          - "phenomenon": null
-          - "behaviouralpr": null
-          - "behaver": null
-          - "verbalpr": null
-          - "sayer": null
-          - "reciver": null
-          - "verbiage": null
-          - "existantialpr": null
-          - "existent": null
-          - "nominalgrp": null
-          - "adjectivegrp": null
-          - "prepositionallocation": null
-          - "will_return": null
+          - "stm_recipient_response": null
+          - "stm_bot_reference_of_truth": null
+          - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
+      - action: action_listen
 
-      - intent: nonexclamation__negative__identifyingpr
+      - intent: nonexclamation__negative__materialpr
         entities:
-          - "identified": "it"
-          - "identifier": "a bicycle"
+          - "actor": "he"
+          - "materialpr": "buy"
+          - "goal": "an expensive bicycle"
       - action: action_memorize_user_response
       - slot_was_set:
-          - "stm_recipient_response": "it was not"
-          - "stm_bot_reference_of_truth": "it was not a bicycle"
+          - "stm_recipient_response": "he did not buy an expensive bicycle"
+          - "stm_bot_reference_of_truth": "he bought an expensive car"
+          - "stm_semantic_axis": "goal"
       - action: action_activate_matched_perception
       - slot_was_set:
           - "stm_matched_belief": true
@@ -360,41 +220,21 @@ stories:
           - "materialpr": null
           - "actor": null
           - "goal": null
-          - "scope": null
-          - "beneficiary": null
-          - "attributivepr": null
-          - "carrier": null
-          - "attribute": null
-          - "identifyingpr": null
-          - "identified": null
-          - "identifier": null
-          - "mentalpr": null
-          - "senser": null
-          - "phenomenon": null
-          - "behaviouralpr": null
-          - "behaver": null
-          - "verbalpr": null
-          - "sayer": null
-          - "reciver": null
-          - "verbiage": null
-          - "existantialpr": null
-          - "existent": null
-          - "nominalgrp": null
-          - "adjectivegrp": null
-          - "prepositionallocation": null
-          - "will_return": null
+          - "stm_recipient_response": null
+          - "stm_bot_reference_of_truth": null
+          - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
       - action: action_listen
 
-  - story: Scenario of NEGATIVE_SHORT_ANSWER
+  - story: Scenario of SHORT_ANSWER
     steps:
       - checkpoint: check_a_kiss_01_DidCarlosBuyOldCar
       - intent: negative__shortanswer
       - action: action_memorize_user_response
       - slot_was_set:
           - "stm_recipient_response": "no"
-          - "stm_bot_reference_of_truth": "he did not buy an old car"
+          - "stm_bot_reference_of_truth": "he bought a new car"
       - action: action_activate_matched_perception
       - slot_was_set:
           - "stm_matched_belief": true
@@ -402,40 +242,17 @@ stories:
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
           - "story_progress": 2
-          - "materialpr": null
-          - "actor": null
-          - "goal": null
-          - "scope": null
-          - "beneficiary": null
-          - "attributivepr": null
-          - "carrier": null
-          - "attribute": null
-          - "identifyingpr": null
-          - "identified": null
-          - "identifier": null
-          - "mentalpr": null
-          - "senser": null
-          - "phenomenon": null
-          - "behaviouralpr": null
-          - "behaver": null
-          - "verbalpr": null
-          - "sayer": null
-          - "reciver": null
-          - "verbiage": null
-          - "existantialpr": null
-          - "existent": null
-          - "nominalgrp": null
-          - "adjectivegrp": null
-          - "prepositionallocation": null
-          - "will_return": null
+          - "stm_recipient_response": null
+          - "stm_bot_reference_of_truth": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
+      - action: action_listen
 
       - intent: negative__shortanswer
       - action: action_memorize_user_response
       - slot_was_set:
           - "stm_recipient_response": "he did not"
-          - "stm_bot_reference_of_truth": "he did not buy a bicycle"
+          - "stm_bot_reference_of_truth": "he bought an expensive car"
       - action: action_activate_matched_perception
       - slot_was_set:
           - "stm_matched_belief": true
@@ -443,34 +260,11 @@ stories:
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
           - "story_progress": 3
-          - "materialpr": null
-          - "actor": null
-          - "goal": null
-          - "scope": null
-          - "beneficiary": null
-          - "attributivepr": null
-          - "carrier": null
-          - "attribute": null
-          - "identifyingpr": null
-          - "identified": null
-          - "identifier": null
-          - "mentalpr": null
-          - "senser": null
-          - "phenomenon": null
-          - "behaviouralpr": null
-          - "behaver": null
-          - "verbalpr": null
-          - "sayer": null
-          - "reciver": null
-          - "verbiage": null
-          - "existantialpr": null
-          - "existent": null
-          - "nominalgrp": null
-          - "adjectivegrp": null
-          - "prepositionallocation": null
-          - "will_return": null
+          - "stm_recipient_response": null
+          - "stm_bot_reference_of_truth": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
+      - action: action_listen
 
       - intent: affirmative__adjectivegroup
         entities:
@@ -479,6 +273,7 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "huge"
           - "stm_bot_reference_of_truth": "it was huge"
+          - "stm_semantic_axis": "adjectivegrp"
       - action: action_activate_matched_perception
       - slot_was_set:
           - "stm_matched_belief": true
@@ -486,34 +281,13 @@ stories:
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
           - "story_progress": 4
-          - "materialpr": null
-          - "actor": null
-          - "goal": null
-          - "scope": null
-          - "beneficiary": null
-          - "attributivepr": null
-          - "carrier": null
-          - "attribute": null
-          - "identifyingpr": null
-          - "identified": null
-          - "identifier": null
-          - "mentalpr": null
-          - "senser": null
-          - "phenomenon": null
-          - "behaviouralpr": null
-          - "behaver": null
-          - "verbalpr": null
-          - "sayer": null
-          - "reciver": null
-          - "verbiage": null
-          - "existantialpr": null
-          - "existent": null
-          - "nominalgrp": null
           - "adjectivegrp": null
-          - "prepositionallocation": null
-          - "will_return": null
+          - "stm_recipient_response": null
+          - "stm_bot_reference_of_truth": null
+          - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
+      - action: action_listen
 
       - intent: affirmative__adjectivegroup
         entities:
@@ -522,6 +296,7 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "blue"
           - "stm_bot_reference_of_truth": "it was blue"
+          - "stm_semantic_axis": "adjectivegrp"
       - action: action_activate_matched_perception
       - slot_was_set:
           - "stm_matched_belief": true
@@ -529,34 +304,12 @@ stories:
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
           - "story_progress": 5
-          - "materialpr": null
-          - "actor": null
-          - "goal": null
-          - "scope": null
-          - "beneficiary": null
-          - "attributivepr": null
-          - "carrier": null
-          - "attribute": null
-          - "identifyingpr": null
-          - "identified": null
-          - "identifier": null
-          - "mentalpr": null
-          - "senser": null
-          - "phenomenon": null
-          - "behaviouralpr": null
-          - "behaver": null
-          - "verbalpr": null
-          - "sayer": null
-          - "reciver": null
-          - "verbiage": null
-          - "existantialpr": null
-          - "existent": null
-          - "nominalgrp": null
           - "adjectivegrp": null
-          - "prepositionallocation": null
-          - "will_return": null
+          - "stm_recipient_response": null
+          - "stm_bot_reference_of_truth": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
+      - action: action_listen
 
       - intent: affirmative__nominalgroup
         entities:
@@ -565,6 +318,7 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "a girl"
           - "stm_bot_reference_of_truth": "he saw a girl"
+          - "stm_semantic_axis": "nominalgrp"
       - action: action_activate_matched_perception
       - slot_was_set:
           - "stm_matched_belief": true
@@ -572,34 +326,13 @@ stories:
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
           - "story_progress": 6
-          - "materialpr": null
-          - "actor": null
-          - "goal": null
-          - "scope": null
-          - "beneficiary": null
-          - "attributivepr": null
-          - "carrier": null
-          - "attribute": null
-          - "identifyingpr": null
-          - "identified": null
-          - "identifier": null
-          - "mentalpr": null
-          - "senser": null
-          - "phenomenon": null
-          - "behaviouralpr": null
-          - "behaver": null
-          - "verbalpr": null
-          - "sayer": null
-          - "reciver": null
-          - "verbiage": null
-          - "existantialpr": null
-          - "existent": null
           - "nominalgrp": null
-          - "adjectivegrp": null
-          - "prepositionallocation": null
-          - "will_return": null
+          - "stm_recipient_response": null
+          - "stm_bot_reference_of_truth": null
+          - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
+      - action: action_listen
 
       - intent: affirmative__shortanswer
       - action: action_memorize_user_response
@@ -627,14 +360,10 @@ stories:
           - intent: affirmative__adjectivegroup
           - intent: affirmative__shortanswer
           - intent: negative__shortanswer
-      - action: action_not_sure_what_to_do_fallback
       - slot_was_set:
           - "will_return": "positive"
-      - action: utter_return_to_previous_question
-      - action: utter_a_kiss_01_DidCarlosBuyOldCar
-      - action: action_store_lesson_history__a_kiss
-      - slot_was_set:
-          - "story_progress": 1
+          - "stm_matched_belief": null
+          - "stm_unmatched_belief": null
           - "materialpr": null
           - "actor": null
           - "goal": null
@@ -660,9 +389,12 @@ stories:
           - "nominalgrp": null
           - "adjectivegrp": null
           - "prepositionallocation": null
+      - action: utter_return_to_previous_question
+      - action: utter_a_kiss_01_DidCarlosBuyOldCar
+      - action: action_store_lesson_history__a_kiss
+      - slot_was_set:
+          - "story_progress": 1
           - "will_return": null
-          - "stm_matched_belief": null
-          - "stm_unmatched_belief": null
       - action: action_listen
 
   - story: Scenario of utter RETURN_TO_PREVIOUS_QUESTION-02
@@ -680,14 +412,10 @@ stories:
           - intent: affirmative__adjectivegroup
           - intent: affirmative__shortanswer
           - intent: negative__shortanswer
-      - action: action_not_sure_what_to_do_fallback
       - slot_was_set:
           - "will_return": "positive"
-      - action: utter_return_to_previous_question
-      - action: utter_a_kiss_02_DidCarlosBuyExpensiveBicycle
-      - action: action_store_lesson_history__a_kiss
-      - slot_was_set:
-          - "story_progress": 2
+          - "stm_matched_belief": null
+          - "stm_unmatched_belief": null
           - "materialpr": null
           - "actor": null
           - "goal": null
@@ -713,9 +441,12 @@ stories:
           - "nominalgrp": null
           - "adjectivegrp": null
           - "prepositionallocation": null
+      - action: utter_return_to_previous_question
+      - action: utter_a_kiss_02_DidCarlosBuyExpensiveBicycle
+      - action: action_store_lesson_history__a_kiss
+      - slot_was_set:
+          - "story_progress": 2
           - "will_return": null
-          - "stm_matched_belief": null
-          - "stm_unmatched_belief": null
       - action: action_listen
 
   - story: Scenario of utter RETURN_TO_PREVIOUS_QUESTION-03
@@ -733,14 +464,10 @@ stories:
           - intent: affirmative__adjectivegroup
           - intent: affirmative__shortanswer
           - intent: negative__shortanswer
-      - action: action_not_sure_what_to_do_fallback
       - slot_was_set:
           - "will_return": "positive"
-      - action: utter_return_to_previous_question
-      - action: utter_a_kiss_03_HowBigWasCar
-      - action: action_store_lesson_history__a_kiss
-      - slot_was_set:
-          - "story_progress": 3
+          - "stm_matched_belief": null
+          - "stm_unmatched_belief": null
           - "materialpr": null
           - "actor": null
           - "goal": null
@@ -766,9 +493,12 @@ stories:
           - "nominalgrp": null
           - "adjectivegrp": null
           - "prepositionallocation": null
+      - action: utter_return_to_previous_question
+      - action: utter_a_kiss_03_HowBigWasCar
+      - action: action_store_lesson_history__a_kiss
+      - slot_was_set:
+          - "story_progress": 3
           - "will_return": null
-          - "stm_matched_belief": null
-          - "stm_unmatched_belief": null
       - action: action_listen
 
   - story: Scenario of utter RETURN_TO_PREVIOUS_QUESTION-04
@@ -786,14 +516,10 @@ stories:
           - intent: affirmative__adjectivegroup
           - intent: affirmative__shortanswer
           - intent: negative__shortanswer
-      - action: action_not_sure_what_to_do_fallback
       - slot_was_set:
           - "will_return": "positive"
-      - action: utter_return_to_previous_question
-      - action: utter_a_kiss_04_WhatColorWasCar
-      - action: action_store_lesson_history__a_kiss
-      - slot_was_set:
-          - "story_progress": 4
+          - "stm_matched_belief": null
+          - "stm_unmatched_belief": null
           - "materialpr": null
           - "actor": null
           - "goal": null
@@ -819,9 +545,12 @@ stories:
           - "nominalgrp": null
           - "adjectivegrp": null
           - "prepositionallocation": null
+      - action: utter_return_to_previous_question
+      - action: utter_a_kiss_04_WhatColorWasCar
+      - action: action_store_lesson_history__a_kiss
+      - slot_was_set:
+          - "story_progress": 4
           - "will_return": null
-          - "stm_matched_belief": null
-          - "stm_unmatched_belief": null
       - action: action_listen
 
   - story: Scenario of utter RETURN_TO_PREVIOUS_QUESTION-05
@@ -839,14 +568,10 @@ stories:
           - intent: affirmative__adjectivegroup
           - intent: affirmative__shortanswer
           - intent: negative__shortanswer
-      - action: action_not_sure_what_to_do_fallback
       - slot_was_set:
           - "will_return": "positive"
-      - action: utter_return_to_previous_question
-      - action: utter_a_kiss_05_WhileDrivingDownWhatDidHeSee
-      - action: action_store_lesson_history__a_kiss
-      - slot_was_set:
-          - "story_progress": 5
+          - "stm_matched_belief": null
+          - "stm_unmatched_belief": null
           - "materialpr": null
           - "actor": null
           - "goal": null
@@ -872,9 +597,12 @@ stories:
           - "nominalgrp": null
           - "adjectivegrp": null
           - "prepositionallocation": null
+      - action: utter_return_to_previous_question
+      - action: utter_a_kiss_05_WhileDrivingDownWhatDidHeSee
+      - action: action_store_lesson_history__a_kiss
+      - slot_was_set:
+          - "story_progress": 5
           - "will_return": null
-          - "stm_matched_belief": null
-          - "stm_unmatched_belief": null
       - action: action_listen
 
   - story: Scenario of utter RETURN_TO_PREVIOUS_QUESTION-06
@@ -892,14 +620,10 @@ stories:
           - intent: affirmative__adjectivegroup
           - intent: affirmative__shortanswer
           - intent: negative__shortanswer
-      - action: action_not_sure_what_to_do_fallback
       - slot_was_set:
           - "will_return": "positive"
-      - action: utter_return_to_previous_question
-      - action: utter_a_kiss_06_DidSheLookBeautiful
-      - action: action_store_lesson_history__a_kiss
-      - slot_was_set:
-          - "story_progress": 6
+          - "stm_matched_belief": null
+          - "stm_unmatched_belief": null
           - "materialpr": null
           - "actor": null
           - "goal": null
@@ -925,9 +649,12 @@ stories:
           - "nominalgrp": null
           - "adjectivegrp": null
           - "prepositionallocation": null
+      - action: utter_return_to_previous_question
+      - action: utter_a_kiss_06_DidSheLookBeautiful
+      - action: action_store_lesson_history__a_kiss
+      - slot_was_set:
+          - "story_progress": 6
           - "will_return": null
-          - "stm_matched_belief": null
-          - "stm_unmatched_belief": null
       - action: action_listen
 
   - story: Scenario of UTTER_PLEASE_REPHRASE-01
@@ -944,6 +671,7 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "he bought a new car"
           - "stm_bot_reference_of_truth": "he bought a new car"
+          - "stm_semantic_axis": "goal"
       - action: action_activate_matched_perception
       - slot_was_set:
           - "stm_matched_belief": true
@@ -954,28 +682,9 @@ stories:
           - "materialpr": null
           - "actor": null
           - "goal": null
-          - "scope": null
-          - "beneficiary": null
-          - "attributivepr": null
-          - "carrier": null
-          - "attribute": null
-          - "identifyingpr": null
-          - "identified": null
-          - "identifier": null
-          - "mentalpr": null
-          - "senser": null
-          - "phenomenon": null
-          - "behaviouralpr": null
-          - "behaver": null
-          - "verbalpr": null
-          - "sayer": null
-          - "reciver": null
-          - "verbiage": null
-          - "existantialpr": null
-          - "existent": null
-          - "nominalgrp": null
-          - "adjectivegrp": null
-          - "prepositionallocation": null
+          - "stm_recipient_response": null
+          - "stm_bot_reference_of_truth": null
+          - "stm_semantic_axis": null
           - "will_return": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
@@ -986,14 +695,16 @@ stories:
       - checkpoint: check_a_kiss_02_DidCarlosBuyExpensiveBicycle
       - intent: nlu_fallback
       - action: utter_please_rephrase
-      - intent: nonexclamation__positive__identifyingpr
+      - intent: nonexclamation__positive__materialpr
         entities:
-          - "identified": "it"
-          - "identifier": "a car"
+          - "actor": "he"
+          - "materialpr": "bought"
+          - "goal": "a expensive car"
       - action: action_memorize_user_response
       - slot_was_set:
-          - "stm_recipient_response": "it was a car"
-          - "stm_bot_reference_of_truth": "it was a car"
+          - "stm_recipient_response": "he bought an expensive car"
+          - "stm_bot_reference_of_truth": "he bought an expensive car"
+          - "stm_semantic_axis": "goal"
       - action: action_activate_matched_perception
       - slot_was_set:
           - "stm_matched_belief": true
@@ -1004,29 +715,9 @@ stories:
           - "materialpr": null
           - "actor": null
           - "goal": null
-          - "scope": null
-          - "beneficiary": null
-          - "attributivepr": null
-          - "carrier": null
-          - "attribute": null
-          - "identifyingpr": null
-          - "identified": null
-          - "identifier": null
-          - "mentalpr": null
-          - "senser": null
-          - "phenomenon": null
-          - "behaviouralpr": null
-          - "behaver": null
-          - "verbalpr": null
-          - "sayer": null
-          - "reciver": null
-          - "verbiage": null
-          - "existantialpr": null
-          - "existent": null
-          - "nominalgrp": null
-          - "adjectivegrp": null
-          - "prepositionallocation": null
-          - "will_return": null
+          - "stm_recipient_response": null
+          - "stm_bot_reference_of_truth": null
+          - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
       - action: action_listen
@@ -1044,39 +735,19 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "it was huge"
           - "stm_bot_reference_of_truth": "it was huge"
+          - "stm_semantic_axis": "attribute"
       - action: action_activate_matched_perception
       - slot_was_set:
           - "stm_matched_belief": true
-      - action: utter_a_kiss_05_WhileDrivingDownWhatDidHeSee
+      - action: utter_a_kiss_04_WhatColorWasCar
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
-          - "story_progress": 5
-          - "materialpr": null
-          - "actor": null
-          - "goal": null
-          - "scope": null
-          - "beneficiary": null
-          - "attributivepr": null
+          - "story_progress": 4
           - "carrier": null
           - "attribute": null
-          - "identifyingpr": null
-          - "identified": null
-          - "identifier": null
-          - "mentalpr": null
-          - "senser": null
-          - "phenomenon": null
-          - "behaviouralpr": null
-          - "behaver": null
-          - "verbalpr": null
-          - "sayer": null
-          - "reciver": null
-          - "verbiage": null
-          - "existantialpr": null
-          - "existent": null
-          - "nominalgrp": null
-          - "adjectivegrp": null
-          - "prepositionallocation": null
-          - "will_return": null
+          - "stm_recipient_response": null
+          - "stm_bot_reference_of_truth": null
+          - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
       - action: action_listen
@@ -1094,39 +765,19 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "it was blue"
           - "stm_bot_reference_of_truth": "it was blue"
+          - "stm_semantic_axis": "attribute"
       - action: action_activate_matched_perception
       - slot_was_set:
           - "stm_matched_belief": true
       - action: utter_a_kiss_05_WhileDrivingDownWhatDidHeSee
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
-          - "story_progress": 5
-          - "materialpr": null
-          - "actor": null
-          - "goal": null
-          - "scope": null
-          - "beneficiary": null
-          - "attributivepr": null
+          - "story_progress": 4
           - "carrier": null
           - "attribute": null
-          - "identifyingpr": null
-          - "identified": null
-          - "identifier": null
-          - "mentalpr": null
-          - "senser": null
-          - "phenomenon": null
-          - "behaviouralpr": null
-          - "behaver": null
-          - "verbalpr": null
-          - "sayer": null
-          - "reciver": null
-          - "verbiage": null
-          - "existantialpr": null
-          - "existent": null
-          - "nominalgrp": null
-          - "adjectivegrp": null
-          - "prepositionallocation": null
-          - "will_return": null
+          - "stm_recipient_response": null
+          - "stm_bot_reference_of_truth": null
+          - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
       - action: action_listen
@@ -1145,6 +796,7 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "he saw a girl"
           - "stm_bot_reference_of_truth": "he saw a girl"
+          - "stm_semantic_axis": "phenomenon"
       - action: action_activate_matched_perception
       - slot_was_set:
           - "stm_matched_belief": true
@@ -1152,32 +804,12 @@ stories:
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
           - "story_progress": 6
-          - "materialpr": null
-          - "actor": null
-          - "goal": null
-          - "scope": null
-          - "beneficiary": null
-          - "attributivepr": null
-          - "carrier": null
-          - "attribute": null
-          - "identifyingpr": null
-          - "identified": null
-          - "identifier": null
-          - "mentalpr": null
           - "senser": null
+          - "mentalpr": null
           - "phenomenon": null
-          - "behaviouralpr": null
-          - "behaver": null
-          - "verbalpr": null
-          - "sayer": null
-          - "reciver": null
-          - "verbiage": null
-          - "existantialpr": null
-          - "existent": null
-          - "nominalgrp": null
-          - "adjectivegrp": null
-          - "prepositionallocation": null
-          - "will_return": null
+          - "stm_recipient_response": null
+          - "stm_bot_reference_of_truth": null
+          - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
       - action: action_listen
@@ -1195,6 +827,7 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "she looked beautiful"
           - "stm_bot_reference_of_truth": "she looked beautiful"
+          - "stm_semantic_axis": "beautiful"
       - action: action_activate_matched_perception
       - slot_was_set:
           - "stm_matched_belief": true
@@ -1208,7 +841,7 @@ stories:
       - action: action_memorize_user_response
       - slot_was_set:
           - "stm_recipient_response": "yes"
-          - "stm_bot_reference_of_truth": "Carlos bought a new car"
+          - "stm_bot_reference_of_truth": "he bought a new car"
       - action: action_activate_unmatched_perception
       - slot_was_set:
           - "stm_unmatched_belief": true
@@ -1218,34 +851,11 @@ stories:
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
           - "story_progress": 2
-          - "materialpr": null
-          - "actor": null
-          - "goal": null
-          - "scope": null
-          - "beneficiary": null
-          - "attributivepr": null
-          - "carrier": null
-          - "attribute": null
-          - "identifyingpr": null
-          - "identified": null
-          - "identifier": null
-          - "mentalpr": null
-          - "senser": null
-          - "phenomenon": null
-          - "behaviouralpr": null
-          - "behaver": null
-          - "verbalpr": null
-          - "sayer": null
-          - "reciver": null
-          - "verbiage": null
-          - "existantialpr": null
-          - "existent": null
-          - "nominalgrp": null
-          - "adjectivegrp": null
-          - "prepositionallocation": null
-          - "will_return": null
+          - "stm_recipient_response": null
+          - "stm_bot_reference_of_truth": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
+      - action: action_listen
 
       - intent: affirmative__shortanswer
       - slot_was_set:
@@ -1259,39 +869,72 @@ stories:
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
           - "story_progress": 3
-          - "materialpr": null
-          - "actor": null
-          - "goal": null
-          - "scope": null
-          - "beneficiary": null
-          - "attributivepr": null
-          - "carrier": null
-          - "attribute": null
-          - "identifyingpr": null
-          - "identified": null
-          - "identifier": null
-          - "mentalpr": null
-          - "senser": null
-          - "phenomenon": null
-          - "behaviouralpr": null
-          - "behaver": null
-          - "verbalpr": null
-          - "sayer": null
-          - "reciver": null
-          - "verbiage": null
-          - "existantialpr": null
-          - "existent": null
-          - "nominalgrp": null
-          - "adjectivegrp": null
-          - "prepositionallocation": null
-          - "will_return": null
+          - "stm_recipient_response": null
+          - "stm_bot_reference_of_truth": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
       - action: action_listen
 
   - story: Scenario of WRONG_ANSWER_LONG_EXPRESSION-01
     steps:
-      - checkpoint: check_a_kiss_03_HowBigWasCar
+      - checkpoint: check_a_kiss_01_DidCarlosBuyOldCar
+
+      - intent: nonexclamation__positive__materialpr
+        entities:
+          - "actor": "he"
+          - "materialpr": "bought"
+          - "goal": "a old car"
+      - action: action_memorize_user_response
+      - slot_was_set:
+          - "stm_recipient_response": "he bought a old car"
+          - "stm_bot_reference_of_truth": "he bought a new car"
+          - "stm_semantic_axis": "goal"
+      - action: action_activate_matched_perception
+      - slot_was_set:
+          - "stm_unmatched_belief": true
+      - action: utter_a_kiss_01_disagree
+      - action: utter_a_kiss_02_DidCarlosBuyExpensiveBicycle
+      - action: action_store_lesson_history__a_kiss
+      - slot_was_set:
+          - "story_progress": 2
+          - "actor": null
+          - "materialpr": null
+          - "goal": null
+          - "stm_recipient_response": null
+          - "stm_bot_reference_of_truth": null
+          - "stm_semantic_axis": null
+          - "stm_matched_belief": null
+          - "stm_unmatched_belief": null
+      - action: action_listen
+
+      - intent: nonexclamation__positive__materialpr
+        entities:
+          - "actor": "he"
+          - "materialpr": "bought"
+          - "goal": "a cheap car"
+      - action: action_memorize_user_response
+      - slot_was_set:
+          - "stm_recipient_response": "he bought an cheap car"
+          - "stm_bot_reference_of_truth": "he bought an expensive car"
+          - "stm_semantic_axis": "goal"
+      - action: action_activate_matched_perception
+      - slot_was_set:
+          - "stm_unmatched_belief": true
+      - action: utter_a_kiss_02_disagree
+      - action: utter_a_kiss_03_HowBigWasCar
+      - action: action_store_lesson_history__a_kiss
+      - slot_was_set:
+          - "story_progress": 3
+          - "actor": null
+          - "materialpr": null
+          - "goal": null
+          - "stm_recipient_response": null
+          - "stm_bot_reference_of_truth": null
+          - "stm_semantic_axis": null
+          - "stm_matched_belief": null
+          - "stm_unmatched_belief": null
+      - action: action_listen
+
       - intent: nonexclamation__positive__attributivepr
         entities:
           - "carrier": "it"
@@ -1300,6 +943,7 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "it was small"
           - "stm_bot_reference_of_truth": "it was huge"
+          - "stm_semantic_axis": "attribute"
       - action: action_activate_unmatched_perception
       - slot_was_set:
           - "stm_unmatched_belief": true
@@ -1308,34 +952,14 @@ stories:
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
           - "story_progress": 4
-          - "materialpr": null
-          - "actor": null
-          - "goal": null
-          - "scope": null
-          - "beneficiary": null
-          - "attributivepr": null
           - "carrier": null
           - "attribute": null
-          - "identifyingpr": null
-          - "identified": null
-          - "identifier": null
-          - "mentalpr": null
-          - "senser": null
-          - "phenomenon": null
-          - "behaviouralpr": null
-          - "behaver": null
-          - "verbalpr": null
-          - "sayer": null
-          - "reciver": null
-          - "verbiage": null
-          - "existantialpr": null
-          - "existent": null
-          - "nominalgrp": null
-          - "adjectivegrp": null
-          - "prepositionallocation": null
-          - "will_return": null
+          - "stm_recipient_response": null
+          - "stm_bot_reference_of_truth": null
+          - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
+      - action: action_listen
 
       - intent: nonexclamation__positive__attributivepr
         entities:
@@ -1345,6 +969,7 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "it was green"
           - "stm_bot_reference_of_truth": "it was blue"
+          - "stm_semantic_axis": "attribute"
       - action: action_activate_unmatched_perception
       - slot_was_set:
           - "stm_unmatched_belief": true
@@ -1353,34 +978,14 @@ stories:
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
           - "story_progress": 5
-          - "materialpr": null
-          - "actor": null
-          - "goal": null
-          - "scope": null
-          - "beneficiary": null
-          - "attributivepr": null
           - "carrier": null
           - "attribute": null
-          - "identifyingpr": null
-          - "identified": null
-          - "identifier": null
-          - "mentalpr": null
-          - "senser": null
-          - "phenomenon": null
-          - "behaviouralpr": null
-          - "behaver": null
-          - "verbalpr": null
-          - "sayer": null
-          - "reciver": null
-          - "verbiage": null
-          - "existantialpr": null
-          - "existent": null
-          - "nominalgrp": null
-          - "adjectivegrp": null
-          - "prepositionallocation": null
-          - "will_return": null
+          - "stm_recipient_response": null
+          - "stm_bot_reference_of_truth": null
+          - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
+      - action: action_listen
 
       - intent: nonexclamation__positive__mentalpr
         entities:
@@ -1390,6 +995,7 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "he saw an egg"
           - "stm_bot_reference_of_truth": "he saw a girl"
+          - "stm_semantic_axis": "phenomenon"
       - action: action_activate_unmatched_perception
       - slot_was_set:
           - "stm_unmatched_belief": true
@@ -1398,32 +1004,12 @@ stories:
       - action: action_store_lesson_history__a_kiss
       - slot_was_set:
           - "story_progress": 6
-          - "materialpr": null
-          - "actor": null
-          - "goal": null
-          - "scope": null
-          - "beneficiary": null
-          - "attributivepr": null
-          - "carrier": null
-          - "attribute": null
-          - "identifyingpr": null
-          - "identified": null
-          - "identifier": null
-          - "mentalpr": null
           - "senser": null
+          - "mentalpr": null
           - "phenomenon": null
-          - "behaviouralpr": null
-          - "behaver": null
-          - "verbalpr": null
-          - "sayer": null
-          - "reciver": null
-          - "verbiage": null
-          - "existantialpr": null
-          - "existent": null
-          - "nominalgrp": null
-          - "adjectivegrp": null
-          - "prepositionallocation": null
-          - "will_return": null
+          - "stm_recipient_response": null
+          - "stm_bot_reference_of_truth": null
+          - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
       - action: action_listen

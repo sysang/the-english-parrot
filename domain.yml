@@ -8,9 +8,8 @@ session_config:
 
 actions:
   - action_not_sure_what_to_do_fallback
-  - action_not_understand_fallback
-  - action_store_lesson_history__a_kiss
   - action_initialize_a_kiss_story
+  - action_store_lesson_history__a_kiss
   - action_initialize_changed_story
   - action_store_lesson_history__changed
   - action_memorize_user_response
@@ -46,106 +45,106 @@ entities:
 
 slots:
   materialpr:
-    type: text
+    type: RasaSlotTypes.Influentialx10
     auto_fill: true
     influence_conversation: true
   actor:
-    type: text
+    type: RasaSlotTypes.Influentialx10
     auto_fill: true
     influence_conversation: true
   goal:
-    type: text
+    type: RasaSlotTypes.Influentialx10
     auto_fill: true
     influence_conversation: true
   scope:
-    type: text
+    type: RasaSlotTypes.Influentialx10
     auto_fill: true
     influence_conversation: true
   beneficiary:
-    type: text
+    type: RasaSlotTypes.Influentialx10
     auto_fill: true
     influence_conversation: true
   attributivepr:
-    type: text
+    type: RasaSlotTypes.Influentialx10
     auto_fill: true
     influence_conversation: true
   carrier:
-    type: text
+    type: RasaSlotTypes.Influentialx10
     auto_fill: true
     influence_conversation: true
   attribute:
-    type: text
+    type: RasaSlotTypes.Influentialx10
     auto_fill: true
     influence_conversation: true
   identifyingpr:
-    type: text
+    type: RasaSlotTypes.Influentialx10
     auto_fill: true
     influence_conversation: true
   identified:
-    type: text
+    type: RasaSlotTypes.Influentialx10
     auto_fill: true
     influence_conversation: true
   identifier:
-    type: text
+    type: RasaSlotTypes.Influentialx10
     auto_fill: true
   mentalpr:
-    type: text
+    type: RasaSlotTypes.Influentialx10
     auto_fill: true
     influence_conversation: true
   senser:
-    type: text
+    type: RasaSlotTypes.Influentialx10
     auto_fill: true
     influence_conversation: true
   phenomenon:
-    type: text
+    type: RasaSlotTypes.Influentialx10
     auto_fill: true
     influence_conversation: true
   behaviouralpr:
-    type: text
+    type: RasaSlotTypes.Influentialx10
     auto_fill: true
     influence_conversation: true
   behaver:
-    type: text
+    type: RasaSlotTypes.Influentialx10
     auto_fill: true
     influence_conversation: true
   verbalpr:
-    type: text
+    type: RasaSlotTypes.Influentialx10
     auto_fill: true
     influence_conversation: true
   sayer:
-    type: text
+    type: RasaSlotTypes.Influentialx10
     auto_fill: true
     influence_conversation: true
   reciver:
-    type: text
+    type: RasaSlotTypes.Influentialx10
     auto_fill: true
     influence_conversation: true
   verbiage:
-    type: text
+    type: RasaSlotTypes.Influentialx10
     auto_fill: true
     influence_conversation: true
   existantialpr:
-    type: text
+    type: RasaSlotTypes.Influentialx10
     auto_fill: true
     influence_conversation: true
   existent:
-    type: text
+    type: RasaSlotTypes.Influentialx10
     auto_fill: true
     influence_conversation: true
   nominalgrp:
-    type: text
+    type: RasaSlotTypes.Influentialx10
     auto_fill: true
     influence_conversation: true
   adjectivegrp:
-    type: text
+    type: RasaSlotTypes.Influentialx10
     auto_fill: true
     influence_conversation: true
   prepositionallocation:
-    type: text
+    type: RasaSlotTypes.Influentialx10
     auto_fill: true
     influence_conversation: true
   will_return:
-    type: text
+    type: RasaSlotTypes.Influentialx10
     influence_conversation: true
   lesson_topic:
     type: categorical
@@ -162,11 +161,40 @@ slots:
   stm_bot_reference_of_truth:
     type: RasaSlotTypes.EmbeddedSentence
     influence_conversation: true
+  stm_semantic_axis:
+    type: categorical
+    values:
+      - materialpr
+      - actor
+      - goal
+      - scope
+      - beneficiary
+      - attributivepr
+      - carrier
+      - attribute
+      - identifyingpr
+      - identified
+      - identifier
+      - mentalpr
+      - senser
+      - phenomenon
+      - behaviouralpr
+      - behaver
+      - verbalpr
+      - sayer
+      - reciver
+      - verbiage
+      - existantialpr
+      - existent
+      - nominalgrp
+      - adjectivegrp
+      - prepositionallocation
+    influence_conversation: true
   stm_matched_belief:
-    type: bool
+    type: RasaSlotTypes.Influentialx10
     influence_conversation: true
   stm_unmatched_belief:
-    type: bool
+    type: RasaSlotTypes.Influentialx10
     influence_conversation: true
 
 
