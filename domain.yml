@@ -9,12 +9,13 @@ session_config:
 actions:
   - action_proceed_dialogue
   - action_finalize_bot_dialogue_turn
-  - action_not_sure_what_to_do_fallback
   - action_initialize_a_kiss_story
   - action_initialize_changed_story
   - action_memorize_user_response
   - action_activate_matched_perception
   - action_activate_unmatched_perception
+  - action_not_sure_what_to_do_fallback
+  - action_repeat_last_utterance
 
 entities:
   - materialpr

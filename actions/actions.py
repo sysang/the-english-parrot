@@ -76,7 +76,7 @@ def query_reference_of_truth(story, question_num):
     return ANSWERS[story][question_num]
 
 
-def query_bot_question(story, question_num):
+def query_bot_utterance(story, question_num):
     story_questions = QUESTIONS[story]
 
     if (question_num >= len(story_questions)):
@@ -95,7 +95,7 @@ class ActionInitializeAKissStory(Action):
         story_progress = 0
         topic = 'a_kiss_story'
 
-        utterance = query_bot_question(topic, story_progress)
+        utterance = query_bot_utterance(topic, story_progress)
 
         return [
                 SlotSet("lesson_topic", topic),
@@ -127,7 +127,7 @@ class ActionProceedDialogue(Action):
         question_num = story_progress + 1
 
         if stm_matched_belief:
-            question = query_bot_question(story, question_num)
+            question = query_bot_utterance(story, question_num)
 
             return [
                 SlotSet('story_progress', question_num),
@@ -138,7 +138,7 @@ class ActionProceedDialogue(Action):
             inform_utterance = UTTERANCES['inform_incorrect_answer']
             answer = query_reference_of_truth(story, story_progress)
 
-            question = query_bot_question(story, question_num)
+            question = query_bot_utterance(story, question_num)
 
             return [
                 SlotSet('story_progress', question_num),
@@ -168,59 +168,6 @@ class ActionFinalizeBotDialogueTurn(Action):
 
         question_num = tracker.get_slot('story_progress')
         logger.debug(f"latest question number: {question_num}")
-
-        return [
-            SlotSet('will_return', None),
-            SlotSet("stm_matched_belief", None),
-            SlotSet("stm_unmatched_belief", None),
-            SlotSet('stm_recipient_response', None),
-            SlotSet('stm_bot_reference_of_truth', None),
-            SlotSet('stm_semantic_axis', None),
-            SlotSet("materialpr", None),
-            SlotSet("actor", None),
-            SlotSet("goal", None),
-            SlotSet("scope", None),
-            SlotSet("beneficiary", None),
-            SlotSet("attributivepr", None),
-            SlotSet("carrier", None),
-            SlotSet("attribute", None),
-            SlotSet("identifyingpr", None),
-            SlotSet("identified", None),
-            SlotSet("identifier", None),
-            SlotSet("mentalpr", None),
-            SlotSet("senser", None),
-            SlotSet("phenomenon", None),
-            SlotSet("behaviouralpr", None),
-            SlotSet("behaver", None),
-            SlotSet("verbalpr", None),
-            SlotSet("sayer", None),
-            SlotSet("reciver", None),
-            SlotSet("verbiage", None),
-            SlotSet("existantialpr", None),
-            SlotSet("existent", None),
-            SlotSet("nominalgrp", None),
-            SlotSet("adjectivegrp", None),
-            SlotSet("prepositionallocation", None),
-        ]
-
-
-class ActionStoreLessonHistory__a_kiss(Action):
-
-    def name(self):
-        return 'action_store_lesson_history__a_kiss'
-
-    def _extract_question_number(self, action_name):
-        p = re.compile(r"_(\d{1,2})_")
-        result = p.findall(action_name)
-
-        return int(result[0]) if len(result) > 0 else None
-
-    def run(self, dispatcher, tracker, domain):
-        current_state = tracker.current_state()
-        logger.debug(f"Current state: {current_state}")
-
-        latest_action_name = tracker.latest_action_name
-        logger.debug(f"latest utterance action: {latest_action_name}")
 
         return [
             SlotSet('will_return', None),
@@ -297,6 +244,23 @@ class ActionNotSureWhatToDoFallback(Action):
             SlotSet("prepositionallocation", None),
             FollowupAction('utter_return_to_previous_question'),
         ]
+
+
+class ActionRepeatLastUtterance(Action):
+    def name(self):
+        return 'action_repeat_last_utterance'
+
+    def run(self, dispatcher, tracker, domain):
+
+        story_progress = tracker.get_slot('story_progress')
+        logger.debug(f"latest question number: {story_progress}")
+
+        utterance = query_bot_utterance(story, story_progress)
+
+        return [
+                BotUttered(text=utterance),
+            ]
+
 
 
 class ActionActivateMatchedPerception(Action):

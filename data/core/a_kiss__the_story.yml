@@ -846,9 +846,7 @@ stories:
           - "adjectivegrp": null
           - "prepositionallocation": null
       - action: utter_return_to_previous_question
-      - action: action_proceed_dialogue #utter_a_kiss_01_DidCarlosBuyOldCar
-      - slot_was_set:
-          - "story_progress": 1
+      - action: action_repeat_last_utterance
       - action: action_finalize_bot_dialogue_turn
       - slot_was_set:
           - "will_return": null
@@ -899,9 +897,7 @@ stories:
           - "adjectivegrp": null
           - "prepositionallocation": null
       - action: utter_return_to_previous_question
-      - action: action_proceed_dialogue #utter_a_kiss_02_DidCarlosBuyExpensiveBicycle
-      - slot_was_set:
-          - "story_progress": 2
+      - action: action_repeat_last_utterance
       - action: action_finalize_bot_dialogue_turn
       - slot_was_set:
           - "will_return": null
@@ -952,9 +948,7 @@ stories:
           - "adjectivegrp": null
           - "prepositionallocation": null
       - action: utter_return_to_previous_question
-      - action: action_proceed_dialogue #utter_a_kiss_03_HowBigWasCar
-      - slot_was_set:
-          - "story_progress": 3
+      - action: action_repeat_last_utterance
       - action: action_finalize_bot_dialogue_turn
       - slot_was_set:
           - "will_return": null
@@ -1005,9 +999,7 @@ stories:
           - "adjectivegrp": null
           - "prepositionallocation": null
       - action: utter_return_to_previous_question
-      - action: action_proceed_dialogue #utter_a_kiss_04_WhatColorWasCar
-      - slot_was_set:
-          - "story_progress": 4
+      - action: action_repeat_last_utterance
       - action: action_finalize_bot_dialogue_turn
       - slot_was_set:
           - "will_return": null
@@ -1058,9 +1050,7 @@ stories:
           - "adjectivegrp": null
           - "prepositionallocation": null
       - action: utter_return_to_previous_question
-      - action: action_proceed_dialogue #utter_a_kiss_05_WhileDrivingDownWhatDidHeSee
-      - slot_was_set:
-          - "story_progress": 5
+      - action: action_repeat_last_utterance
       - action: action_finalize_bot_dialogue_turn
       - slot_was_set:
           - "will_return": null
@@ -1111,7 +1101,7 @@ stories:
           - "adjectivegrp": null
           - "prepositionallocation": null
       - action: utter_return_to_previous_question
-      - action: action_proceed_dialogue #utter_a_kiss_06_DidSheLookBeautiful
+      - action: action_repeat_last_utterance
       - slot_was_set:
           - "story_progress": 6
       - action: action_finalize_bot_dialogue_turn

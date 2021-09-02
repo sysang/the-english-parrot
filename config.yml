@@ -67,7 +67,7 @@ policies:
   #   priority: 5
   - name: "RulePolicy"
     priority: 4
-    core_fallback_threshold: 0.65
+    core_fallback_threshold: 0.58
     core_fallback_action_name: 'action_not_sure_what_to_do_fallback'
     enable_fallback_prediction: true
     restrict_rules: true
