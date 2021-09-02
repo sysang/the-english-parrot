@@ -22,7 +22,7 @@ from rasa_sdk.events import (
 
 logger = logging.getLogger(__name__)
 
-a_kiss_story = [
+A_KISS_STORY = [
         {},
         {
             'truth': "he bought a new car",
@@ -50,11 +50,11 @@ a_kiss_story = [
         },
     ]
 
-answers = {
-        "a_kiss_story": a_kiss_story,
+ANSWERS = {
+        "a_kiss_story": A_KISS_STORY,
     }
 
-questions = {
+QUESTIONS = {
     'a_kiss_story': [
         "in this lesson i will ask many questions. you must answer every question.  okay. let's start the story. a kiss...",
         "did carlos buy an old car",
@@ -67,12 +67,17 @@ questions = {
     ]
 }
 
+UTTERANCES = {
+    'inform_incorrect_answer': "it is not correct"
+}
+
+
 def query_reference_of_truth(story, question_num):
-    return answers[story][question_num]
+    return ANSWERS[story][question_num]
 
 
 def query_bot_question(story, question_num):
-    story_questions = questions[story]
+    story_questions = QUESTIONS[story]
 
     if (question_num >= len(story_questions)):
         return None
@@ -105,7 +110,6 @@ class ActionProceedDialogue(Action):
     def name(self):
         return 'action_proceed_dialogue'
 
-
     def run(self, dispatcher, tracker, domain):
 
         story = tracker.get_slot('lesson_topic')
@@ -114,13 +118,34 @@ class ActionProceedDialogue(Action):
         story_progress = tracker.get_slot('story_progress')
         logger.debug(f"latest question number: {story_progress}")
 
-        question_num = story_progress + 1
-        utterance = query_bot_question(story, question_num)
+        stm_matched_belief = tracker.get_slot('stm_matched_belief')
+        stm_unmatched_belief = tracker.get_slot('stm_unmatched_belief')
 
-        return [
-            SlotSet('story_progress', question_num),
-            BotUttered(text=utterance)
-        ]
+        if not stm_matched_belief and not stm_unmatched_belief:
+            raise Exception("There might be a breach in training data leading this bad perceptional state.")
+
+        question_num = story_progress + 1
+
+        if stm_matched_belief:
+            question = query_bot_question(story, question_num)
+
+            return [
+                SlotSet('story_progress', question_num),
+                BotUttered(text=question)
+            ]
+
+        elif stm_unmatched_belief:
+            inform_utterance = UTTERANCES['inform_incorrect_answer']
+            answer = query_reference_of_truth(story, story_progress)
+
+            question = query_bot_question(story, question_num)
+
+            return [
+                SlotSet('story_progress', question_num),
+                BotUttered(text=inform_utterance),
+                BotUttered(text=answer),
+                BotUttered(text=question),
+            ]
 
 
 class ActionFinalizeBotDialogueTurn(Action):

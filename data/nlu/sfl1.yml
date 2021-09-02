@@ -161,28 +161,28 @@ nlu:
 
   - intent: negative__shortanswer
     examples: |
-      - no
-      - he isn't
-      - he wasn't
-      - he doesn't
-      - he didn't
-      - she isn't
-      - she wasn't
-      - she doesn't
-      - she didn't
-      - it isn't
-      - it doesn't
-      - it wasn't
-      - it didn't
-      - he is not
-      - he was not
-      - he does not
-      - he did not
-      - she is not
-      - she was not
-      - she does not
-      - she did not
-      - it is not
-      - it does not
-      - it was not
-      - it did not
+      - [no](negative)
+      - [he isn't](negative)
+      - [he wasn't](negative)
+      - [he doesn't](negative)
+      - [he didn't](negative)
+      - [she isn't](negative)
+      - [she wasn't](negative)
+      - [she doesn't](negative)
+      - [she didn't](negative)
+      - [it isn't](negative)
+      - [it doesn't](negative)
+      - [it wasn't](negative)
+      - [it didn't](negative)
+      - [he is not](negative)
+      - [he was not](negative)
+      - [he does not](negative)
+      - [he did not](negative)
+      - [she is not](negative)
+      - [she was not](negative)
+      - [she does not](negative)
+      - [she did not](negative)
+      - [it is not](negative)
+      - [it does not](negative)
+      - [it was not](negative)
+      - [it did not](negative)
