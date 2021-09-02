@@ -145,19 +145,19 @@ nlu:
 
   - intent: affirmative__shortanswer
     examples: |
-      - yes
-      - he is
-      - he was
-      - he does
-      - he did
-      - she is
-      - she was
-      - she does
-      - she did
-      - it is
-      - it does
-      - it was
-      - it did
+      - [yes](affirmative)
+      - [he is](affirmative)
+      - [he was](affirmative)
+      - [he does](affirmative)
+      - [he did](affirmative)
+      - [she is](affirmative)
+      - [she was](affirmative)
+      - [she does](affirmative)
+      - [she did](affirmative)
+      - [it is](affirmative)
+      - [it does](affirmative)
+      - [it was](affirmative)
+      - [it did](affirmative)
 
   - intent: negative__shortanswer
     examples: |

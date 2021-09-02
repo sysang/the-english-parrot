@@ -55,13 +55,13 @@ policies:
       label_action_text: 1
       dialogue: 3
     number_of_attention_heads: 4
-    connection_density: 0.15
+    connection_density: 0.85
     split_entities_by_comma: true
     constrain_similarities: true
     model_confidence: softmax
     batch_size:
+      - 16
       - 32
-      - 64
   # - name: AugmentedMemoizationPolicy
   #   max_history: 10
   #   priority: 5
