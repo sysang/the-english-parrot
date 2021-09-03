@@ -40,8 +40,8 @@ policies:
       intent: 20
       action_name: 20
       label_action_name: 20
-      entities: 256
-      slots: 1542
+      entities: 104
+      slots: 1024
       active_loop: 20
     encoding_dimension: 150
     transformer_size:

@@ -121,31 +121,31 @@ class ActionProceedDialogue(Action):
         stm_matched_belief = tracker.get_slot('stm_matched_belief')
         stm_unmatched_belief = tracker.get_slot('stm_unmatched_belief')
 
-        if not stm_matched_belief and not stm_unmatched_belief:
-            raise Exception("There might be a breach in training data leading this bad perceptional state.")
+        if not stm_matched_belief and not stm_unmatched_belief and story_progress != 0:
+            raise Exception("There might be a breach in training data leading bad perceptional states.")
 
         question_num = story_progress + 1
 
-        if stm_matched_belief:
-            question = query_bot_utterance(story, question_num)
+        events = [
+            SlotSet('story_progress', question_num),
+        ]
 
-            return [
-                SlotSet('story_progress', question_num),
-                BotUttered(text=question)
-            ]
+        if story_progress == 0:
+            introduction_utterance = query_bot_utterance(story, story_progress)
+            events.append(BotUttered(text=introduction_utterance))
 
-        elif stm_unmatched_belief:
+
+        if stm_unmatched_belief:
             inform_utterance = UTTERANCES['inform_incorrect_answer']
+            events.append(BotUttered(text=inform_utterance))
+
             answer = query_reference_of_truth(story, story_progress)
+            events.append(BotUttered(text=answer))
 
-            question = query_bot_utterance(story, question_num)
+        question = query_bot_utterance(story, question_num)
+        events.append(BotUttered(text=question))
 
-            return [
-                SlotSet('story_progress', question_num),
-                BotUttered(text=inform_utterance),
-                BotUttered(text=answer),
-                BotUttered(text=question),
-            ]
+        return events
 
 
 class ActionFinalizeBotDialogueTurn(Action):
@@ -251,16 +251,20 @@ class ActionRepeatLastUtterance(Action):
         return 'action_repeat_last_utterance'
 
     def run(self, dispatcher, tracker, domain):
+        story = tracker.get_slot('lesson_topic')
+        logger.debug(f"Story: {story}")
 
         story_progress = tracker.get_slot('story_progress')
         logger.debug(f"latest question number: {story_progress}")
+
+        if story_progress == 0:
+            return []
 
         utterance = query_bot_utterance(story, story_progress)
 
         return [
                 BotUttered(text=utterance),
             ]
-
 
 
 class ActionActivateMatchedPerception(Action):

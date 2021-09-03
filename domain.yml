@@ -48,114 +48,114 @@ entities:
 
 slots:
   materialpr:
-    type: RasaSlotTypes.Influentialx10
+    type: RasaSlotTypes.Influentialx4
     auto_fill: true
     influence_conversation: true
   actor:
-    type: RasaSlotTypes.Influentialx10
+    type: RasaSlotTypes.Influentialx4
     auto_fill: true
     influence_conversation: true
   goal:
-    type: RasaSlotTypes.Influentialx10
+    type: RasaSlotTypes.Influentialx4
     auto_fill: true
     influence_conversation: true
   scope:
-    type: RasaSlotTypes.Influentialx10
+    type: RasaSlotTypes.Influentialx4
     auto_fill: true
     influence_conversation: true
   beneficiary:
-    type: RasaSlotTypes.Influentialx10
+    type: RasaSlotTypes.Influentialx4
     auto_fill: true
     influence_conversation: true
   attributivepr:
-    type: RasaSlotTypes.Influentialx10
+    type: RasaSlotTypes.Influentialx4
     auto_fill: true
     influence_conversation: true
   carrier:
-    type: RasaSlotTypes.Influentialx10
+    type: RasaSlotTypes.Influentialx4
     auto_fill: true
     influence_conversation: true
   attribute:
-    type: RasaSlotTypes.Influentialx10
+    type: RasaSlotTypes.Influentialx4
     auto_fill: true
     influence_conversation: true
   identifyingpr:
-    type: RasaSlotTypes.Influentialx10
+    type: RasaSlotTypes.Influentialx4
     auto_fill: true
     influence_conversation: true
   identified:
-    type: RasaSlotTypes.Influentialx10
+    type: RasaSlotTypes.Influentialx4
     auto_fill: true
     influence_conversation: true
   identifier:
-    type: RasaSlotTypes.Influentialx10
+    type: RasaSlotTypes.Influentialx4
     auto_fill: true
   mentalpr:
-    type: RasaSlotTypes.Influentialx10
+    type: RasaSlotTypes.Influentialx4
     auto_fill: true
     influence_conversation: true
   senser:
-    type: RasaSlotTypes.Influentialx10
+    type: RasaSlotTypes.Influentialx4
     auto_fill: true
     influence_conversation: true
   phenomenon:
-    type: RasaSlotTypes.Influentialx10
+    type: RasaSlotTypes.Influentialx4
     auto_fill: true
     influence_conversation: true
   behaviouralpr:
-    type: RasaSlotTypes.Influentialx10
+    type: RasaSlotTypes.Influentialx4
     auto_fill: true
     influence_conversation: true
   behaver:
-    type: RasaSlotTypes.Influentialx10
+    type: RasaSlotTypes.Influentialx4
     auto_fill: true
     influence_conversation: true
   verbalpr:
-    type: RasaSlotTypes.Influentialx10
+    type: RasaSlotTypes.Influentialx4
     auto_fill: true
     influence_conversation: true
   sayer:
-    type: RasaSlotTypes.Influentialx10
+    type: RasaSlotTypes.Influentialx4
     auto_fill: true
     influence_conversation: true
   reciver:
-    type: RasaSlotTypes.Influentialx10
+    type: RasaSlotTypes.Influentialx4
     auto_fill: true
     influence_conversation: true
   verbiage:
-    type: RasaSlotTypes.Influentialx10
+    type: RasaSlotTypes.Influentialx4
     auto_fill: true
     influence_conversation: true
   existantialpr:
-    type: RasaSlotTypes.Influentialx10
+    type: RasaSlotTypes.Influentialx4
     auto_fill: true
     influence_conversation: true
   existent:
-    type: RasaSlotTypes.Influentialx10
+    type: RasaSlotTypes.Influentialx4
     auto_fill: true
     influence_conversation: true
   nominalgrp:
-    type: RasaSlotTypes.Influentialx10
+    type: RasaSlotTypes.Influentialx4
     auto_fill: true
     influence_conversation: true
   adjectivegrp:
-    type: RasaSlotTypes.Influentialx10
+    type: RasaSlotTypes.Influentialx4
     auto_fill: true
     influence_conversation: true
   prepositionallocation:
-    type: RasaSlotTypes.Influentialx10
+    type: RasaSlotTypes.Influentialx4
     auto_fill: true
     influence_conversation: true
   affirmative:
-    type: RasaSlotTypes.Influentialx10
+    type: RasaSlotTypes.Influentialx4
     auto_fill: true
     influence_conversation: true
   negative:
-    type: RasaSlotTypes.Influentialx10
+    type: RasaSlotTypes.Influentialx4
     auto_fill: true
     influence_conversation: true
   will_return:
-    type: RasaSlotTypes.Influentialx10
+    type: RasaSlotTypes.Influentialx16
     influence_conversation: true
   lesson_topic:
     type: categorical
@@ -202,10 +202,10 @@ slots:
       - prepositionallocation
     influence_conversation: true
   stm_matched_belief:
-    type: RasaSlotTypes.Influentialx10
+    type: RasaSlotTypes.Influentialx16
     influence_conversation: true
   stm_unmatched_belief:
-    type: RasaSlotTypes.Influentialx10
+    type: RasaSlotTypes.Influentialx16
     influence_conversation: true
 
 
