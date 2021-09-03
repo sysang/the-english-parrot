@@ -12,4 +12,5 @@ __all__ = [
     "Influentialx4",
     "Influentialx8",
     "Influentialx16",
+    "Influentialx32",
     ]

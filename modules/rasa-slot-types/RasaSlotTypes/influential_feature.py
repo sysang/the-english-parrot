@@ -34,3 +34,9 @@ class Influentialx16(Influential):
 
     def feature_dimensionality(self):
         return 16
+
+
+class Influentialx32(Influential):
+
+    def feature_dimensionality(self):
+        return 32

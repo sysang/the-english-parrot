@@ -121,7 +121,7 @@ class ActionProceedDialogue(Action):
         stm_matched_belief = tracker.get_slot('stm_matched_belief')
         stm_unmatched_belief = tracker.get_slot('stm_unmatched_belief')
 
-        if not stm_matched_belief and not stm_unmatched_belief and story_progress != 0:
+        if not stm_matched_belief and not stm_unmatched_belief:
             raise Exception("There might be a breach in training data leading bad perceptional states.")
 
         question_num = story_progress + 1
@@ -129,11 +129,6 @@ class ActionProceedDialogue(Action):
         events = [
             SlotSet('story_progress', question_num),
         ]
-
-        if story_progress == 0:
-            introduction_utterance = query_bot_utterance(story, story_progress)
-            events.append(BotUttered(text=introduction_utterance))
-
 
         if stm_unmatched_belief:
             inform_utterance = UTTERANCES['inform_incorrect_answer']
