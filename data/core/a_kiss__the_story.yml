@@ -3,7 +3,7 @@
 version: "2.0"
 
 stories:
-  - story: Scenario MAIN
+  - story: SCENARIO MAIN
     steps:
       - intent: client_initializes_a_kiss_story
       - action: action_initialize_a_kiss_story
@@ -188,7 +188,7 @@ stories:
           - "stm_unmatched_belief": null
       - action: action_restart
 
-  - story: Scenario of NEGATIVE_FORM
+  - story: SCENARIO OF NEGATIVE_FORM
     steps:
       - checkpoint: check_a_kiss_01_DidCarlosBuyOldCar
       - intent: nonexclamation__negative__materialpr
@@ -356,7 +356,7 @@ stories:
           - "stm_unmatched_belief": null
       - action: action_restart
 
-  - story: Scenario of SHORT_ANSWER
+  - story: SCENARIO OF SHORT_ANSWER
     steps:
       - checkpoint: check_a_kiss_01_DidCarlosBuyOldCar
       - intent: negative__shortanswer
@@ -496,7 +496,7 @@ stories:
           - "stm_unmatched_belief": null
       - action: action_restart
 
-  - story: Scenario of WRONG_SHORT_ANSWER-01
+  - story: SCENARIO OF WRONG_SHORT_ANSWER-01
     steps:
       - checkpoint: check_a_kiss_01_DidCarlosBuyOldCar
       - intent: affirmative__shortanswer
@@ -636,7 +636,7 @@ stories:
           - "stm_unmatched_belief": null
       - action: action_restart
 
-  - story: Scenario of WRONG_LONG_EXPRESSION-01
+  - story: SCENARIO OF WRONG_LONG_EXPRESSION-01
     steps:
       - checkpoint: check_a_kiss_01_DidCarlosBuyOldCar
 
@@ -801,7 +801,7 @@ stories:
           - "stm_unmatched_belief": null
       - action: action_restart
 
-  - story: Scenario of utter RETURN_TO_PREVIOUS_QUESTION-01
+  - story: SCENARIO OF UTTER RETURN_TO_PREVIOUS_QUESTION-01
     steps:
       - checkpoint: check_a_kiss_01_DidCarlosBuyOldCar
       - or:
@@ -852,7 +852,7 @@ stories:
           - "will_return": null
       - action: action_listen
 
-  - story: Scenario of utter RETURN_TO_PREVIOUS_QUESTION-02
+  - story: SCENARIO OF UTTER RETURN_TO_PREVIOUS_QUESTION-02
     steps:
       - checkpoint: check_a_kiss_02_DidCarlosBuyExpensiveBicycle
       - or:
@@ -903,7 +903,7 @@ stories:
           - "will_return": null
       - action: action_listen
 
-  - story: Scenario of utter RETURN_TO_PREVIOUS_QUESTION-03
+  - story: SCENARIO OF UTTER RETURN_TO_PREVIOUS_QUESTION-03
     steps:
       - checkpoint: check_a_kiss_03_HowBigWasCar
       - or:
@@ -954,7 +954,7 @@ stories:
           - "will_return": null
       - action: action_listen
 
-  - story: Scenario of utter RETURN_TO_PREVIOUS_QUESTION-04
+  - story: SCENARIO OF UTTER RETURN_TO_PREVIOUS_QUESTION-04
     steps:
       - checkpoint: check_a_kiss_04_WhatColorWasCar
       - or:
@@ -1005,7 +1005,7 @@ stories:
           - "will_return": null
       - action: action_listen
 
-  - story: Scenario of utter RETURN_TO_PREVIOUS_QUESTION-05
+  - story: SCENARIO OF UTTER RETURN_TO_PREVIOUS_QUESTION-05
     steps:
       - checkpoint: check_a_kiss_05_WhileDrivingDownWhatDidHeSee
       - or:
@@ -1056,7 +1056,7 @@ stories:
           - "will_return": null
       - action: action_listen
 
-  - story: Scenario of utter RETURN_TO_PREVIOUS_QUESTION-06
+  - story: SCENARIO OF UTTER RETURN_TO_PREVIOUS_QUESTION-06
     steps:
       - checkpoint: check_a_kiss_06_DidSheLookBeautiful
       - or:
@@ -1109,7 +1109,7 @@ stories:
           - "will_return": null
       - action: action_listen
 
-  - story: Scenario of UTTER_PLEASE_REPHRASE-01
+  - story: SCENARIO OF UTTER_PLEASE_REPHRASE-01
     steps:
       - checkpoint: check_a_kiss_01_DidCarlosBuyOldCar
       - intent: nlu_fallback
@@ -1143,7 +1143,7 @@ stories:
           - "stm_unmatched_belief": null
       - action: action_listen
 
-  - story: Scenario of UTTER_PLEASE_REPHRASE-02
+  - story: SCENARIO OF UTTER_PLEASE_REPHRASE-02
     steps:
       - checkpoint: check_a_kiss_02_DidCarlosBuyExpensiveBicycle
       - intent: nlu_fallback
@@ -1176,7 +1176,7 @@ stories:
           - "stm_unmatched_belief": null
       - action: action_listen
 
-  - story: Scenario of UTTER_PLEASE_REPHRASE-03
+  - story: SCENARIO OF UTTER_PLEASE_REPHRASE-03
     steps:
       - checkpoint: check_a_kiss_03_HowBigWasCar
       - intent: nlu_fallback
@@ -1207,7 +1207,7 @@ stories:
           - "stm_unmatched_belief": null
       - action: action_listen
 
-  - story: Scenario of UTTER_PLEASE_REPHRASE-04
+  - story: SCENARIO OF UTTER_PLEASE_REPHRASE-04
     steps:
       - checkpoint: check_a_kiss_04_WhatColorWasCar
       - intent: nlu_fallback
@@ -1238,7 +1238,7 @@ stories:
           - "stm_unmatched_belief": null
       - action: action_listen
 
-  - story: Scenario of UTTER_PLEASE_REPHRASE-05
+  - story: SCENARIO OF UTTER_PLEASE_REPHRASE-05
     steps:
       - checkpoint: check_a_kiss_05_WhileDrivingDownWhatDidHeSee
       - intent: nlu_fallback
@@ -1271,7 +1271,7 @@ stories:
           - "stm_unmatched_belief": null
       - action: action_listen
 
-  - story: Scenario of UTTER_PLEASE_REPHRASE-06
+  - story: SCENARIO OF UTTER_PLEASE_REPHRASE-06
     steps:
       - checkpoint: check_a_kiss_06_DidSheLookBeautiful
       - intent: nlu_fallback
