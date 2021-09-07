@@ -29,7 +29,7 @@ A_KISS_STORY = [
             'axis': 'goal'
         },
         {
-            'truth': "he bought a expensive car",
+            'truth': "he bought an expensive car",
             'axis': 'goal'
         },
         {
@@ -100,6 +100,7 @@ class ActionInitializeAKissStory(Action):
         return [
                 SlotSet("lesson_topic", topic),
                 SlotSet('will_return', None),
+                SlotSet("intent_listen", None),
                 SlotSet("story_progress", story_progress),
                 BotUttered(text=utterance),
             ]
@@ -135,7 +136,7 @@ class ActionProceedDialogue(Action):
             events.append(BotUttered(text=inform_utterance))
 
             answer = query_reference_of_truth(story, story_progress)
-            events.append(BotUttered(text=answer))
+            events.append(BotUttered(text=answer['truth']))
 
         question = query_bot_utterance(story, question_num)
         events.append(BotUttered(text=question))
@@ -165,6 +166,7 @@ class ActionFinalizeBotDialogueTurn(Action):
         logger.debug(f"latest question number: {question_num}")
 
         return [
+            SlotSet("intent_listen", True),
             SlotSet('will_return', None),
             SlotSet("stm_matched_belief", None),
             SlotSet("stm_unmatched_belief", None),
@@ -299,6 +301,7 @@ class ActionMemorizeUserResponse(Action):
         answer = query_reference_of_truth(story, question_num)
 
         return [
+                SlotSet("intent_listen", None),
                 SlotSet('stm_recipient_response', tracker.latest_message['text']),
                 SlotSet("stm_bot_reference_of_truth", answer['truth']),
                 SlotSet("stm_semantic_axis", answer['axis']),
