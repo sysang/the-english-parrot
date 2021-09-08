@@ -158,7 +158,7 @@ slots:
     type: RasaSlotTypes.Influentialx16
     influence_conversation: true
   intent_listen:
-    type: RasaSlotTypes.Influentialx16
+    type: RasaSlotTypes.Influentialx4
     influence_conversation: true
   lesson_topic:
     type: categorical
