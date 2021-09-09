@@ -54,7 +54,7 @@ ANSWERS = {
         "a_kiss_story": A_KISS_STORY,
     }
 
-QUESTIONS = {
+UTTERANCES = {
     'a_kiss_story': [
         "in this lesson i will ask many questions. you must answer every question.  okay. let's start the story. a kiss...",
         "did carlos buy an old car",
@@ -64,20 +64,22 @@ QUESTIONS = {
         "while driving down the street. what did he see",
         "did she look beautiful",
         "that's all. you did a very good job",
-    ]
+    ],
+    'inform_incorrect_answer': ["it is not correct"]
 }
-
-UTTERANCES = {
-    'inform_incorrect_answer': "it is not correct"
-}
-
 
 def query_reference_of_truth(story, question_num):
     return ANSWERS[story][question_num]
 
 
+def query_story(story):
+    return {
+        'answers': ANSWERS[story]
+    }
+
+
 def query_bot_utterance(story, question_num):
-    story_questions = QUESTIONS[story]
+    story_questions = UTTERANCES[story]
 
     if (question_num >= len(story_questions)):
         return None
@@ -102,6 +104,7 @@ class ActionInitializeAKissStory(Action):
                 SlotSet('will_return', None),
                 SlotSet("intent_listen", None),
                 SlotSet("story_progress", story_progress),
+                SlotSet("story_end", None),
                 BotUttered(text=utterance),
             ]
 
@@ -132,7 +135,7 @@ class ActionProceedDialogue(Action):
         ]
 
         if stm_unmatched_belief:
-            inform_utterance = UTTERANCES['inform_incorrect_answer']
+            inform_utterance = UTTERANCES['inform_incorrect_answer'][0]
             events.append(BotUttered(text=inform_utterance))
 
             answer = query_reference_of_truth(story, story_progress)
@@ -165,8 +168,22 @@ class ActionFinalizeBotDialogueTurn(Action):
         question_num = tracker.get_slot('story_progress')
         logger.debug(f"latest question number: {question_num}")
 
+        story_progress = tracker.get_slot('story_progress')
+        logger.debug(f"latest question number: {story_progress}")
+
+        story = tracker.get_slot('lesson_topic')
+        logger.debug(f"query quesion for story: {story}")
+
+        answers = query_story(story)['answers']
+        intent_listen_slot_val = True
+        story_end_slot_val = None
+        if story_progress >= len(answers):
+            intent_listen_slot_val = None
+            story_end_slot_val = True
+
         return [
-            SlotSet("intent_listen", True),
+            SlotSet("intent_listen", intent_listen_slot_val),
+            SlotSet('story_end', story_end_slot_val),
             SlotSet('will_return', None),
             SlotSet("stm_matched_belief", None),
             SlotSet("stm_unmatched_belief", None),

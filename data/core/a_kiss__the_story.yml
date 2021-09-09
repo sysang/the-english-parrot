@@ -12,6 +12,7 @@ stories:
           - "story_progress": 0
           - "will_return": null
           - "intent_listen": null
+          - "story_end": null
       - action: action_activate_matched_perception
       - slot_was_set:
           - "stm_matched_belief": true
@@ -26,6 +27,10 @@ stories:
 
       - intent: nonexclamation__positive__materialpr
         entities:
+          - "actor": "he"
+          - "materialpr": "bought"
+          - "goal": "a new car"
+      - slot_was_set:
           - "actor": "he"
           - "materialpr": "bought"
           - "goal": "a new car"
@@ -60,6 +65,10 @@ stories:
           - "actor": "he"
           - "materialpr": "bought"
           - "goal": "a expensive car"
+      - slot_was_set:
+          - "actor": "he"
+          - "materialpr": "bought"
+          - "goal": "a expensive car"
       - action: action_memorize_user_response
       - slot_was_set:
           - "intent_listen": null
@@ -88,6 +97,9 @@ stories:
 
       - intent: nonexclamation__positive__attributivepr
         entities:
+          - "carrier": "it"
+          - "attribute": "huge"
+      - slot_was_set:
           - "carrier": "it"
           - "attribute": "huge"
       - action: action_memorize_user_response
@@ -119,6 +131,9 @@ stories:
         entities:
           - "carrier": "it"
           - "attribute": "blue"
+      - slot_was_set:
+          - "carrier": "it"
+          - "attribute": "blue"
       - action: action_memorize_user_response
       - slot_was_set:
           - "stm_recipient_response": "it was blue"
@@ -144,6 +159,10 @@ stories:
 
       - intent: nonexclamation__positive__mentalpr
         entities:
+          - "senser": "he"
+          - "mentalpr": "saw"
+          - "phenomenon": "a girl"
+      - slot_was_set:
           - "senser": "he"
           - "mentalpr": "saw"
           - "phenomenon": "a girl"
@@ -177,6 +196,9 @@ stories:
         entities:
           - "carrier": "she"
           - "attribute": "beautiful"
+      - slot_was_set:
+          - "carrier": "she"
+          - "attribute": "beautiful"
       - action: action_memorize_user_response
       - slot_was_set:
           - "intent_listen": null
@@ -191,7 +213,7 @@ stories:
           - "story_progress": 7
       - action: action_finalize_bot_dialogue_turn
       - slot_was_set:
-          - "intent_listen": true
+          - "intent_listen": null
           - "carrier": null
           - "attribute": null
           - "stm_recipient_response": null
@@ -199,6 +221,7 @@ stories:
           - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
+          - "story_end": true
       - action: action_restart
 
   - story: SCENARIO OF NEGATIVE_FORM
@@ -206,6 +229,10 @@ stories:
       - checkpoint: check_a_kiss_01_DidCarlosBuyOldCar
       - intent: nonexclamation__negative__materialpr
         entities:
+          - "actor": "he"
+          - "materialpr": "buy"
+          - "goal": "a old car"
+      - slot_was_set:
           - "actor": "he"
           - "materialpr": "buy"
           - "goal": "a old car"
@@ -239,6 +266,10 @@ stories:
           - "actor": "he"
           - "materialpr": "buy"
           - "goal": "an expensive bicycle"
+      - slot_was_set:
+          - "actor": "he"
+          - "materialpr": "buy"
+          - "goal": "an expensive bicycle"
       - action: action_memorize_user_response
       - slot_was_set:
           - "intent_listen": null
@@ -266,6 +297,9 @@ stories:
 
       - intent: nonexclamation__positive__attributivepr
         entities:
+          - "carrier": "it"
+          - "attribute": "huge"
+      - slot_was_set:
           - "carrier": "it"
           - "attribute": "huge"
       - action: action_memorize_user_response
@@ -297,6 +331,9 @@ stories:
         entities:
           - "carrier": "it"
           - "attribute": "blue"
+      - slot_was_set:
+          - "carrier": "it"
+          - "attribute": "blue"
       - action: action_memorize_user_response
       - slot_was_set:
           - "intent_listen": null
@@ -324,6 +361,10 @@ stories:
 
       - intent: nonexclamation__positive__mentalpr
         entities:
+          - "senser": "he"
+          - "mentalpr": "saw"
+          - "phenomenon": "a girl"
+      - slot_was_set:
           - "senser": "he"
           - "mentalpr": "saw"
           - "phenomenon": "a girl"
@@ -357,6 +398,9 @@ stories:
         entities:
           - "carrier": "she"
           - "attribute": "beautiful"
+      - slot_was_set:
+          - "carrier": "she"
+          - "attribute": "beautiful"
       - action: action_memorize_user_response
       - slot_was_set:
           - "intent_listen": null
@@ -371,7 +415,7 @@ stories:
           - "story_progress": 7
       - action: action_finalize_bot_dialogue_turn
       - slot_was_set:
-          - "intent_listen": true
+          - "intent_listen": null
           - "carrier": null
           - "attribute": null
           - "stm_recipient_response": null
@@ -379,6 +423,7 @@ stories:
           - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
+          - "story_end": true
       - action: action_restart
 
   - story: SCENARIO OF SHORT_ANSWER
@@ -386,6 +431,8 @@ stories:
       - checkpoint: check_a_kiss_01_DidCarlosBuyOldCar
       - intent: negative__shortanswer
         entities:
+          - "negative": "no"
+      - slot_was_set:
           - "negative": "no"
       - action: action_memorize_user_response
       - slot_was_set:
@@ -411,6 +458,8 @@ stories:
       - intent: negative__shortanswer
         entities:
           - "negative": "no"
+      - slot_was_set:
+          - "negative": "no"
       - action: action_memorize_user_response
       - slot_was_set:
           - "intent_listen": null
@@ -434,6 +483,8 @@ stories:
 
       - intent: affirmative__adjectivegroup
         entities:
+          - "adjectivegrp": "huge"
+      - slot_was_set:
           - "adjectivegrp": "huge"
       - action: action_memorize_user_response
       - slot_was_set:
@@ -461,6 +512,8 @@ stories:
       - intent: affirmative__adjectivegroup
         entities:
           - "adjectivegrp": "blue"
+      - slot_was_set:
+          - "adjectivegrp": "blue"
       - action: action_memorize_user_response
       - slot_was_set:
           - "intent_listen": null
@@ -485,6 +538,8 @@ stories:
 
       - intent: affirmative__nominalgroup
         entities:
+          - "nominalgrp": "a girl"
+      - slot_was_set:
           - "nominalgrp": "a girl"
       - action: action_memorize_user_response
       - slot_was_set:
@@ -512,6 +567,8 @@ stories:
       - intent: affirmative__shortanswer
         entities:
           - "affirmative": "yes"
+      - slot_was_set:
+          - "affirmative": "yes"
       - action: action_memorize_user_response
       - slot_was_set:
           - "intent_listen": null
@@ -525,12 +582,13 @@ stories:
           - "story_progress": 7
       - action: action_finalize_bot_dialogue_turn
       - slot_was_set:
-          - "intent_listen": true
+          - "intent_listen": null
           - "affirmative": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
+          - "story_end": true
       - action: action_restart
 
   - story: SCENARIO OF WRONG_SHORT_ANSWER-01
@@ -538,6 +596,8 @@ stories:
       - checkpoint: check_a_kiss_01_DidCarlosBuyOldCar
       - intent: affirmative__shortanswer
         entities:
+          - "affirmative": "yes"
+      - slot_was_set:
           - "affirmative": "yes"
       - action: action_memorize_user_response
       - slot_was_set:
@@ -563,6 +623,8 @@ stories:
       - intent: affirmative__shortanswer
         entities:
           - "affirmative": "yes"
+      - slot_was_set:
+          - "affirmative": "yes"
       - action: action_memorize_user_response
       - slot_was_set:
           - "intent_listen": null
@@ -586,6 +648,8 @@ stories:
 
       - intent: affirmative__adjectivegroup
         entities:
+          - "adjectivegrp": "small"
+      - slot_was_set:
           - "adjectivegrp": "small"
       - action: action_memorize_user_response
       - slot_was_set:
@@ -613,6 +677,8 @@ stories:
       - intent: affirmative__adjectivegroup
         entities:
           - "adjectivegrp": "young"
+      - slot_was_set:
+          - "adjectivegrp": "young"
       - action: action_memorize_user_response
       - slot_was_set:
           - "intent_listen": null
@@ -637,6 +703,8 @@ stories:
 
       - intent: affirmative__nominalgroup
         entities:
+          - "nominalgrp": "a girl"
+      - slot_was_set:
           - "nominalgrp": "a girl"
       - action: action_memorize_user_response
       - slot_was_set:
@@ -664,6 +732,8 @@ stories:
       - intent: negative__shortanswer
         entities:
           - "affirmative": "no"
+      - slot_was_set:
+          - "affirmative": "no"
       - action: action_memorize_user_response
       - slot_was_set:
           - "intent_listen": null
@@ -677,12 +747,13 @@ stories:
           - "story_progress": 7
       - action: action_finalize_bot_dialogue_turn
       - slot_was_set:
-          - "intent_listen": true
+          - "intent_listen": null
           - "affirmative": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
+          - "story_end": true
       - action: action_restart
 
   - story: SCENARIO OF WRONG_LONG_EXPRESSION-01
@@ -691,6 +762,10 @@ stories:
 
       - intent: nonexclamation__positive__materialpr
         entities:
+          - "actor": "he"
+          - "materialpr": "bought"
+          - "goal": "a old car"
+      - slot_was_set:
           - "actor": "he"
           - "materialpr": "bought"
           - "goal": "a old car"
@@ -724,6 +799,10 @@ stories:
           - "actor": "he"
           - "materialpr": "bought"
           - "goal": "a cheap car"
+      - slot_was_set:
+          - "actor": "he"
+          - "materialpr": "bought"
+          - "goal": "a cheap car"
       - action: action_memorize_user_response
       - slot_was_set:
           - "intent_listen": null
@@ -753,6 +832,9 @@ stories:
         entities:
           - "carrier": "it"
           - "attribute": "small"
+      - slot_was_set:
+          - "carrier": "it"
+          - "attribute": "small"
       - action: action_memorize_user_response
       - slot_was_set:
           - "intent_listen": null
@@ -779,6 +861,9 @@ stories:
 
       - intent: nonexclamation__positive__attributivepr
         entities:
+          - "carrier": "it"
+          - "attribute": "green"
+      - slot_was_set:
           - "carrier": "it"
           - "attribute": "green"
       - action: action_memorize_user_response
@@ -811,6 +896,11 @@ stories:
           - "mentalpr": "saw"
           - "phenomenon": "an egg"
       - slot_was_set:
+          - "senser": "he"
+          - "mentalpr": "saw"
+          - "phenomenon": "an egg"
+      - action: action_memorize_user_response
+      - slot_was_set:
           - "stm_recipient_response": "he saw an egg"
           - "stm_bot_reference_of_truth": "he saw a girl"
           - "stm_semantic_axis": "phenomenon"
@@ -837,6 +927,9 @@ stories:
         entities:
           - "carrier": "she"
           - "attribute": "ugly"
+      - slot_was_set:
+          - "carrier": "she"
+          - "attribute": "ugly"
       - action: action_memorize_user_response
       - slot_was_set:
           - "intent_listen": null
@@ -851,7 +944,7 @@ stories:
           - "story_progress": 7
       - action: action_finalize_bot_dialogue_turn
       - slot_was_set:
-          - "intent_listen": true
+          - "intent_listen": null
           - "carrier": null
           - "attribute": null
           - "stm_recipient_response": null
@@ -859,6 +952,7 @@ stories:
           - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
+          - "story_end": true
       - action: action_restart
 
   - story: SCENARIO OF UTTER RETURN_TO_PREVIOUS_QUESTION-01
@@ -1185,6 +1279,10 @@ stories:
           - "actor": "he"
           - "materialpr": "bought"
           - "goal": "a new car"
+      - slot_was_set:
+          - "actor": "he"
+          - "materialpr": "bought"
+          - "goal": "a new car"
       - action: action_memorize_user_response
       - slot_was_set:
           - "intent_listen": null
@@ -1217,6 +1315,10 @@ stories:
       - action: utter_please_rephrase
       - intent: nonexclamation__positive__materialpr
         entities:
+          - "actor": "he"
+          - "materialpr": "bought"
+          - "goal": "a expensive car"
+      - slot_was_set:
           - "actor": "he"
           - "materialpr": "bought"
           - "goal": "a expensive car"
@@ -1254,6 +1356,9 @@ stories:
         entities:
           - "carrier": "it"
           - "attribute": "huge"
+      - slot_was_set:
+          - "carrier": "it"
+          - "attribute": "huge"
       - action: action_memorize_user_response
       - slot_was_set:
           - "intent_listen": null
@@ -1287,6 +1392,9 @@ stories:
         entities:
           - "carrier": "it"
           - "attribute": "blue"
+      - slot_was_set:
+          - "carrier": "it"
+          - "attribute": "blue"
       - action: action_memorize_user_response
       - slot_was_set:
           - "intent_listen": null
@@ -1318,6 +1426,10 @@ stories:
       - action: utter_please_rephrase
       - intent: nonexclamation__positive__mentalpr
         entities:
+          - "senser": "he"
+          - "mentalpr": "saw"
+          - "phenomenon": "a girl"
+      - slot_was_set:
           - "senser": "he"
           - "mentalpr": "saw"
           - "phenomenon": "a girl"
@@ -1355,6 +1467,9 @@ stories:
         entities:
           - "carrier": "she"
           - "attribute": "beautiful"
+      - slot_was_set:
+          - "carrier": "she"
+          - "attribute": "beautiful"
       - action: action_memorize_user_response
       - slot_was_set:
           - "intent_listen": null
@@ -1364,5 +1479,19 @@ stories:
       - action: action_activate_matched_perception
       - slot_was_set:
           - "stm_matched_belief": true
+      - action: action_proceed_dialogue #utter_a_kiss_07_LessonCompleted
+      - slot_was_set:
+          - "story_progress": 7
+      - action: action_finalize_bot_dialogue_turn
+      - slot_was_set:
+          - "intent_listen": null
+          - "carrier": null
+          - "attribute": null
+          - "stm_recipient_response": null
+          - "stm_bot_reference_of_truth": null
+          - "stm_semantic_axis": null
+          - "stm_matched_belief": null
+          - "stm_unmatched_belief": null
+          - "story_end": true
       - action: action_restart
 

@@ -31,7 +31,7 @@ pipeline:
     ambiguity_threshold: 0.01
 policies:
   - name: TEDPolicy
-    epochs: 121
+    epochs: 72
     learning_rate: 0.001
     batch_size:
       - 16
@@ -77,7 +77,7 @@ policies:
     split_entities_by_comma: true
   - name: "RulePolicy"
     priority: 4
-    core_fallback_threshold: 0.65
+    core_fallback_threshold: 0.25
     core_fallback_action_name: 'action_not_sure_what_to_do_fallback'
     enable_fallback_prediction: true
     restrict_rules: true

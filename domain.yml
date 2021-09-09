@@ -160,6 +160,9 @@ slots:
   intent_listen:
     type: RasaSlotTypes.Influentialx4
     influence_conversation: true
+  story_end:
+    type: RasaSlotTypes.Influentialx32
+    influence_conversation: true
   lesson_topic:
     type: categorical
     values:
