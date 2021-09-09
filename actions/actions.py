@@ -214,7 +214,10 @@ class ActionFinalizeBotDialogueTurn(Action):
             SlotSet("existent", None),
             SlotSet("nominalgrp", None),
             SlotSet("adjectivegrp", None),
+            SlotSet("adjectivegrp", None),
             SlotSet("prepositionallocation", None),
+            SlotSet("negative", None),
+            SlotSet("affirmative", None),
         ]
 
 
@@ -256,6 +259,8 @@ class ActionNotSureWhatToDoFallback(Action):
             SlotSet("nominalgrp", None),
             SlotSet("adjectivegrp", None),
             SlotSet("prepositionallocation", None),
+            SlotSet("negative", None),
+            SlotSet("affirmative", None),
             FollowupAction('utter_return_to_previous_question'),
         ]
 

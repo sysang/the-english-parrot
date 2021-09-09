@@ -31,7 +31,7 @@ pipeline:
     ambiguity_threshold: 0.01
 policies:
   - name: TEDPolicy
-    epochs: 72
+    epochs: 101
     learning_rate: 0.001
     batch_size:
       - 16
@@ -69,7 +69,7 @@ policies:
     number_of_attention_heads: 4
     unidirectional_encoder: True
     embedding_dimension: 20
-    number_of_negative_examples: 20
+    number_of_negative_examples: 100
     constrain_similarities: true
     entity_recognition: True
     model_confidence: softmax

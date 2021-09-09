@@ -426,7 +426,7 @@ stories:
           - "story_end": true
       - action: action_restart
 
-  - story: SCENARIO OF SHORT_ANSWER
+  - story: SCENARIO OF SHORT_EXPRESSION
     steps:
       - checkpoint: check_a_kiss_01_DidCarlosBuyOldCar
       - intent: negative__shortanswer
@@ -465,6 +465,7 @@ stories:
           - "intent_listen": null
           - "stm_recipient_response": "he did not"
           - "stm_bot_reference_of_truth": "he bought an expensive car"
+          - "stm_semantic_axis": "goal"
       - action: action_activate_matched_perception
       - slot_was_set:
           - "stm_matched_belief": true
@@ -477,6 +478,7 @@ stories:
           - "negative": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
       - action: action_listen
@@ -491,7 +493,7 @@ stories:
           - "intent_listen": null
           - "stm_recipient_response": "huge"
           - "stm_bot_reference_of_truth": "it was huge"
-          - "stm_semantic_axis": "adjectivegrp"
+          - "stm_semantic_axis": "attribute"
       - action: action_activate_matched_perception
       - slot_was_set:
           - "stm_matched_belief": true
@@ -519,7 +521,7 @@ stories:
           - "intent_listen": null
           - "stm_recipient_response": "blue"
           - "stm_bot_reference_of_truth": "it was blue"
-          - "stm_semantic_axis": "adjectivegrp"
+          - "stm_semantic_axis": "attribute"
       - action: action_activate_matched_perception
       - slot_was_set:
           - "stm_matched_belief": true
@@ -546,7 +548,7 @@ stories:
           - "intent_listen": null
           - "stm_recipient_response": "a girl"
           - "stm_bot_reference_of_truth": "he saw a girl"
-          - "stm_semantic_axis": "nominalgrp"
+          - "stm_semantic_axis": "phenomenon"
       - action: action_activate_matched_perception
       - slot_was_set:
           - "stm_matched_belief": true
@@ -574,6 +576,7 @@ stories:
           - "intent_listen": null
           - "stm_recipient_response": "yes"
           - "stm_bot_reference_of_truth": "she looked beautiful"
+          - "stm_semantic_axis": "attribute"
       - action: action_activate_matched_perception
       - slot_was_set:
           - "stm_matched_belief": true
@@ -586,12 +589,13 @@ stories:
           - "affirmative": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
           - "story_end": true
       - action: action_restart
 
-  - story: SCENARIO OF WRONG_SHORT_ANSWER-01
+  - story: SCENARIO OF WRONG_SHORT_EXPRESSION-01
     steps:
       - checkpoint: check_a_kiss_01_DidCarlosBuyOldCar
       - intent: affirmative__shortanswer
@@ -604,6 +608,7 @@ stories:
           - "intent_listen": null
           - "stm_recipient_response": "yes"
           - "stm_bot_reference_of_truth": "he bought a new car"
+          - "stm_semantic_axis": "goal"
       - action: action_activate_unmatched_perception
       - slot_was_set:
           - "stm_unmatched_belief": true
@@ -616,6 +621,7 @@ stories:
           - "affirmative": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
       - action: action_listen
@@ -630,6 +636,7 @@ stories:
           - "intent_listen": null
           - "stm_recipient_response": "yes"
           - "stm_bot_reference_of_truth": "Carlos did not buy bicycle"
+          - "stm_semantic_axis": "goal"
       - action: action_activate_unmatched_perception
       - slot_was_set:
           - "stm_unmatched_belief": true
@@ -642,6 +649,7 @@ stories:
           - "affirmative": "yes"
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
       - action: action_listen
@@ -684,7 +692,7 @@ stories:
           - "intent_listen": null
           - "stm_recipient_response": "young"
           - "stm_bot_reference_of_truth": "it was blue"
-          - "stm_semantic_axis": "adjectivegrp"
+          - "stm_semantic_axis": "attribute"
       - action: action_activate_unmatched_perception
       - slot_was_set:
           - "stm_unmatched_belief": true
@@ -697,6 +705,7 @@ stories:
           - "adjectivegrp": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
       - action: action_listen
@@ -711,7 +720,7 @@ stories:
           - "intent_listen": null
           - "stm_recipient_response": "a tree"
           - "stm_bot_reference_of_truth": "he saw a girl"
-          - "stm_semantic_axis": "nominalgrp"
+          - "stm_semantic_axis": "attribute"
       - action: action_activate_unmatched_perception
       - slot_was_set:
           - "stm_unmatched_belief": true
@@ -772,7 +781,7 @@ stories:
       - action: action_memorize_user_response
       - slot_was_set:
           - "intent_listen": null
-          - "stm_recipient_response": "he bought a old car"
+          - "stm_recipient_response": "he bought an old car"
           - "stm_bot_reference_of_truth": "he bought a new car"
           - "stm_semantic_axis": "goal"
       - action: action_activate_unmatched_perception
@@ -999,6 +1008,8 @@ stories:
           - "nominalgrp": null
           - "adjectivegrp": null
           - "prepositionallocation": null
+          - "affirmative": null
+          - "negative": null
       - action: utter_return_to_previous_question
       - action: action_repeat_last_utterance
       - action: action_finalize_bot_dialogue_turn
@@ -1051,6 +1062,8 @@ stories:
           - "nominalgrp": null
           - "adjectivegrp": null
           - "prepositionallocation": null
+          - "affirmative": null
+          - "negative": null
       - action: utter_return_to_previous_question
       - action: action_repeat_last_utterance
       - action: action_finalize_bot_dialogue_turn
@@ -1103,6 +1116,8 @@ stories:
           - "nominalgrp": null
           - "adjectivegrp": null
           - "prepositionallocation": null
+          - "affirmative": null
+          - "negative": null
       - action: utter_return_to_previous_question
       - action: action_repeat_last_utterance
       - action: action_finalize_bot_dialogue_turn
@@ -1155,6 +1170,8 @@ stories:
           - "nominalgrp": null
           - "adjectivegrp": null
           - "prepositionallocation": null
+          - "affirmative": null
+          - "negative": null
       - action: utter_return_to_previous_question
       - action: action_repeat_last_utterance
       - action: action_finalize_bot_dialogue_turn
@@ -1207,6 +1224,8 @@ stories:
           - "nominalgrp": null
           - "adjectivegrp": null
           - "prepositionallocation": null
+          - "affirmative": null
+          - "negative": null
       - action: utter_return_to_previous_question
       - action: action_repeat_last_utterance
       - action: action_finalize_bot_dialogue_turn
@@ -1259,10 +1278,10 @@ stories:
           - "nominalgrp": null
           - "adjectivegrp": null
           - "prepositionallocation": null
+          - "affirmative": null
+          - "negative": null
       - action: utter_return_to_previous_question
       - action: action_repeat_last_utterance
-      - slot_was_set:
-          - "story_progress": 6
       - action: action_finalize_bot_dialogue_turn
       - slot_was_set:
           - "intent_listen": true
@@ -1475,7 +1494,7 @@ stories:
           - "intent_listen": null
           - "stm_recipient_response": "she looked beautiful"
           - "stm_bot_reference_of_truth": "she looked beautiful"
-          - "stm_semantic_axis": "beautiful"
+          - "stm_semantic_axis": "attribute"
       - action: action_activate_matched_perception
       - slot_was_set:
           - "stm_matched_belief": true

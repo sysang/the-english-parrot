@@ -1,2 +1,0 @@
-Setting,Toal Traing Loss,Training Accuracy,accMain Case,Short-Answer Case,Wrong-Answer Case,Remark
-S01-Sh01,1.68,0.999,Pass,Fail,na,"predict activate_matched_perception instead of listen "
