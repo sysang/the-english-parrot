@@ -22,7 +22,9 @@ stories:
       - action: action_finalize_bot_dialogue_turn
       - slot_was_set:
           - "intent_listen": true
-      - action: action_listen
+      - action: action_handle_listen
+      - slot_was_set:
+          - "intent_listen": null
       - checkpoint: check_a_kiss_01_DidCarlosBuyOldCar
 
       - intent: nonexclamation__positive__materialpr
@@ -57,7 +59,9 @@ stories:
           - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
-      - action: action_listen
+      - action: action_handle_listen
+      - slot_was_set:
+          - "intent_listen": null
       - checkpoint: check_a_kiss_02_DidCarlosBuyExpensiveBicycle
 
       - intent: nonexclamation__positive__materialpr
@@ -92,7 +96,9 @@ stories:
           - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
-      - action: action_listen
+      - action: action_handle_listen
+      - slot_was_set:
+          - "intent_listen": null
       - checkpoint: check_a_kiss_03_HowBigWasCar
 
       - intent: nonexclamation__positive__attributivepr
@@ -124,7 +130,9 @@ stories:
           - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
-      - action: action_listen
+      - action: action_handle_listen
+      - slot_was_set:
+          - "intent_listen": null
       - checkpoint: check_a_kiss_04_WhatColorWasCar
 
       - intent: nonexclamation__positive__attributivepr
@@ -154,7 +162,9 @@ stories:
           - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
-      - action: action_listen
+      - action: action_handle_listen
+      - slot_was_set:
+          - "intent_listen": null
       - checkpoint: check_a_kiss_05_WhileDrivingDownWhatDidHeSee
 
       - intent: nonexclamation__positive__mentalpr
@@ -189,7 +199,9 @@ stories:
           - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
-      - action: action_listen
+      - action: action_handle_listen
+      - slot_was_set:
+          - "intent_listen": null
       - checkpoint: check_a_kiss_06_DidSheLookBeautiful
 
       - intent: nonexclamation__positive__attributivepr
@@ -259,7 +271,9 @@ stories:
           - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
-      - action: action_listen
+      - action: action_handle_listen
+      - slot_was_set:
+          - "intent_listen": null
 
       - intent: nonexclamation__negative__materialpr
         entities:
@@ -293,7 +307,9 @@ stories:
           - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
-      - action: action_listen
+      - action: action_handle_listen
+      - slot_was_set:
+          - "intent_listen": null
 
       - intent: nonexclamation__positive__attributivepr
         entities:
@@ -324,8 +340,9 @@ stories:
           - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
-      - action: action_listen
-      - checkpoint: check_a_kiss_04_WhatColorWasCar
+      - action: action_handle_listen
+      - slot_was_set:
+          - "intent_listen": null
 
       - intent: nonexclamation__positive__attributivepr
         entities:
@@ -356,8 +373,9 @@ stories:
           - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
-      - action: action_listen
-      - checkpoint: check_a_kiss_05_WhileDrivingDownWhatDidHeSee
+      - action: action_handle_listen
+      - slot_was_set:
+          - "intent_listen": null
 
       - intent: nonexclamation__positive__mentalpr
         entities:
@@ -391,8 +409,9 @@ stories:
           - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
-      - action: action_listen
-      - checkpoint: check_a_kiss_06_DidSheLookBeautiful
+      - action: action_handle_listen
+      - slot_was_set:
+          - "intent_listen": null
 
       - intent: nonexclamation__positive__attributivepr
         entities:
@@ -453,7 +472,9 @@ stories:
           - "stm_bot_reference_of_truth": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
-      - action: action_listen
+      - action: action_handle_listen
+      - slot_was_set:
+          - "intent_listen": null
 
       - intent: negative__shortanswer
         entities:
@@ -481,7 +502,9 @@ stories:
           - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
-      - action: action_listen
+      - action: action_handle_listen
+      - slot_was_set:
+          - "intent_listen": null
 
       - intent: affirmative__adjectivegroup
         entities:
@@ -509,7 +532,9 @@ stories:
           - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
-      - action: action_listen
+      - action: action_handle_listen
+      - slot_was_set:
+          - "intent_listen": null
 
       - intent: affirmative__adjectivegroup
         entities:
@@ -536,7 +561,9 @@ stories:
           - "stm_bot_reference_of_truth": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
-      - action: action_listen
+      - action: action_handle_listen
+      - slot_was_set:
+          - "intent_listen": null
 
       - intent: affirmative__nominalgroup
         entities:
@@ -564,7 +591,9 @@ stories:
           - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
-      - action: action_listen
+      - action: action_handle_listen
+      - slot_was_set:
+          - "intent_listen": null
 
       - intent: affirmative__shortanswer
         entities:
@@ -624,7 +653,9 @@ stories:
           - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
-      - action: action_listen
+      - action: action_handle_listen
+      - slot_was_set:
+          - "intent_listen": null
 
       - intent: affirmative__shortanswer
         entities:
@@ -652,7 +683,9 @@ stories:
           - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
-      - action: action_listen
+      - action: action_handle_listen
+      - slot_was_set:
+          - "intent_listen": null
 
       - intent: affirmative__adjectivegroup
         entities:
@@ -680,7 +713,9 @@ stories:
           - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
-      - action: action_listen
+      - action: action_handle_listen
+      - slot_was_set:
+          - "intent_listen": null
 
       - intent: affirmative__adjectivegroup
         entities:
@@ -708,7 +743,9 @@ stories:
           - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
-      - action: action_listen
+      - action: action_handle_listen
+      - slot_was_set:
+          - "intent_listen": null
 
       - intent: affirmative__nominalgroup
         entities:
@@ -736,7 +773,9 @@ stories:
           - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
-      - action: action_listen
+      - action: action_handle_listen
+      - slot_was_set:
+          - "intent_listen": null
 
       - intent: negative__shortanswer
         entities:
@@ -801,7 +840,9 @@ stories:
           - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
-      - action: action_listen
+      - action: action_handle_listen
+      - slot_was_set:
+          - "intent_listen": null
 
       - intent: nonexclamation__positive__materialpr
         entities:
@@ -815,7 +856,7 @@ stories:
       - action: action_memorize_user_response
       - slot_was_set:
           - "intent_listen": null
-          - "stm_recipient_response": "he bought an cheap car"
+          - "stm_recipient_response": "he bought a cheap car"
           - "stm_bot_reference_of_truth": "he bought an expensive car"
           - "stm_semantic_axis": "goal"
       - action: action_activate_unmatched_perception
@@ -835,7 +876,9 @@ stories:
           - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
-      - action: action_listen
+      - action: action_handle_listen
+      - slot_was_set:
+          - "intent_listen": null
 
       - intent: nonexclamation__positive__attributivepr
         entities:
@@ -866,7 +909,9 @@ stories:
           - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
-      - action: action_listen
+      - action: action_handle_listen
+      - slot_was_set:
+          - "intent_listen": null
 
       - intent: nonexclamation__positive__attributivepr
         entities:
@@ -897,7 +942,9 @@ stories:
           - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
-      - action: action_listen
+      - action: action_handle_listen
+      - slot_was_set:
+          - "intent_listen": null
 
       - intent: nonexclamation__positive__mentalpr
         entities:
@@ -930,7 +977,9 @@ stories:
           - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
-      - action: action_listen
+      - action: action_handle_listen
+      - slot_was_set:
+          - "intent_listen": null
 
       - intent: nonexclamation__positive__attributivepr
         entities:
@@ -1016,7 +1065,9 @@ stories:
       - slot_was_set:
           - "intent_listen": true
           - "will_return": null
-      - action: action_listen
+      - action: action_handle_listen
+      - slot_was_set:
+          - "intent_listen": null
 
   - story: SCENARIO OF UTTER RETURN_TO_PREVIOUS_QUESTION-02
     steps:
@@ -1070,7 +1121,9 @@ stories:
       - slot_was_set:
           - "intent_listen": true
           - "will_return": null
-      - action: action_listen
+      - action: action_handle_listen
+      - slot_was_set:
+          - "intent_listen": null
 
   - story: SCENARIO OF UTTER RETURN_TO_PREVIOUS_QUESTION-03
     steps:
@@ -1124,7 +1177,9 @@ stories:
       - slot_was_set:
           - "intent_listen": true
           - "will_return": null
-      - action: action_listen
+      - action: action_handle_listen
+      - slot_was_set:
+          - "intent_listen": null
 
   - story: SCENARIO OF UTTER RETURN_TO_PREVIOUS_QUESTION-04
     steps:
@@ -1178,7 +1233,9 @@ stories:
       - slot_was_set:
           - "intent_listen": true
           - "will_return": null
-      - action: action_listen
+      - action: action_handle_listen
+      - slot_was_set:
+          - "intent_listen": null
 
   - story: SCENARIO OF UTTER RETURN_TO_PREVIOUS_QUESTION-05
     steps:
@@ -1232,7 +1289,9 @@ stories:
       - slot_was_set:
           - "intent_listen": true
           - "will_return": null
-      - action: action_listen
+      - action: action_handle_listen
+      - slot_was_set:
+          - "intent_listen": null
 
   - story: SCENARIO OF UTTER RETURN_TO_PREVIOUS_QUESTION-06
     steps:
@@ -1286,7 +1345,9 @@ stories:
       - slot_was_set:
           - "intent_listen": true
           - "will_return": null
-      - action: action_listen
+      - action: action_handle_listen
+      - slot_was_set:
+          - "intent_listen": null
 
   - story: SCENARIO OF UTTER_PLEASE_REPHRASE-01
     steps:
@@ -1325,7 +1386,9 @@ stories:
           - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
-      - action: action_listen
+      - action: action_handle_listen
+      - slot_was_set:
+          - "intent_listen": null
 
   - story: SCENARIO OF UTTER_PLEASE_REPHRASE-02
     steps:
@@ -1364,7 +1427,9 @@ stories:
           - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
-      - action: action_listen
+      - action: action_handle_listen
+      - slot_was_set:
+          - "intent_listen": null
 
   - story: SCENARIO OF UTTER_PLEASE_REPHRASE-03
     steps:
@@ -1400,7 +1465,9 @@ stories:
           - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
-      - action: action_listen
+      - action: action_handle_listen
+      - slot_was_set:
+          - "intent_listen": null
 
   - story: SCENARIO OF UTTER_PLEASE_REPHRASE-04
     steps:
@@ -1436,7 +1503,9 @@ stories:
           - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
-      - action: action_listen
+      - action: action_handle_listen
+      - slot_was_set:
+          - "intent_listen": null
 
   - story: SCENARIO OF UTTER_PLEASE_REPHRASE-05
     steps:
@@ -1475,7 +1544,9 @@ stories:
           - "stm_semantic_axis": null
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
-      - action: action_listen
+      - action: action_handle_listen
+      - slot_was_set:
+          - "intent_listen": null
 
   - story: SCENARIO OF UTTER_PLEASE_REPHRASE-06
     steps:

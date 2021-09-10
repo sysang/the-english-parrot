@@ -7,6 +7,7 @@ session_config:
   session_expiration_time: 480
 
 actions:
+  - action_handle_listen
   - action_proceed_dialogue
   - action_finalize_bot_dialogue_turn
   - action_initialize_a_kiss_story

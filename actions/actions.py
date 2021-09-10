@@ -87,6 +87,17 @@ def query_bot_utterance(story, question_num):
     return story_questions[question_num]
 
 
+class ActionHanleListen(Action):
+    def name(self):
+        return 'action_handle_listen'
+
+    def run(self, dispatcher, tracker, domain):
+        return [
+            SlotSet("intent_listen", None),
+            FollowupAction('action_listen'),
+        ]
+
+
 class ActionInitializeAKissStory(Action):
 
     def name(self):

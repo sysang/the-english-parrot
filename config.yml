@@ -31,7 +31,7 @@ pipeline:
     ambiguity_threshold: 0.01
 policies:
   - name: TEDPolicy
-    epochs: 101
+    epochs: 121
     learning_rate: 0.001
     batch_size:
       - 16
