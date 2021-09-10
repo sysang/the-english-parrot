@@ -15,9 +15,12 @@
 - Lower value of epoch may make model less confidence when predicting but may make model "smarter" (better in  processing abstract data)
 - Increase the size of slots feature to balance with the size of sbert wordvector
 - The acc metrics of training time is very good (0.99) but the performance at testing time is not correct in repsect to story's instruction, \
-is that because the training story is composed improperly??
+is that because the training story is composed improperly?? Is that because of executing unexpectedly actions??
 - The higher acc value the higher prediction confidence value
 - Increase the size of dense dimension layer can improve the training acc.
 - Increse the size of dialogue block of trainsform layer can improm the training acc.
 - core_fallback_threshold, how to determine its value? Start at lowers first, just increase this value when wrong action with low confidence occurs. \
 If right action is predicted with low confidence story should by improved, fallback_threshold should be used when there is no option to improve the sittuation.
+- Remember a sittuation as perfect evidence of size of dimension of slot has significant influence on action selection. It was when "stm_bot_verbal_intention" was added \
+to the story but action had not yet implemented appropriately, the consequence of that was action "action_initialize_a_kiss_story" was always chosen. Why? Because \
+"stm_bot_verbal_intention" is None at starting point and is dominant to others.

@@ -173,6 +173,9 @@ slots:
   story_progress:
     type: RasaSlotTypes.Binary127Bit3
     influence_conversation: true
+  stm_bot_verbal_intention:
+    type: RasaSlotTypes.EmbeddedSentence
+    influence_conversation: true
   stm_recipient_response:
     type: RasaSlotTypes.EmbeddedSentence
     influence_conversation: true

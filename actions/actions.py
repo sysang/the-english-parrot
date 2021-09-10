@@ -147,13 +147,18 @@ class ActionProceedDialogue(Action):
 
         if stm_unmatched_belief:
             inform_utterance = UTTERANCES['inform_incorrect_answer'][0]
-            events.append(BotUttered(text=inform_utterance))
-
             answer = query_reference_of_truth(story, story_progress)
+
+            events.append(BotUttered(text=inform_utterance))
             events.append(BotUttered(text=answer['truth']))
 
         question = query_bot_utterance(story, question_num)
+
         events.append(BotUttered(text=question))
+
+        answers = query_story(story)['answers']
+        if question_num < len(answers):
+            events.append(SlotSet('stm_bot_verbal_intention', question))
 
         return events
 
@@ -162,12 +167,6 @@ class ActionFinalizeBotDialogueTurn(Action):
 
     def name(self):
         return 'action_finalize_bot_dialogue_turn'
-
-    def _extract_question_number(self, action_name):
-        p = re.compile(r"_(\d{1,2})_")
-        result = p.findall(action_name)
-
-        return int(result[0]) if len(result) > 0 else None
 
     def run(self, dispatcher, tracker, domain):
         current_state = tracker.current_state()
@@ -186,11 +185,11 @@ class ActionFinalizeBotDialogueTurn(Action):
         logger.debug(f"query quesion for story: {story}")
 
         answers = query_story(story)['answers']
-        intent_listen_slot_val = True
         story_end_slot_val = None
+        intent_listen_slot_val = True
         if story_progress >= len(answers):
-            intent_listen_slot_val = None
             story_end_slot_val = True
+            intent_listen_slot_val = None
 
         return [
             SlotSet("intent_listen", intent_listen_slot_val),
@@ -198,8 +197,6 @@ class ActionFinalizeBotDialogueTurn(Action):
             SlotSet('will_return', None),
             SlotSet("stm_matched_belief", None),
             SlotSet("stm_unmatched_belief", None),
-            SlotSet('stm_recipient_response', None),
-            SlotSet('stm_bot_reference_of_truth', None),
             SlotSet('stm_semantic_axis', None),
             SlotSet("materialpr", None),
             SlotSet("actor", None),
@@ -241,6 +238,7 @@ class ActionNotSureWhatToDoFallback(Action):
         return [
             SlotSet('stm_matched_belief', None),
             SlotSet('stm_unmatched_belief', None),
+            SlotSet('stm_bot_verbal_intention', None),
             SlotSet('stm_recipient_response', None),
             SlotSet('stm_bot_reference_of_truth', None),
             SlotSet('stm_semantic_axis', None),
@@ -305,6 +303,9 @@ class ActionActivateMatchedPerception(Action):
 
         return [
                 SlotSet('stm_matched_belief', True),
+                SlotSet('stm_bot_verbal_intention', None),
+                SlotSet('stm_recipient_response', None),
+                SlotSet('stm_bot_reference_of_truth', None),
             ]
 
 
@@ -316,6 +317,9 @@ class ActionActivateUnMatchedPerception(Action):
 
         return [
                 SlotSet('stm_unmatched_belief', True),
+                SlotSet('stm_bot_verbal_intention', None),
+                SlotSet('stm_recipient_response', None),
+                SlotSet('stm_bot_reference_of_truth', None),
             ]
 
 
@@ -334,7 +338,6 @@ class ActionMemorizeUserResponse(Action):
         answer = query_reference_of_truth(story, question_num)
 
         return [
-                SlotSet("intent_listen", None),
                 SlotSet('stm_recipient_response', tracker.latest_message['text']),
                 SlotSet("stm_bot_reference_of_truth", answer['truth']),
                 SlotSet("stm_semantic_axis", answer['axis']),
