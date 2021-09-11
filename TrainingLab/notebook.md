@@ -24,3 +24,4 @@ If right action is predicted with low confidence story should by improved, fallb
 - Remember a sittuation as perfect evidence of size of dimension of slot has significant influence on action selection. It was when "stm_bot_verbal_intention" was added \
 to the story but action had not yet implemented appropriately, the consequence of that was action "action_initialize_a_kiss_story" was always chosen. Why? Because \
 "stm_bot_verbal_intention" is None at starting point and is dominant to others.
+- If prediction confidence is high most of the time, it's very good chance to decrease training time (epoch) to improve model generalizing ability.

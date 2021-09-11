@@ -34,9 +34,9 @@ policies:
     epochs: 71
     learning_rate: 0.001
     batch_size:
+      - 16
       - 32
-      - 64
-    max_history: 13  # null set default value
+    max_history: 11  # null set default value
     hidden_layers_sizes:
       text: []
       action_text: []
@@ -72,7 +72,7 @@ policies:
     number_of_negative_examples: 100
     constrain_similarities: true
     entity_recognition: True
-    model_confidence: linear_norm
+    model_confidence: softmax
     connection_density: 0.85
     split_entities_by_comma: true
   - name: "RulePolicy"
