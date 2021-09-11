@@ -31,12 +31,12 @@ pipeline:
     ambiguity_threshold: 0.01
 policies:
   - name: TEDPolicy
-    epochs: 71
+    epochs: 101
     learning_rate: 0.001
     batch_size:
-      - 16
-      - 64
-    max_history: 11  # null set default value
+      - 32
+      - 128
+    max_history: 13  # null set default value
     hidden_layers_sizes:
       text: []
       action_text: []
@@ -49,7 +49,7 @@ policies:
       action_name: 20
       label_action_name: 20
       entities: 20
-      slots: 1024
+      slots: 1536
       active_loop: 20
     concat_dimension:
       text: 128
@@ -68,7 +68,7 @@ policies:
       dialogue: 3
     number_of_attention_heads: 4
     unidirectional_encoder: True
-    embedding_dimension: 20
+    embedding_dimension: 50
     number_of_negative_examples: 100
     constrain_similarities: true
     entity_recognition: True
