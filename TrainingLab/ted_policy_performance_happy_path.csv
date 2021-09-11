@@ -1,3 +1,4 @@
  Setting,Total Traing Loss,Training Acc,Main,Short Exp,Negative Exp,Wrong Shot Exp,Wrong Long Exp,                                                 Remark,
-S01-Sh01,             1.68,       0.999,  A+,        F,          na,            na,            na,"predict activate_matched_perception instead of listen",
-S02-Sh01,             1.49,           1,  A+,       A+,          A+,            A-,            A+,                       "make wrong peception at step 6",
+S01-Sh01,             1.73,           1,  A+,       A+,          A+,            A-,            A+,                      "make wrong perception at step 6",
+S02-Sh01,             1.49,           1,  A+,       A+,          A+,            A-,            A+,                      "make wrong perception at step 6",
+S03-Sh01,             2.45,           1,  A+,       A+,          A+,            F-,            A+,                      "loop at step 6",
