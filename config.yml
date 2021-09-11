@@ -72,7 +72,7 @@ policies:
     number_of_negative_examples: 100
     constrain_similarities: true
     entity_recognition: True
-    model_confidence: softmax
+    model_confidence: linear_norm
     connection_density: 0.85
     split_entities_by_comma: true
   - name: "RulePolicy"
