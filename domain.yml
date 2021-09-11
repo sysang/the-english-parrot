@@ -148,11 +148,11 @@ slots:
     auto_fill: true
     influence_conversation: true
   affirmative:
-    type: RasaSlotTypes.Influentialx8
+    type: RasaSlotTypes.Influentialx32
     auto_fill: true
     influence_conversation: true
   negative:
-    type: RasaSlotTypes.Influentialx8
+    type: RasaSlotTypes.Influentialx32
     auto_fill: true
     influence_conversation: true
   will_return:

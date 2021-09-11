@@ -31,11 +31,11 @@ pipeline:
     ambiguity_threshold: 0.01
 policies:
   - name: TEDPolicy
-    epochs: 101
+    epochs: 71
     learning_rate: 0.001
     batch_size:
       - 32
-      - 128
+      - 64
     max_history: 13  # null set default value
     hidden_layers_sizes:
       text: []
@@ -60,7 +60,7 @@ policies:
       text: 128
       action_text: 128
       label_action_text: 128
-      dialogue: 2048
+      dialogue: 3072
     number_of_transformer_layers:
       text: 1
       action_text: 1
