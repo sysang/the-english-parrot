@@ -14,8 +14,10 @@
 - When prediction confidence is low, making NN bigger is good to try
 - Lower value of epoch may make model less confidence when predicting but may make model "smarter" (better in  processing abstract data)
 - Increase the size of slots feature to balance with the size of sbert wordvector
-- The acc metrics of training time is very good (0.99) but the performance at testing time is not correct in repsect to story's instruction, \
-is that because the training story is composed improperly?? Is that because of executing unexpectedly actions??
+- The acc metrics of training time is very good (acc more than 0.99, loss less than 3) but the performance at testing time is not correct in repsect to story's instruction, \
+is that because the training story is composed improperly?? Is that because of executing unexpectedly actions?? yeah, There was an example of it, \
+that is every models which had trained so far passed all scenario except step 6th of scenario of wrong-shot-expression, the cause of that is the misalignment between \
+intention and entitiy, 'negative__shortanswer' is used with 'affirmative' instead of 'negative'
 - The higher acc value the higher prediction confidence value
 - Increase the size of dense dimension layer can improve the training acc.
 - Increse the size of dialogue block of trainsform layer can improm the training acc.

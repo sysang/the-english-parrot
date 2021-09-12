@@ -5,10 +5,17 @@ version: "2.0"
 nlu:
   - intent: nonexclamation__positive__materialpr
     examples: |
+      - [John](actor) [climbed](materialpr) [the mountain](scope)
       - [she](actor) [lived](materialpr) [in phoenix](scope)
       - [he](actor) [worked](materialpr) [at home](scope)
-      - [he](actor) [bought](materialpr) [a new car](scope)
-      - [he](actor) [buys](materialpr) [a new car](scope)
+      - [he](actor) [bought](materialpr) [a new car](goal)
+      - [he](actor) [buys](materialpr) [a new car](goal)
+      - [The English parrot](actor) [initializes](materialpr) [a kiss story](goal)
+      - [The English parrot](actor) [starts](materialpr) [a kiss story](goal)
+      - [The English parrot](actor) [begins](materialpr) [a kiss story](goal)
+      - [The English parrot](actor) [initializes](materialpr) [changed story](goal)
+      - [The English parrot](actor) [starts](materialpr) [changed story](goal)
+      - [The English parrot](actor) [begins](materialpr) [changed story](goal)
 
   - intent: nonexclamation__negative__materialpr
     examples: |
@@ -125,6 +132,14 @@ nlu:
       - [a car](nominalgrp)
       - [no affection](nominalgrp)
 
+  - intent: negative__nominalgroup
+    examples: |
+      - [not a girl](negativenominalgrp)
+      - [not a new car](negativenominalgrp)
+      - [not a blue car](negativenominalgrp)
+      - [not a car](negativenominalgrp)
+      - [no affection](negativenominalgrp)
+
   - intent: affirmative__adjectivegroup
     examples: |
       - [huge](adjectivegrp)
@@ -134,6 +149,14 @@ nlu:
       - [new](adjectivegrp)
       - [old](adjectivegrp)
       - [blue](adjectivegrp)
+
+  - intent: negative__adjectivegroup
+    examples: |
+      - [not huge](negativeadjectivegrp)
+      - [not beautiful](negativeadjectivegrp)
+      - [not new](negativeadjectivegrp)
+      - [not old](negativeadjectivegrp)
+      - [not blue](negativeadjectivegrp)
 
   - intent: affirmative__prepositionalphrase__location
     examples: |
@@ -158,6 +181,7 @@ nlu:
       - [it does](affirmative)
       - [it was](affirmative)
       - [it did](affirmative)
+      - [yes he did](affirmative)
 
   - intent: negative__shortanswer
     examples: |
@@ -186,3 +210,5 @@ nlu:
       - [it does not](negative)
       - [it was not](negative)
       - [it did not](negative)
+      - [no it did not](negative)
+      - [no he did not](negative)

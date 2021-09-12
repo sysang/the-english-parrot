@@ -10,8 +10,7 @@ actions:
   - action_handle_listen
   - action_proceed_dialogue
   - action_finalize_bot_dialogue_turn
-  - action_initialize_a_kiss_story
-  - action_initialize_changed_story
+  - action_end_story
   - action_memorize_user_response
   - action_activate_matched_perception
   - action_activate_unmatched_perception
@@ -42,7 +41,9 @@ entities:
   - existantialpr
   - existent
   - nominalgrp
+  - negativenominalgrp
   - adjectivegrp
+  - negativeadjectivegrp
   - prepositionallocation
   - affirmative
   - negative
@@ -136,15 +137,23 @@ slots:
     auto_fill: true
     influence_conversation: true
   nominalgrp:
-    type: RasaSlotTypes.Influentialx8
+    type: RasaSlotTypes.Influentialx16
+    auto_fill: true
+    influence_conversation: true
+  negativenominalgrp:
+    type: RasaSlotTypes.Influentialx16
     auto_fill: true
     influence_conversation: true
   adjectivegrp:
-    type: RasaSlotTypes.Influentialx8
+    type: RasaSlotTypes.Influentialx16
+    auto_fill: true
+    influence_conversation: true
+  negativeadjectivegrp:
+    type: RasaSlotTypes.Influentialx16
     auto_fill: true
     influence_conversation: true
   prepositionallocation:
-    type: RasaSlotTypes.Influentialx8
+    type: RasaSlotTypes.Influentialx16
     auto_fill: true
     influence_conversation: true
   affirmative:
@@ -155,23 +164,24 @@ slots:
     type: RasaSlotTypes.Influentialx32
     auto_fill: true
     influence_conversation: true
-  will_return:
-    type: RasaSlotTypes.Influentialx16
+  intent_rephrase:
+    type: RasaSlotTypes.Influentialx32
     influence_conversation: true
-  intent_listen:
+  bot_intent_listen:
     type: RasaSlotTypes.Influentialx4
     influence_conversation: true
   story_end:
-    type: RasaSlotTypes.Influentialx32
+    type: RasaSlotTypes.Influentialx4
     influence_conversation: true
   lesson_topic:
     type: categorical
     values:
-      - a_kiss_story
-      - changed_story
+      - "a kiss story"
+      - "changed story"
     influence_conversation: true
   story_progress:
     type: RasaSlotTypes.Binary127Bit3
+    initial_value: 0
     influence_conversation: true
   stm_bot_verbal_intention:
     type: RasaSlotTypes.EmbeddedSentence
@@ -183,33 +193,7 @@ slots:
     type: RasaSlotTypes.EmbeddedSentence
     influence_conversation: true
   stm_semantic_axis:
-    type: categorical
-    values:
-      - materialpr
-      - actor
-      - goal
-      - scope
-      - beneficiary
-      - attributivepr
-      - carrier
-      - attribute
-      - identifyingpr
-      - identified
-      - identifier
-      - mentalpr
-      - senser
-      - phenomenon
-      - behaviouralpr
-      - behaver
-      - verbalpr
-      - sayer
-      - reciver
-      - verbiage
-      - existantialpr
-      - existent
-      - nominalgrp
-      - adjectivegrp
-      - prepositionallocation
+    type: RasaSlotTypes.SemanticAxisX4
     influence_conversation: true
   stm_matched_belief:
     type: RasaSlotTypes.Influentialx32
@@ -224,18 +208,6 @@ responses:
     - text: "I'm sorry, I didn't quite understand that. Could you rephrase?"
   utter_return_to_previous_question:
     - text: "That is quite embarrassing because I'm getting lost. Let's go back to previous question."
-  utter_a_kiss_01_disagree:
-    - text: "it's not correct. he bought a new car"
-  utter_a_kiss_02_disagree:
-    - text: "no. it was an expensive car"
-  utter_a_kiss_03_disagree:
-    - text: "no no. the car was huge. very big"
-  utter_a_kiss_04_disagree:
-    - text: "not correct. It was blue"
-  utter_a_kiss_05_disagree:
-    - text: "while driving down the street he saw a girl on bicycle"
-  utter_a_kiss_06_disagree:
-    - text: "actually, the girl is beautiful"
       #utter_start_a_changed_lesson:
       #  - text: "in this lesson i will ask many questions. you must answer every question.  okay. let's start the story. changed..."
       #utter_changed_01_WhereDidSheLive:
@@ -299,9 +271,15 @@ intents:
   - affirmative__nominalgroup:
       use_entities:
         - nominalgrp
+  - negative__nominalgroup:
+      use_entities:
+        - negativenominalgrp
   - affirmative__adjectivegroup:
       use_entities:
         - adjectivegrp
+  - negative__adjectivegroup:
+      use_entities:
+        - negativeadjectivegrp
   - affirmative__prepositionalphrase__location:
       use_entities:
         - prepositionallocation

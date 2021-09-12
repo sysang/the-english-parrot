@@ -87,45 +87,17 @@ def query_bot_utterance(story, question_num):
     return story_questions[question_num]
 
 
-class ActionHanleListen(Action):
-    def name(self):
-        return 'action_handle_listen'
-
-    def run(self, dispatcher, tracker, domain):
-        return [
-            SlotSet("intent_listen", None),
-            FollowupAction('action_listen'),
-        ]
-
-
-class ActionInitializeAKissStory(Action):
-
-    def name(self):
-        return 'action_initialize_a_kiss_story'
-
-    def run(self, dispatcher, tracker, domain):
-
-        story_progress = 0
-        topic = 'a_kiss_story'
-
-        utterance = query_bot_utterance(topic, story_progress)
-
-        return [
-                SlotSet("lesson_topic", topic),
-                SlotSet('will_return', None),
-                SlotSet("intent_listen", None),
-                SlotSet("story_progress", story_progress),
-                SlotSet("story_end", None),
-                BotUttered(text=utterance),
-            ]
-
-
 class ActionProceedDialogue(Action):
 
     def name(self):
         return 'action_proceed_dialogue'
 
     def run(self, dispatcher, tracker, domain):
+        # current_state = tracker.current_state()
+        # logger.debug(f"Current state: {current_state}")
+
+        # latest_action_name = tracker.latest_action_name
+        # logger.debug(f"latest utterance action: {latest_action_name}")
 
         story = tracker.get_slot('lesson_topic')
         logger.debug(f"query quesion for story: {story}")
@@ -141,9 +113,25 @@ class ActionProceedDialogue(Action):
 
         question_num = story_progress + 1
 
-        events = [
-            SlotSet('story_progress', question_num),
-        ]
+
+        if story_progress == 0:
+
+            topic = 'a kiss story'
+            entities = tracker.latest_message['entities']
+            print(entities)
+
+            utterance = query_bot_utterance(topic, story_progress)
+
+            events = [
+                    SlotSet("lesson_topic", topic),
+                    SlotSet('intent_rephrase', None),
+                    SlotSet("story_end", None),
+                    BotUttered(text=utterance),
+                ]
+        else:
+            events = []
+
+        events.append(SlotSet('story_progress', question_num))
 
         if stm_unmatched_belief:
             inform_utterance = UTTERANCES['inform_incorrect_answer'][0]
@@ -152,16 +140,35 @@ class ActionProceedDialogue(Action):
             events.append(BotUttered(text=inform_utterance))
             events.append(BotUttered(text=answer['truth']))
 
-        question = query_bot_utterance(story, question_num)
-
-        events.append(BotUttered(text=question))
-
         answers = query_story(story)['answers']
         if question_num < len(answers):
             events.append(SlotSet('stm_bot_verbal_intention', question))
+            events.append(SlotSet('story_end', False))
+        else:
+            events.append(SlotSet('story_end', True))
+
+        question = query_bot_utterance(story, question_num)
+        events.append(BotUttered(text=question))
+
+
+        events.append(SlotSet("bot_intent_listen", True))
+        events.append(SlotSet("stm_matched_belief", None))
+        events.append(SlotSet("stm_unmatched_belief", None))
 
         return events
 
+
+class ActionEndStory(Action):
+
+    def name(self):
+        return 'action_end_story'
+
+    def run(self, dispatcher, tracker, domain):
+
+        return [
+            SlotSet("stm_matched_belief", None),
+            SlotSet("stm_unmatched_belief", None),
+        ]
 
 class ActionFinalizeBotDialogueTurn(Action):
 
@@ -169,64 +176,108 @@ class ActionFinalizeBotDialogueTurn(Action):
         return 'action_finalize_bot_dialogue_turn'
 
     def run(self, dispatcher, tracker, domain):
-        current_state = tracker.current_state()
-        logger.debug(f"Current state: {current_state}")
-
-        latest_action_name = tracker.latest_action_name
-        logger.debug(f"latest utterance action: {latest_action_name}")
-
-        question_num = tracker.get_slot('story_progress')
-        logger.debug(f"latest question number: {question_num}")
-
-        story_progress = tracker.get_slot('story_progress')
-        logger.debug(f"latest question number: {story_progress}")
-
-        story = tracker.get_slot('lesson_topic')
-        logger.debug(f"query quesion for story: {story}")
-
-        answers = query_story(story)['answers']
-        story_end_slot_val = None
-        intent_listen_slot_val = True
-        if story_progress >= len(answers):
-            story_end_slot_val = True
-            intent_listen_slot_val = None
 
         return [
-            SlotSet("intent_listen", intent_listen_slot_val),
-            SlotSet('story_end', story_end_slot_val),
-            SlotSet('will_return', None),
-            SlotSet("stm_matched_belief", None),
-            SlotSet("stm_unmatched_belief", None),
-            SlotSet('stm_semantic_axis', None),
-            SlotSet("materialpr", None),
-            SlotSet("actor", None),
-            SlotSet("goal", None),
-            SlotSet("scope", None),
-            SlotSet("beneficiary", None),
-            SlotSet("attributivepr", None),
-            SlotSet("carrier", None),
-            SlotSet("attribute", None),
-            SlotSet("identifyingpr", None),
-            SlotSet("identified", None),
-            SlotSet("identifier", None),
-            SlotSet("mentalpr", None),
-            SlotSet("senser", None),
-            SlotSet("phenomenon", None),
-            SlotSet("behaviouralpr", None),
-            SlotSet("behaver", None),
-            SlotSet("verbalpr", None),
-            SlotSet("sayer", None),
-            SlotSet("reciver", None),
-            SlotSet("verbiage", None),
-            SlotSet("existantialpr", None),
-            SlotSet("existent", None),
-            SlotSet("nominalgrp", None),
-            SlotSet("adjectivegrp", None),
-            SlotSet("adjectivegrp", None),
-            SlotSet("prepositionallocation", None),
-            SlotSet("negative", None),
-            SlotSet("affirmative", None),
         ]
+
+
+class ActionHanleListen(Action):
+    def name(self):
+        return 'action_handle_listen'
+
+    def run(self, dispatcher, tracker, domain):
+        return [
+            SlotSet("bot_intent_listen", None),
+            FollowupAction('action_listen'),
+        ]
+
+
+class ActionMemorizeUserResponse(Action):
+    def name(self):
+        return 'action_memorize_user_response'
+
+    def run(self, dispatcher, tracker, domain):
+
+        question_num = tracker.get_slot('story_progress')
+        story = tracker.get_slot('lesson_topic')
+
+        if not question_num:
+            raise Exception("Can not get slot value, story_progress")
+
+        answer = query_reference_of_truth(story, question_num)
+
+        return [
+                SlotSet('stm_recipient_response', tracker.latest_message['text']),
+                SlotSet("stm_bot_reference_of_truth", answer['truth']),
+                SlotSet("stm_semantic_axis", answer['axis']),
+            ]
+
+def create_event_reseting_entity_slots()
+
+    return [
+        SlotSet("materialpr", None),
+        SlotSet("actor", None),
+        SlotSet("goal", None),
+        SlotSet("scope", None),
+        SlotSet("beneficiary", None),
+        SlotSet("attributivepr", None),
+        SlotSet("carrier", None),
+        SlotSet("attribute", None),
+        SlotSet("identifyingpr", None),
+        SlotSet("identified", None),
+        SlotSet("identifier", None),
+        SlotSet("mentalpr", None),
+        SlotSet("senser", None),
+        SlotSet("phenomenon", None),
+        SlotSet("behaviouralpr", None),
+        SlotSet("behaver", None),
+        SlotSet("verbalpr", None),
+        SlotSet("sayer", None),
+        SlotSet("reciver", None),
+        SlotSet("verbiage", None),
+        SlotSet("existantialpr", None),
+        SlotSet("existent", None),
+        SlotSet("nominalgrp", None),
+        SlotSet("negativenominalgrp", None),
+        SlotSet("adjectivegrp", None),
+        SlotSet("negativeadjectivegrp", None),
+        SlotSet("adjectivegrp", None),
+        SlotSet("prepositionallocation", None),
+        SlotSet("negative", None),
+        SlotSet("affirmative", None),
+    ]
+
+
+class ActionActivateMatchedPerception(Action):
+    def name(self):
+        return 'action_activate_matched_perception'
+
+    def run(self, dispatcher, tracker, domain):
+
+        return [
+                SlotSet('stm_matched_belief', True),
+                SlotSet('stm_unmatched_belief', None),
+                SlotSet('stm_bot_verbal_intention', None),
+                SlotSet('stm_recipient_response', None),
+                SlotSet('stm_bot_reference_of_truth', None),
+                SlotSet('stm_semantic_axis', None),
+            ] + create_event_reseting_entity_slots()
+
+
+class ActionActivateUnMatchedPerception(Action):
+    def name(self):
+        return 'action_activate_unmatched_perception'
+
+    def run(self, dispatcher, tracker, domain):
+
+        return [
+                SlotSet('stm_unmatched_belief', True),
+                SlotSet('stm_matched_belief', None),
+                SlotSet('stm_bot_verbal_intention', None),
+                SlotSet('stm_recipient_response', None),
+                SlotSet('stm_bot_reference_of_truth', None),
+                SlotSet('stm_semantic_axis', None),
+            ] + create_event_reseting_entity_slots()
 
 
 class ActionNotSureWhatToDoFallback(Action):
@@ -236,40 +287,13 @@ class ActionNotSureWhatToDoFallback(Action):
     def run(self, dispatcher, tracker, domain):
 
         return [
+            SlotSet('intent_rephrase', "positive"),
             SlotSet('stm_matched_belief', None),
             SlotSet('stm_unmatched_belief', None),
             SlotSet('stm_bot_verbal_intention', None),
             SlotSet('stm_recipient_response', None),
             SlotSet('stm_bot_reference_of_truth', None),
             SlotSet('stm_semantic_axis', None),
-            SlotSet('will_return', "positive"),
-            SlotSet("materialpr", None),
-            SlotSet("actor", None),
-            SlotSet("goal", None),
-            SlotSet("scope", None),
-            SlotSet("beneficiary", None),
-            SlotSet("attributivepr", None),
-            SlotSet("carrier", None),
-            SlotSet("attribute", None),
-            SlotSet("identifyingpr", None),
-            SlotSet("identified", None),
-            SlotSet("identifier", None),
-            SlotSet("mentalpr", None),
-            SlotSet("senser", None),
-            SlotSet("phenomenon", None),
-            SlotSet("behaviouralpr", None),
-            SlotSet("behaver", None),
-            SlotSet("verbalpr", None),
-            SlotSet("sayer", None),
-            SlotSet("reciver", None),
-            SlotSet("verbiage", None),
-            SlotSet("existantialpr", None),
-            SlotSet("existent", None),
-            SlotSet("nominalgrp", None),
-            SlotSet("adjectivegrp", None),
-            SlotSet("prepositionallocation", None),
-            SlotSet("negative", None),
-            SlotSet("affirmative", None),
             FollowupAction('utter_return_to_previous_question'),
         ]
 
@@ -292,53 +316,6 @@ class ActionRepeatLastUtterance(Action):
 
         return [
                 BotUttered(text=utterance),
-            ]
-
-
-class ActionActivateMatchedPerception(Action):
-    def name(self):
-        return 'action_activate_matched_perception'
-
-    def run(self, dispatcher, tracker, domain):
-
-        return [
-                SlotSet('stm_matched_belief', True),
-                SlotSet('stm_bot_verbal_intention', None),
-                SlotSet('stm_recipient_response', None),
-                SlotSet('stm_bot_reference_of_truth', None),
-            ]
-
-
-class ActionActivateUnMatchedPerception(Action):
-    def name(self):
-        return 'action_activate_unmatched_perception'
-
-    def run(self, dispatcher, tracker, domain):
-
-        return [
-                SlotSet('stm_unmatched_belief', True),
-                SlotSet('stm_bot_verbal_intention', None),
-                SlotSet('stm_recipient_response', None),
-                SlotSet('stm_bot_reference_of_truth', None),
-            ]
-
-
-class ActionMemorizeUserResponse(Action):
-    def name(self):
-        return 'action_memorize_user_response'
-
-    def run(self, dispatcher, tracker, domain):
-
-        question_num = tracker.get_slot('story_progress')
-        story = tracker.get_slot('lesson_topic')
-
-        if not question_num:
-            raise Exception("Can not get slot value, story_progress")
-
-        answer = query_reference_of_truth(story, question_num)
-
-        return [
-                SlotSet('stm_recipient_response', tracker.latest_message['text']),
-                SlotSet("stm_bot_reference_of_truth", answer['truth']),
-                SlotSet("stm_semantic_axis", answer['axis']),
+                SlotSet('intent_rephrase', None),
+                SlotSet("bot_intent_listen", True),
             ]
