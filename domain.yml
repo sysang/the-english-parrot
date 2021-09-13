@@ -179,9 +179,11 @@ slots:
       - "a_kiss_story"
       - "changed_story"
     influence_conversation: true
-  story_progress:
-    type: RasaSlotTypes.Binary127Bit3
+  dialogue_progress:
+    type: float
     initial_value: 0
+    min_value: 0.0
+    max_value: 1000.0
     influence_conversation: true
   stm_bot_verbal_intention:
     type: RasaSlotTypes.EmbeddedSentence

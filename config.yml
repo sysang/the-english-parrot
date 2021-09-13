@@ -34,9 +34,9 @@ policies:
     epochs: 37
     learning_rate: 0.001
     batch_size:
-      - 16
-      - 48
-    max_history: 7  # null set default value
+      - 32
+      - 128
+    max_history: 11  # null set default value
     hidden_layers_sizes:
       text: []
       action_text: []
@@ -49,7 +49,7 @@ policies:
       action_name: 20
       label_action_name: 20
       entities: 20
-      slots: 2048
+      slots: 128
       active_loop: 20
     concat_dimension:
       text: 128
@@ -60,16 +60,16 @@ policies:
       text: 128
       action_text: 128
       label_action_text: 128
-      dialogue: 3072
+      dialogue: 512
     number_of_transformer_layers:
       text: 1
       action_text: 1
       label_action_text: 1
-      dialogue: 3
+      dialogue: 2
     number_of_attention_heads: 4
     unidirectional_encoder: True
-    embedding_dimension: 100
-    number_of_negative_examples: 100
+    embedding_dimension: 20
+    number_of_negative_examples: 50
     constrain_similarities: true
     entity_recognition: True
     model_confidence: softmax
@@ -77,7 +77,7 @@ policies:
     split_entities_by_comma: true
   - name: "RulePolicy"
     priority: 4
-    core_fallback_threshold: 0.25
+    core_fallback_threshold: 0.15
     core_fallback_action_name: 'action_not_sure_what_to_do_fallback'
     enable_fallback_prediction: true
     restrict_rules: true

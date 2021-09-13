@@ -34,7 +34,7 @@ stories:
       - slot_was_set:
           - "intent_rephrase": null
           - "story_end": null
-          - "story_progress": 1
+          - "dialogue_progress": 1
           - "stm_bot_verbal_intention": "did carlos buy an old car"
           - "bot_intent_listen": true
           - "stm_matched_belief": null
@@ -70,7 +70,7 @@ stories:
           - "goal": null
       - action: action_proceed_dialogue #utter_a_kiss_02_DidCarlosBuyExpensiveBicycle
       - slot_was_set:
-          - "story_progress": 2
+          - "dialogue_progress": 2
           - "stm_bot_verbal_intention": "did carlos buy an expensive bicycle"
           - "bot_intent_listen": true
           - "stm_matched_belief": null
@@ -106,7 +106,7 @@ stories:
           - "goal": null
       - action: action_proceed_dialogue #utter_a_kiss_03_HowBigWasCar
       - slot_was_set:
-          - "story_progress": 3
+          - "dialogue_progress": 3
           - "stm_bot_verbal_intention": "how big was the car"
           - "bot_intent_listen": true
           - "stm_matched_belief": null
@@ -139,7 +139,7 @@ stories:
           - "attribute": null
       - action: action_proceed_dialogue #utter_a_kiss_04_WhatColorWasCar
       - slot_was_set:
-          - "story_progress": 4
+          - "dialogue_progress": 4
           - "stm_bot_verbal_intention": "what color was the car"
           - "bot_intent_listen": true
           - "stm_matched_belief": null
@@ -172,7 +172,7 @@ stories:
           - "attribute": null
       - action: action_proceed_dialogue #utter_a_kiss_05_WhileDrivingDownWhatDidHeSee
       - slot_was_set:
-          - "story_progress": 5
+          - "dialogue_progress": 5
           - "stm_bot_verbal_intention": "while driving down the street. what did he see"
           - "bot_intent_listen": true
           - "stm_matched_belief": null
@@ -208,7 +208,7 @@ stories:
           - "phenomenon": null
       - action: action_proceed_dialogue #utter_a_kiss_06_DidSheLookBeautiful
       - slot_was_set:
-          - "story_progress": 6
+          - "dialogue_progress": 6
           - "stm_bot_verbal_intention": "did she look beautiful"
           - "bot_intent_listen": true
           - "stm_matched_belief": null
@@ -241,7 +241,7 @@ stories:
           - "attribute": null
       - action: action_proceed_dialogue #utter_a_kiss_07_LessonCompleted
       - slot_was_set:
-          - "story_progress": 7
+          - "dialogue_progress": 7
           - "stm_bot_verbal_intention": null
           - "bot_intent_listen": null
           - "stm_matched_belief": null
@@ -279,7 +279,7 @@ stories:
           - "goal": null
       - action: action_proceed_dialogue #utter_a_kiss_02_DidCarlosBuyExpensiveBicycle
       - slot_was_set:
-          - "story_progress": 2
+          - "dialogue_progress": 2
           - "stm_bot_verbal_intention": "did carlos buy an expensive bicycle"
           - "bot_intent_listen": true
           - "stm_matched_belief": null
@@ -314,7 +314,7 @@ stories:
           - "goal": null
       - action: action_proceed_dialogue #utter_a_kiss_03_HowBigWasCar
       - slot_was_set:
-          - "story_progress": 3
+          - "dialogue_progress": 3
           - "stm_bot_verbal_intention": "how big was the car"
           - "bot_intent_listen": true
           - "stm_matched_belief": null
@@ -346,7 +346,7 @@ stories:
           - "attribute": null
       - action: action_proceed_dialogue #utter_a_kiss_04_WhatColorWasCar
       - slot_was_set:
-          - "story_progress": 4
+          - "dialogue_progress": 4
           - "stm_bot_verbal_intention": "what color was the car"
           - "bot_intent_listen": true
           - "stm_matched_belief": null
@@ -378,7 +378,7 @@ stories:
           - "attribute": null
       - action: action_proceed_dialogue #utter_a_kiss_05_WhileDrivingDownWhatDidHeSee
       - slot_was_set:
-          - "story_progress": 5
+          - "dialogue_progress": 5
           - "stm_bot_verbal_intention": "while driving down the street. what did he see"
           - "bot_intent_listen": true
           - "stm_matched_belief": null
@@ -413,7 +413,7 @@ stories:
           - "phenomenon": null
       - action: action_proceed_dialogue #utter_a_kiss_06_DidSheLookBeautiful
       - slot_was_set:
-          - "story_progress": 6
+          - "dialogue_progress": 6
           - "stm_bot_verbal_intention": "did she look beautiful"
           - "bot_intent_listen": true
           - "stm_matched_belief": null
@@ -445,7 +445,7 @@ stories:
           - "attribute": null
       - action: action_proceed_dialogue #utter_a_kiss_07_LessonCompleted
       - slot_was_set:
-          - "story_progress": 7
+          - "dialogue_progress": 7
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
           - "stm_bot_verbal_intention": null
@@ -454,7 +454,7 @@ stories:
       - action: action_end_story
 
 
-  - story: "[03] SCENARIO OF SHORT_EXPRESSION"
+  - story: "[03] SCENARIO OF SHORT_EXPRESSION-01"
     steps:
       - checkpoint: check_a_kiss_01_DidCarlosBuyOldCar
       - intent: affirmative__nominalgroup
@@ -477,7 +477,7 @@ stories:
           - "nominalgrp": null
       - action: action_proceed_dialogue #utter_a_kiss_02_DidCarlosBuyExpensiveBicycle
       - slot_was_set:
-          - "story_progress": 2
+          - "dialogue_progress": 2
           - "stm_bot_verbal_intention": "did carlos buy an expensive bicycle"
           - "bot_intent_listen": true
           - "stm_matched_belief": null
@@ -506,7 +506,7 @@ stories:
           - "nominalgrp": null
       - action: action_proceed_dialogue #utter_a_kiss_03_HowBigWasCar
       - slot_was_set:
-          - "story_progress": 3
+          - "dialogue_progress": 3
           - "stm_bot_verbal_intention": "how big was the car"
           - "bot_intent_listen": true
           - "stm_matched_belief": null
@@ -515,14 +515,14 @@ stories:
       - slot_was_set:
           - "bot_intent_listen": null
 
-      - intent: affirmative__adjectivegroup
+      - intent: affirmative__nominalgroup
         entities:
-          - "adjectivegrp": "huge"
+          - "nominalgrp": "huge car"
       - slot_was_set:
-          - "adjectivegrp": "huge"
+          - "nominalgrp": "huge car"
       - action: action_memorize_user_response
       - slot_was_set:
-          - "stm_recipient_response": "huge"
+          - "stm_recipient_response": "huge car"
           - "stm_bot_reference_of_truth": "it was huge"
           - "stm_semantic_axis": "attribute"
       - action: action_activate_matched_perception
@@ -532,10 +532,10 @@ stories:
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
           - "stm_semantic_axis": null
-          - "adjectivegrp": null
+          - "nominalgrp": null
       - action: action_proceed_dialogue #utter_a_kiss_04_WhatColorWasCar
       - slot_was_set:
-          - "story_progress": 4
+          - "dialogue_progress": 4
           - "stm_bot_verbal_intention": "what color was the car"
           - "bot_intent_listen": true
           - "stm_matched_belief": null
@@ -544,14 +544,14 @@ stories:
       - slot_was_set:
           - "bot_intent_listen": null
 
-      - intent: affirmative__adjectivegroup
+      - intent: affirmative__nominalgroup
         entities:
-          - "adjectivegrp": "blue"
+          - "nominalgrp": "blue color"
       - slot_was_set:
-          - "adjectivegrp": "blue"
+          - "nominalgrp": "blue color"
       - action: action_memorize_user_response
       - slot_was_set:
-          - "stm_recipient_response": "blue"
+          - "stm_recipient_response": "blue color"
           - "stm_bot_reference_of_truth": "it was blue"
           - "stm_semantic_axis": "attribute"
       - action: action_activate_matched_perception
@@ -561,10 +561,10 @@ stories:
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
           - "stm_semantic_axis": null
-          - "adjectivegrp": null
+          - "nominalgrp": null
       - action: action_proceed_dialogue #utter_a_kiss_05_WhileDrivingDownWhatDidHeSee
       - slot_was_set:
-          - "story_progress": 5
+          - "dialogue_progress": 5
           - "stm_bot_verbal_intention": "while driving down the street. what did he see"
           - "bot_intent_listen": true
           - "stm_matched_belief": null
@@ -593,7 +593,7 @@ stories:
           - "nominalgrp": null
       - action: action_proceed_dialogue #utter_a_kiss_06_DidSheLookBeautiful
       - slot_was_set:
-          - "story_progress": 6
+          - "dialogue_progress": 6
           - "stm_bot_verbal_intention": "did she look beautiful"
           - "bot_intent_listen": true
           - "stm_matched_belief": null
@@ -602,14 +602,14 @@ stories:
       - slot_was_set:
           - "bot_intent_listen": null
 
-      - intent: affirmative__adjectivegroup
+      - intent: affirmative__nominalgroup
         entities:
-          - "adjectivegrp": "beautiful"
+          - "nominalgrp": "beautiful girl"
       - slot_was_set:
-          - "adjectivegrp": "beautiful"
+          - "nominalgrp": "beautiful girl"
       - action: action_memorize_user_response
       - slot_was_set:
-          - "stm_recipient_response": "beautiful"
+          - "stm_recipient_response": "beautiful girl"
           - "stm_bot_reference_of_truth": "she looked beautiful"
           - "stm_semantic_axis": "attribute"
       - action: action_activate_matched_perception
@@ -619,10 +619,10 @@ stories:
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
           - "stm_semantic_axis": null
-          - "adjectivegrp": null
+          - "nominalgrp": null
       - action: action_proceed_dialogue #utter_a_kiss_07_LessonCompleted
       - slot_was_set:
-          - "story_progress": 7
+          - "dialogue_progress": 7
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
           - "stm_bot_verbal_intention": null
@@ -631,17 +631,17 @@ stories:
       - action: action_end_story
 
 
-  - story: "[04] SCENARIO OF YES_NO_EXPRESSION"
+  - story: "[04] SCENARIO OF SHORT_EXPRESSION-02"
     steps:
       - checkpoint: check_a_kiss_01_DidCarlosBuyOldCar
-      - intent: negative__shortanswer
+      - intent: affirmative__adjectivegroup
         entities:
-          - "negative": "no"
+          - "adjectivegrp": "new"
       - slot_was_set:
-          - "negative": "no"
+          - "adjectivegrp": "new"
       - action: action_memorize_user_response
       - slot_was_set:
-          - "stm_recipient_response": "no"
+          - "stm_recipient_response": "new"
           - "stm_bot_reference_of_truth": "he bought a new car"
           - "stm_semantic_axis": "goal"
       - action: action_activate_matched_perception
@@ -651,10 +651,10 @@ stories:
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
           - "stm_semantic_axis": null
-          - "negative": null
+          - "adjectivegrp": null
       - action: action_proceed_dialogue #utter_a_kiss_02_DidCarlosBuyExpensiveBicycle
       - slot_was_set:
-          - "story_progress": 2
+          - "dialogue_progress": 2
           - "stm_bot_verbal_intention": "did carlos buy an expensive bicycle"
           - "bot_intent_listen": true
           - "stm_matched_belief": null
@@ -663,14 +663,14 @@ stories:
       - slot_was_set:
           - "bot_intent_listen": null
 
-      - intent: negative__shortanswer
+      - intent: affirmative__adjectivegroup
         entities:
-          - "negative": "no"
+          - "adjectivegrp": "expensive"
       - slot_was_set:
-          - "negative": "no"
+          - "adjectivegrp": "expensive"
       - action: action_memorize_user_response
       - slot_was_set:
-          - "stm_recipient_response": "no"
+          - "stm_recipient_response": "expensive"
           - "stm_bot_reference_of_truth": "he bought an expensive car"
           - "stm_semantic_axis": "goal"
       - action: action_activate_matched_perception
@@ -680,10 +680,10 @@ stories:
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
           - "stm_semantic_axis": null
-          - "negative": null
+          - "adjectivegrp": null
       - action: action_proceed_dialogue #utter_a_kiss_03_HowBigWasCar
       - slot_was_set:
-          - "story_progress": 3
+          - "dialogue_progress": 3
           - "stm_bot_verbal_intention": "how big was the car"
           - "bot_intent_listen": true
           - "stm_matched_belief": null
@@ -692,16 +692,14 @@ stories:
       - slot_was_set:
           - "bot_intent_listen": null
 
-      - intent: nonexclamation__positive__attributivepr
+      - intent: affirmative__adjectivegroup
         entities:
-          - "carrier": "it"
-          - "attribute": "huge"
+          - "adjectivegrp": "huge"
       - slot_was_set:
-          - "carrier": "it"
-          - "attribute": "huge"
+          - "adjectivegrp": "huge"
       - action: action_memorize_user_response
       - slot_was_set:
-          - "stm_recipient_response": "it was huge"
+          - "stm_recipient_response": "huge"
           - "stm_bot_reference_of_truth": "it was huge"
           - "stm_semantic_axis": "attribute"
       - action: action_activate_matched_perception
@@ -711,11 +709,10 @@ stories:
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
           - "stm_semantic_axis": null
-          - "carrier": null
-          - "attribute": null
+          - "adjectivegrp": null
       - action: action_proceed_dialogue #utter_a_kiss_04_WhatColorWasCar
       - slot_was_set:
-          - "story_progress": 4
+          - "dialogue_progress": 4
           - "stm_bot_verbal_intention": "what color was the car"
           - "bot_intent_listen": true
           - "stm_matched_belief": null
@@ -724,16 +721,14 @@ stories:
       - slot_was_set:
           - "bot_intent_listen": null
 
-      - intent: nonexclamation__positive__attributivepr
+      - intent: affirmative__adjectivegroup
         entities:
-          - "carrier": "it"
-          - "attribute": "blue"
+          - "adjectivegrp": "blue"
       - slot_was_set:
-          - "carrier": "it"
-          - "attribute": "blue"
+          - "adjectivegrp": "blue"
       - action: action_memorize_user_response
       - slot_was_set:
-          - "stm_recipient_response": "it was blue"
+          - "stm_recipient_response": "blue"
           - "stm_bot_reference_of_truth": "it was blue"
           - "stm_semantic_axis": "attribute"
       - action: action_activate_matched_perception
@@ -743,11 +738,10 @@ stories:
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
           - "stm_semantic_axis": null
-          - "carrier": null
-          - "attribute": null
+          - "adjectivegrp": null
       - action: action_proceed_dialogue #utter_a_kiss_05_WhileDrivingDownWhatDidHeSee
       - slot_was_set:
-          - "story_progress": 5
+          - "dialogue_progress": 5
           - "stm_bot_verbal_intention": "while driving down the street. what did he see"
           - "bot_intent_listen": true
           - "stm_matched_belief": null
@@ -782,7 +776,196 @@ stories:
           - "phenomenon": null
       - action: action_proceed_dialogue #utter_a_kiss_06_DidSheLookBeautiful
       - slot_was_set:
-          - "story_progress": 6
+          - "dialogue_progress": 6
+          - "stm_bot_verbal_intention": "did she look beautiful"
+          - "bot_intent_listen": true
+          - "stm_matched_belief": null
+          - "stm_unmatched_belief": null
+      - action: action_handle_listen
+      - slot_was_set:
+          - "bot_intent_listen": null
+
+      - intent: affirmative__adjectivegroup
+        entities:
+          - "adjectivegrp": "beautiful"
+      - slot_was_set:
+          - "adjectivegrp": "beautiful"
+      - action: action_memorize_user_response
+      - slot_was_set:
+          - "stm_recipient_response": "beautiful"
+          - "stm_bot_reference_of_truth": "she looked beautiful"
+          - "stm_semantic_axis": "attribute"
+      - action: action_activate_matched_perception
+      - slot_was_set:
+          - "stm_matched_belief": true
+          - "stm_bot_verbal_intention": null
+          - "stm_recipient_response": null
+          - "stm_bot_reference_of_truth": null
+          - "stm_semantic_axis": null
+          - "adjectivegrp": null
+      - action: action_proceed_dialogue #utter_a_kiss_07_LessonCompleted
+      - slot_was_set:
+          - "dialogue_progress": 7
+          - "stm_matched_belief": null
+          - "stm_unmatched_belief": null
+          - "stm_bot_verbal_intention": null
+          - "bot_intent_listen": null
+          - "story_end": true
+      - action: action_end_story
+
+
+  - story: "[05] SCENARIO OF YES_NO_EXPRESSION"
+    steps:
+      - checkpoint: check_a_kiss_01_DidCarlosBuyOldCar
+      - intent: negative__shortanswer
+        entities:
+          - "negative": "no"
+      - slot_was_set:
+          - "negative": "no"
+      - action: action_memorize_user_response
+      - slot_was_set:
+          - "stm_recipient_response": "no"
+          - "stm_bot_reference_of_truth": "he bought a new car"
+          - "stm_semantic_axis": "goal"
+      - action: action_activate_matched_perception
+      - slot_was_set:
+          - "stm_matched_belief": true
+          - "stm_bot_verbal_intention": null
+          - "stm_recipient_response": null
+          - "stm_bot_reference_of_truth": null
+          - "stm_semantic_axis": null
+          - "negative": null
+      - action: action_proceed_dialogue #utter_a_kiss_02_DidCarlosBuyExpensiveBicycle
+      - slot_was_set:
+          - "dialogue_progress": 2
+          - "stm_bot_verbal_intention": "did carlos buy an expensive bicycle"
+          - "bot_intent_listen": true
+          - "stm_matched_belief": null
+          - "stm_unmatched_belief": null
+      - action: action_handle_listen
+      - slot_was_set:
+          - "bot_intent_listen": null
+
+      - intent: negative__shortanswer
+        entities:
+          - "negative": "no"
+      - slot_was_set:
+          - "negative": "no"
+      - action: action_memorize_user_response
+      - slot_was_set:
+          - "stm_recipient_response": "no"
+          - "stm_bot_reference_of_truth": "he bought an expensive car"
+          - "stm_semantic_axis": "goal"
+      - action: action_activate_matched_perception
+      - slot_was_set:
+          - "stm_matched_belief": true
+          - "stm_bot_verbal_intention": null
+          - "stm_recipient_response": null
+          - "stm_bot_reference_of_truth": null
+          - "stm_semantic_axis": null
+          - "negative": null
+      - action: action_proceed_dialogue #utter_a_kiss_03_HowBigWasCar
+      - slot_was_set:
+          - "dialogue_progress": 3
+          - "stm_bot_verbal_intention": "how big was the car"
+          - "bot_intent_listen": true
+          - "stm_matched_belief": null
+          - "stm_unmatched_belief": null
+      - action: action_handle_listen
+      - slot_was_set:
+          - "bot_intent_listen": null
+
+      - intent: nonexclamation__positive__attributivepr
+        entities:
+          - "carrier": "it"
+          - "attribute": "huge"
+      - slot_was_set:
+          - "carrier": "it"
+          - "attribute": "huge"
+      - action: action_memorize_user_response
+      - slot_was_set:
+          - "stm_recipient_response": "it was huge"
+          - "stm_bot_reference_of_truth": "it was huge"
+          - "stm_semantic_axis": "attribute"
+      - action: action_activate_matched_perception
+      - slot_was_set:
+          - "stm_matched_belief": true
+          - "stm_bot_verbal_intention": null
+          - "stm_recipient_response": null
+          - "stm_bot_reference_of_truth": null
+          - "stm_semantic_axis": null
+          - "carrier": null
+          - "attribute": null
+      - action: action_proceed_dialogue #utter_a_kiss_04_WhatColorWasCar
+      - slot_was_set:
+          - "dialogue_progress": 4
+          - "stm_bot_verbal_intention": "what color was the car"
+          - "bot_intent_listen": true
+          - "stm_matched_belief": null
+          - "stm_unmatched_belief": null
+      - action: action_handle_listen
+      - slot_was_set:
+          - "bot_intent_listen": null
+
+      - intent: nonexclamation__positive__attributivepr
+        entities:
+          - "carrier": "it"
+          - "attribute": "blue"
+      - slot_was_set:
+          - "carrier": "it"
+          - "attribute": "blue"
+      - action: action_memorize_user_response
+      - slot_was_set:
+          - "stm_recipient_response": "it was blue"
+          - "stm_bot_reference_of_truth": "it was blue"
+          - "stm_semantic_axis": "attribute"
+      - action: action_activate_matched_perception
+      - slot_was_set:
+          - "stm_matched_belief": true
+          - "stm_bot_verbal_intention": null
+          - "stm_recipient_response": null
+          - "stm_bot_reference_of_truth": null
+          - "stm_semantic_axis": null
+          - "carrier": null
+          - "attribute": null
+      - action: action_proceed_dialogue #utter_a_kiss_05_WhileDrivingDownWhatDidHeSee
+      - slot_was_set:
+          - "dialogue_progress": 5
+          - "stm_bot_verbal_intention": "while driving down the street. what did he see"
+          - "bot_intent_listen": true
+          - "stm_matched_belief": null
+          - "stm_unmatched_belief": null
+      - action: action_handle_listen
+      - slot_was_set:
+          - "bot_intent_listen": null
+
+      - intent: nonexclamation__positive__mentalpr
+        entities:
+          - "senser": "he"
+          - "mentalpr": "saw"
+          - "phenomenon": "a girl"
+      - slot_was_set:
+          - "senser": "he"
+          - "mentalpr": "saw"
+          - "phenomenon": "a girl"
+      - action: action_memorize_user_response
+      - slot_was_set:
+          - "stm_recipient_response": "he saw a girl"
+          - "stm_bot_reference_of_truth": "he saw a girl"
+          - "stm_semantic_axis": "phenomenon"
+      - action: action_activate_matched_perception
+      - slot_was_set:
+          - "stm_matched_belief": true
+          - "stm_bot_verbal_intention": null
+          - "stm_recipient_response": null
+          - "stm_bot_reference_of_truth": null
+          - "stm_semantic_axis": null
+          - "senser": null
+          - "mentalpr": null
+          - "phenomenon": null
+      - action: action_proceed_dialogue #utter_a_kiss_06_DidSheLookBeautiful
+      - slot_was_set:
+          - "dialogue_progress": 6
           - "stm_bot_verbal_intention": "did she look beautiful"
           - "bot_intent_listen": true
           - "stm_matched_belief": null
@@ -811,7 +994,7 @@ stories:
           - "affirmative": null
       - action: action_proceed_dialogue
       - slot_was_set:
-          - "story_progress": 7
+          - "dialogue_progress": 7
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
           - "stm_bot_verbal_intention": null
@@ -820,7 +1003,7 @@ stories:
       - action: action_end_story
 
 
-  - story: "[05] SCENARIO OF WRONG_LONG_EXPRESSION"
+  - story: "[06] SCENARIO OF WRONG_LONG_EXPRESSION"
     steps:
       - checkpoint: check_a_kiss_01_DidCarlosBuyOldCar
 
@@ -850,7 +1033,7 @@ stories:
           - "goal": null
       - action: action_proceed_dialogue
       - slot_was_set:
-          - "story_progress": 2
+          - "dialogue_progress": 2
           - "stm_bot_verbal_intention": "did carlos buy an expensive bicycle"
           - "bot_intent_listen": true
           - "stm_matched_belief": null
@@ -885,7 +1068,7 @@ stories:
           - "goal": null
       - action: action_proceed_dialogue
       - slot_was_set:
-          - "story_progress": 3
+          - "dialogue_progress": 3
           - "stm_bot_verbal_intention": "how big was the car"
           - "bot_intent_listen": true
           - "stm_matched_belief": null
@@ -917,7 +1100,7 @@ stories:
           - "attribute": null
       - action: action_proceed_dialogue
       - slot_was_set:
-          - "story_progress": 4
+          - "dialogue_progress": 4
           - "stm_bot_verbal_intention": "what color was the car"
           - "bot_intent_listen": true
           - "stm_matched_belief": null
@@ -949,7 +1132,7 @@ stories:
           - "attribute": null
       - action: action_proceed_dialogue
       - slot_was_set:
-          - "story_progress": 5
+          - "dialogue_progress": 5
           - "stm_bot_verbal_intention": "while driving down the street. what did he see"
           - "bot_intent_listen": true
           - "stm_matched_belief": null
@@ -984,7 +1167,7 @@ stories:
           - "phenomenon": null
       - action: action_proceed_dialogue
       - slot_was_set:
-          - "story_progress": 6
+          - "dialogue_progress": 6
           - "stm_bot_verbal_intention": "did she look beautiful"
           - "bot_intent_listen": true
           - "stm_matched_belief": null
@@ -1016,7 +1199,7 @@ stories:
           - "attribute": null
       - action: action_proceed_dialogue #utter_a_kiss_07_LessonCompleted
       - slot_was_set:
-          - "story_progress": 7
+          - "dialogue_progress": 7
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
           - "stm_bot_verbal_intention": null
@@ -1025,7 +1208,7 @@ stories:
       - action: action_end_story
 
 
-  - story: "[06] SCENARIO OF WRONG_SHORT_EXPRESSION-01"
+  - story: "[07] SCENARIO OF WRONG_SHORT_EXPRESSION-01"
     steps:
       - checkpoint: check_a_kiss_01_DidCarlosBuyOldCar
       - intent: affirmative__nominalgroup
@@ -1048,7 +1231,7 @@ stories:
           - "nominalgrp": null
       - action: action_proceed_dialogue #utter_a_kiss_02_DidCarlosBuyExpensiveBicycle
       - slot_was_set:
-          - "story_progress": 2
+          - "dialogue_progress": 2
           - "stm_bot_verbal_intention": "did carlos buy an expensive bicycle"
           - "bot_intent_listen": true
           - "stm_matched_belief": null
@@ -1077,7 +1260,7 @@ stories:
           - "nominalgrp": null
       - action: action_proceed_dialogue #utter_a_kiss_03_HowBigWasCar
       - slot_was_set:
-          - "story_progress": 3
+          - "dialogue_progress": 3
           - "stm_bot_verbal_intention": "how big was the car"
           - "bot_intent_listen": true
           - "stm_matched_belief": null
@@ -1086,14 +1269,14 @@ stories:
       - slot_was_set:
           - "bot_intent_listen": null
 
-      - intent: affirmative__adjectivegroup
+      - intent: affirmative__nominalgroup
         entities:
-          - "adjectivegrp": "small"
+          - "nominalgrp": "small car"
       - slot_was_set:
-          - "adjectivegrp": "small"
+          - "nominalgrp": "small car"
       - action: action_memorize_user_response
       - slot_was_set:
-          - "stm_recipient_response": "small"
+          - "stm_recipient_response": "small car"
           - "stm_bot_reference_of_truth": "it was huge"
           - "stm_semantic_axis": "attribute"
       - action: action_activate_unmatched_perception
@@ -1103,10 +1286,10 @@ stories:
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
           - "stm_semantic_axis": null
-          - "adjectivegrp": null
+          - "nominalgrp": null
       - action: action_proceed_dialogue #utter_a_kiss_04_WhatColorWasCar
       - slot_was_set:
-          - "story_progress": 4
+          - "dialogue_progress": 4
           - "stm_bot_verbal_intention": "what color was the car"
           - "bot_intent_listen": true
           - "stm_matched_belief": null
@@ -1115,14 +1298,14 @@ stories:
       - slot_was_set:
           - "bot_intent_listen": null
 
-      - intent: affirmative__adjectivegroup
+      - intent: affirmative__nominalgroup
         entities:
-          - "adjectivegrp": "young"
+          - "nominalgrp": "green car"
       - slot_was_set:
-          - "adjectivegrp": "young"
+          - "nominalgrp": "green car"
       - action: action_memorize_user_response
       - slot_was_set:
-          - "stm_recipient_response": young"
+          - "stm_recipient_response": "green car"
           - "stm_bot_reference_of_truth": "it was blue"
           - "stm_semantic_axis": "attribute"
       - action: action_activate_unmatched_perception
@@ -1132,187 +1315,10 @@ stories:
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
           - "stm_semantic_axis": null
-          - "adjectivegrp": null
+          - "nominalgrp": null
       - action: action_proceed_dialogue #utter_a_kiss_05_WhileDrivingDownWhatDidHeSee
       - slot_was_set:
-          - "story_progress": 5
-          - "stm_bot_verbal_intention": "while driving down the street. what did he see"
-          - "bot_intent_listen": true
-          - "stm_matched_belief": null
-          - "stm_unmatched_belief": null
-      - action: action_handle_listen
-      - slot_was_set:
-          - "bot_intent_listen": null
-
-      - intent: affirmative__nominalgroup
-        entities:
-          - "nominalgrp": "a e"
-      - slot_was_set:
-          - "nominalgrp": "a girl"
-      - action: action_memorize_user_response
-      - slot_was_set:
-          - "stm_recipient_response": "a girl"
-          - "stm_bot_reference_of_truth": "he saw a girl"
-          - "stm_semantic_axis": "phenomenon"
-      - action: action_activate_matched_perception
-      - slot_was_set:
-          - "stm_matched_belief": true
-          - "stm_bot_verbal_intention": null
-          - "stm_recipient_response": null
-          - "stm_bot_reference_of_truth": null
-          - "stm_semantic_axis": null
-          - "nominalgrp": null
-      - action: action_proceed_dialogue #utter_a_kiss_06_DidSheLookBeautiful
-      - slot_was_set:
-          - "story_progress": 6
-          - "stm_bot_verbal_intention": "did she look beautiful"
-          - "bot_intent_listen": true
-          - "stm_matched_belief": null
-          - "stm_unmatched_belief": null
-      - action: action_handle_listen
-      - slot_was_set:
-          - "bot_intent_listen": null
-
-      - intent: affirmative__nominalgroup
-        entities:
-          - "nominalgrp": "a beautiful girl"
-      - slot_was_set:
-          - "nominalgrp": "a beautiful girl"
-      - action: action_memorize_user_response
-      - slot_was_set:
-          - "stm_recipient_response": "a beautiful girl"
-          - "stm_bot_reference_of_truth": "she looked beautiful"
-          - "stm_semantic_axis": "attribute"
-      - action: action_activate_matched_perception
-      - slot_was_set:
-          - "stm_matched_belief": true
-          - "stm_bot_verbal_intention": null
-          - "stm_recipient_response": null
-          - "stm_bot_reference_of_truth": null
-          - "stm_semantic_axis": null
-          - "nominalgrp": null
-      - action: action_proceed_dialogue #utter_a_kiss_07_LessonCompleted
-      - slot_was_set:
-          - "story_progress": 7
-          - "stm_matched_belief": null
-          - "stm_unmatched_belief": null
-          - "stm_bot_verbal_intention": null
-          - "bot_intent_listen": null
-          - "story_end": true
-      - action: action_end_story
-
-
-  - story: "[07] SCENARIO OF WRONG_SHORT_EXPRESSION-02"
-    steps:
-      - checkpoint: check_a_kiss_01_DidCarlosBuyOldCar
-      - intent: affirmative__nominalgroup
-        entities:
-          - "nominalgrp": "a new car"
-      - slot_was_set:
-          - "nominalgrp": "a new car"
-      - action: action_memorize_user_response
-      - slot_was_set:
-          - "stm_recipient_response": "no"
-          - "stm_bot_reference_of_truth": "he bought a new car"
-          - "stm_semantic_axis": "goal"
-      - action: action_activate_matched_perception
-      - slot_was_set:
-          - "stm_matched_belief": true
-          - "stm_bot_verbal_intention": null
-          - "stm_recipient_response": null
-          - "stm_bot_reference_of_truth": null
-          - "stm_semantic_axis": null
-          - "negative": null
-      - action: action_proceed_dialogue #utter_a_kiss_02_DidCarlosBuyExpensiveBicycle
-      - slot_was_set:
-          - "story_progress": 2
-          - "stm_bot_verbal_intention": "did carlos buy an expensive bicycle"
-          - "bot_intent_listen": true
-          - "stm_matched_belief": null
-          - "stm_unmatched_belief": null
-      - action: action_handle_listen
-      - slot_was_set:
-          - "bot_intent_listen": null
-
-      - intent: affirmative__nominalgroup
-        entities:
-          - "nominalgrp": "an expensive car"
-      - slot_was_set:
-          - "nominalgrp": "an expensive car"
-      - action: action_memorize_user_response
-      - slot_was_set:
-          - "stm_recipient_response": "an expensive car"
-          - "stm_bot_reference_of_truth": "he bought an expensive car"
-          - "stm_semantic_axis": "goal"
-      - action: action_activate_matched_perception
-      - slot_was_set:
-          - "stm_matched_belief": true
-          - "stm_bot_verbal_intention": null
-          - "stm_recipient_response": null
-          - "stm_bot_reference_of_truth": null
-          - "nominalgrp": null
-          - "stm_semantic_axis": null
-      - action: action_proceed_dialogue #utter_a_kiss_03_HowBigWasCar
-      - slot_was_set:
-          - "story_progress": 3
-          - "stm_bot_verbal_intention": "how big was the car"
-          - "bot_intent_listen": true
-          - "stm_matched_belief": null
-          - "stm_unmatched_belief": null
-      - action: action_handle_listen
-      - slot_was_set:
-          - "bot_intent_listen": null
-
-      - intent: affirmative__adjectivegroup
-        entities:
-          - "adjectivegrp": "huge"
-      - slot_was_set:
-          - "adjectivegrp": "huge"
-      - action: action_memorize_user_response
-      - slot_was_set:
-          - "stm_recipient_response": "huge"
-          - "stm_bot_reference_of_truth": "it was huge"
-          - "stm_semantic_axis": "attribute"
-      - action: action_activate_matched_perception
-      - slot_was_set:
-          - "stm_matched_belief": true
-          - "stm_bot_verbal_intention": null
-          - "stm_recipient_response": null
-          - "stm_bot_reference_of_truth": null
-          - "stm_semantic_axis": null
-          - "adjectivegrp": null
-      - action: action_proceed_dialogue #utter_a_kiss_04_WhatColorWasCar
-      - slot_was_set:
-          - "story_progress": 4
-          - "stm_bot_verbal_intention": "what color was the car"
-          - "bot_intent_listen": true
-          - "stm_matched_belief": null
-          - "stm_unmatched_belief": null
-      - action: action_handle_listen
-      - slot_was_set:
-          - "bot_intent_listen": null
-
-      - intent: affirmative__adjectivegroup
-        entities:
-          - "adjectivegrp": "blue"
-      - slot_was_set:
-          - "adjectivegrp": "blue"
-      - action: action_memorize_user_response
-      - slot_was_set:
-          - "stm_recipient_response": "blue"
-          - "stm_bot_reference_of_truth": "it was blue"
-          - "stm_semantic_axis": "attribute"
-      - action: action_activate_matched_perception
-      - slot_was_set:
-          - "stm_matched_belief": true
-          - "stm_bot_verbal_intention": null
-          - "stm_recipient_response": null
-          - "stm_bot_reference_of_truth": null
-          - "stm_semantic_axis": null
-          - "adjectivegrp": null
-      - action: action_proceed_dialogue #utter_a_kiss_05_WhileDrivingDownWhatDidHeSee
-      - slot_was_set:
-          - "story_progress": 5
+          - "dialogue_progress": 5
           - "stm_bot_verbal_intention": "while driving down the street. what did he see"
           - "bot_intent_listen": true
           - "stm_matched_belief": null
@@ -1341,7 +1347,7 @@ stories:
           - "nominalgrp": null
       - action: action_proceed_dialogue #utter_a_kiss_06_DidSheLookBeautiful
       - slot_was_set:
-          - "story_progress": 6
+          - "dialogue_progress": 6
           - "stm_bot_verbal_intention": "did she look beautiful"
           - "bot_intent_listen": true
           - "stm_matched_belief": null
@@ -1357,12 +1363,12 @@ stories:
           - "nominalgrp": "an ugly girl"
       - action: action_memorize_user_response
       - slot_was_set:
-          - "stm_recipient_response": "an ugly girl"
+          - "stm_recipient_response": "a ugly girl"
           - "stm_bot_reference_of_truth": "she looked beautiful"
           - "stm_semantic_axis": "attribute"
-      - action: action_activate_unmatched_perception
+      - action: action_activate_matched_perception
       - slot_was_set:
-          - "stm_unmatched_belief": true
+          - "stm_matched_belief": true
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
@@ -1370,7 +1376,7 @@ stories:
           - "nominalgrp": null
       - action: action_proceed_dialogue #utter_a_kiss_07_LessonCompleted
       - slot_was_set:
-          - "story_progress": 7
+          - "dialogue_progress": 7
           - "stm_matched_belief": null
           - "stm_unmatched_belief": null
           - "stm_bot_verbal_intention": null
@@ -1379,17 +1385,17 @@ stories:
       - action: action_end_story
 
 
-  - story: "[08] SCENARIO OF WRONG_YES_NO_EXPRESSION"
+  - story: "[08] SCENARIO OF WRONG_SHORT_EXPRESSION-02"
     steps:
       - checkpoint: check_a_kiss_01_DidCarlosBuyOldCar
-      - intent: affirmative__shortanswer
+      - intent: affirmative__adjectivegroup
         entities:
-          - "affirmative": "yes"
+          - "adjectivegrp": "old"
       - slot_was_set:
-          - "affirmative": "yes"
+          - "adjectivegrp": "old"
       - action: action_memorize_user_response
       - slot_was_set:
-          - "stm_recipient_response": "yes"
+          - "stm_recipient_response": "old"
           - "stm_bot_reference_of_truth": "he bought a new car"
           - "stm_semantic_axis": "goal"
       - action: action_activate_unmatched_perception
@@ -1399,10 +1405,10 @@ stories:
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
           - "stm_semantic_axis": null
-          - "affirmative": null
+          - "adjectivegrp": null
       - action: action_proceed_dialogue #utter_a_kiss_02_DidCarlosBuyExpensiveBicycle
       - slot_was_set:
-          - "story_progress": 2
+          - "dialogue_progress": 2
           - "stm_bot_verbal_intention": "did carlos buy an expensive bicycle"
           - "bot_intent_listen": true
           - "stm_matched_belief": null
@@ -1411,14 +1417,14 @@ stories:
       - slot_was_set:
           - "bot_intent_listen": null
 
-      - intent: affirmative__shortanswer
+      - intent: affirmative__adjectivegroup
         entities:
-          - "affirmative": "yes"
+          - "adjectivegrp": "cheap"
       - slot_was_set:
-          - "affirmative": "yes"
+          - "adjectivegrp": "cheap"
       - action: action_memorize_user_response
       - slot_was_set:
-          - "stm_recipient_response": "no"
+          - "stm_recipient_response": "cheap"
           - "stm_bot_reference_of_truth": "he bought an expensive car"
           - "stm_semantic_axis": "goal"
       - action: action_activate_unmatched_perception
@@ -1428,10 +1434,10 @@ stories:
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
           - "stm_semantic_axis": null
-          - "affirmative": null
+          - "adjectivegrp": null
       - action: action_proceed_dialogue #utter_a_kiss_03_HowBigWasCar
       - slot_was_set:
-          - "story_progress": 3
+          - "dialogue_progress": 3
           - "stm_bot_verbal_intention": "how big was the car"
           - "bot_intent_listen": true
           - "stm_matched_belief": null
@@ -1440,30 +1446,27 @@ stories:
       - slot_was_set:
           - "bot_intent_listen": null
 
-      - intent: nonexclamation__positive__attributivepr
+      - intent: affirmative__adjectivegroup
         entities:
-          - "carrier": "it"
-          - "attribute": "huge"
+          - "adjectivegrp": "small"
       - slot_was_set:
-          - "carrier": "it"
-          - "attribute": "huge"
+          - "adjectivegrp": "small"
       - action: action_memorize_user_response
       - slot_was_set:
-          - "stm_recipient_response": "it was huge"
+          - "stm_recipient_response": "small"
           - "stm_bot_reference_of_truth": "it was huge"
           - "stm_semantic_axis": "attribute"
-      - action: action_activate_matched_perception
+      - action: action_activate_unmatched_perception
       - slot_was_set:
-          - "stm_matched_belief": true
+          - "stm_unmatched_belief": true
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
           - "stm_semantic_axis": null
-          - "carrier": null
-          - "attribute": null
+          - "adjectivegrp": null
       - action: action_proceed_dialogue #utter_a_kiss_04_WhatColorWasCar
       - slot_was_set:
-          - "story_progress": 4
+          - "dialogue_progress": 4
           - "stm_bot_verbal_intention": "what color was the car"
           - "bot_intent_listen": true
           - "stm_matched_belief": null
@@ -1472,30 +1475,27 @@ stories:
       - slot_was_set:
           - "bot_intent_listen": null
 
-      - intent: nonexclamation__positive__attributivepr
+      - intent: affirmative__adjectivegroup
         entities:
-          - "carrier": "it"
-          - "attribute": "blue"
+          - "adjectivegrp": "green"
       - slot_was_set:
-          - "carrier": "it"
-          - "attribute": "blue"
+          - "adjectivegrp": "green"
       - action: action_memorize_user_response
       - slot_was_set:
-          - "stm_recipient_response": "it was blue"
+          - "stm_recipient_response": "green"
           - "stm_bot_reference_of_truth": "it was blue"
           - "stm_semantic_axis": "attribute"
-      - action: action_activate_matched_perception
+      - action: action_activate_unmatched_perception
       - slot_was_set:
-          - "stm_matched_belief": true
+          - "stm_unmatched_belief": true
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
           - "stm_semantic_axis": null
-          - "carrier": null
-          - "attribute": null
+          - "adjectivegrp": null
       - action: action_proceed_dialogue #utter_a_kiss_05_WhileDrivingDownWhatDidHeSee
       - slot_was_set:
-          - "story_progress": 5
+          - "dialogue_progress": 5
           - "stm_bot_verbal_intention": "while driving down the street. what did he see"
           - "bot_intent_listen": true
           - "stm_matched_belief": null
@@ -1530,7 +1530,196 @@ stories:
           - "phenomenon": null
       - action: action_proceed_dialogue #utter_a_kiss_06_DidSheLookBeautiful
       - slot_was_set:
-          - "story_progress": 6
+          - "dialogue_progress": 6
+          - "stm_bot_verbal_intention": "did she look beautiful"
+          - "bot_intent_listen": true
+          - "stm_matched_belief": null
+          - "stm_unmatched_belief": null
+      - action: action_handle_listen
+      - slot_was_set:
+          - "bot_intent_listen": null
+
+      - intent: affirmative__adjectivegroup
+        entities:
+          - "adjectivegrp": "ugly"
+      - slot_was_set:
+          - "adjectivegrp": "ugly"
+      - action: action_memorize_user_response
+      - slot_was_set:
+          - "stm_recipient_response": "ugly"
+          - "stm_bot_reference_of_truth": "she looked beautiful"
+          - "stm_semantic_axis": "attribute"
+      - action: action_activate_unmatched_perception
+      - slot_was_set:
+          - "stm_unmatched_belief": true
+          - "stm_bot_verbal_intention": null
+          - "stm_recipient_response": null
+          - "stm_bot_reference_of_truth": null
+          - "stm_semantic_axis": null
+          - "adjectivegrp": null
+      - action: action_proceed_dialogue #utter_a_kiss_07_LessonCompleted
+      - slot_was_set:
+          - "dialogue_progress": 7
+          - "stm_matched_belief": null
+          - "stm_unmatched_belief": null
+          - "stm_bot_verbal_intention": null
+          - "bot_intent_listen": null
+          - "story_end": true
+      - action: action_end_story
+
+
+  - story: "[09] SCENARIO OF WRONG_YES_NO_EXPRESSION"
+    steps:
+      - checkpoint: check_a_kiss_01_DidCarlosBuyOldCar
+      - intent: affirmative__shortanswer
+        entities:
+          - "affirmative": "yes"
+      - slot_was_set:
+          - "affirmative": "yes"
+      - action: action_memorize_user_response
+      - slot_was_set:
+          - "stm_recipient_response": "yes"
+          - "stm_bot_reference_of_truth": "he bought a new car"
+          - "stm_semantic_axis": "goal"
+      - action: action_activate_unmatched_perception
+      - slot_was_set:
+          - "stm_unmatched_belief": true
+          - "stm_bot_verbal_intention": null
+          - "stm_recipient_response": null
+          - "stm_bot_reference_of_truth": null
+          - "stm_semantic_axis": null
+          - "affirmative": null
+      - action: action_proceed_dialogue #utter_a_kiss_02_DidCarlosBuyExpensiveBicycle
+      - slot_was_set:
+          - "dialogue_progress": 2
+          - "stm_bot_verbal_intention": "did carlos buy an expensive bicycle"
+          - "bot_intent_listen": true
+          - "stm_matched_belief": null
+          - "stm_unmatched_belief": null
+      - action: action_handle_listen
+      - slot_was_set:
+          - "bot_intent_listen": null
+
+      - intent: affirmative__shortanswer
+        entities:
+          - "affirmative": "yes"
+      - slot_was_set:
+          - "affirmative": "yes"
+      - action: action_memorize_user_response
+      - slot_was_set:
+          - "stm_recipient_response": "no"
+          - "stm_bot_reference_of_truth": "he bought an expensive car"
+          - "stm_semantic_axis": "goal"
+      - action: action_activate_unmatched_perception
+      - slot_was_set:
+          - "stm_unmatched_belief": true
+          - "stm_bot_verbal_intention": null
+          - "stm_recipient_response": null
+          - "stm_bot_reference_of_truth": null
+          - "stm_semantic_axis": null
+          - "affirmative": null
+      - action: action_proceed_dialogue #utter_a_kiss_03_HowBigWasCar
+      - slot_was_set:
+          - "dialogue_progress": 3
+          - "stm_bot_verbal_intention": "how big was the car"
+          - "bot_intent_listen": true
+          - "stm_matched_belief": null
+          - "stm_unmatched_belief": null
+      - action: action_handle_listen
+      - slot_was_set:
+          - "bot_intent_listen": null
+
+      - intent: nonexclamation__positive__attributivepr
+        entities:
+          - "carrier": "it"
+          - "attribute": "huge"
+      - slot_was_set:
+          - "carrier": "it"
+          - "attribute": "huge"
+      - action: action_memorize_user_response
+      - slot_was_set:
+          - "stm_recipient_response": "it was huge"
+          - "stm_bot_reference_of_truth": "it was huge"
+          - "stm_semantic_axis": "attribute"
+      - action: action_activate_matched_perception
+      - slot_was_set:
+          - "stm_matched_belief": true
+          - "stm_bot_verbal_intention": null
+          - "stm_recipient_response": null
+          - "stm_bot_reference_of_truth": null
+          - "stm_semantic_axis": null
+          - "carrier": null
+          - "attribute": null
+      - action: action_proceed_dialogue #utter_a_kiss_04_WhatColorWasCar
+      - slot_was_set:
+          - "dialogue_progress": 4
+          - "stm_bot_verbal_intention": "what color was the car"
+          - "bot_intent_listen": true
+          - "stm_matched_belief": null
+          - "stm_unmatched_belief": null
+      - action: action_handle_listen
+      - slot_was_set:
+          - "bot_intent_listen": null
+
+      - intent: nonexclamation__positive__attributivepr
+        entities:
+          - "carrier": "it"
+          - "attribute": "blue"
+      - slot_was_set:
+          - "carrier": "it"
+          - "attribute": "blue"
+      - action: action_memorize_user_response
+      - slot_was_set:
+          - "stm_recipient_response": "it was blue"
+          - "stm_bot_reference_of_truth": "it was blue"
+          - "stm_semantic_axis": "attribute"
+      - action: action_activate_matched_perception
+      - slot_was_set:
+          - "stm_matched_belief": true
+          - "stm_bot_verbal_intention": null
+          - "stm_recipient_response": null
+          - "stm_bot_reference_of_truth": null
+          - "stm_semantic_axis": null
+          - "carrier": null
+          - "attribute": null
+      - action: action_proceed_dialogue #utter_a_kiss_05_WhileDrivingDownWhatDidHeSee
+      - slot_was_set:
+          - "dialogue_progress": 5
+          - "stm_bot_verbal_intention": "while driving down the street. what did he see"
+          - "bot_intent_listen": true
+          - "stm_matched_belief": null
+          - "stm_unmatched_belief": null
+      - action: action_handle_listen
+      - slot_was_set:
+          - "bot_intent_listen": null
+
+      - intent: nonexclamation__positive__mentalpr
+        entities:
+          - "senser": "he"
+          - "mentalpr": "saw"
+          - "phenomenon": "a girl"
+      - slot_was_set:
+          - "senser": "he"
+          - "mentalpr": "saw"
+          - "phenomenon": "a girl"
+      - action: action_memorize_user_response
+      - slot_was_set:
+          - "stm_recipient_response": "he saw a girl"
+          - "stm_bot_reference_of_truth": "he saw a girl"
+          - "stm_semantic_axis": "phenomenon"
+      - action: action_activate_matched_perception
+      - slot_was_set:
+          - "stm_matched_belief": true
+          - "stm_bot_verbal_intention": null
+          - "stm_recipient_response": null
+          - "stm_bot_reference_of_truth": null
+          - "stm_semantic_axis": null
+          - "senser": null
+          - "mentalpr": null
+          - "phenomenon": null
+      - action: action_proceed_dialogue #utter_a_kiss_06_DidSheLookBeautiful
+      - slot_was_set:
+          - "dialogue_progress": 6
           - "stm_bot_verbal_intention": "did she look beautiful"
           - "bot_intent_listen": true
           - "stm_matched_belief": null
@@ -1559,7 +1748,7 @@ stories:
           - "negative": null
       - action: action_proceed_dialogue
       - slot_was_set:
-          - "story_progress": 7
+          - "dialogue_progress": 7
           - "stm_bot_verbal_intention": null
           - "bot_intent_listen": null
           - "stm_matched_belief": null
@@ -1568,7 +1757,7 @@ stories:
       - action: action_end_story
 
 
-  - story: "[09] SCENARIO OF UTTER REPHRASE_PREVIOUS_QUESTION-01"
+  - story: "[10] SCENARIO OF UTTER REPHRASE_PREVIOUS_QUESTION-01"
     steps:
       - checkpoint: check_a_kiss_01_DidCarlosBuyOldCar
       - or:
@@ -1628,7 +1817,7 @@ stories:
           - "bot_intent_listen": null
 
 
-  - story: "[10] SCENARIO OF UTTER REPHRASE_PREVIOUS_QUESTION-02"
+  - story: "[11] SCENARIO OF UTTER REPHRASE_PREVIOUS_QUESTION-02"
     steps:
       - checkpoint: check_a_kiss_02_DidCarlosBuyExpensiveBicycle
       - or:
@@ -1688,7 +1877,7 @@ stories:
           - "bot_intent_listen": null
 
 
-  - story: "[11] SCENARIO OF UTTER REPHRASE_PREVIOUS_QUESTION-03"
+  - story: "[12] SCENARIO OF UTTER REPHRASE_PREVIOUS_QUESTION-03"
     steps:
       - checkpoint: check_a_kiss_03_HowBigWasCar
       - or:
@@ -1748,7 +1937,7 @@ stories:
           - "bot_intent_listen": null
 
 
-  - story: "[12] SCENARIO OF UTTER REPHRASE_PREVIOUS_QUESTION-04"
+  - story: "[13] SCENARIO OF UTTER REPHRASE_PREVIOUS_QUESTION-04"
     steps:
       - checkpoint: check_a_kiss_04_WhatColorWasCar
       - or:
@@ -1808,7 +1997,7 @@ stories:
           - "bot_intent_listen": null
 
 
-  - story: "[13] SCENARIO OF UTTER REPHRASE_PREVIOUS_QUESTION-05"
+  - story: "[14] SCENARIO OF UTTER REPHRASE_PREVIOUS_QUESTION-05"
     steps:
       - checkpoint: check_a_kiss_05_WhileDrivingDownWhatDidHeSee
       - or:
@@ -1868,7 +2057,7 @@ stories:
           - "bot_intent_listen": null
 
 
-  - story: "[14] SCENARIO OF UTTER REPHRASE_PREVIOUS_QUESTION-06"
+  - story: "[15] SCENARIO OF UTTER REPHRASE_PREVIOUS_QUESTION-06"
     steps:
       - checkpoint: check_a_kiss_06_DidSheLookBeautiful
       - or:

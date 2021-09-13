@@ -76,18 +76,18 @@ class ActionCommon():
 
     def get_story_progress_slot(self, dispatcher, tracker, domain):
 
-        story_progress = tracker.get_slot('story_progress')
-        logger.debug(f"latest question number: {story_progress}")
+        dialogue_progress = tracker.get_slot('dialogue_progress')
+        logger.debug(f"latest question number: {dialogue_progress}")
 
-        if story_progress is None:
-            raise Exception("Can not get slot value, story_progress")
+        if dialogue_progress is None:
+            raise Exception("Can not get slot value, dialogue_progress")
 
-        return story_progress
+        return dialogue_progress
 
     def get_dialogue_topic_slot(self, dispatcher, tracker, domain):
-        story_progress = self.get_story_progress_slot(dispatcher, tracker, domain)
+        dialogue_progress = self.get_story_progress_slot(dispatcher, tracker, domain)
 
-        if story_progress == 0:
+        if dialogue_progress == 0:
 
             entities = tracker.latest_message['entities']
             goal_entity = [e for e in entities if e['entity'] == 'goal']
@@ -169,8 +169,8 @@ class ActionProceedDialogue(Action, ActionCommon):
 
         topic = self.get_dialogue_topic_slot(dispatcher, tracker, domain)
 
-        story_progress = tracker.get_slot('story_progress')
-        logger.debug(f"latest story progress: {story_progress}")
+        dialogue_progress = tracker.get_slot('dialogue_progress')
+        logger.debug(f"latest story progress: {dialogue_progress}")
 
         stm_matched_belief = tracker.get_slot('stm_matched_belief')
         stm_unmatched_belief = tracker.get_slot('stm_unmatched_belief')
@@ -178,9 +178,9 @@ class ActionProceedDialogue(Action, ActionCommon):
         if not stm_matched_belief and not stm_unmatched_belief:
             raise Exception("There might be a breach in training data leading bad perceptional states.")
 
-        if story_progress == 0:
+        if dialogue_progress == 0:
 
-            utterance = self.query_bot_utterance(topic, story_progress)
+            utterance = self.query_bot_utterance(topic, dialogue_progress)
 
             events = [
                     SlotSet('intent_rephrase', None),
@@ -190,15 +190,15 @@ class ActionProceedDialogue(Action, ActionCommon):
         else:
             events = []
 
-        progress_next = story_progress + 1
+        progress_next = dialogue_progress + 1
 
-        events.append(SlotSet('story_progress', progress_next))
+        events.append(SlotSet('dialogue_progress', progress_next))
         events.append(SlotSet("stm_matched_belief", None))
         events.append(SlotSet("stm_unmatched_belief", None))
 
         if stm_unmatched_belief:
             inform_utterance = UTTERANCES['inform_incorrect_answer'][0]
-            answer = self.query_reference_of_truth(topic, story_progress)
+            answer = self.query_reference_of_truth(topic, dialogue_progress)
 
             events.append(BotUttered(text=inform_utterance))
             events.append(BotUttered(text=answer['truth']))
@@ -258,17 +258,17 @@ class ActionMemorizeUserResponse(Action, ActionCommon):
 
     def run(self, dispatcher, tracker, domain):
 
-        story_progress = self.get_story_progress_slot(dispatcher, tracker, domain)
+        dialogue_progress = self.get_story_progress_slot(dispatcher, tracker, domain)
         topic = self.get_dialogue_topic_slot(dispatcher, tracker, domain)
 
-        if story_progress == 0:
+        if dialogue_progress == 0:
             events = [
                 SlotSet("dialogue_topic", topic),
             ]
         else:
             events = []
 
-        answer = self.query_reference_of_truth(topic, story_progress)
+        answer = self.query_reference_of_truth(topic, dialogue_progress)
 
         return [
                 SlotSet('stm_recipient_response', tracker.latest_message['text']),
@@ -336,12 +336,12 @@ class ActionRepeatLastUtterance(Action, ActionCommon):
     def run(self, dispatcher, tracker, domain):
 
         topic = self.get_dialogue_topic_slot(dispatcher, tracker, domain)
-        story_progress = self.get_story_progress_slot(dispatcher, tracker, domain)
+        dialogue_progress = self.get_story_progress_slot(dispatcher, tracker, domain)
 
-        if story_progress == 0:
+        if dialogue_progress == 0:
             return []
 
-        utterance = self.query_bot_utterance(topic, story_progress)
+        utterance = self.query_bot_utterance(topic, dialogue_progress)
 
         return [
                 BotUttered(text=utterance),
