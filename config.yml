@@ -31,7 +31,7 @@ pipeline:
     ambiguity_threshold: 0.01
 policies:
   - name: TEDPolicy
-    epochs: 71
+    epochs: 37
     learning_rate: 0.001
     batch_size:
       - 16
@@ -49,7 +49,7 @@ policies:
       action_name: 20
       label_action_name: 20
       entities: 20
-      slots: 1536
+      slots: 2048
       active_loop: 20
     concat_dimension:
       text: 128

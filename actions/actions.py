@@ -23,7 +23,10 @@ from rasa_sdk.events import (
 logger = logging.getLogger(__name__)
 
 A_KISS_STORY = [
-        {},
+        {
+            'truth': "the english parrot initializes a kiss story",
+            'axis': 'goal'
+        },
         {
             'truth': "he bought a new car",
             'axis': 'goal'
@@ -68,26 +71,91 @@ UTTERANCES = {
     'inform_incorrect_answer': ["it is not correct"]
 }
 
-def query_reference_of_truth(story, question_num):
-    return ANSWERS[story][question_num]
 
+class ActionCommon():
 
-def query_story(story):
-    return {
-        'answers': ANSWERS[story]
-    }
+    def get_story_progress_slot(self, dispatcher, tracker, domain):
 
+        story_progress = tracker.get_slot('story_progress')
+        logger.debug(f"latest question number: {story_progress}")
 
-def query_bot_utterance(story, question_num):
-    story_questions = UTTERANCES[story]
+        if story_progress is None:
+            raise Exception("Can not get slot value, story_progress")
 
-    if (question_num >= len(story_questions)):
-        return None
+        return story_progress
 
-    return story_questions[question_num]
+    def get_dialogue_topic_slot(self, dispatcher, tracker, domain):
+        story_progress = self.get_story_progress_slot(dispatcher, tracker, domain)
 
+        if story_progress == 0:
 
-class ActionProceedDialogue(Action):
+            entities = tracker.latest_message['entities']
+            goal_entity = [e for e in entities if e['entity'] == 'goal']
+            if not len(goal_entity):
+                raise Exception("Fatar error: story topic can not be retrieved!")
+
+            topic = goal_entity[0]['value']
+            topic = "_".join(topic.split())
+
+        else:
+            topic = tracker.get_slot('dialogue_topic')
+
+        logger.debug(f"query quesion for topic: {topic}")
+
+        return topic
+
+    def query_reference_of_truth(self, topic, question_num):
+        return ANSWERS[topic][question_num]
+
+    def query_story(self, topic):
+        return {
+            'answers': ANSWERS[topic]
+        }
+
+    def query_bot_utterance(self, topic, question_num):
+        story_questions = UTTERANCES[topic]
+
+        if (question_num >= len(story_questions)):
+            return None
+
+        return story_questions[question_num]
+
+    def create_event_reseting_entity_slots(self):
+
+        return [
+            SlotSet("materialpr", None),
+            SlotSet("actor", None),
+            SlotSet("goal", None),
+            SlotSet("scope", None),
+            SlotSet("beneficiary", None),
+            SlotSet("attributivepr", None),
+            SlotSet("carrier", None),
+            SlotSet("attribute", None),
+            SlotSet("identifyingpr", None),
+            SlotSet("identified", None),
+            SlotSet("identifier", None),
+            SlotSet("mentalpr", None),
+            SlotSet("senser", None),
+            SlotSet("phenomenon", None),
+            SlotSet("behaviouralpr", None),
+            SlotSet("behaver", None),
+            SlotSet("verbalpr", None),
+            SlotSet("sayer", None),
+            SlotSet("reciver", None),
+            SlotSet("verbiage", None),
+            SlotSet("existantialpr", None),
+            SlotSet("existent", None),
+            SlotSet("nominalgrp", None),
+            SlotSet("negativenominalgrp", None),
+            SlotSet("adjectivegrp", None),
+            SlotSet("negativeadjectivegrp", None),
+            SlotSet("adjectivegrp", None),
+            SlotSet("prepositionallocation", None),
+            SlotSet("negative", None),
+            SlotSet("affirmative", None),
+        ]
+
+class ActionProceedDialogue(Action, ActionCommon):
 
     def name(self):
         return 'action_proceed_dialogue'
@@ -99,11 +167,10 @@ class ActionProceedDialogue(Action):
         # latest_action_name = tracker.latest_action_name
         # logger.debug(f"latest utterance action: {latest_action_name}")
 
-        story = tracker.get_slot('lesson_topic')
-        logger.debug(f"query quesion for story: {story}")
+        topic = self.get_dialogue_topic_slot(dispatcher, tracker, domain)
 
         story_progress = tracker.get_slot('story_progress')
-        logger.debug(f"latest question number: {story_progress}")
+        logger.debug(f"latest story progress: {story_progress}")
 
         stm_matched_belief = tracker.get_slot('stm_matched_belief')
         stm_unmatched_belief = tracker.get_slot('stm_unmatched_belief')
@@ -111,19 +178,11 @@ class ActionProceedDialogue(Action):
         if not stm_matched_belief and not stm_unmatched_belief:
             raise Exception("There might be a breach in training data leading bad perceptional states.")
 
-        question_num = story_progress + 1
-
-
         if story_progress == 0:
 
-            topic = 'a kiss story'
-            entities = tracker.latest_message['entities']
-            print(entities)
-
-            utterance = query_bot_utterance(topic, story_progress)
+            utterance = self.query_bot_utterance(topic, story_progress)
 
             events = [
-                    SlotSet("lesson_topic", topic),
                     SlotSet('intent_rephrase', None),
                     SlotSet("story_end", None),
                     BotUttered(text=utterance),
@@ -131,29 +190,31 @@ class ActionProceedDialogue(Action):
         else:
             events = []
 
-        events.append(SlotSet('story_progress', question_num))
+        progress_next = story_progress + 1
+
+        events.append(SlotSet('story_progress', progress_next))
+        events.append(SlotSet("stm_matched_belief", None))
+        events.append(SlotSet("stm_unmatched_belief", None))
 
         if stm_unmatched_belief:
             inform_utterance = UTTERANCES['inform_incorrect_answer'][0]
-            answer = query_reference_of_truth(story, story_progress)
+            answer = self.query_reference_of_truth(topic, story_progress)
 
             events.append(BotUttered(text=inform_utterance))
             events.append(BotUttered(text=answer['truth']))
 
-        answers = query_story(story)['answers']
-        if question_num < len(answers):
+        answers = self.query_story(topic)['answers']
+        question = self.query_bot_utterance(topic, progress_next)
+        if progress_next < len(answers):
             events.append(SlotSet('stm_bot_verbal_intention', question))
+            events.append(SlotSet("bot_intent_listen", True))
             events.append(SlotSet('story_end', False))
         else:
+            events.append(SlotSet('stm_bot_verbal_intention', None))
+            events.append(SlotSet("bot_intent_listen", None))
             events.append(SlotSet('story_end', True))
 
-        question = query_bot_utterance(story, question_num)
         events.append(BotUttered(text=question))
-
-
-        events.append(SlotSet("bot_intent_listen", True))
-        events.append(SlotSet("stm_matched_belief", None))
-        events.append(SlotSet("stm_unmatched_belief", None))
 
         return events
 
@@ -166,8 +227,7 @@ class ActionEndStory(Action):
     def run(self, dispatcher, tracker, domain):
 
         return [
-            SlotSet("stm_matched_belief", None),
-            SlotSet("stm_unmatched_belief", None),
+            FollowupAction('action_restart'),
         ]
 
 class ActionFinalizeBotDialogueTurn(Action):
@@ -192,63 +252,32 @@ class ActionHanleListen(Action):
         ]
 
 
-class ActionMemorizeUserResponse(Action):
+class ActionMemorizeUserResponse(Action, ActionCommon):
     def name(self):
         return 'action_memorize_user_response'
 
     def run(self, dispatcher, tracker, domain):
 
-        question_num = tracker.get_slot('story_progress')
-        story = tracker.get_slot('lesson_topic')
+        story_progress = self.get_story_progress_slot(dispatcher, tracker, domain)
+        topic = self.get_dialogue_topic_slot(dispatcher, tracker, domain)
 
-        if not question_num:
-            raise Exception("Can not get slot value, story_progress")
+        if story_progress == 0:
+            events = [
+                SlotSet("dialogue_topic", topic),
+            ]
+        else:
+            events = []
 
-        answer = query_reference_of_truth(story, question_num)
+        answer = self.query_reference_of_truth(topic, story_progress)
 
         return [
                 SlotSet('stm_recipient_response', tracker.latest_message['text']),
                 SlotSet("stm_bot_reference_of_truth", answer['truth']),
                 SlotSet("stm_semantic_axis", answer['axis']),
-            ]
-
-def create_event_reseting_entity_slots()
-
-    return [
-        SlotSet("materialpr", None),
-        SlotSet("actor", None),
-        SlotSet("goal", None),
-        SlotSet("scope", None),
-        SlotSet("beneficiary", None),
-        SlotSet("attributivepr", None),
-        SlotSet("carrier", None),
-        SlotSet("attribute", None),
-        SlotSet("identifyingpr", None),
-        SlotSet("identified", None),
-        SlotSet("identifier", None),
-        SlotSet("mentalpr", None),
-        SlotSet("senser", None),
-        SlotSet("phenomenon", None),
-        SlotSet("behaviouralpr", None),
-        SlotSet("behaver", None),
-        SlotSet("verbalpr", None),
-        SlotSet("sayer", None),
-        SlotSet("reciver", None),
-        SlotSet("verbiage", None),
-        SlotSet("existantialpr", None),
-        SlotSet("existent", None),
-        SlotSet("nominalgrp", None),
-        SlotSet("negativenominalgrp", None),
-        SlotSet("adjectivegrp", None),
-        SlotSet("negativeadjectivegrp", None),
-        SlotSet("adjectivegrp", None),
-        SlotSet("prepositionallocation", None),
-        SlotSet("negative", None),
-        SlotSet("affirmative", None),
-    ]
+            ] + events
 
 
-class ActionActivateMatchedPerception(Action):
+class ActionActivateMatchedPerception(Action, ActionCommon):
     def name(self):
         return 'action_activate_matched_perception'
 
@@ -261,10 +290,11 @@ class ActionActivateMatchedPerception(Action):
                 SlotSet('stm_recipient_response', None),
                 SlotSet('stm_bot_reference_of_truth', None),
                 SlotSet('stm_semantic_axis', None),
-            ] + create_event_reseting_entity_slots()
+            ] + self.create_event_reseting_entity_slots()
 
 
-class ActionActivateUnMatchedPerception(Action):
+class ActionActivateUnMatchedPerception(Action, ActionCommon):
+
     def name(self):
         return 'action_activate_unmatched_perception'
 
@@ -277,42 +307,41 @@ class ActionActivateUnMatchedPerception(Action):
                 SlotSet('stm_recipient_response', None),
                 SlotSet('stm_bot_reference_of_truth', None),
                 SlotSet('stm_semantic_axis', None),
-            ] + create_event_reseting_entity_slots()
+            ] + self.create_event_reseting_entity_slots()
 
 
-class ActionNotSureWhatToDoFallback(Action):
+class ActionNotSureWhatToDoFallback(Action, ActionCommon):
+
     def name(self):
         return 'action_not_sure_what_to_do_fallback'
 
     def run(self, dispatcher, tracker, domain):
 
         return [
-            SlotSet('intent_rephrase', "positive"),
+            SlotSet('intent_rephrase', True),
             SlotSet('stm_matched_belief', None),
             SlotSet('stm_unmatched_belief', None),
             SlotSet('stm_bot_verbal_intention', None),
             SlotSet('stm_recipient_response', None),
             SlotSet('stm_bot_reference_of_truth', None),
             SlotSet('stm_semantic_axis', None),
-            FollowupAction('utter_return_to_previous_question'),
-        ]
+        ] + self.create_event_reseting_entity_slots() + [FollowupAction('utter_return_to_previous_question')]
 
 
-class ActionRepeatLastUtterance(Action):
+class ActionRepeatLastUtterance(Action, ActionCommon):
+
     def name(self):
         return 'action_repeat_last_utterance'
 
     def run(self, dispatcher, tracker, domain):
-        story = tracker.get_slot('lesson_topic')
-        logger.debug(f"Story: {story}")
 
-        story_progress = tracker.get_slot('story_progress')
-        logger.debug(f"latest question number: {story_progress}")
+        topic = self.get_dialogue_topic_slot(dispatcher, tracker, domain)
+        story_progress = self.get_story_progress_slot(dispatcher, tracker, domain)
 
         if story_progress == 0:
             return []
 
-        utterance = query_bot_utterance(story, story_progress)
+        utterance = self.query_bot_utterance(topic, story_progress)
 
         return [
                 BotUttered(text=utterance),

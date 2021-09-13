@@ -6,7 +6,7 @@ neoterm:
 # @/usr/bin/python3 tryit.py
 
 action:
-	/usr/local/bin/rasa run actions --actions actions
+	/usr/local/bin/rasa run -vv actions --actions actions
 
 actiond:
 	setsid ./actions/runactionserver.sh >./actions/logs/$(shell date "+%Y%m%d-%H%M").log 2>&1 < /dev/null &

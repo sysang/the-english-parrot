@@ -173,11 +173,11 @@ slots:
   story_end:
     type: RasaSlotTypes.Influentialx4
     influence_conversation: true
-  lesson_topic:
+  dialogue_topic:
     type: categorical
     values:
-      - "a kiss story"
-      - "changed story"
+      - "a_kiss_story"
+      - "changed_story"
     influence_conversation: true
   story_progress:
     type: RasaSlotTypes.Binary127Bit3
