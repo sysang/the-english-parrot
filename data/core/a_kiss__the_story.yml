@@ -20,12 +20,16 @@ stories:
           - "stm_recipient_response": "the english parrot initializes a kiss story"
           - "stm_bot_reference_of_truth": "the english parrot initializes a kiss story"
           - "stm_semantic_axis": "goal"
+          - "stm_semantic_point": "a kiss story"
+          - "stm_semantic_intention": "nonexclamation__positive__materialpr"
       - action: action_activate_matched_perception
       - slot_was_set:
           - "stm_matched_belief": true
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "actor": null
           - "materialpr": null
@@ -57,6 +61,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "he bought a new car"
           - "stm_bot_reference_of_truth": "he bought a new car"
+          - "stm_semantic_point": 'a new car'
+          - "stm_semantic_intention": 'nonexclamation__positive__materialpr'
           - "stm_semantic_axis": "goal"
       - action: action_activate_matched_perception
       - slot_was_set:
@@ -64,6 +70,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "actor": null
           - "materialpr": null
@@ -93,6 +101,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "he bought an expensive car"
           - "stm_bot_reference_of_truth": "he bought an expensive car"
+          - "stm_semantic_point": 'an expensive car'
+          - "stm_semantic_intention": 'nonexclamation__positive__materialpr'
           - "stm_semantic_axis": "goal"
       - action: action_activate_matched_perception
       - slot_was_set:
@@ -100,6 +110,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "actor": null
           - "materialpr": null
@@ -127,6 +139,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "it was huge"
           - "stm_bot_reference_of_truth": "it was huge"
+          - "stm_semantic_point": 'huge'
+          - "stm_semantic_intention": 'nonexclamation__positive__attributivepr'
           - "stm_semantic_axis": "attribute"
       - action: action_activate_matched_perception
       - slot_was_set:
@@ -134,6 +148,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "carrier": null
           - "attribute": null
@@ -160,6 +176,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "it was blue"
           - "stm_bot_reference_of_truth": "it was blue"
+          - "stm_semantic_point": 'blue'
+          - "stm_semantic_intention": 'nonexclamation__positive__attributivepr'
           - "stm_semantic_axis": "attribute"
       - action: action_activate_matched_perception
       - slot_was_set:
@@ -167,6 +185,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "carrier": null
           - "attribute": null
@@ -195,6 +215,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "he saw a girl"
           - "stm_bot_reference_of_truth": "he saw a girl"
+          - "stm_semantic_point": 'a girl'
+          - "stm_semantic_intention": 'nonexclamation__positive__mentalpr'
           - "stm_semantic_axis": "phenomenon"
       - action: action_activate_matched_perception
       - slot_was_set:
@@ -202,6 +224,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "senser": null
           - "mentalpr": null
@@ -229,6 +253,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "she looked beautiful"
           - "stm_bot_reference_of_truth": "she looked beautiful"
+          - "stm_semantic_point": 'beautiful'
+          - "stm_semantic_intention": 'nonexclamation__positive__attributivepr'
           - "stm_semantic_axis": "attribute"
       - action: action_activate_matched_perception
       - slot_was_set:
@@ -236,6 +262,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "carrier": null
           - "attribute": null
@@ -266,6 +294,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "he did not buy an old car"
           - "stm_bot_reference_of_truth": "he bought a new car"
+          - "stm_semantic_point": 'a new car'
+          - "stm_semantic_intention": 'nonexclamation__positive__materialpr'
           - "stm_semantic_axis": "goal"
       - action: action_activate_matched_perception
       - slot_was_set:
@@ -273,6 +303,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "materialpr": null
           - "actor": null
@@ -301,6 +333,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "he did not buy an expensive bicycle"
           - "stm_bot_reference_of_truth": "he bought an expensive car"
+          - "stm_semantic_point": 'an expensive car'
+          - "stm_semantic_intention": 'nonexclamation__positive__materialpr'
           - "stm_semantic_axis": "goal"
       - action: action_activate_matched_perception
       - slot_was_set:
@@ -308,6 +342,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "materialpr": null
           - "actor": null
@@ -334,6 +370,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "it was huge"
           - "stm_bot_reference_of_truth": "it was huge"
+          - "stm_semantic_point": 'huge'
+          - "stm_semantic_intention": 'nonexclamation__positive__attributivepr'
           - "stm_semantic_axis": "attribute"
       - action: action_activate_matched_perception
       - slot_was_set:
@@ -341,6 +379,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "carrier": null
           - "attribute": null
@@ -366,6 +406,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "it was blue"
           - "stm_bot_reference_of_truth": "it was blue"
+          - "stm_semantic_point": 'blue'
+          - "stm_semantic_intention": 'nonexclamation__positive__attributivepr'
           - "stm_semantic_axis": "attribute"
       - action: action_activate_matched_perception
       - slot_was_set:
@@ -373,6 +415,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "carrier": null
           - "attribute": null
@@ -400,6 +444,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "he saw a girl"
           - "stm_bot_reference_of_truth": "he saw a girl"
+          - "stm_semantic_point": 'a girl'
+          - "stm_semantic_intention": 'nonexclamation__positive__mentalpr'
           - "stm_semantic_axis": "phenomenon"
       - action: action_activate_matched_perception
       - slot_was_set:
@@ -407,6 +453,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "senser": null
           - "mentalpr": null
@@ -433,6 +481,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "she looked beautiful"
           - "stm_bot_reference_of_truth": "she looked beautiful"
+          - "stm_semantic_point": 'beautiful'
+          - "stm_semantic_intention": 'nonexclamation__positive__attributivepr'
           - "stm_semantic_axis": "attribute"
       - action: action_activate_matched_perception
       - slot_was_set:
@@ -440,6 +490,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "carrier": null
           - "attribute": null
@@ -466,6 +518,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "a new car"
           - "stm_bot_reference_of_truth": "he bought a new car"
+          - "stm_semantic_point": 'a new car'
+          - "stm_semantic_intention": 'nonexclamation__positive__materialpr'
           - "stm_semantic_axis": "goal"
       - action: action_activate_matched_perception
       - slot_was_set:
@@ -473,6 +527,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "nominalgrp": null
       - action: action_proceed_dialogue #utter_a_kiss_02_DidCarlosBuyExpensiveBicycle
@@ -495,6 +551,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "an expensive car"
           - "stm_bot_reference_of_truth": "he bought an expensive car"
+          - "stm_semantic_point": 'an expensive car'
+          - "stm_semantic_intention": 'nonexclamation__positive__materialpr'
           - "stm_semantic_axis": "goal"
       - action: action_activate_matched_perception
       - slot_was_set:
@@ -502,6 +560,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "nominalgrp": null
       - action: action_proceed_dialogue #utter_a_kiss_03_HowBigWasCar
@@ -524,6 +584,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "huge car"
           - "stm_bot_reference_of_truth": "it was huge"
+          - "stm_semantic_point": 'huge'
+          - "stm_semantic_intention": 'nonexclamation__positive__attributivepr'
           - "stm_semantic_axis": "attribute"
       - action: action_activate_matched_perception
       - slot_was_set:
@@ -531,6 +593,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "nominalgrp": null
       - action: action_proceed_dialogue #utter_a_kiss_04_WhatColorWasCar
@@ -553,6 +617,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "blue color"
           - "stm_bot_reference_of_truth": "it was blue"
+          - "stm_semantic_point": 'blue'
+          - "stm_semantic_intention": 'nonexclamation__positive__attributivepr'
           - "stm_semantic_axis": "attribute"
       - action: action_activate_matched_perception
       - slot_was_set:
@@ -560,6 +626,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "nominalgrp": null
       - action: action_proceed_dialogue #utter_a_kiss_05_WhileDrivingDownWhatDidHeSee
@@ -582,6 +650,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "a girl"
           - "stm_bot_reference_of_truth": "he saw a girl"
+          - "stm_semantic_point": 'a girl'
+          - "stm_semantic_intention": 'nonexclamation__positive__mentalpr'
           - "stm_semantic_axis": "phenomenon"
       - action: action_activate_matched_perception
       - slot_was_set:
@@ -589,6 +659,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "nominalgrp": null
       - action: action_proceed_dialogue #utter_a_kiss_06_DidSheLookBeautiful
@@ -611,6 +683,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "beautiful girl"
           - "stm_bot_reference_of_truth": "she looked beautiful"
+          - "stm_semantic_point": 'beautiful'
+          - "stm_semantic_intention": 'nonexclamation__positive__attributivepr'
           - "stm_semantic_axis": "attribute"
       - action: action_activate_matched_perception
       - slot_was_set:
@@ -618,6 +692,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "nominalgrp": null
       - action: action_proceed_dialogue #utter_a_kiss_07_LessonCompleted
@@ -643,6 +719,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "new"
           - "stm_bot_reference_of_truth": "he bought a new car"
+          - "stm_semantic_point": 'a new car'
+          - "stm_semantic_intention": 'nonexclamation__positive__materialpr'
           - "stm_semantic_axis": "goal"
       - action: action_activate_matched_perception
       - slot_was_set:
@@ -650,6 +728,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "adjectivegrp": null
       - action: action_proceed_dialogue #utter_a_kiss_02_DidCarlosBuyExpensiveBicycle
@@ -672,6 +752,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "expensive"
           - "stm_bot_reference_of_truth": "he bought an expensive car"
+          - "stm_semantic_point": 'an expensive car'
+          - "stm_semantic_intention": 'nonexclamation__positive__materialpr'
           - "stm_semantic_axis": "goal"
       - action: action_activate_matched_perception
       - slot_was_set:
@@ -679,6 +761,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "adjectivegrp": null
       - action: action_proceed_dialogue #utter_a_kiss_03_HowBigWasCar
@@ -701,6 +785,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "huge"
           - "stm_bot_reference_of_truth": "it was huge"
+          - "stm_semantic_point": 'huge'
+          - "stm_semantic_intention": 'nonexclamation__positive__attributivepr'
           - "stm_semantic_axis": "attribute"
       - action: action_activate_matched_perception
       - slot_was_set:
@@ -708,6 +794,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "adjectivegrp": null
       - action: action_proceed_dialogue #utter_a_kiss_04_WhatColorWasCar
@@ -730,6 +818,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "blue"
           - "stm_bot_reference_of_truth": "it was blue"
+          - "stm_semantic_point": 'blue'
+          - "stm_semantic_intention": 'nonexclamation__positive__attributivepr'
           - "stm_semantic_axis": "attribute"
       - action: action_activate_matched_perception
       - slot_was_set:
@@ -737,6 +827,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "adjectivegrp": null
       - action: action_proceed_dialogue #utter_a_kiss_05_WhileDrivingDownWhatDidHeSee
@@ -763,6 +855,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "he saw a girl"
           - "stm_bot_reference_of_truth": "he saw a girl"
+          - "stm_semantic_point": 'a girl'
+          - "stm_semantic_intention": 'nonexclamation__positive__mentalpr'
           - "stm_semantic_axis": "phenomenon"
       - action: action_activate_matched_perception
       - slot_was_set:
@@ -770,6 +864,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "senser": null
           - "mentalpr": null
@@ -794,6 +890,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "beautiful"
           - "stm_bot_reference_of_truth": "she looked beautiful"
+          - "stm_semantic_point": 'beautiful'
+          - "stm_semantic_intention": 'nonexclamation__positive__attributivepr'
           - "stm_semantic_axis": "attribute"
       - action: action_activate_matched_perception
       - slot_was_set:
@@ -801,6 +899,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "adjectivegrp": null
       - action: action_proceed_dialogue #utter_a_kiss_07_LessonCompleted
@@ -826,6 +926,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "no"
           - "stm_bot_reference_of_truth": "he bought a new car"
+          - "stm_semantic_point": 'a new car'
+          - "stm_semantic_intention": 'nonexclamation__positive__materialpr'
           - "stm_semantic_axis": "goal"
       - action: action_activate_matched_perception
       - slot_was_set:
@@ -833,6 +935,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "negative": null
       - action: action_proceed_dialogue #utter_a_kiss_02_DidCarlosBuyExpensiveBicycle
@@ -855,6 +959,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "no"
           - "stm_bot_reference_of_truth": "he bought an expensive car"
+          - "stm_semantic_point": 'an expensive car'
+          - "stm_semantic_intention": 'nonexclamation__positive__materialpr'
           - "stm_semantic_axis": "goal"
       - action: action_activate_matched_perception
       - slot_was_set:
@@ -862,6 +968,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "negative": null
       - action: action_proceed_dialogue #utter_a_kiss_03_HowBigWasCar
@@ -886,6 +994,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "it was huge"
           - "stm_bot_reference_of_truth": "it was huge"
+          - "stm_semantic_point": 'huge'
+          - "stm_semantic_intention": 'nonexclamation__positive__attributivepr'
           - "stm_semantic_axis": "attribute"
       - action: action_activate_matched_perception
       - slot_was_set:
@@ -893,6 +1003,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "carrier": null
           - "attribute": null
@@ -918,6 +1030,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "it was blue"
           - "stm_bot_reference_of_truth": "it was blue"
+          - "stm_semantic_point": 'blue'
+          - "stm_semantic_intention": 'nonexclamation__positive__attributivepr'
           - "stm_semantic_axis": "attribute"
       - action: action_activate_matched_perception
       - slot_was_set:
@@ -925,6 +1039,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "carrier": null
           - "attribute": null
@@ -952,6 +1068,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "he saw a girl"
           - "stm_bot_reference_of_truth": "he saw a girl"
+          - "stm_semantic_point": 'a girl'
+          - "stm_semantic_intention": 'nonexclamation__positive__mentalpr'
           - "stm_semantic_axis": "phenomenon"
       - action: action_activate_matched_perception
       - slot_was_set:
@@ -959,6 +1077,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "senser": null
           - "mentalpr": null
@@ -983,6 +1103,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "yes"
           - "stm_bot_reference_of_truth": "she looked beautiful"
+          - "stm_semantic_point": 'beautiful'
+          - "stm_semantic_intention": 'nonexclamation__positive__attributivepr'
           - "stm_semantic_axis": "attribute"
       - action: action_activate_matched_perception
       - slot_was_set:
@@ -990,6 +1112,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "affirmative": null
       - action: action_proceed_dialogue
@@ -1020,6 +1144,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "he bought an old car"
           - "stm_bot_reference_of_truth": "he bought a new car"
+          - "stm_semantic_point": 'a new car'
+          - "stm_semantic_intention": 'nonexclamation__positive__materialpr'
           - "stm_semantic_axis": "goal"
       - action: action_activate_unmatched_perception
       - slot_was_set:
@@ -1027,6 +1153,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "actor": null
           - "materialpr": null
@@ -1055,6 +1183,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "he bought a cheap car"
           - "stm_bot_reference_of_truth": "he bought an expensive car"
+          - "stm_semantic_point": 'an expensive car'
+          - "stm_semantic_intention": 'nonexclamation__positive__materialpr'
           - "stm_semantic_axis": "goal"
       - action: action_activate_unmatched_perception
       - slot_was_set:
@@ -1062,6 +1192,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "actor": null
           - "materialpr": null
@@ -1088,6 +1220,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "it was small"
           - "stm_bot_reference_of_truth": "it was huge"
+          - "stm_semantic_point": 'huge'
+          - "stm_semantic_intention": 'nonexclamation__positive__attributivepr'
           - "stm_semantic_axis": "attribute"
       - action: action_activate_unmatched_perception
       - slot_was_set:
@@ -1095,6 +1229,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "carrier": null
           - "attribute": null
@@ -1120,6 +1256,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "it was green"
           - "stm_bot_reference_of_truth": "it was blue"
+          - "stm_semantic_point": 'blue'
+          - "stm_semantic_intention": 'nonexclamation__positive__attributivepr'
           - "stm_semantic_axis": "attribute"
       - action: action_activate_unmatched_perception
       - slot_was_set:
@@ -1127,6 +1265,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "carrier": null
           - "attribute": null
@@ -1154,6 +1294,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "he saw an egg"
           - "stm_bot_reference_of_truth": "he saw a girl"
+          - "stm_semantic_point": 'a girl'
+          - "stm_semantic_intention": 'nonexclamation__positive__mentalpr'
           - "stm_semantic_axis": "phenomenon"
       - action: action_activate_unmatched_perception
       - slot_was_set:
@@ -1161,6 +1303,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "senser": null
           - "mentalpr": null
@@ -1187,6 +1331,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "she looked ugly"
           - "stm_bot_reference_of_truth": "she looked beautiful"
+          - "stm_semantic_point": 'beautiful'
+          - "stm_semantic_intention": 'nonexclamation__positive__attributivepr'
           - "stm_semantic_axis": "attribute"
       - action: action_activate_unmatched_perception
       - slot_was_set:
@@ -1194,6 +1340,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "carrier": null
           - "attribute": null
@@ -1220,6 +1368,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "an old car"
           - "stm_bot_reference_of_truth": "he bought a new car"
+          - "stm_semantic_point": 'a new car'
+          - "stm_semantic_intention": 'nonexclamation__positive__materialpr'
           - "stm_semantic_axis": "goal"
       - action: action_activate_unmatched_perception
       - slot_was_set:
@@ -1227,6 +1377,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "nominalgrp": null
       - action: action_proceed_dialogue #utter_a_kiss_02_DidCarlosBuyExpensiveBicycle
@@ -1249,6 +1401,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "an cheap car"
           - "stm_bot_reference_of_truth": "he bought an expensive car"
+          - "stm_semantic_point": 'an expensive car'
+          - "stm_semantic_intention": 'nonexclamation__positive__materialpr'
           - "stm_semantic_axis": "goal"
       - action: action_activate_unmatched_perception
       - slot_was_set:
@@ -1256,6 +1410,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "nominalgrp": null
       - action: action_proceed_dialogue #utter_a_kiss_03_HowBigWasCar
@@ -1278,6 +1434,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "small car"
           - "stm_bot_reference_of_truth": "it was huge"
+          - "stm_semantic_point": 'huge'
+          - "stm_semantic_intention": 'nonexclamation__positive__attributivepr'
           - "stm_semantic_axis": "attribute"
       - action: action_activate_unmatched_perception
       - slot_was_set:
@@ -1285,6 +1443,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "nominalgrp": null
       - action: action_proceed_dialogue #utter_a_kiss_04_WhatColorWasCar
@@ -1307,6 +1467,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "green car"
           - "stm_bot_reference_of_truth": "it was blue"
+          - "stm_semantic_point": 'blue'
+          - "stm_semantic_intention": 'nonexclamation__positive__attributivepr'
           - "stm_semantic_axis": "attribute"
       - action: action_activate_unmatched_perception
       - slot_was_set:
@@ -1314,6 +1476,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "nominalgrp": null
       - action: action_proceed_dialogue #utter_a_kiss_05_WhileDrivingDownWhatDidHeSee
@@ -1336,6 +1500,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "a tree"
           - "stm_bot_reference_of_truth": "he saw a girl"
+          - "stm_semantic_point": 'a girl'
+          - "stm_semantic_intention": 'nonexclamation__positive__mentalpr'
           - "stm_semantic_axis": "phenomenon"
       - action: action_activate_unmatched_perception
       - slot_was_set:
@@ -1343,6 +1509,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "nominalgrp": null
       - action: action_proceed_dialogue #utter_a_kiss_06_DidSheLookBeautiful
@@ -1365,6 +1533,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "a ugly girl"
           - "stm_bot_reference_of_truth": "she looked beautiful"
+          - "stm_semantic_point": 'beautiful'
+          - "stm_semantic_intention": 'nonexclamation__positive__attributivepr'
           - "stm_semantic_axis": "attribute"
       - action: action_activate_matched_perception
       - slot_was_set:
@@ -1372,6 +1542,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "nominalgrp": null
       - action: action_proceed_dialogue #utter_a_kiss_07_LessonCompleted
@@ -1397,6 +1569,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "old"
           - "stm_bot_reference_of_truth": "he bought a new car"
+          - "stm_semantic_point": 'a new car'
+          - "stm_semantic_intention": 'nonexclamation__positive__materialpr'
           - "stm_semantic_axis": "goal"
       - action: action_activate_unmatched_perception
       - slot_was_set:
@@ -1404,6 +1578,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "adjectivegrp": null
       - action: action_proceed_dialogue #utter_a_kiss_02_DidCarlosBuyExpensiveBicycle
@@ -1426,6 +1602,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "cheap"
           - "stm_bot_reference_of_truth": "he bought an expensive car"
+          - "stm_semantic_point": 'an expensive car'
+          - "stm_semantic_intention": 'nonexclamation__positive__materialpr'
           - "stm_semantic_axis": "goal"
       - action: action_activate_unmatched_perception
       - slot_was_set:
@@ -1433,6 +1611,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "adjectivegrp": null
       - action: action_proceed_dialogue #utter_a_kiss_03_HowBigWasCar
@@ -1455,6 +1635,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "small"
           - "stm_bot_reference_of_truth": "it was huge"
+          - "stm_semantic_point": 'huge'
+          - "stm_semantic_intention": 'nonexclamation__positive__attributivepr'
           - "stm_semantic_axis": "attribute"
       - action: action_activate_unmatched_perception
       - slot_was_set:
@@ -1462,6 +1644,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "adjectivegrp": null
       - action: action_proceed_dialogue #utter_a_kiss_04_WhatColorWasCar
@@ -1484,6 +1668,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "green"
           - "stm_bot_reference_of_truth": "it was blue"
+          - "stm_semantic_point": 'blue'
+          - "stm_semantic_intention": 'nonexclamation__positive__attributivepr'
           - "stm_semantic_axis": "attribute"
       - action: action_activate_unmatched_perception
       - slot_was_set:
@@ -1491,6 +1677,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "adjectivegrp": null
       - action: action_proceed_dialogue #utter_a_kiss_05_WhileDrivingDownWhatDidHeSee
@@ -1517,6 +1705,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "he saw a girl"
           - "stm_bot_reference_of_truth": "he saw a girl"
+          - "stm_semantic_point": 'a girl'
+          - "stm_semantic_intention": 'nonexclamation__positive__mentalpr'
           - "stm_semantic_axis": "phenomenon"
       - action: action_activate_matched_perception
       - slot_was_set:
@@ -1524,6 +1714,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "senser": null
           - "mentalpr": null
@@ -1548,6 +1740,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "ugly"
           - "stm_bot_reference_of_truth": "she looked beautiful"
+          - "stm_semantic_point": 'beautiful'
+          - "stm_semantic_intention": 'nonexclamation__positive__attributivepr'
           - "stm_semantic_axis": "attribute"
       - action: action_activate_unmatched_perception
       - slot_was_set:
@@ -1555,6 +1749,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "adjectivegrp": null
       - action: action_proceed_dialogue #utter_a_kiss_07_LessonCompleted
@@ -1580,6 +1776,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "yes"
           - "stm_bot_reference_of_truth": "he bought a new car"
+          - "stm_semantic_point": 'a new car'
+          - "stm_semantic_intention": 'nonexclamation__positive__materialpr'
           - "stm_semantic_axis": "goal"
       - action: action_activate_unmatched_perception
       - slot_was_set:
@@ -1587,6 +1785,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "affirmative": null
       - action: action_proceed_dialogue #utter_a_kiss_02_DidCarlosBuyExpensiveBicycle
@@ -1609,6 +1809,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "no"
           - "stm_bot_reference_of_truth": "he bought an expensive car"
+          - "stm_semantic_point": 'an expensive car'
+          - "stm_semantic_intention": 'nonexclamation__positive__materialpr'
           - "stm_semantic_axis": "goal"
       - action: action_activate_unmatched_perception
       - slot_was_set:
@@ -1616,6 +1818,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "affirmative": null
       - action: action_proceed_dialogue #utter_a_kiss_03_HowBigWasCar
@@ -1640,6 +1844,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "it was huge"
           - "stm_bot_reference_of_truth": "it was huge"
+          - "stm_semantic_point": 'huge'
+          - "stm_semantic_intention": 'nonexclamation__positive__attributivepr'
           - "stm_semantic_axis": "attribute"
       - action: action_activate_matched_perception
       - slot_was_set:
@@ -1647,6 +1853,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "carrier": null
           - "attribute": null
@@ -1672,6 +1880,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "it was blue"
           - "stm_bot_reference_of_truth": "it was blue"
+          - "stm_semantic_point": 'blue'
+          - "stm_semantic_intention": 'nonexclamation__positive__attributivepr'
           - "stm_semantic_axis": "attribute"
       - action: action_activate_matched_perception
       - slot_was_set:
@@ -1679,6 +1889,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "carrier": null
           - "attribute": null
@@ -1706,6 +1918,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "he saw a girl"
           - "stm_bot_reference_of_truth": "he saw a girl"
+          - "stm_semantic_point": 'a girl'
+          - "stm_semantic_intention": 'nonexclamation__positive__mentalpr'
           - "stm_semantic_axis": "phenomenon"
       - action: action_activate_matched_perception
       - slot_was_set:
@@ -1713,6 +1927,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "senser": null
           - "mentalpr": null
@@ -1737,6 +1953,8 @@ stories:
       - slot_was_set:
           - "stm_recipient_response": "no"
           - "stm_bot_reference_of_truth": "she looked beautiful"
+          - "stm_semantic_point": 'beautiful'
+          - "stm_semantic_intention": 'nonexclamation__positive__attributivepr'
           - "stm_semantic_axis": "attribute"
       - action: action_activate_unmatched_perception
       - slot_was_set:
@@ -1744,6 +1962,8 @@ stories:
           - "stm_bot_verbal_intention": null
           - "stm_recipient_response": null
           - "stm_bot_reference_of_truth": null
+          - "stm_semantic_point": null
+          - "stm_semantic_intention": null
           - "stm_semantic_axis": null
           - "negative": null
       - action: action_proceed_dialogue

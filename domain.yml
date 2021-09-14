@@ -194,8 +194,14 @@ slots:
   stm_bot_reference_of_truth:
     type: RasaSlotTypes.EmbeddedSentence
     influence_conversation: true
+  stm_semantic_intention:
+    type: RasaSlotTypes.SemanticIntentionX4
+    influence_conversation: true
   stm_semantic_axis:
     type: RasaSlotTypes.SemanticAxisX4
+    influence_conversation: true
+  stm_semantic_point:
+    type: RasaSlotTypes.EmbeddedSentence
     influence_conversation: true
   stm_matched_belief:
     type: RasaSlotTypes.Influentialx32
@@ -291,5 +297,3 @@ intents:
   - affirmative__shortanswer:
       use_entities:
         - affirmative
-  - client_initializes_a_kiss_story
-  - client_initializes_changed_story

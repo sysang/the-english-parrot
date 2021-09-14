@@ -25,31 +25,45 @@ logger = logging.getLogger(__name__)
 A_KISS_STORY = [
         {
             'truth': "the english parrot initializes a kiss story",
-            'axis': 'goal'
+            'axis': 'goal',
+            'point': 'a kiss story',
+            'intention': 'nonexclamation__positive__materialpr',
         },
         {
             'truth': "he bought a new car",
-            'axis': 'goal'
+            'axis': 'goal',
+            'point': 'a new car',
+            'intention': 'nonexclamation__positive__materialpr',
         },
         {
             'truth': "he bought an expensive car",
-            'axis': 'goal'
+            'axis': 'goal',
+            'point': 'an expensive car',
+            'intention': 'nonexclamation__positive__materialpr',
         },
         {
             'truth': "it was huge",
-            'axis': 'attribute'
+            'axis': 'attribute',
+            'point': 'huge',
+            'intention': 'nonexclamation__positive__attributivepr',
         },
         {
             'truth': "it was blue",
-            'axis': 'attribute'
+            'axis': 'attribute',
+            'point': 'blue',
+            'intention': 'nonexclamation__positive__attributivepr',
         },
         {
             'truth': "he saw a girl",
-            'axis': 'phenomenon'
+            'axis': 'phenomenon',
+            'point': 'a girl',
+            'intention': 'nonexclamation__positive__mentalpr',
         },
         {
             'truth': "she looked beautiful",
-            'axis': 'attribute'
+            'axis': 'attribute',
+            'point': 'beautiful',
+            'intention': 'nonexclamation__positive__attributivepr',
         },
     ]
 
@@ -273,6 +287,8 @@ class ActionMemorizeUserResponse(Action, ActionCommon):
         return [
                 SlotSet('stm_recipient_response', tracker.latest_message['text']),
                 SlotSet("stm_bot_reference_of_truth", answer['truth']),
+                SlotSet("stm_semantic_point", answer['point']),
+                SlotSet("stm_semantic_intention", answer['intention']),
                 SlotSet("stm_semantic_axis", answer['axis']),
             ] + events
 
@@ -289,6 +305,8 @@ class ActionActivateMatchedPerception(Action, ActionCommon):
                 SlotSet('stm_bot_verbal_intention', None),
                 SlotSet('stm_recipient_response', None),
                 SlotSet('stm_bot_reference_of_truth', None),
+                SlotSet('stm_semantic_point', None),
+                SlotSet('stm_semantic_intention', None),
                 SlotSet('stm_semantic_axis', None),
             ] + self.create_event_reseting_entity_slots()
 
@@ -306,6 +324,8 @@ class ActionActivateUnMatchedPerception(Action, ActionCommon):
                 SlotSet('stm_bot_verbal_intention', None),
                 SlotSet('stm_recipient_response', None),
                 SlotSet('stm_bot_reference_of_truth', None),
+                SlotSet('stm_semantic_point', None),
+                SlotSet('stm_semantic_intention', None),
                 SlotSet('stm_semantic_axis', None),
             ] + self.create_event_reseting_entity_slots()
 

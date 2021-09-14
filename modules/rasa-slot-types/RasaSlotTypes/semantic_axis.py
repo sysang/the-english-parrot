@@ -1,7 +1,37 @@
 import logging
 from rasa.shared.core.slots import Slot
 
-class SemanticAxisX4(Slot):
+class SemanticValueEncoder(Slot):
+
+    def as_feature(self):
+        dim = self.feature_dimensionality()
+        features = [0.0] * dim
+
+        if not self.value:
+            return features
+
+        axes = self.axes()
+        axis_order = axes.get(self.value, None)
+        if not axis_order:
+            return features
+
+
+        influence = self.feature_influence()
+        starting = axis_order * influence
+        for num in range(influence):
+            features[starting + num] = 1.0
+
+        return features
+
+    def feature_dimensionality(self):
+        axes = self.axes()
+        influence = self.feature_influence()
+
+        return len(axes.keys()) * influence
+
+
+class SemanticAxisX4(SemanticValueEncoder):
+
     def axes(self):
         return {
             "materialpr": 0,
@@ -30,32 +60,31 @@ class SemanticAxisX4(Slot):
             "adjectivegrp": 23,
             "prepositionallocation": 24,
         }
+
     def feature_influence(self):
         return 4
 
-    def feature_dimensionality(self):
-        axes = self.axes()
-        influence = self.feature_influence()
 
-        return len(axes.keys()) * influence
+class SemanticIntentionX4(SemanticValueEncoder):
 
-    def as_feature(self):
-        dim = self.feature_dimensionality()
-        features = [0.0] * dim
+    def axes(self):
+        return {
+            "nonexclamation__negative__attributivepr": 0,
+            "nonexclamation__positive__materialpr": 1,
+            "nonexclamation__negative__materialpr": 2,
+            "nonexclamation__positive__identifyingpr": 3,
+            "nonexclamation__negative__identifyingpr": 4,
+            "nonexclamation__positive__attributivepr": 5,
+            "nonexclamation__positive__mentalpr": 6,
+            "nonexclamation__negative__mentalpr": 7,
+            "affirmative__nominalgroup": 8,
+            "negative__nominalgroup": 9,
+            "affirmative__adjectivegroup": 10,
+            "negative__adjectivegroup": 11,
+            "affirmative__prepositionalphrase__location": 12,
+            "negative__shortanswer": 13,
+            "affirmative__shortanswer": 14,
+        }
 
-        if not self.value:
-            return features
-
-        axes = self.axes()
-        axis_order = axes.get(self.value, None)
-        if not axis_order:
-            return features
-
-
-        influence = self.feature_influence()
-        starting = axis_order * influence
-        for num in range(influence):
-            features[starting + num] = 1.0
-
-        return features
-
+    def feature_influence(self):
+        return 4
