@@ -1736,8 +1736,8 @@ stories:
       - action: action_memorize_user_response
       - slot_was_set:
           - "stm_recipient_response": "no"
-          - "stm_bot_reference_of_truth": "he bought a expensive car"
-          - "stm_semantic_axis": "goal"
+          - "stm_bot_reference_of_truth": "she looked beautiful"
+          - "stm_semantic_axis": "attribute"
       - action: action_activate_unmatched_perception
       - slot_was_set:
           - "stm_unmatched_belief": true

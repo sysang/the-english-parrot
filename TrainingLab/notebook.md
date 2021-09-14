@@ -27,3 +27,5 @@ If right action is predicted with low confidence story should by improved, fallb
 to the story but action had not yet implemented appropriately, the consequence of that was action "action_initialize_a_kiss_story" was always chosen. Why? Because \
 "stm_bot_verbal_intention" is None at starting point and is dominant to others.
 - If prediction confidence is high most of the time, it's very good chance to decrease training time (epoch) to improve model generalizing ability.
+**- Start from simple idea, simple design, simple solution. Always BEAR IN MIND that as long as thing works well, just keep it minimalist. Decide to add more layer of \
+complexity only if you know it solves a concrete problem. This is the perfect way to understand things and control things.**

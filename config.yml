@@ -38,42 +38,42 @@ policies:
       - 128
     max_history: 11  # null set default value
     hidden_layers_sizes:
-      text: []
+      text: [] # guesing it is used for e2e mode
       action_text: []
       label_action_text: []
     dense_dimension:
-      text: 128
+      text: 128 # guesing it is used for e2e mode
       action_text: 128
       label_action_text: 128
       intent: 20
       action_name: 20
       label_action_name: 20
       entities: 20
-      slots: 128
+      slots: 256
       active_loop: 20
     concat_dimension:
-      text: 128
+      text: 128 # guesing it is used for e2e mode
       action_text: 128
       label_action_text: 128
     encoding_dimension: 50
     transformer_size:
-      text: 128
+      text: 128 # guesing it is used for e2e mode
       action_text: 128
       label_action_text: 128
-      dialogue: 512
+      dialogue: 384
     number_of_transformer_layers:
       text: 1
       action_text: 1
       label_action_text: 1
       dialogue: 2
-    number_of_attention_heads: 4
+    number_of_attention_heads: 3
     unidirectional_encoder: True
-    embedding_dimension: 20
-    number_of_negative_examples: 50
+    embedding_dimension: 32
+    number_of_negative_examples: 100
     constrain_similarities: true
     entity_recognition: True
     model_confidence: softmax
-    connection_density: 0.85
+    connection_density: 0.93
     split_entities_by_comma: true
   - name: "RulePolicy"
     priority: 4
